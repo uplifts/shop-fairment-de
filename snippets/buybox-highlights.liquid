@@ -1,0 +1,32 @@
+{%- assign text_rows = text | newline_to_br | split: '<br />' -%}
+
+{%- if text_rows != blank -%}
+  <div class="product__info-higlights prodHlights">
+    {%- for row in text_rows -%}
+      <div class="product__info-higlights-item flex-align-center">
+        <div class="product__info-higlights-item-icon">
+          {% render 'icon', icon: 'check-solid' %}
+        </div>
+        <div class="flex-1">
+          {{ row }}
+        </div>
+      </div>
+    {%- endfor -%}
+    <div class="product__info-higlights--overlay">
+      <div data-more="weiterlesen +" data-less="weniger sehen -" class="product__info-higlights--trigger"></div>
+    </div>
+  </div>
+{%- endif -%}
+
+<script async defer>
+  var prodHlights = document.querySelector('.prodHlights');
+  if (prodHlights) {
+    let height = prodHlights.clientHeight;
+    if (height > 180) {
+      prodHlights.classList.add('mod-expandable');
+      prodHlights.addEventListener('click', function(e) {
+        prodHlights.classList.toggle('is-open');
+      });
+    }
+  }
+</script>

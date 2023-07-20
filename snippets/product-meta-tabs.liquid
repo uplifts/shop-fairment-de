@@ -1,0 +1,56 @@
+{% assign tab_1_title = product.metafields.custom.product_tab_1_title %}
+{% assign tab_1_content = product.metafields.custom.product_tab_1_content %}
+{% assign tab_2_title = product.metafields.custom.product_tab_2_title %}
+{% assign tab_2_content = product.metafields.custom.product_tab_2_content %}
+{% assign tab_3_title = product.metafields.custom.product_tab_3_title %}
+{% assign tab_3_content = product.metafields.custom.product_tab_3_content %}
+
+<div class="product-meta-tabs">
+  <tabs-nav class="tabs-nav">
+    <div class="tabs-nav__item-list">
+      {%- if tab_1_title != blank -%}
+        <button type="button" class="tabs-nav__item" aria-expanded="true" aria-controls="block-product-metatab-01" {{ block.shopify_attributes }}>
+          {{- tab_1_title -}}
+        </button>
+      {%- endif -%}
+      {%- if tab_2_title != blank -%}
+        <button type="button" class="tabs-nav__item" aria-expanded="false" aria-controls="block-product-metatab-02" {{ block.shopify_attributes }}>
+          {{- tab_2_title -}}
+        </button>
+      {%- endif -%}
+      {%- if tab_3_title != blank -%}
+        <button type="button" class="tabs-nav__item" aria-expanded="false" aria-controls="block-product-metatab-03" {{ block.shopify_attributes }}>
+          {{- tab_3_title -}}
+        </button>
+      {%- endif -%}
+    </div>
+  </tabs-nav>
+
+  <div class="taabs">
+    {%- if tab_1_content != blank -%}
+      <div
+        class="pdp-tab-01"
+        id="block-product-metatab-01">
+        {{ tab_1_content }}
+      </div>
+    {%- endif -%}
+
+    {%- if tab_2_content != blank -%}
+      <div
+        class="pdp-tab-02"
+        {% if tab_1_content != blank %} hidden{% endif %}
+        id="block-product-metatab-02">
+        {{ tab_2_content }}
+      </div>
+    {%- endif -%}
+
+    {%- if tab_3_content != blank -%}
+      <div
+        class="pdp-tab-03"
+        {% if tab_1_content != blank or tab_2_content != blank %} hidden{% endif %}
+        id="block-product-metatab-03">
+        {{ tab_3_content }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

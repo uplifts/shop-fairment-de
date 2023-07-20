@@ -1,0 +1,133 @@
+{% if settings.fg_enable == true %}
+  {% assign productA = settings.fg_a %}
+  {% assign productB = settings.fg_b %}
+  {% assign threshold = settings.fg_threshold | plus: 0 | times: 100 %}
+  {% assign show_fake = false %}
+  {% assign hasA = false %}
+  {% assign hasB = false %}
+  {% for item in checkout.line_items %}
+    {{ settings.fg_a.title }}
+    {% if item.product.handle == productA %}
+      {% assign hasA = true %}
+    {% endif %}
+    {% if item.product.handle == productB %}
+      {% assign hasB = true %}
+    {% endif %}
+  {% endfor %}
+  
+  {% if checkout.total_price >= threshold and hasA == true and hasB == false %}
+    {% assign show_fake = true %}
+  {% endif %}
+  
+  {% if show_fake == true %}
+    <script>
+      var variantB = '';
+      
+      (function($){
+        $(document).on("page:load", function(){
+          if ($('.fg-discount').length == 0) {
+            $('.order-summary__section--discount .fieldset').addClass('fg-discount--original');
+            $('.fg-discount--original').hide();
+            $('.order-summary__section--discount').append(`
+              <div class="fg-discount">
+                <div class="fieldset">
+                  <div class="field">
+                    <div class="field__input-btn-wrapper">
+                      <div class="field__input-wrapper"><label class="field__label field__label--visible" for="checkout_reduction_code">Geschenkkarte oder Rabattcode</label>
+                      <input placeholder="Geschenkkarte oder Rabattcode" class="field__input js-input-fg-discount" data-discount-field="true" autocomplete="off" aria-required="true" size="30" type="text">
+                    </div>
+      
+                    <button class="field__input-btn btn btn--disabled js-apply-fg-discount" aria-busy="false" disabled="disabled">
+                      <span class="btn__content visually-hidden-on-mobile" aria-hidden="true">
+                        Anwenden
+                      </span>
+                      <span class="visually-hidden">
+                        Rabattcode nutzen
+                      </span>
+                      <svg class="icon-svg icon-svg--size-16 btn__icon shown-on-mobile" aria-hidden="true" focusable="false"> <use xlink:href="#arrow"></use> </svg>
+                      <svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xlink:href="#spinner-button"></use> </svg>
+                    </button>      
+                  </div>
+                </div>
+              </div>
+            `);
+            $.ajax({
+              url : '/products/{{ productB }}?view=getid',
+              type : 'GET',
+              success : function(data) {
+                variantB = data;
+              },
+              error : function(request,error)
+              {
+                console.log(JSON.stringify(request));
+              }
+            });
+          }
+        });
+    
+        $(document).on('keydown', '.js-input-fg-discount', function () {
+          if($(this).val() != '') {
+            $('.js-apply-fg-discount').prop('disabled', false);
+            $('.js-apply-fg-discount').removeClass('btn--disabled');
+          }
+          else {
+            $('.js-apply-fg-discount').prop('disabled', true);
+            $('.js-apply-fg-discount').addClass('btn--disabled');        
+          }
+        });
+    
+        $(document).on('change', '.js-input-fg-discount', function () {
+          if($(this).val() != '') {
+            $('.js-apply-fg-discount').prop('disabled', false);
+            $('.js-apply-fg-discount').removeClass('btn--disabled');
+          }
+          else {
+            $('.js-apply-fg-discount').prop('disabled', true);
+            $('.js-apply-fg-discount').addClass('btn--disabled');        
+          }
+        });
+    
+        $(document).on('click', '.js-apply-fg-discount', function () {
+          if ($('.js-input-fg-discount').val() == '{{ settings.fg_discount }}') {
+            if ($(`.product[data-variant-id="${variantB}"]`).length == 0) {
+              $.ajax({
+                url : '/cart/add.js',
+                type : 'POST',
+                data : {
+                  id: variantB,
+                  quantity: 1
+                },
+                dataType: 'json',
+                success : function(data) {
+                  $('#checkout_reduction_code').val('{{ settings.fg_discount }}');
+                  $('.fg-discount').hide();
+                  $('.fg-discount--original').show();
+                  window.OrderSummaryUpdater && OrderSummaryUpdater.prototype.refresh();
+                  setTimeout(function () {
+                    $('#checkout_submit').removeClass('btn--disabled');
+                    $('#checkout_submit').prop('disabled', false);
+                    $('#checkout_submit').trigger('click');
+                  }, 500);
+                },
+                error : function(request,error)
+                {
+                  console.log(JSON.stringify(request));
+                }
+              });
+            }
+          }
+          else {
+            $('#checkout_reduction_code').val($('.js-input-fg-discount').val());
+            $('.fg-discount').hide();
+            $('.fg-discount--original').show();
+            setTimeout(function () {
+              $('#checkout_submit').removeClass('btn--disabled');
+              $('#checkout_submit').prop('disabled', false);
+              $('#checkout_submit').trigger('click');
+            }, 300);
+          }
+        });
+      })(Checkout.$)
+    </script>
+  {% endif %}
+{% endif %}

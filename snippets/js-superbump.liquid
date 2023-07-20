@@ -1,0 +1,16 @@
+{% comment %}
+{% assign product = all_products['mikroben-futter-premium-ballaststoffe'] %}
+{%- capture unit_price -%}{%- if product.selected_or_first_available_variant.unit_price_measurement -%}{{ product.selected_or_first_available_variant.unit_price | money }}/{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}{%- endif -%}{%- endcapture -%}
+{% endcomment %}
+<script>
+  (function($) {
+    $(document).on("page:load page:change", function() {
+      setInterval(function () {
+        if ($('.superbump-app').length > 0 && $('.superbump-app .unit-price').length == 0) {
+          
+          $('<span class="unit-price">147,78 €/kg</span>').insertBefore('.superbump-subtitle');
+        }
+      }, 100);
+    });
+  })(Checkout.$);
+</script>

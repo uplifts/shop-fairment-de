@@ -1,0 +1,516 @@
+{
+  "sections": {
+    "16627352937f5d32f8": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "1662735293d32096ee-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/headerbild_1920_landingpage_illustrationen-1.jpg",
+            "split_image": "shopify:\/\/shop_images\/headerhero_04-2.png",
+            "mobile_image": "shopify:\/\/shop_images\/headerhero_04-2.png",
+            "stretch_1st_image": true,
+            "text_position": "middle_left",
+            "subheading": "",
+            "title": "DA STECKT LEBEN DRIN.",
+            "text": "fairment braut Kombucha und bringt lebendige Nahrungsmittel zurück in deine Küche.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "bottom_line_text": "",
+            "text_color": "#de2a2a",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1662735293d32096ee-0"
+      ],
+      "settings": {
+        "css_class": "",
+        "section_height_mobile": 76,
+        "section_height": "small",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "mobile_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1644422436e5687919": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd": {
+          "type": "item",
+          "settings": {
+            "tab_label": "Item",
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "title_fallback": "",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1659088832ca9f9962": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "12a169dd-bd93-40f8-8f27-8f20b78019ae": {
+          "type": "item",
+          "settings": {
+            "tab_label": "Item",
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "title_fallback": "",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "12a169dd-bd93-40f8-8f27-8f20b78019ae"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1659348938f6df9a2f": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "165934893735c45f7e-0": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "165934893735c45f7e-1": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "165934893735c45f7e-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "165934893735c45f7e-0",
+        "165934893735c45f7e-1",
+        "165934893735c45f7e-2"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "Lorem ipsum",
+        "title": "Lorem ipsum",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16593489629e61cb22": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "16593489621646493c-0": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "16593489621646493c-1": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "16593489621646493c-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16593489621646493c-0",
+        "16593489621646493c-1",
+        "16593489621646493c-2"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1659082402d944bfd7": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "has_border": false,
+        "has_product_tabs": false,
+        "subheading": "Lorem ipsum",
+        "title": "Lorem ipsum",
+        "content": "<p>Lorem ipsum<\/p><p><\/p>",
+        "liquid": "",
+        "button_text": "Kontakt aufnehmen",
+        "button_link": "shopify:\/\/pages\/contact",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "youtube_video_url": "",
+        "video_caption": ""
+      }
+    },
+    "16589075887c730d6b": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "165890758815e98f23-0": {
+          "type": "collection",
+          "settings": {
+            "hide_differentiation_tags": false,
+            "product_item_badge_color": "#fff8ef",
+            "product_item_badge_text_color": "#2c1c05",
+            "collection": "frontpage",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "165890758815e98f23-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "slider_mode_mobile": false,
+        "stack_products": false,
+        "show_atc": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16627355136fccd1dc": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "ÜBER FAIRMENT IN KURZ:",
+        "content": "<p>2015 gründeten Leon Benedens und Paul Seelhorst fairment. Mit der Vision, Darmgesundheit einfach zu machen und lebendige Nahrungsmittel zurück in unsere Küchen zu bringen.<\/p><p>Fairment produziert und vertreibt Lebensmittel und Nahrungsergänzungsmittel fürs \"gute Bauchgefühl\". Mit den Starter Kits können Kund:innen aber auch selbst zu Hause leckere und darm-gesunde Lebensmittel herstellen: Ob Kombucha, Kefir, Sauerteigbrot, veganer Käse oder Joghurt. Und alles fermentieren, was man fermentieren kann.<\/p><p>Mittlerweile ist fairment auf ein 20-köpfiges Team herangewachsen, das über Deutschland und Eutropa verteilt ist. Berlin ist trotzdem die Heimat von fairment geblieben: Hier trifft sich das Team zu regelmäßigen Teamevents und Offsites. <\/p><p>Neben Produkten findet man auf der Webseite <a href=\"https:\/\/www.fairment.de\/\">www.fairment.de<\/a> eine Fülle an Tipps rund um Darmgesundheit, gesunde Ernährung, vielfältige Rezepte und geheime Tricks aus der fairment-Küche.<\/p><p><\/p><p>fairment - Da steckt Leben drin.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662735571aab1f4be": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "WAS IST FERMENTATION?",
+        "content": "<p>Es gibt eine große Vielfalt an fermentierten Produkten. Jeder kennt Sauerkraut, Joghurt, Kefir und milchsauer eingelegte Gurken. Aber auch Kombucha, Kefir und Kimchi sind weltweit im Kommen. Alle unsere Produkte haben eins gemeinsam: sie sind fermentiert. Ursprünglich war Fermentation ein Verfahren mit dem Lebensmittel haltbar gemacht wurden. Als es noch keine Kühlschränke und gut ausgestattete Supermärkte gab. Je nachdem, um welches Lebensmittel es sich handelt, werden unterschiedliche Arten und Kulturen zum Einsatz gebracht, die das Lebensmittel fermentieren und es so haltbar machen. Und gleichzeitig neue Aromen und Geschmacksdimensionen auf die Zunge zaubern.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662735639e00dc7eb": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "WAS IST KOMBUCHA?",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662735681d52d4786": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "WER STECKT HINTER FAIRMENT?",
+        "content": "<p>Leon Benedens und Paul Seelhorst gründeten 2015 Fairment mit dem Ziel, fermentierte Lebensmittel in Rohkostqualität wieder als integralen Bestandteil einer ausgewogenen Ernährung zurück in die Haushalte zu bringen. Hierfür produzieren sie die ersten sporen-basierten Nahrungsergänzungsmittel Deutschlands, lebendige Nahrungsmittel, wie z.B. Kimchi und Miso, aber auch Equipment und Bio-Starter-Kulturen zum Brauen und Fermentieren für zu Hause.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662735710929ede91": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "PHILOSOPHIE",
+        "content": "<p>fairment steht für Fairness gegenüber dem Konsumenten. Die Produkte sind alle unpastuerisiert und haben Rohkostqualität. Das beudeutet, dass alle lebendigen Mikroorganismen, die so gesund für unseren Darm sind, weiterhin enthalten sind und nicht durch hohe Erhitzung zugunsten der haltbarkeit abgetötet wurden Ohne Kompromisse. <\/p><p>Fair ist aber auch die Transparenz. Der Kunde hat die Möglichkeit, über den Onlineshop von fairment selbst eine Kombucha Kultur zu erwerben und für wenige Euro zu Hause eigenständig Kombucha zu brauen. Für die Produktion werden ausschließlich Bio-Zutaten verwendet, frei von jeglichen Zusätzen.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662735825f5e6dc8c": {
+      "type": "gallery",
+      "blocks": {
+        "1662735825216ca2b7-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/paul_und_leon_b453f3c4-3600-48f7-b7a8-d3bf052013b8.png",
+            "caption": ""
+          }
+        },
+        "ea2140e7-bab5-4b3c-8233-1507e2846263": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/220314_FAIR_Ueber-Uns_1920x1080_044.jpg",
+            "caption": ""
+          }
+        },
+        "ce42b317-7687-4f9b-8b08-0d429baf6b5b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/221026_Fair_Bestsellers.png",
+            "caption": ""
+          }
+        },
+        "566395c6-f826-44f9-9616-707bc8ff49e0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/221025_Fair_PulverundPillen_01.png",
+            "caption": ""
+          }
+        },
+        "1662735825216ca2b7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fm_team_02.jpg",
+            "caption": ""
+          }
+        },
+        "1662735825216ca2b7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fairment-logo-main.png",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662735825216ca2b7-2",
+        "ea2140e7-bab5-4b3c-8233-1507e2846263",
+        "ce42b317-7687-4f9b-8b08-0d429baf6b5b",
+        "566395c6-f826-44f9-9616-707bc8ff49e0",
+        "1662735825216ca2b7-1",
+        "1662735825216ca2b7-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "PRESSEBILDER",
+        "content": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a7fadc7d-1310-47d4-aefa-c6d9eb218620": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Presseordner",
+        "content": "<p>BIlder und Logos zum Download erhalten Sie auf Anfrage unter briefkasten@fairment.de<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "16627352937f5d32f8",
+    "main",
+    "1644422436e5687919",
+    "1659088832ca9f9962",
+    "1659348938f6df9a2f",
+    "16593489629e61cb22",
+    "1659082402d944bfd7",
+    "16589075887c730d6b",
+    "16627355136fccd1dc",
+    "1662735571aab1f4be",
+    "1662735639e00dc7eb",
+    "1662735681d52d4786",
+    "1662735710929ede91",
+    "1662735825f5e6dc8c",
+    "a7fadc7d-1310-47d4-aefa-c6d9eb218620"
+  ]
+}

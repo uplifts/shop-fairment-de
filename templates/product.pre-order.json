@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "652485fb-5566-42fe-ac99-ef74d0336fa7": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "css_class": "",
+            "text_color": "",
+            "text": "<p><strong>Vorbestellung<\/strong><\/p>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffefef",
+            "atc_button_text_color": "#f70000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "2adad7ba-0209-4f0f-adf3-61cd79269af6": {
+          "type": "advantage",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icons8-schedule.png",
+            "content": "Es handelt sich um eine <b>Vorbestellung<\/b>"
+          }
+        },
+        "8cae4e20-72a9-46a8-9ff5-9a968704875a": {
+          "type": "advantage",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icons8-delivered_box.png",
+            "content": "Die Lieferung erfolgt erst bei <b>Verfügbarkeit<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "quantity_selector",
+        "652485fb-5566-42fe-ac99-ef74d0336fa7",
+        "buy_buttons",
+        "2adad7ba-0209-4f0f-adf3-61cd79269af6",
+        "8cae4e20-72a9-46a8-9ff5-9a968704875a"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "custom_rating_snippet": "<div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div>",
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_atc": false,
+        "show_cta": false,
+        "subheading": "",
+        "title": "Das könnte dir auch gefallen...",
+        "recommendations_count": 4,
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,60 @@
+{%- assign url_parameters = section.settings.url_parameters -%}
+
+{%- if section.settings.enable_section -%}
+  <style>
+    #shopify-section-{{ section.id }} {
+      --text-color: {{ section.settings.text_color }};
+      --section-background: {{ section.settings.background }};
+    }
+  </style>
+  
+  <div class="countdown-panel{% if url_parameters != blank %} countdownPanel d-none{% endif %} {{ section.settings.css_classes }}" data-parameters="{{ url_parameters }}">
+    <div class="countdown-panel--row flex-align-center">
+      {%- if section.settings.icon != blank -%}
+        <div class="countdown-panel--icon">
+          <img
+            src="{{ section.settings.icon | img_url: 'master' }}"
+            alt="Icon" loading="lazy">
+        </div>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="countdown-panel--text flex-1{% if section.settings.expired_text != blank %} originalText{% endif %}">
+          {{ section.settings.text }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.expired_text != blank -%}
+        <div class="countdown-panel--text flex-1 expiredText d-none">
+          {{ section.settings.expired_text }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.time != blank -%}
+        <div class="countdown-panel--timer">
+          <b class="timer-counter timerCounter" data-time="{{ section.settings.time }}">
+            {{ section.settings.time }}
+          </b>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+  
+  <script>
+    var countdownPanel = document.querySelector('#shopify-section-{{ section.id }} .countdownPanel');
+    var currentHref = window.location.href;
+  
+    if (countdownPanel) {
+      var displayPanel = false;
+      var panelParameterConditions = countdownPanel.dataset.parameters;
+      var panelParameterConditionsArr = panelParameterConditions.split(',');
+      if (panelParameterConditionsArr.length > 0) {
+        panelParameterConditionsArr.map(param => {
+          if (currentHref.includes(param)) {
+            displayPanel = true;
+          }
+        });
+        if (displayPanel) {
+          countdownPanel.classList.remove('d-none');
+        }
+      }
+    }
+  </script>
+{%- endif -%}

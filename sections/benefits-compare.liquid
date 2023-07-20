@@ -1,0 +1,131 @@
+<div class="vertical-breather">
+  <div class="container">
+    <div class="benefits-compare--row">
+      {%- if section.settings.title != blank or section.settings.text != blank -%}
+        <div class="benefits-compare--header">
+          {%- if section.settings.title != blank -%}
+            <h2 class="benefits-compare--title heading h2">
+              {{ section.settings.title }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="benefits-compare--copy text--medium">
+              {{ section.settings.text }}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.dynamic_benefits != blank or section.settings.benefits != blank -%}
+        <div class="benefits-compare--column mod-benefits">
+          {%- if section.settings.benefits_title != blank -%}
+            <h3 class="benefits-compare--column-ttl heading h3 text--center">
+              {{ section.settings.benefits_title }}
+            </h3>
+          {%- endif -%}
+          <div class="benefits-compare--column-content">
+            {%- if section.settings.dynamic_benefits != blank -%}
+              {%- assign raw_list = section.settings.dynamic_benefits | split: '|' -%}
+            {%- elsif section.settings.benefits != blank -%}
+              {%- assign raw_list = section.settings.benefits | split: '|' -%}
+            {%- endif -%}
+
+            {%- if raw_list.size > 0 -%}
+              <ul class="benefits-compare--list">
+                {%- for item in raw_list -%}
+                  <li>
+                    {{ item }}
+                    {% render 'icon', icon: 'check-solid' %}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.dynamic_antibenefits != blank or section.settings.antibenefits != blank -%}
+        <div class="benefits-compare--column mod-disadvantages">
+          {%- if section.settings.antibenefits_title != blank -%}
+            <h3 class="benefits-compare--column-ttl heading h3 text--center">
+              {{ section.settings.antibenefits_title }}
+            </h3>
+          {%- endif -%}
+          <div class="benefits-compare--column-content">
+            {%- if section.settings.dynamic_antibenefits != blank -%}
+              {%- assign raw_list = section.settings.dynamic_antibenefits | split: '|' -%}
+            {%- elsif section.settings.antibenefits != blank -%}
+              {%- assign raw_list = section.settings.antibenefits | split: '|' -%}
+            {%- endif -%}
+
+            {%- if raw_list.size > 0 -%}
+              <ul class="benefits-compare--list">
+                {%- for item in raw_list -%}
+                  <li>
+                    {% render 'icon', icon: 'xmark-solid' %}
+                    {{ item }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Benefits compare",
+    "class": "sec--benefits-compare",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "benefits_title",
+        "label": "Benefits title"
+      },
+      {
+        "type": "text",
+        "id": "dynamic_benefits",
+        "label": "Benefits (for metafields)"
+      },
+      {
+        "type": "textarea",
+        "id": "benefits",
+        "label": "Benefits (fallback)",
+        "info": "Separate list values by |"
+      },
+      {
+        "type": "text",
+        "id": "antibenefits_title",
+        "label": "Disadvantages title"
+      },
+      {
+        "type": "text",
+        "id": "dynamic_antibenefits",
+        "label": "Disadvantages (for metafields)"
+      },
+      {
+        "type": "textarea",
+        "id": "antibenefits",
+        "label": "Disadvantages (fallback)",
+        "info": "Separate list values by |"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Benefits compare"
+      }
+    ]
+  }
+{% endschema %}

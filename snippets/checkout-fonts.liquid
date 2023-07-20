@@ -1,0 +1,15 @@
+{%- liquid
+  assign header_font = settings.type_header_font_family
+  assign header_font_regular = base_font | font_modify: 'weight', 'normal'
+-%}
+
+<style>
+  {{ header_font | font_face: font_display: 'swap' }}
+  {{ header_font_regular | font_face: font_display: 'swap' }}
+</style>
+<style>
+  :root {
+    --typeHeaderPrimary: {{ settings.type_header_font_family.family }};
+    --typeHeaderFallback: {{ settings.type_header_font_family.fallback_families }};
+  }
+</style>

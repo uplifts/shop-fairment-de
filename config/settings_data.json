@@ -1,0 +1,853 @@
+{
+  "current": {
+    "icon_stroke_width": 1.5,
+    "button_border_radius": 30,
+    "block_border_radius": "small",
+    "vertical_spacing": "large",
+    "heading_color": "#00148c",
+    "text_color": "#43484c",
+    "background": "#f9f9f9",
+    "secondary_background": "#ffffff",
+    "success_color": "#2e9e7b",
+    "error_color": "#de2a2a",
+    "header_background": "#ffffff",
+    "header_text_color": "#2d2d2d",
+    "footer_background": "#00148c",
+    "footer_text_color": "#ffffff",
+    "primary_button_background": "#f70000",
+    "primary_button_text_color": "#ffffff",
+    "secondary_button_background": "#00148c",
+    "secondary_button_text_color": "#ffffff",
+    "product_item_badge_color": "#f1f1f1",
+    "product_item_badge_text_color": "#43484c",
+    "product_on_sale_accent": "#9e3800",
+    "product_sold_out_accent": "#585858",
+    "product_custom_label_background": "#405de6",
+    "product_custom_label_2_background": "#f3e5b6",
+    "product_in_stock_text_color": "#2e9e7b",
+    "product_low_stock_text_color": "#de2a2a",
+    "heading_font": "avenir_next_n7",
+    "heading_font_size": "medium",
+    "heading_text_transform": "normal",
+    "text_font": "avenir_next_n4",
+    "text_font_size": 17,
+    "currency_code_enabled": false,
+    "show_image_zoom": false,
+    "stagger_products_apparition": false,
+    "stagger_blog_posts_apparition": false,
+    "reveal_product_media": false,
+    "round_color_swatches": true,
+    "show_vendor": false,
+    "show_secondary_image": true,
+    "show_secondary_image_metafield": true,
+    "product_add_to_cart": false,
+    "show_product_rating": true,
+    "discount_mode": "percentage",
+    "product_color_display": "count",
+    "product_image_size": "square",
+    "search_enable_pages": true,
+    "cart_type": "drawer",
+    "cart_icon": "shopping_bag",
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "75",
+    "social_facebook": "https:\/\/www.facebook.com\/fairment",
+    "social_instagram": "https:\/\/www.instagram.com\/fairment\/",
+    "favicon": "shopify:\/\/shop_images\/cropped-fairment-logo-192x192.png",
+    "dhl_logo": "shopify:\/\/shop_images\/dhl-gogreen.png",
+    "custom_announcement_bar_snippet": "<div id=\"qab_placeholder\"><\/div>\n<style>\n#shopify-section-header {\n  margin-top: 52px !important;\n}\n@media (min-width: 518px) {\n  #shopify-section-header {\n    margin-top: 40px !important;\n  }\n}\n<\/style>",
+    "fg_enable": true,
+    "fg_discount": "BUYXGETY",
+    "fg_threshold": 60,
+    "fg_a": "fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika",
+    "fg_b": "kombucha-set-fairment-original-neu",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-Header-box-final-alternate.jpg",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_sidebar_background_color": "#f9f9f9",
+    "checkout_accent_color": "#00148c",
+    "checkout_button_color": "#f70000",
+    "checkout_error_color": "#de2a2a",
+    "express_checkout_hide_product": "effektivenzyme-premium-verdauungskomplex",
+    "cart_success_message": "<strong>Gute Wahl!<\/strong> Hier sind deine Produkte",
+    "accent_color": "#405de6",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "99effb0d-0dbb-4c21-a91b-cd4d45bf55ac": {
+            "type": "message",
+            "settings": {
+              "text": "Kostenloser Versand ab",
+              "learn_more_text": "75 € *",
+              "title": "Kostenloser Versand ab 75€ innerhalb von Deutschland",
+              "content": "<p>Andere Länder können abweichen. Alle Versandkonditionen findest du hier:<\/p>",
+              "button_text": "Alle Versandkonditionen",
+              "button_link": "shopify:\/\/policies\/shipping-policy"
+            }
+          },
+          "6f5ec34f-8681-4d6c-8727-c6205d10d952": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "Announce something here",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "99effb0d-0dbb-4c21-a91b-cd4d45bf55ac",
+          "6f5ec34f-8681-4d6c-8727-c6205d10d952"
+        ],
+        "settings": {
+          "announcement_bar_position": "non_sticky",
+          "announcement_text_size": "small",
+          "autoplay": true,
+          "show_arrows": false,
+          "cycle_speed": 5,
+          "background": "#ececfa",
+          "text_color": "#00148c",
+          "button_background": "#00148c",
+          "button_text_color": "#ffffff",
+          "announcement_left_icon_1": "shopify:\/\/shop_images\/Bewertungen_png_webp.png",
+          "announcement_left_text_desktop": "4,86 Sterne (Über 100.000 zufriedene Kund:innen)",
+          "announcement_left_text_mobile": "<b>4.8<\/b>",
+          "announcement_menu": "submenu",
+          "announcement_right_icon_1": "shopify:\/\/shop_images\/Fairment-Header-Icons2-Bio-Vegan.png"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "f20cfd25-fbf4-4e9b-8269-d6dc52bf498f": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Shop",
+              "images_position": "right",
+              "image_1_heading": "",
+              "image_1_text": "",
+              "image_1_link": "shopify:\/\/collections\/probiotika-prabiotika",
+              "image_2_heading": "",
+              "image_2_text": "",
+              "image_2_link": "",
+              "image_3_heading": "",
+              "image_3_text": "",
+              "image_3_link": "",
+              "image_4_heading": "",
+              "image_4_text": "",
+              "image_4_link": "",
+              "image_5_heading": "",
+              "image_5_text": "",
+              "image_5_link": "",
+              "image_6_heading": "",
+              "image_6_text": "",
+              "image_6_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "f20cfd25-fbf4-4e9b-8269-d6dc52bf498f"
+        ],
+        "settings": {
+          "enable_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/Fairment_WordLogo_Black.png",
+          "logo_max_width": 120,
+          "mobile_logo_max_width": 120,
+          "navigation_menu": "hauptmenu",
+          "sidebar_navigation_menu": "",
+          "secondary_mobile_menu": "",
+          "header_layout": "logo_left_navigation_center",
+          "show_icons": true,
+          "reduce_desktop_padding": true,
+          "show_locale_selector": false,
+          "show_country_selector": false,
+          "enable_transparent_header": false,
+          "transparent_header_text_color": "rgba(0,0,0,0)",
+          "search_menu": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "Über uns",
+              "content": "<p>fairment hat seine Wurzeln in Berlin. Seit 2015 wachsen wir so natürlich wie unsere Produktpalette. Ganz ohne Zusatzstoffe. Bei fairment stimmt nur die Biochemie. Wir sorgen mit fermentierten Lebensmittel und innovativen Darmbakterien und Ballaststoffen für ein gutes Bauchgefühl.<\/p>",
+              "show_dhl_logo": true
+            }
+          },
+          "96504f48-6646-46be-b8be-e0707baeb5f5": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "Was ist Kombucha?",
+              "content": "<p>Kombucha ist ein fermentiertes Teegetränk. Dieses sagenumwobene Getränk ist bereits seit 2.500 Jahren Teil der asiatischen Naturmedizin. Seine vitalisierende Wirkung und der einzigartige Geschmack machen es zu einem Getränk der besonderen Art.<\/p><p><\/p><p>¹nicht gültig mit anderen Rabattaktionen und Rabattcodes<\/p><p><\/p>",
+              "show_dhl_logo": false
+            }
+          },
+          "links": {
+            "type": "links",
+            "settings": {
+              "menu": "informationen"
+            }
+          },
+          "f2fa3346-7aef-44b5-b996-82c68bb0a6d4": {
+            "type": "links",
+            "settings": {
+              "menu": "rechtliches"
+            }
+          },
+          "87888cdc-9a86-449d-85e4-e75d672b61aa": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Jetzt direkt anmelden und 10% Rabatt sichern",
+              "content": "<p>Registriere dich für den Newsletter und spare 10% auf deine erste Bestellung. Außerdem erfährst du immer zuerst von Produktneuheiten und besonderen Aktionen rund um Fairment.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text",
+          "96504f48-6646-46be-b8be-e0707baeb5f5",
+          "links",
+          "f2fa3346-7aef-44b5-b996-82c68bb0a6d4",
+          "87888cdc-9a86-449d-85e4-e75d672b61aa"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "show_country_selector": false,
+          "show_locale_selector": false,
+          "show_dhl_logo": true,
+          "show_cookie_bar": false,
+          "cookie_bar_title": "<h3>Der Schutz deiner Daten ist uns wichtig<\/h3>",
+          "cookie_bar_content": "<p>Kombucha ist ein Elixier, das vor Leben nur so strotzt. Mithilfe des sogenannten „Kombucha- Pilzes“ wird gesüßter Tee fermentiert. Der Kombucha-Pilz ist jedoch kein Pilz, sondern eine Symbiose verschiedener Hefen und Bakterien. Das Ergebnis ist ein fein moussierender Tee mit süß-saurem, leicht gärigem Geschmack, der kalt genossen wird.<\/p>"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "enable": false,
+          "apparition_delay": 5,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "image_position": "left",
+          "title": "Get 10% off",
+          "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
+        }
+      },
+      "mini-cart": {
+        "type": "mini-cart",
+        "blocks": {
+          "d9e95c4a-ce58-4734-8616-cfc56b1ed7ca": {
+            "type": "advantage",
+            "disabled": true,
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/icons8-verified_account.png",
+              "content": "Laborgeprüfte zertifizierte Qualität"
+            }
+          },
+          "a7310a58-c5fe-4710-a46d-a32c915d6921": {
+            "type": "advantage",
+            "disabled": true,
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/klarna-icon.png",
+              "content": "Kauf auf Rechnung möglich"
+            }
+          },
+          "b9ba5b93-fdbd-45a6-972f-4aadfbefc683": {
+            "type": "advantage",
+            "disabled": true,
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/icons8-tracking.png",
+              "content": "Einfache Sendungsverfolgung"
+            }
+          },
+          "6181359e-d100-4b2e-a906-6ffcc9d0e7ff": {
+            "type": "gift_offer",
+            "disabled": true,
+            "settings": {
+              "threshold": 150,
+              "product": "mikroben-futter-dose-premium-ballaststoffe"
+            }
+          },
+          "eef3eb13-ecfc-4556-8291-0cf2c6a37e2e": {
+            "type": "gift_offer",
+            "disabled": true,
+            "settings": {
+              "threshold": 100,
+              "product": "kopie-von-bio-apfelessig-naturtrub-ungefiltert-500-ml"
+            }
+          }
+        },
+        "block_order": [
+          "d9e95c4a-ce58-4734-8616-cfc56b1ed7ca",
+          "a7310a58-c5fe-4710-a46d-a32c915d6921",
+          "b9ba5b93-fdbd-45a6-972f-4aadfbefc683",
+          "6181359e-d100-4b2e-a906-6ffcc9d0e7ff",
+          "eef3eb13-ecfc-4556-8291-0cf2c6a37e2e"
+        ],
+        "custom_css": [
+          ".mini-cart__drawer-footer.drawer__footer.drawer__footer--tight.drawer__footer--bordered {opacity: 1; padding-top: 0px !important; padding-bottom: 3px !important;}",
+          ".docapp-cart-item.docapp-summary-note {margin-top: -5px !important;}"
+        ],
+        "settings": {
+          "cart_success_message": "<span class=\"drawer-ab-message-1\"><strong>Gute Wahl!<\/strong> Du wirst dich großartig fühlen<\/span>\n<span class=\"drawer-ab-message-2\"><strong>Gute Wahl!<\/strong> Hier sind deine Produkte<\/span>",
+          "show_order_note": false,
+          "show_shipping_tax_note": false,
+          "show_checkout_button": true,
+          "show_payment_methods": true,
+          "empty_button_link": "shopify:\/\/collections\/all",
+          "show_recommendations": true,
+          "hide_recommend_condition_prod": "effektivenzyme-premium-verdauungskomplex",
+          "recommendations_title": "Perfekte Ergänzung",
+          "is_gift_campaign_active": true,
+          "gift_campaign_title": "Jetzt einkaufen & Geschenke freischalten:"
+        }
+      },
+      "static-text-with-icons": {
+        "type": "static-text-with-icons",
+        "blocks": {
+          "static-text-with-icons-1": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-fast-delivery",
+              "custom_icon_width": 50,
+              "title": "Schnelle Lieferung zu dir Nachhause",
+              "content": ""
+            }
+          },
+          "static-text-with-icons-0": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-box",
+              "custom_icon_width": 50,
+              "title": "Kostenloser Versand ab 75 € nach DE",
+              "content": ""
+            }
+          },
+          "static-text-with-icons-2": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-lock",
+              "custom_icon_width": 50,
+              "title": "Einfache & sichere Bezahlung",
+              "content": ""
+            }
+          },
+          "static-text-with-icons-3": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-chat",
+              "custom_icon_width": 50,
+              "title": "Fragen? Kontaktiere uns!",
+              "content": ""
+            }
+          }
+        },
+        "block_order": [
+          "static-text-with-icons-1",
+          "static-text-with-icons-0",
+          "static-text-with-icons-2",
+          "static-text-with-icons-3"
+        ],
+        "settings": {
+          "show_section": true,
+          "background": "#ececf9",
+          "text_color": "#283583"
+        }
+      },
+      "static-newsletter": {
+        "type": "static-newsletter",
+        "settings": {
+          "show_section": false,
+          "reveal_on_scroll": true,
+          "subheading": "Subscribe to our newsletter",
+          "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "text_position": "right",
+          "text_alignment": "left",
+          "text_background": "rgba(0,0,0,0)",
+          "text_color": "rgba(0,0,0,0)",
+          "button_background": "rgba(0,0,0,0)",
+          "button_text_color": "rgba(0,0,0,0)"
+        }
+      },
+      "text-columns-checkout": {
+        "type": "text-columns-checkout",
+        "blocks": {
+          "3f4bbd8e-927a-4073-894d-6f2094f69f20": {
+            "type": "text_block",
+            "settings": {
+              "montage_free_related": false,
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Qualitaet_03.png",
+              "image_width": 40,
+              "title": "<h2>Höchste Qualität<\/h2>",
+              "text": "Höchste Standards für Qualität und Kundensupport"
+            }
+          },
+          "e19a361a-b702-4e39-9991-843eabff9969": {
+            "type": "text_block",
+            "settings": {
+              "montage_free_related": false,
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Schloss_02.png",
+              "image_width": 40,
+              "title": "<h2>100% Sichere Zahlung<\/h2>",
+              "text": "Höchste Sicherheit durch SSL-Verschlüsselung"
+            }
+          },
+          "145fc8a3-0696-4056-bc64-0ab3d0fba57f": {
+            "type": "text_block",
+            "settings": {
+              "montage_free_related": false,
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Versand_04.png",
+              "image_width": 40,
+              "title": "<h2>Klimaneutraler Versand<\/h2>",
+              "text": "Sicher dank DHL GoGreen und Sendungsverfolgung"
+            }
+          },
+          "8833e36e-586a-482a-a5d6-e677b97dc239": {
+            "type": "text_block",
+            "settings": {
+              "montage_free_related": false,
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Kundenservice_05.png",
+              "image_width": 40,
+              "title": "<h2>Guter Kundensupport<\/h2>",
+              "text": "Schnelle Abwicklung und inhaltliche Hilfe"
+            }
+          }
+        },
+        "block_order": [
+          "3f4bbd8e-927a-4073-894d-6f2094f69f20",
+          "e19a361a-b702-4e39-9991-843eabff9969",
+          "145fc8a3-0696-4056-bc64-0ab3d0fba57f",
+          "8833e36e-586a-482a-a5d6-e677b97dc239"
+        ],
+        "settings": {
+          "title": "Warum unsere Kunden Fairment lieben...",
+          "stars_image": "shopify:\/\/shop_images\/Bewertungen_png.webp",
+          "footer_title": "Über 100.000 glückliche Kunden & Kundinnen"
+        }
+      },
+      "countdown-timer": {
+        "type": "countdown-timer",
+        "settings": {
+          "enable_section": true,
+          "css_classes": "countdown-1",
+          "url_parameters": "dailyrituals",
+          "icon": "shopify:\/\/shop_images\/icons8-discount.svg",
+          "text": "<b>Der Sale endet bald!<\/b> Warenkorb reserviert für:",
+          "expired_text": "<b>Reservierung abgelaufen!<\/b> Sei schnell, dein Warenkorb ist nicht mehr reserviert.",
+          "time": "15:00",
+          "background": "#ececfa",
+          "text_color": "#000000"
+        }
+      },
+      "main-customers-register": {
+        "type": "main-customers-register",
+        "settings": {}
+      },
+      "main-customers-login": {
+        "type": "main-customers-login",
+        "settings": {}
+      },
+      "countdown-timer-2-ablyft": {
+        "type": "countdown-timer-2-ablyft",
+        "settings": {
+          "enable_section": true,
+          "css_classes": "countdown-2",
+          "url_parameters": "dailyrituals",
+          "text": "<b>Jetzt beeilen! ⏰<\/b><br> \nDein Warenkorb ist nur für <b class=\"timer-counter timerCounter\" data-time=\"15:00\">15:00<\/b> reserviert.",
+          "expired_text": "<b>Jetzt beeilen! ⏰<\/b><br>\nDein Warenkorb ist nicht mehr reserviert.",
+          "time": "",
+          "background": "#f7dfcc",
+          "text_color": "#614c3b"
+        }
+      },
+      "support-box": {
+        "type": "support-box",
+        "settings": {
+          "title": "Noch Fragen? Wir helfen gerne!",
+          "message": "Unser Kundenservice mit Sitz in Berlin ist von Mo.-Fr. 9 - 13 Uhr für dich da.",
+          "photo": "shopify:\/\/shop_images\/melanie-agent.png",
+          "agent_name": "Melanie",
+          "agent_position": "Kundenservice",
+          "contact_info": "<b>Email: <\/b><a href=\"mailto:briefkasten@fairment.de\">briefkasten@fairment.de<\/a><br>\n<p><b>Telefon:<\/b> <a href=\"tel:030 221 847 31\">030 221 847 31<\/a><\/p>"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "10830403595879607806": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "url_key": "shop.fairment.de",
+          "lang": "de"
+        }
+      },
+      "15316669992541710076": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "star": "#ffca28",
+          "text_color": "#333333",
+          "snippet_mode": "default",
+          "text": "",
+          "line_break": false,
+          "listen_for_changes": true,
+          "rating_without_brackets": false,
+          "format_review_count": false,
+          "show_popup": true,
+          "anchor_to_reviews_widget": false,
+          "show_empty_stars": false
+        }
+      },
+      "1027443428159536739": {
+        "type": "shopify:\/\/apps\/hextom-quick-announcement-bar\/blocks\/qab-embeded-block\/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
+        "disabled": true,
+        "settings": {}
+      },
+      "10312807297210203588": {
+        "type": "shopify:\/\/apps\/aftersell-post-purchase-upsell\/blocks\/utm-triggers\/509ec35d-0632-4dfc-a105-fa799cd9d149",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Carbon": {
+      "button_border_radius": 0,
+      "block_border_radius": "none",
+      "heading_color": "#282828",
+      "text_color": "#282828",
+      "secondary_background": "#f5f5f5",
+      "success_color": "#2e9e7b",
+      "error_color": "#de2a2a",
+      "header_background": "#282828",
+      "footer_background": "#282828",
+      "footer_text_color": "#ffffff",
+      "primary_button_background": "#405de6",
+      "secondary_button_background": "#f3ff34",
+      "secondary_button_text_color": "#282828",
+      "product_on_sale_accent": "#de2a2a",
+      "product_custom_label_background": "#405de6",
+      "product_custom_label_2_background": "#f3ff34",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#de2a2a",
+      "heading_font": "zurich_extended_n8",
+      "heading_font_size": "medium",
+      "heading_text_transform": "uppercase",
+      "text_font": "zurich_n4",
+      "text_font_size": 15,
+      "currency_code_enabled": false,
+      "stagger_products_apparition": true,
+      "round_color_swatches": false,
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "product_color_display": "count",
+      "product_image_size": "natural",
+      "show_product_rating": false,
+      "cart_type": "message",
+      "cart_show_free_shipping_threshold": true,
+      "accent_color": "#405de6",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#282828",
+      "checkout_button_color": "#405de6",
+      "checkout_error_color": "#de2a2a",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "normal",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#f3ff34",
+            "text_color": "#282828",
+            "button_background": "#282828",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_left_navigation_center",
+            "show_icons": false,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": false,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Ivory": {
+      "button_border_radius": 4,
+      "block_border_radius": "small",
+      "heading_color": "#1a1a1a",
+      "text_color": "#1a1a1a",
+      "secondary_background": "#f5f1ec",
+      "success_color": "#2e9e7b",
+      "error_color": "#de2a2a",
+      "header_background": "#56112a",
+      "header_text_color": "#ffffff",
+      "footer_background": "#56112a",
+      "footer_text_color": "#ffffff",
+      "primary_button_background": "#56112a",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#f7aea6",
+      "secondary_button_text_color": "#56112a",
+      "product_on_sale_accent": "#913b59",
+      "product_custom_label_background": "#405de6",
+      "product_custom_label_2_background": "#f3e5b6",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#de2a2a",
+      "heading_font": "itc_caslon_no_224_n5",
+      "heading_font_size": "medium",
+      "heading_text_transform": "normal",
+      "text_font": "avenir_next_n4",
+      "text_font_size": 15,
+      "stagger_products_apparition": true,
+      "round_color_swatches": true,
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "product_color_display": "count",
+      "product_image_size": "natural",
+      "cart_type": "page",
+      "accent_color": "#405de6",
+      "checkout_sidebar_background_color": "#f6f3ed",
+      "checkout_accent_color": "#353535",
+      "checkout_button_color": "#353535",
+      "checkout_error_color": "#de2a2a",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "small",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#f7aea6",
+            "text_color": "#56112a",
+            "button_background": "#56112a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_center_navigation_inline",
+            "show_icons": false,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": false,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Quartz": {
+      "icon_stroke_width": 1.3,
+      "button_border_radius": 0,
+      "block_border_radius": "none",
+      "vertical_spacing": "medium",
+      "heading_color": "#0d0d0d",
+      "text_color": "#2e2e2e",
+      "background": "#ffffff",
+      "secondary_background": "#f5f5f5",
+      "success_color": "#3c6e71",
+      "error_color": "#de2a2a",
+      "header_background": "#ffffff",
+      "header_text_color": "#2e2e2e",
+      "footer_background": "#ffffff",
+      "footer_text_color": "#2e2e2e",
+      "primary_button_background": "#051e38",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#dfdfdf",
+      "secondary_button_text_color": "#2e2e2e",
+      "product_on_sale_accent": "#de2b2b",
+      "product_sold_out_accent": "#5b5b5b",
+      "product_custom_label_background": "#051e38",
+      "product_custom_label_2_background": "#2e9e7b",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#de2b2b",
+      "heading_font": "futura_n3",
+      "heading_font_size": "medium",
+      "heading_text_transform": "uppercase",
+      "text_font": "din_next_n4",
+      "text_font_size": 15,
+      "stagger_products_apparition": true,
+      "round_color_swatches": false,
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "product_color_display": "hide",
+      "product_image_size": "natural",
+      "cart_type": "page",
+      "cart_icon": "tote_bag",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#051e38",
+      "checkout_button_color": "#051e38",
+      "checkout_error_color": "#de2a2a",
+      "accent_color": "#405de6",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "small",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#051e38",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#051e38"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_center_navigation_inline",
+            "show_icons": true,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": true,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "#_form_59_ {background-color: #5e6ab5 !important; color: white !important; border-radius: 12px !important;}"
+    ]
+  }
+}

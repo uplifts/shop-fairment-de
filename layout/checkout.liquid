@@ -1,0 +1,212 @@
+{%- assign is_thank_you_page = false -%}
+{%- if checkout_html_classes contains 'page--thank-you' -%}
+  {%- assign is_thank_you_page = true -%}
+{%- endif -%}
+
+{%- assign hide_xpress_buttons = false -%}
+{% for line_item in checkout.line_items %}
+  {%- if line_item.product_id == 8285947494664 -%}
+    {%- assign hide_xpress_buttons = true -%}
+  {%- endif -%}
+{% endfor %}
+
+<!DOCTYPE html>
+  <html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }} no-ablyft{% if hide_xpress_buttons %} hide-xpress-buttons{% endif %}">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+      <meta name="referrer" content="origin">
+
+    <!-- ABlyft Snippet from Uplifts -->
+    <script src="https://cdn.ablyft.com/s/41759244.js"></script>
+  
+      <title>{{ page_title }}</title>
+
+      {{ checkout_stylesheets }}
+      {{ content_for_header }}
+  
+      {% render 'checkout-fonts' %}
+      {{ 'checkout.css' | asset_url | stylesheet_tag: preload: true }}
+      {{ checkout_scripts }}
+
+    {% include 'analyzify-gtm-checkout' %}
+    </head>
+    <body class="page-checkout">
+      {{ skip_to_content_link }}
+  
+      <header class="banner" data-header role="banner">
+        <div class="wrap">
+          {{ content_for_logo }}
+        </div>
+
+        <!-- Hotjar Tracking Code for shop.fairment.de -->
+        <script>
+          (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3542263,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+      </header>
+  
+      {{ order_summary_toggle }}
+
+      <div class="content" data-content>
+        <div class="wrap">
+          <div class="main">
+            <header class="main__header" role="banner">
+              {{ content_for_logo }}
+              <div hidden="hidden">
+                {{ breadcrumb }}
+              </div>
+
+                
+              {%- unless is_thank_you_page -%}
+                {% comment %} The Vaan Group - Order Bump (1/2) {% endcomment %}
+                  <div id="superbump"></div>
+                {% comment %} END OF The Vaan Group - Order Bump (1/2) {% endcomment %}
+                {% comment %} The Vaan Group - Order Bump (2/2) {% endcomment %}
+                  <script src="/apps/superbump/superbump_widget.js"></script>
+                {% comment %} END OF The Vaan Group - Order Bump (2/2) {% endcomment %}
+                {% render 'js-superbump' %}
+                <nav class="checkout-breadcrumbs">
+                  <ol class="breadcrumb breadcrumb--center" role="list">
+                    <li class="breadcrumb-item mod-completed" data-breadcrumb-step="cart">
+                      <a class="breadcrumb-link" href="/cart">
+                        <span class="breadcrumb-bubble">
+                          <span class="breadcrumb-step">1</span>
+                          <span class="breadcrumb-icon">
+                            {% render 'icon', icon: 'check-2' %} 
+                          </span>
+                        </span>
+                        <span class="breadcrumb-caption">
+                          Warenkorb
+                        </span>
+                      </a>
+                    </li>
+            
+                    <li class="breadcrumb-item mod-blank" data-breadcrumb-step="contact_information">
+                      <a class="breadcrumb-link" href="?step=contact_information">
+                        <span class="breadcrumb-bubble">
+                          <span class="breadcrumb-step">2</span>
+                          <span class="breadcrumb-icon">
+                            {% render 'icon', icon: 'check-2' %}
+                          </span>
+                        </span>
+                        <span class="breadcrumb-caption">
+                        Informationen
+                        </span>
+                      </a>
+                    </li>
+  
+                    <li class="breadcrumb-item mod-blank" data-breadcrumb-step="shipping_method">
+                      <a class="breadcrumb-link" href="?previous_step=contact_information&step=shipping_method">
+                        <span class="breadcrumb-bubble">
+                          <span class="breadcrumb-step">3</span>
+                          <span class="breadcrumb-icon">
+                            {% render 'icon', icon: 'check-2' %}
+                          </span>
+                        </span>
+                        <span class="breadcrumb-caption">
+                        Versand
+                        </span>
+                      </a>
+                    </li>
+  
+                    <li class="breadcrumb-item mod-blank" data-breadcrumb-step="payment_method">
+                      <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
+                        <span class="breadcrumb-bubble">
+                          <span class="breadcrumb-step">4</span>
+                          <span class="breadcrumb-icon">
+                            {% render 'icon', icon: 'check-2' %}
+                          </span>
+                        </span>
+                        <span class="breadcrumb-caption">
+                          Bezahlung
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li class="breadcrumb-item mod-blank" data-breadcrumb-step="thank_you">
+                      <a class="breadcrumb-link mod-nolink">
+                        <span class="breadcrumb-bubble">
+                          <span class="breadcrumb-step">5</span>
+                          <span class="breadcrumb-icon">
+                            {% render 'icon', icon: 'check-2' %}
+                          </span>
+                        </span>
+                        <span class="breadcrumb-caption">
+                          Fertig
+                        </span>
+                      </a>
+                    </li>
+                  </ol>
+                </nav>
+              {%- endunless -%}
+
+              {% section 'countdown-timer' %}
+              {% section 'countdown-timer-2-ablyft' %}
+
+             {{ alternative_payment_methods }} 
+            </header>
+            <main class="main__content" role="main">
+              {{ content_for_layout }}
+
+              <div class="text-columns-checkout--mobile textColumnsCheckoutMobileTarget"></div>
+
+              <div class="checkout-supportbox checkoutSupportBoxMain checkout-supbox-main hidden-lap-and-up"></div>
+            </main>
+            <footer class="checkout-footer main__footer" role="contentinfo">
+              {%- if settings.custom_payment_icons_url != blank -%}
+                <div class="checkout-page--payicons">
+                  <img src="{{ settings.custom_payment_icons_url }}" alt="Payment methods">
+                </div>
+              {%- else -%}
+                {%- unless shop.enabled_payment_types == empty -%}
+                  <div class="checkout-page--payicons">
+                    <ul class="inline-list payment-icons">
+                      {%- for type in shop.enabled_payment_types -%}
+                        <li class="icon--payment">
+                          {{ type | payment_type_svg_tag }}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endunless -%}
+              {%- endif -%}
+              {{ content_for_footer }}
+            </footer>
+          </div>
+          <aside class="sidebar" role="complementary">
+            <div class="sidebar__header">
+              {{ content_for_logo }}
+            </div>
+            <div class="sidebar__content">
+              {{ content_for_order_summary }}
+
+              <div class="text-columns-checkout--desktop">
+                {% section 'text-columns-checkout' %}
+              </div>
+
+              <div class="checkout-supportbox sidebar-supbox hidden-pocket">
+                <div class="checkoutSupportBoxEl">
+                  {% section 'support-box' %}
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <script src="{{ 'checkout.js' | asset_url }}" defer="defer"></script>
+
+      {% render 'js-freegift' %}
+  
+      {{ tracking_code }}
+    </body>
+  </html>
+  

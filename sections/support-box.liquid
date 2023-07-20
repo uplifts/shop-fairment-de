@@ -1,0 +1,85 @@
+<div class="supportbox">
+  <div class="supportbox-top d-grid">
+    {%- if section.settings.title != blank -%}
+      <div class="supportbox-top-title flex-1">
+        <h3 class="heading-2">{{ section.settings.title }}</h3>
+      </div>
+      <div class="supportbox-top--status flex-item-auto">
+        {{ 'general.miscellaneous.online' | t }}
+      </div>
+    {%- endif -%}
+  </div>
+  {%- if section.settings.message != blank -%}
+    <div class="supportbox-middle">
+      <div class="supportbox-text">
+        {{ section.settings.message }}
+      </div>
+    </div>
+  {%- endif -%}
+  <div class="supportbox-footer d-grid">
+    {%- if section.settings.photo != blank -%}
+      <div class="supportbox-footer--person-photo">
+        <img class="mw-100" src="{{ section.settings.photo | img_url: 'master' }}" alt="{{ section.settings.photo.alt }}">
+      </div>
+    {%- endif -%}
+    <div class="supportbox-footer--content">
+      <div class="supportbox-footer--person">
+        {%- if section.settings.agent_name != blank -%}
+          <h2 class="heading-3">
+            {{ section.settings.agent_name }}
+          </h2>
+        {%- endif -%}
+        {%- if section.settings.agent_position != blank -%}
+          <div>
+            {{ section.settings.agent_position }}
+          </div>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.contact_info != blank -%}
+        <div class="supportbox-footer--contacts">
+          {{ section.settings.contact_info }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Support box",
+  "class": "sec-support-box",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "liquid",
+      "id": "message",
+      "label": "Message"
+    },
+    {
+      "type": "image_picker",
+      "id": "photo",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "agent_name",
+      "label": "Agent name"
+    },
+    {
+      "type": "text",
+      "id": "agent_position",
+      "label": "Agent position"
+    },
+    {
+      "type": "liquid",
+      "id": "contact_info",
+      "label": "Contact info"
+    }
+  ]
+}
+{% endschema %}

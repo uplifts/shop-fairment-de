@@ -1,0 +1,757 @@
+{
+  "sections": {
+    "90c81096-454c-41be-8415-7def3dee83f5": {
+      "type": "image-with-text-block",
+      "settings": {
+        "css_class": "about-header",
+        "reveal_on_scroll": false,
+        "image": "shopify:\/\/shop_images\/220314_FAIR_Ueber-Uns_1920x1080_044.jpg",
+        "has_border": false,
+        "has_product_tabs": false,
+        "subheading": "Über uns",
+        "title": "DA STECKT LEBEN DRIN.",
+        "content": "<p><strong>Fairment braut Kombucha und bringt lebendige Nahrungsmittel zurück in deine Küche!<\/strong><\/p>",
+        "liquid": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "#e2a4c7",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "youtube_video_url": "",
+        "video_caption": "",
+        "media_image": "shopify:\/\/shop_images\/transparent.png"
+      }
+    },
+    "16627154018feb90e3": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "1662715401f2e56e7d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/headerbild_1920_landingpage_illustrationen-1.jpg",
+            "split_image": "shopify:\/\/shop_images\/headerhero_04-2.png",
+            "mobile_image": "shopify:\/\/shop_images\/headerhero_04-2.png",
+            "stretch_1st_image": true,
+            "text_position": "middle_left",
+            "subheading": "",
+            "title": "DA STECKT LEBEN DRIN.",
+            "text": "fairment braut Kombucha und bringt lebendige Nahrungsmittel zurück in deine Küche.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "bottom_line_text": "",
+            "text_color": "#00148c",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1662715401f2e56e7d-0"
+      ],
+      "settings": {
+        "css_class": "home-hero",
+        "section_height_mobile": 60,
+        "section_height": "small",
+        "transition_type": "reveal",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f6f6f6",
+        "mobile_text_below": true
+      }
+    },
+    "16627151687ab9bf47": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Unsere Kombuchas findest du bei:",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662715612a3c19f54": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "1662715612dba984fc-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/denns_logo.png",
+            "link": ""
+          }
+        },
+        "1662715612dba984fc-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/veganz_logo.png",
+            "link": ""
+          }
+        },
+        "1662715612dba984fc-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vollcorner_logo.jpg",
+            "link": ""
+          }
+        },
+        "1662715612dba984fc-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lpg_logo.png",
+            "link": ""
+          }
+        },
+        "1662715612dba984fc-4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/aleco_logo.png",
+            "link": ""
+          }
+        },
+        "1662715612dba984fc-5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Bildschirmfoto_2022-09-09_um_11.29.44.png",
+            "link": ""
+          }
+        },
+        "8018aa15-fe01-4a9f-99f9-e7c86c6e215c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/biofrischmarkt_logo.png",
+            "link": ""
+          }
+        },
+        "a3b1a1c5-8252-4f95-9087-c628ad06b298": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/basic_logo.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662715612dba984fc-0",
+        "1662715612dba984fc-1",
+        "1662715612dba984fc-2",
+        "1662715612dba984fc-3",
+        "1662715612dba984fc-4",
+        "1662715612dba984fc-5",
+        "8018aa15-fe01-4a9f-99f9-e7c86c6e215c",
+        "a3b1a1c5-8252-4f95-9087-c628ad06b298"
+      ],
+      "settings": {
+        "items_per_row_mobile": 2,
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "eb08f762-0ac8-4186-b5b0-2869403ac447": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16146404704520__eb08f762-0ac8-4186-b5b0-2869403ac447-16667738859522fe48-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/220314_FAIRMENT_ICONS_blau_Vegan_03.png",
+            "image_width": 90,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "template--16146404704520__eb08f762-0ac8-4186-b5b0-2869403ac447-16667738859522fe48-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/220314_FAIRMENT_ICONS_Zeichenflache_1_Kopie_58.png",
+            "image_width": 90,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "template--16146404704520__eb08f762-0ac8-4186-b5b0-2869403ac447-16667738859522fe48-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/220314_FAIRMENT_ICONS__Zeichenflache_1_Kopie_61.png",
+            "image_width": 90,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16146404704520__eb08f762-0ac8-4186-b5b0-2869403ac447-16667738859522fe48-0",
+        "template--16146404704520__eb08f762-0ac8-4186-b5b0-2869403ac447-16667738859522fe48-1",
+        "template--16146404704520__eb08f762-0ac8-4186-b5b0-2869403ac447-16667738859522fe48-2"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "",
+        "title": "Make it Easy!",
+        "content": "<p>Unser Purpose: Absolutes Wohlbefinden bei vollstem Genuss.<\/p>",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "loose",
+        "background": "#ececfa",
+        "text_color": "#060792"
+      }
+    },
+    "1659088832ca9f9962": {
+      "type": "image-with-text",
+      "blocks": {
+        "12a169dd-bd93-40f8-8f27-8f20b78019ae": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/paul_und_leon_b453f3c4-3600-48f7-b7a8-d3bf052013b8.png",
+            "tab_label": "",
+            "subheading": "Unsere Geschichte",
+            "title": "FAIRMENT BRINGT WOHLBEFINDEN.",
+            "title_fallback": "",
+            "content": "<p>Wir sind Paul und Leon und haben 2015 fairment gegründet. Aus einem guten Bauchgefühl heraus. Dieses Gefühl wollen wir weitergeben. Unsere Reise begann mit der Begeisterung für die Fermentation verschiedener Produkte. Durch diese Erfahrungen haben wir uns stetig weiterentwickelt und neue Wege erkundet. Heute liegt unser Fokus auf der Entwicklung hochwertiger Nahrungsergänzungsmittel, um das Wohlbefinden auf eine noch umfassendere Art und Weise zu fördern. Mithilfe von Millionen Mikroben streben wir danach, unsere Mission zu erfüllen: Absolutes Wohlbefinden bei vollstem Genuss! <\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "3909891e-2238-44b3-a35c-765494207cb2": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/220314_FAIRMENT_ICONS__Bar_01.png",
+            "tab_label": "Item",
+            "subheading": "Subheading",
+            "title": "Fairment kommt aus Berlin.",
+            "title_fallback": "",
+            "content": "<p>Erfahre mehr über die Entstehungsgeschichte von Fairment.<\/p>",
+            "content_fallback": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "12a169dd-bd93-40f8-8f27-8f20b78019ae",
+        "3909891e-2238-44b3-a35c-765494207cb2"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#2e9e7b",
+        "text_color": "#ffffff",
+        "button_background": "#283583",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1644422436e5687919": {
+      "type": "image-with-text",
+      "blocks": {
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/221026_Fair_Bestsellers.png",
+            "tab_label": "",
+            "subheading": "Unsere Produkte",
+            "title": "LASS MIKROBEN TOBEN!",
+            "title_fallback": "",
+            "content": "<p>Bei fairment gibt’s alles genau nach deinem Geschmack: als Starter Kit für zu Hause zum Selbermachen. Kreiere deinen eigenen individuellen Stil, sei es durch unsere Starter Kits für zu Hause oder durch die Zubereitung von Joghurt, Kefir, Sauerkraut, Sauerteig und veganem Käse - alles in Eigenregie. Zusätzlich sorgen unsere wertvollen Nahrungsergänzungsmittel für ein gutes Bauchgefühl. Komm auf den Geschmack. <\/p>",
+            "content_fallback": "",
+            "button_text": "Unsere Produkte",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "boxed",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#f1b76e",
+        "text_color": "#ffffff",
+        "button_background": "#060792",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "f3cdf2d2-bb1f-4239-8c85-8920f14391db": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16146404704520__f3cdf2d2-bb1f-4239-8c85-8920f14391db-16667738856c633368-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/221026_Fair_PulverundPillen.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Maximal gut fürs Wohlbefinden.",
+            "title_fallback": "",
+            "content": "<p>Gönn’ dir das Rundum-Sorglos-Paket. Mit unseren Supplements ist das Wohlbefinden ganz einfach. Unsere Super-Mikroben sind ein einzigartiger Mix aus sporen-basierten Bakterien, die im Gegensatz zu anderen Produkten auch ohne Kapsel die Magensäure überleben und sich mehrere Wochen im Darm ansiedeln können. Dort fördern sie die mikrobielle Vielfalt für mehr Wohlbefinden.<\/p>",
+            "content_fallback": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16146404704520__f3cdf2d2-bb1f-4239-8c85-8920f14391db-16667738856c633368-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#e2a4c7",
+        "text_color": "#00148c",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "9ad5ea63-822b-436e-81e6-157a6e78b894": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16146404704520__9ad5ea63-822b-436e-81e6-157a6e78b894-16667738856c633368-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/220314_FAIR_Arbeiten_Bildslide_770x630_02.jpg",
+            "tab_label": "Item",
+            "subheading": "Arbeiten bei Fairment",
+            "title": "WIR BRINGEN LEBEN IN DIE BUDE.",
+            "title_fallback": "",
+            "content": "<p>Wir arbeiten zusammen hochmotiviert an unserem Ziel:<br\/>Absolutes Wohlbefinden bei vollstem Genuss für alle Menschen!<\/p><p>Wie wir das machen? Wir legen viel Wert auf die fachliche und persönliche Weiterentwicklung aller Mitarbeitenden durch regelmäßige Workshops und Coachings. Bei regelmäßigen Teamevents und halbjährlichen Offsites aber auch jeden Tag bei der Arbeit haben wir jede Menge Spaß zusammen. Außerdem setzen wir auf maximale Flexibilität und minimale Hierarchie. Digitale und remote Zusammenarbeit leben wir jeden Tag - ein tolles Office in Berlin haben wir trotzdem!<\/p>",
+            "content_fallback": "",
+            "button_text": "Offene Stellen",
+            "button_link": "https:\/\/fairment.jobs.personio.de\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16146404704520__9ad5ea63-822b-436e-81e6-157a6e78b894-16667738856c633368-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "boxed",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#2e9e7b",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662726817c4d53ec9": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "1662726817830310ee-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/221026_Fair_Bestsellers.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "REGIONALER ALS AUS DEINER KÜCHE GEHT NICHT.",
+            "title_fallback": "",
+            "content": "<p>Fermentation ist uralt. Über 8000 Jahre Tradition. Das hier ist kein Food-Trend, das sind steinzeitliche Methoden: Die Wiederentdeckung des guten Alten in neu. Fermentiertes ist nicht nur ewig haltbar und nachhaltig, sondern schmeckt! Fermentation gibt Aroma - wusste schon Oma. Bei dir gibt's bald keine Lebensmittel aus der Region. Sondern aus deiner eigenen Küche. Nachhaltig, umweltschonend und vitalisierend. Keine Konservern von Uncle Ben oder Tante Emma. Sondern das Beste im Foodsharing mit Mutter Natur.<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662726817830310ee-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662726921f122f7bb": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "16627269214821bc44-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/fairment_team.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "FIRMEN­PHILOSOPHIE FAIRPLAY.",
+            "title_fallback": "",
+            "content": "<p>Kultur steckt nicht nur in unseren lebendigen Produkten. Auch im Unternehmen. Unsere Firmenphilosophie ist Fairplay: der Umwelt, unseren Kunden, Lieferanten und der fairment-Familie zuliebe.<br\/><br\/>Bei fairment sind wir zu neunt - ein vielfältiger, lebendiger Haufen. Von Anfang an kooperieren wir mit den Delphin-Werktstätten: Einer Berliner Einrichtung für Menschen mit Handicap. Gemeinsam mit Mitarbeitern mit Behinderung brauen, befüllen und packen wir die fairment Pakete.<br\/><br\/>\"Fair\" tragen wir nicht nur im Namen. Wir leben und erleben es jeden Tag.<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16627269214821bc44-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166272698289273420": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "1662726982c49c3658-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/gewissen.jpg",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/Bildschirmfoto_2022-09-09_um_14.37.11.png",
+            "subheading": "",
+            "title": "ENTHÄLT SPUREN VON GUTEM GEWISSEN.",
+            "title_fallback": "",
+            "content": "<p>Das Leben ist bunt. Genau wie fairment und unsere Produkte. Fermentiertes ist gut verträglich. Auch für die Umwelt. Unsere Verpackungen und Produktions­prozesse sind nachhaltig und umweltschonend. In unserem Shop ist alles möglichst fair gehandelt und meist bio oder vegan. Wir verzichten auf Plastik wo wir können. Das kannst du mit unseren Produkten ab jetzt auch viel besser.<\/p><p>Bring ein bisschen mehr lebendige Ess- und Trinkkultur in dein Leben. Die Umwelt sagt danke!<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662726982c49c3658-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662727106d9d374fe": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "FERMENTATION IST KEINE RAKETEN­WISSEN­SCHAFT:",
+        "content": "<p>Ein bisschen Know-How genügt.<br\/><br\/>Und das findest du in unseren Kits auf Anleitungen, hier auf FAQ-Seiten und in Deutschlands größter Online-Community zu Fermentation und Kombuchabrauen. Lass es dir schmecken und veredle deine Zuhausmannskost mit Lieblingsgewürzen, Tees oder Aromen!<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16627165937e1885d1": {
+      "type": "promotion-blocks",
+      "blocks": {
+        "16627165936d9d24ae-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/urn_aaid_sc_US_590d21ed-c0e4-4500-9b8f-1c06f438826c_revision_1-4.png",
+            "highlight": true,
+            "subheading": "Lass dich inspirieren!",
+            "title": "FAIRMENT REZEPTE",
+            "link_text": "Mehr dazu",
+            "link_url": "https:\/\/www.fairment.de\/rezepte\/",
+            "link_style": "button",
+            "text_position": "middle_left",
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#283583"
+          }
+        },
+        "16627165936d9d24ae-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/urn_aaid_sc_US_590d21ed-c0e4-4500-9b8f-1c06f438826c_revision_1-6.png",
+            "highlight": false,
+            "subheading": "Mach dich schlau!",
+            "title": "FAIRMENT WISSEN",
+            "link_text": "Mehr dazu",
+            "link_url": "https:\/\/www.fairment.de\/lernen\/",
+            "link_style": "button",
+            "text_position": "middle_left",
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#283583"
+          }
+        },
+        "77e4e503-db09-4a97-b64e-923107f8bfc1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/urn_aaid_sc_US_590d21ed-c0e4-4500-9b8f-1c06f438826c_revision_1-1.png",
+            "highlight": false,
+            "subheading": "Lass dir helfen.",
+            "title": "FAIRMENT FAQ",
+            "link_text": "Mehr dazu",
+            "link_url": "https:\/\/support.fairment.de\/?_ga=2.260832461.1351084372.1662714249-232376252.1662714249",
+            "link_style": "button",
+            "text_position": "middle_left",
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#283583"
+          }
+        },
+        "21dd7ec3-9207-4743-890c-0209ecd44699": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/urn_aaid_sc_US_590d21ed-c0e4-4500-9b8f-1c06f438826c_revision_1-2.png",
+            "highlight": true,
+            "subheading": "Besuch die Community",
+            "title": "FAIRMENT AUF FACEBOOK",
+            "link_text": "Mehr dazu",
+            "link_url": "https:\/\/www.facebook.com\/fairment",
+            "link_style": "button",
+            "text_position": "middle_left",
+            "background": "#ffffff",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#283583"
+          }
+        }
+      },
+      "block_order": [
+        "16627165936d9d24ae-0",
+        "16627165936d9d24ae-2",
+        "77e4e503-db09-4a97-b64e-923107f8bfc1",
+        "21dd7ec3-9207-4743-890c-0209ecd44699"
+      ],
+      "settings": {
+        "css_class": "",
+        "subheading": "",
+        "title": "",
+        "section_size": "small",
+        "have_overlay": false,
+        "slider_mode": false,
+        "stack_on_mobile": true,
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16589075887c730d6b": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "165890758815e98f23-0": {
+          "type": "collection",
+          "settings": {
+            "hide_differentiation_tags": false,
+            "product_item_badge_color": "#fff8ef",
+            "product_item_badge_text_color": "#2c1c05",
+            "collection": "frontpage",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "165890758815e98f23-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "slider_mode_mobile": false,
+        "stack_products": false,
+        "show_atc": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166271883964a4fe9d": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "FAIRMENT - TV",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=KKqy3pKxw_k",
+        "image": "shopify:\/\/shop_images\/fairment-Lifestyle-074-min.jpg",
+        "subheading2": "",
+        "title2": "Fairment TV",
+        "video_url2": "https:\/\/www.youtube.com\/watch?v=_Ye4KT4VIgc",
+        "image2": "shopify:\/\/shop_images\/urn_aaid_sc_US_590d21ed-c0e4-4500-9b8f-1c06f438826c_revision_1-10.png",
+        "background_type": "boxed",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "#ffffff",
+        "text_color": "#283583"
+      }
+    },
+    "166271955017a941ed": {
+      "type": "testimonials",
+      "blocks": {
+        "1662719550c1eb31b0-0": {
+          "type": "testimonial",
+          "settings": {
+            "content": "„Kombucha hat meine Oma damals schon immer gemacht. Mit Fairment bin ich in ihre Fußstapfen getreten“",
+            "author": "Danke Fairment. Dank euch gibt es bei mir jetzt immer frische Fermente auf den Tisch. Das tut dem Geldbeutel aber vor allem der Gesundheit ganz gut. Die Community hat mich immer mit Rezepten inspiriert. - Annika Föhr"
+          }
+        },
+        "1662719550c1eb31b0-1": {
+          "type": "testimonial",
+          "settings": {
+            "content": "„Fairment hat meine Küche erobert. Ich backe jetzt auch mein eigenes Sauerteig Brot.“",
+            "author": "An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und stylisch. - Thomas Neuenhagen"
+          }
+        }
+      },
+      "block_order": [
+        "1662719550c1eb31b0-0",
+        "1662719550c1eb31b0-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "DAS SAGEN UNSERE KUNDEN",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "90c81096-454c-41be-8415-7def3dee83f5",
+    "16627154018feb90e3",
+    "16627151687ab9bf47",
+    "1662715612a3c19f54",
+    "main",
+    "eb08f762-0ac8-4186-b5b0-2869403ac447",
+    "1659088832ca9f9962",
+    "1644422436e5687919",
+    "f3cdf2d2-bb1f-4239-8c85-8920f14391db",
+    "9ad5ea63-822b-436e-81e6-157a6e78b894",
+    "1662726817c4d53ec9",
+    "1662726921f122f7bb",
+    "166272698289273420",
+    "1662727106d9d374fe",
+    "16627165937e1885d1",
+    "16589075887c730d6b",
+    "166271883964a4fe9d",
+    "166271955017a941ed"
+  ]
+}

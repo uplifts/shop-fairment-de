@@ -1,0 +1,117 @@
+{%- assign free_installation_tag_trigger = section.settings.free_installation_tag_trigger | default: 'kostenlos_montage' -%}
+{%- for item in checkout.line_items -%}
+  {%- assign product = item.product -%}
+  {%- assign tags = product.tags -%}
+  {%- if tags contains free_installation_tag_trigger -%}
+    {%- assign free_montage = true -%}
+    {% break %}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="text-columns-checkout textColumnsCheckout">
+  <div class="text-columns-checkout--wrap">
+    {%- if section.settings.title != blank -%}
+      <h3 class="text-columns-checkout--title">
+        {{ section.settings.title }}
+      </h3>
+    {%- endif -%}
+    
+    <div class="text-columns-checkout--row">
+      {%- for block in section.blocks -%}
+        {%- assign montage_free_related = block.settings.montage_free_related -%}
+        {%- if free_montage -%}
+          {%- if montage_free_related -%}
+            {% render 'text-columns-checkout-item', block: block %}
+          {%- endif -%}
+        {%- else -%}
+          {%- unless montage_free_related -%}
+            {% render 'text-columns-checkout-item', block: block %}
+          {%- endunless -%}
+        {%- endif -%}
+        
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.stars_image != blank or section.settings.footer_title != blank -%}
+      <div class="text-columns-checkout--footer">
+        {%- if section.settings.stars_image != blank -%}
+          <img style="height:1.2em" src="{{ section.settings.stars_image | img_url: 'master' }}" alt="Stars">
+        {%- endif -%}
+        <span>
+          {{ section.settings.footer_title }}
+        </span>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Text columns with images",
+    "class": "sec--checkout-text-columns",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "stars_image",
+        "label": "Stars image"
+      },
+      {
+        "type": "text",
+        "id": "footer_title",
+        "label": "Footer text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "montage_free_related",
+            "label": "Related to free montage?",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_image",
+            "label": "Show image",
+            "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "image_width",
+            "label": "Image width",
+            "default": 60,
+            "min": 30,
+            "max": 120,
+            "step": 5,
+            "unit": "px"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Example title"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

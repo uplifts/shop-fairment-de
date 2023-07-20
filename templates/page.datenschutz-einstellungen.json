@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1659108287f1909031": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "disabled": true,
+      "blocks": {
+        "e9e1fbd5-cf3d-49bb-9501-46f8bd866767": {
+          "type": "text",
+          "settings": {
+            "title": "Bestellnummer",
+            "use_long_text": false,
+            "is_required": false
+          }
+        }
+      },
+      "block_order": [
+        "e9e1fbd5-cf3d-49bb-9501-46f8bd866767"
+      ],
+      "settings": {
+        "title": "Kontakt",
+        "content": "<p>Du hast Fragen zu deiner Bestellung?<br\/>Fülle das Formular aus oder schreibe uns unter Hello@Glow25.de<\/p>",
+        "text_1_heading": "",
+        "text_1_text": "",
+        "text_2_heading": "",
+        "text_2_text": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1659108287f1909031",
+    "contact-form"
+  ]
+}

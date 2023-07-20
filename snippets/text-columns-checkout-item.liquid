@@ -1,0 +1,27 @@
+<div
+  {{ block.shopify_attributes }}
+  class="text-columns-checkout--col">
+  <div class="text-column--row">
+    {%- if block.settings.enable_image -%}
+      {%- if block.settings.image != blank -%}
+        <div class="text-column--row--img" style="width: {{ block.settings.image_width }}px;max-width: {{ block.settings.image_width }}px;">
+          <img
+            src="{{ block.settings.image | img_url: 'master' }}"
+            alt="{{ block.settings.image.alt }}">
+        </div>
+      {%- else -%}
+        <div class="text-column--row--img" style="width:60px;max-width:60px;">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+    <div class="text-column--row-content">
+      {%- if block.settings.title != blank -%}
+        <div class="text-column--row-ttl">{{ block.settings.title }}</div>
+      {%- endif -%}
+      {%- if block.settings.text != blank -%}
+        <div class="text-column--row-text">{{ block.settings.text }}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>

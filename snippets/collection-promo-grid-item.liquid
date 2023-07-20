@@ -1,0 +1,42 @@
+{%- capture block_content -%}
+{%- if block.settings.image != blank -%}
+  <img class="promotion-block__image"
+       loading="lazy"
+       sizes="(max-width: 740px) calc(100vw - 12px * 2), calc(min(100vw, 1560px) / {{ section.blocks.size }} - 20px * {{ section.blocks.size | minus: 1 }})"
+       {% render 'image-attributes', image: block.settings.image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600' %}>
+{%- endif -%}
+
+<div class="promotion-block__content-wrapper text-container" style="{% if block.settings.text_position contains 'center' %}text-align: center{% elsif block.settings.text_position contains 'right' %}text-align: end{% endif %}">
+  {%- if block.settings.subheading != blank -%}
+    <p class="promotion-block--subheading heading heading--small">{{ block.settings.subheading | escape }}</p>
+  {%- endif -%}
+
+  {%- if block.settings.title != blank -%}
+    <p class="promotion-block--heading heading h4">{{ block.settings.title | escape | newline_to_br }}</p>
+  {%- endif -%}
+
+  {%- if block.settings.text != blank -%}
+    <div class="promotion-block--text">{{ block.settings.text }}</div>
+  {%- endif -%}
+
+  {%- if block.settings.link_text != blank -%}
+    {%- if block.settings.link_style == 'link' -%}
+      <span class="heading heading--small link">{{ block.settings.link_text | escape }}</span>
+    {%- else -%}
+      <div class="button-wrapper">
+        <span class="button button--small button--primary">{{ block.settings.link_text | escape }}</span>
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+</div>
+{%- endcapture -%}
+
+{%- if block.settings.link_url != blank -%}
+<a id="block-{{ section.id }}-{{ block.id }}" href="{{ block.settings.link_url }}" class="promotion-block promotion-block--{{ section.settings.promotion_height }} promotion-block--expand image-zoom" {{ block.shopify_attributes }}>
+  {{- block_content -}}
+</a>
+{%- else -%}
+<div id="block-{{ section.id }}-{{ block.id }}" class="promotion-block promotion-block--{{ section.settings.promotion_height }} promotion-block--expand image-zoom" {{ block.shopify_attributes }}>
+  {{- block_content -}}
+</div>
+{%- endif -%}

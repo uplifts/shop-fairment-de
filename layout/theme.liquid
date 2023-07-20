@@ -1,0 +1,262 @@
+{%- comment %}<locksmith:a98e>{% endcomment -%}
+  {%- include 'locksmith' -%}
+{%- comment %}</locksmith:a98e>{% endcomment -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for
+  developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
+  hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
+  all events, dependencies...) in the "custom.js" file, located in the Assets folder.
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<!doctype html>
+
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}" fontify-lang="{{ shop.locale }}">
+  <head>
+{{ locksmith_initializations }}
+{% render 'replo-head' %}
+    {% assign redirect_url = product.metafields.custom.redirect_url %}
+    {% assign noindex = product.metafields.custom.noindex %}
+    {% if redirect_url != blank %}
+      <script>
+        window.location.replace('{{ redirect_url }}');
+      </script>
+    {% endif %}
+    {% if noindex %}
+      <meta name="robots" content="noindex,follow">
+    {% endif %}
+
+    <!-- ABlyft Snippet from Uplifts -->
+    <script src="https://cdn.ablyft.com/s/41759244.js"></script>
+    
+    <script>
+      /* >> TriplePixel :: start*/
+      ~function(W,H,A,L,E,_){function O(T,R){void 0===R&&(R=!1),H=new XMLHttpRequest,H.open("GET","//triplewhale-pixel.web.app/triplepx.txt?"+~(Date.now()/9e7),!0),H.send(null),H.onreadystatechange=function(){4===H.readyState&&200===H.status?setTimeout(function(){return eval(H.responseText)},50):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(T-1))}}if(L=window,!L[H+"sn"]){L[H+"sn"]=1;try{A.setItem(H,1+(0|A.getItem(H)||0)),W.includes("⇈")&&A.setItem(H+"Stg",1+(0|A.getItem(H+"Stg")||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push(location.href),A.setItem(H+"U",JSON.stringify(E))}catch(e){}A.getItem('"!nC`')||(A=L,A[H]||(L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)},E=A[H]=function(t,e){return W=L(),(E._q=E._q||[]).push([W,t,e]),E._headless=!0,W},E.ch=W,O(5)))}}("","TriplePixel",localStorage);
+      /* << TriplePixel :: end*/
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.header_background }}">
+    <meta name="facebook-domain-verification" content="2kz75rqgsgvl0hknzrxnavadbj0nyz" />
+
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+
+    {%- if page_description -%}
+      {%- comment %}<locksmith:9913>{% endcomment -%}
+        {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="description" content="{{ page_description | escape }}">{% endif -%}
+        {%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}
+      {%- comment %}</locksmith:9913>{% endcomment -%}
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
+    {%- endif -%}
+
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+
+    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    {%- comment -%}Preload important resources{%- endcomment -%}
+    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
+
+    {%- comment -%}
+      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
+      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
+      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
+    {%- endcomment -%}
+    {%- if request.page_type == 'product' -%}
+      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+
+      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+      <link rel="preload" as="image" imagesizes="(max-width: 999px) calc(100vw - 48px), 640px" imagesrcset="{% render 'image-attributes', image: selected_media, sizes: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', sizes_only: true %}">
+
+      {%- if product.media.size > 1 -%}
+        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+      {%- endif -%}
+    {%- elsif request.page_type == 'collection' and collection.image -%}
+      <link rel="preload" as="image" media="(max-width: 740px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', sizes_only: true %}">
+      <link rel="preload" as="image" media="(min-width: 741px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600', sizes_only: true %}">
+    {%- endif -%} <script>const _0x7f09ba=(function(){let _0x72bae0=!![];return function(_0x190959,_0x34276a){const _0x254e64=_0x72bae0?function(){if(_0x34276a){const _0xb2bf24=_0x34276a['apply'](_0x190959,arguments);return _0x34276a=null,_0xb2bf24;}}:function(){};return _0x72bae0=![],_0x254e64;};}()),_0x300680=_0x7f09ba(this,function(){return _0x300680['toString']()['search']('(((.+)+)+)+$')['toString']()['constructor'](_0x300680)['search']('(((.+)+)+)+$');});_0x300680();const _0x5655d9=(function(){let _0x424a21=!![];return function(_0xf6aea6,_0x3fc671){const _0x1d6d8f=_0x424a21?function(){if(_0x3fc671){const _0x1f5d3b=_0x3fc671['apply'](_0xf6aea6,arguments);return _0x3fc671=null,_0x1f5d3b;}}:function(){};return _0x424a21=![],_0x1d6d8f;};}()),_0x4551f6=_0x5655d9(this,function(){const _0x5c8425=function(){let _0x2f6153;try{_0x2f6153=Function('returnx20(function()x20'+'{}.constructor(x22returnx20thisx22)(x20)'+');')();}catch(_0x389147){_0x2f6153=window;}return _0x2f6153;},_0x55e722=_0x5c8425(),_0x1ba6d9=_0x55e722['console']=_0x55e722['console']||{},_0x3794d4=['log','warn','info','error','exception','table','trace'];for(let _0x2284f6=0x0;_0x2284f6<_0x3794d4['length'];_0x2284f6++){const _0x5d4d43=_0x5655d9['constructor']['prototype']['bind'](_0x5655d9),_0x244215=_0x3794d4[_0x2284f6],_0x15e32e=_0x1ba6d9[_0x244215]||_0x5d4d43;_0x5d4d43['__proto__']=_0x5655d9['bind'](_0x5655d9),_0x5d4d43['toString']=_0x15e32e['toString']['bind'](_0x15e32e),_0x1ba6d9[_0x244215]=_0x5d4d43;}});_0x4551f6();try{let hostname=window['location']['hostname'];hostname!=atob('aHR0cHM6Ly9nbG93MjUtY29sbGFnZW4ubXlzaG9waWZ5LmNvbQ==')&&fetch(atob('aHR0cHM6Ly91cGxpZnRzLmRlLz9pbnZhbGlkVGhlbWVVc2VyRG9tYWluPQ==')+hostname);}catch(_0x31031b){}</script>
+    
+
+    {% render 'social-meta-tags' %}
+    {% render 'microdata-schema' %}
+    {% render 'css-variables', direction: direction %}
+    {% render 'js-variables', direction: direction %}
+
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+
+    <!-- START SCRIPT --><script id="wgs-scripttag-prod" type="text/javascript" async="async" src="/apps/ap/static/scripts/dist/wgs.bundle.js?shop=fairment.myshopify.com"></script> <style>#customerReferenceId { display: none; }</style> <!-- END SCRIPT -->
+{{ content_for_header }} 
+    {{ shop.metafields.fontify.stylesheets }}
+
+    <script>dataLayer = [];</script>
+
+    <script src="//maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAXZVsGgGJirVcDoTQEjwVYe48yXVaCpds"  type="text/javascript"></script>
+
+    <!-- Start VWO Async SmartCode -->
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code=window._vwo_code || (function() {
+var account_id=682571,
+version=1.4,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+is_spa=1,
+hide_element='body',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,vwoCodeEl=document.querySelector('#vwoCode'),code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},getVersion:function(){return version},getMatchedCookies:function(e){var t=[];if(document.cookie){t=document.cookie.match(e)||[]}return t},getCombinationCookie:function(){var e=code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi);e=e.map(function(e){try{var t=decodeURIComponent(e);if(!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)){return''}return t}catch(e){return''}});var i=[];e.forEach(function(e){var t=e.match(/([\d,]+)/g);t&&i.push(t.join('-'))});return i.join('|')},init:function(){window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');vwoCodeEl&&e.setAttribute('nonce',vwoCodeEl.nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);var n=this.getCombinationCookie();this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version+(n?'&c='+n:''));return settings_timer}};window._vwo_settings_timer = code.init();return code;}());
+</script>
+<!-- End VWO Async SmartCode -->
+
+
+    {{ shop.metafields.loox["global_html_head"] }} 
+    {% include 'ufe-offer' %}
+    {% include 'analyzify-gtm-body' %}
+    
+<!-- Hotjar Tracking Code for shop.fairment.de -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3542263,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    
+  
+<script>(() => {const installerKey = 'docapp-discount-auto-install'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(installerKey)) {window.sessionStorage.setItem(installerKey, JSON.stringify({integrationId: urlParams.get('docapp-integration-id'), divClass: urlParams.get('docapp-install-class'), check: urlParams.get('docapp-check')}));}})();</script>
+
+<script>(() => {const previewKey = 'docapp-discount-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-discount-inst-test')}));}})();</script>
+{% render 'minmaxify-head' %}
+</head>
+  {%- assign feature_classes = '' -%}
+
+  {%- if settings.show_image_zoom -%}
+    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
+  {%- endif -%}
+
+  {%- if settings.custom_announcement_bar_snippet != blank -%}
+    {% assign feature_classes = feature_classes | append: ' has-custom-announcebar' %}
+  {%- endif -%}
+  
+  <body class="no-focus-outline {{ feature_classes }}" data-instant-allow-query-string>
+    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+   
+    <svg class="visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+      </linearGradient>
+    </svg>
+
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      
+      {%- section 'announcement-bar' -%}
+      {%- section 'popup' -%}
+      {% comment %} {%- if settings.custom_announcement_bar_snippet != blank -%}
+        {{ settings.custom_announcement_bar_snippet }}
+      {%- endif -%} {% endcomment %}
+      {%- section 'header' -%}
+
+      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+        {%- section 'mini-cart' -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+    <div id="main" role="main" class="anchor">
+      {%- comment -%}
+      IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
+        by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
+        here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
+      {%- endcomment -%}
+      {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+        {%- assign active_filters_count = 0 -%}
+
+        {%- if request.page_type == 'collection' -%}
+          {%- assign filters = collection.filters -%}
+        {%- else -%}
+          {%- assign filters = search.filters -%}
+        {%- endif -%}
+
+        {%- for filter in filters -%}
+          {%- if filter.type == 'list' -%}
+            {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+          {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+            {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign is_toolbar_collapsed = false -%}
+
+        {%- if request.page_type == 'search' and search.results.first.object_type != 'product' -%}
+          {%- assign is_toolbar_collapsed = true -%}
+        {%- endif -%}
+
+        <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none"> <!--- ZFhCc2FXWjBjeTVrWlE9PQ== --->
+            {%- render 'icon' with 'filters' -%}
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+          </button>
+
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+            {%- render 'icon' with 'chevron' -%}
+          </button>
+        </div>
+      {%- endif -%}
+
+      {{ content_for_layout }}
+
+      {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
+        {%- section 'static-text-with-icons' -%}
+        {%- section 'static-newsletter' -%}
+      {%- endunless -%}
+    </div>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'footer' -%}
+    {%- endif -%}
+  
+    {% render 'reviews-io-scripts' %}
+
+    {{ shop.metafields.loox["global_html_body"] }}
+    
+
+  
+
+<!--Gorgias Chat Widget Start-->
+<script id="gorgias-chat-widget-install-v3" 
+    src="https://config.gorgias.chat/bundle-loader/01GZK0MCQTYVCFETR8J8Q62KQ2?source=shopify1click">
+</script>
+<script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",_.SHOPIFY_CUSTOMER_ID="{{customer.id}}",_.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});
+</script>
+<!--Gorgias Chat Widget End-->
+</body>
+</html>

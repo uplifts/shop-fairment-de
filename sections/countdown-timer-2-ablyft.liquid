@@ -1,0 +1,69 @@
+{% render 'countdown-timer', section: section %}
+
+{% schema %}
+{
+  "name": "Countdown timer 2",
+  "class": "shopify-section--countdown-timer countdownTimer countdownTimer2",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_section",
+      "label": "Enable timer?"
+    },
+    {
+      "type": "text",
+      "id": "css_classes",
+      "label": "CSS classes"
+    },
+    {
+      "type": "text",
+      "id": "url_parameters",
+      "label": "URL parameters",
+      "info": "Split multiple items with a comma"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
+    {
+      "type": "liquid",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "liquid",
+      "id": "expired_text",
+      "label": "Expired text"
+    },
+    {
+      "type": "text",
+      "id": "time",
+      "label": "Time",
+      "info": "Template: 15:00 (mm:ss)"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ECECFA"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown timer 2"
+    }
+  ]
+}
+{% endschema %}

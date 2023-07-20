@@ -1,0 +1,9 @@
+{%- if product.metafields.custom.badge != blank -%}
+  {%- assign css_class = 'badge-popular' -%}
+  {%- if product.metafields.custom.badge contains 'Bestseller' -%}
+    {%- assign css_class = 'badge-bestsellerNo1' -%}
+  {%- endif -%}
+  <div class="product-meta__badge {{ css_class }}">
+    {{ product.metafields.custom.badge }}
+  </div>
+{%- endif -%}
