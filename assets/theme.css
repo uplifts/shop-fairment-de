@@ -17480,6 +17480,12 @@ visibility: hidden;
 
 @media (max-width: 600px) {
   .anchor-link-reviews {
-  top:-250px;
+    top:-250px;
+  }
 }
+
+/* START ID - 27.07.23 - Price per use experiment */
+.product-meta__price-per-use {
+  display: none;
 }
+/* END ID - 27.07.23 - Price per use experiment */
