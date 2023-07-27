@@ -147,7 +147,7 @@
           {{ selected_var.id }}
           {%- for variant in product.variants -%}
             {%- if variant.metafields.custom.price_per_use != blank -%}
-              {%- assign price_per_use = variant.metafields.custom.price_per_use.amount | times: 100 | money_with_currency -%}
+              {%- assign price_per_use = variant.metafields.custom.price_per_use.amount | times: 100.00 | money_with_currency -%}
               <div class="variantRelated" data-variant-id="{{ variant.id }}">
                 {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
               </div>
