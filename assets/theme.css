@@ -17495,5 +17495,7 @@ visibility: hidden;
   display: inline-flex;
   background-color: #d2efd4;
   color: #11904b;
+  font-size: 13px;
+  line-height: 1.1;
 }
 /* END ID - 27.07.23 - Price per use experiment */
