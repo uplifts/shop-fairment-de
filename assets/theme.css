@@ -17490,4 +17490,10 @@ visibility: hidden;
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+.product-meta__priceperuse-bubble {
+  display: inline-flex;
+  background-color: #d2efd4;
+  color: #11904b;
+}
 /* END ID - 27.07.23 - Price per use experiment */
