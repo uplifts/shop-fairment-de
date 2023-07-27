@@ -108,7 +108,7 @@
             {%- endunless -%}
           </div>
 
-          <div class="product-meta__price-per-use flex-1">
+          <div class="product-meta__price-per-use">
             {%- assign selected_var = product.selected_or_first_available_variant -%}
             {%- for variant in product.variants -%}
               {%- if variant.metafields.custom.price_per_use != blank -%}

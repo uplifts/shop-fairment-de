@@ -17487,5 +17487,7 @@ visibility: hidden;
 /* START ID - 27.07.23 - Price per use experiment */
 .product-meta__price-per-use {
   display: none;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 /* END ID - 27.07.23 - Price per use experiment */
