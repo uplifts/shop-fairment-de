@@ -116,7 +116,9 @@
                 <div
                   class="variantRelated{% unless variant.id == selected_var.id %} d-none{% endunless %}"
                   data-variant-id="{{ variant.id }}">
-                  {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
+                  <div class="product-meta__priceperuse-bubble">
+                    {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
+                  </div>
                 </div>
               {%- endif -%}
             {%- endfor -%}
