@@ -181,6 +181,7 @@
       "sku": "SKU:",
       "regular_price": "Regular price",
       "sale_price": "Sale price",
+      "price_per_application_html": "<strong>Only {{ price }}<\/strong> per application",
       "view_in_space": "View in your space",
       "zoom": "Zoom",
       "share": "Share",
