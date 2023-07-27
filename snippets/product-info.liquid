@@ -108,6 +108,20 @@
             {%- endunless -%}
           </div>
 
+          <div class="product-meta__price-per-use flex-1">
+            {%- assign selected_var = product.selected_or_first_available_variant -%}
+            {%- for variant in product.variants -%}
+              {%- if variant.metafields.custom.price_per_use != blank -%}
+                {%- assign price_per_use = variant.metafields.custom.price_per_use | metafield_tag -%}
+                <div
+                  class="variantRelated{% unless variant.id == selected_var.id %} d-none{% endunless %}"
+                  data-variant-id="{{ variant.id }}">
+                  {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+
           <div class="product-meta__units-taxes text--xxsmall">
             <div class="product-meta__units" data-product-price-unit>
               {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
@@ -140,20 +154,6 @@
               {%- endif -%}
             {%- endif -%}
           </div>
-        </div>
-
-        <div class="product-meta__price-per-use">
-          {%- assign selected_var = product.selected_or_first_available_variant -%}
-          {%- for variant in product.variants -%}
-            {%- if variant.metafields.custom.price_per_use != blank -%}
-              {%- assign price_per_use = variant.metafields.custom.price_per_use | metafield_tag -%}
-              <div
-                class="variantRelated{% unless variant.id == selected_var.id %} d-none{% endunless %}"
-                data-variant-id="{{ variant.id }}">
-                {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
         </div>
 
         <product-payment-terms form-id="{{ product_form_id }}">
