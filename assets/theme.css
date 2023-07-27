@@ -17492,7 +17492,7 @@ visibility: hidden;
 }
 
 .product-meta__priceperuse-bubble {
-  display: inline-flex;
+  display: inline-block;
   background-color: #d2efd4;
   color: #11904b;
   font-size: 13px;
