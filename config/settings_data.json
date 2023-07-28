@@ -450,11 +450,13 @@
       },
       "main-customers-register": {
         "type": "main-customers-register",
-        "settings": {}
+        "settings": {
+        }
       },
       "main-customers-login": {
         "type": "main-customers-login",
-        "settings": {}
+        "settings": {
+        }
       },
       "countdown-timer-2-ablyft": {
         "type": "countdown-timer-2-ablyft",
@@ -481,7 +483,9 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "10830403595879607806": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -511,12 +515,14 @@
       "1027443428159536739": {
         "type": "shopify:\/\/apps\/hextom-quick-announcement-bar\/blocks\/qab-embeded-block\/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
         "disabled": true,
-        "settings": {}
+        "settings": {
+        }
       },
       "10312807297210203588": {
         "type": "shopify:\/\/apps\/aftersell-post-purchase-upsell\/blocks\/utm-triggers\/509ec35d-0632-4dfc-a105-fa799cd9d149",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   },
@@ -566,7 +572,8 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -600,7 +607,8 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "links": {
               "type": "links",
@@ -610,11 +618,13 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             },
             "social_media": {
               "type": "social_media",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -623,7 +633,8 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       }
     },
@@ -671,7 +682,8 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -705,7 +717,8 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "links": {
               "type": "links",
@@ -715,11 +728,13 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             },
             "social_media": {
               "type": "social_media",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -728,7 +743,8 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       }
     },
@@ -781,7 +797,8 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -815,7 +832,8 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "links": {
               "type": "links",
@@ -825,11 +843,13 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             },
             "social_media": {
               "type": "social_media",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -838,7 +858,8 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       }
     }
