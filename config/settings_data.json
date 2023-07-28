@@ -269,7 +269,6 @@
           },
           "6181359e-d100-4b2e-a906-6ffcc9d0e7ff": {
             "type": "gift_offer",
-            "disabled": true,
             "settings": {
               "threshold": 150,
               "product": "mikroben-futter-dose-premium-ballaststoffe"
@@ -277,7 +276,6 @@
           },
           "eef3eb13-ecfc-4556-8291-0cf2c6a37e2e": {
             "type": "gift_offer",
-            "disabled": true,
             "settings": {
               "threshold": 100,
               "product": "kopie-von-bio-apfelessig-naturtrub-ungefiltert-500-ml"

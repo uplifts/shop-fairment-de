@@ -148,6 +148,11 @@
                 </nav>
               {%- endunless -%}
 
+              <div id="savings" class="hidden">
+                <p class="savings_top" style="font-weight:700;">Rabattcode erfolgreich aktiviert! 🥳</p>
+                <p class="savings_bottom"><span style="font-weight:700;">Du sparst <span id="saving"></span> Euro</span> auf deine Bestellung!</p>
+              </div>
+
               {% section 'countdown-timer' %}
               {% section 'countdown-timer-2-ablyft' %}
 
@@ -158,7 +163,7 @@
 
               <div class="text-columns-checkout--mobile textColumnsCheckoutMobileTarget"></div>
 
-              <div class="checkout-supportbox checkoutSupportBoxMain checkout-supbox-main hidden-lap-and-up"></div>
+              <div class="checkoutSupportBoxMain checkout-supbox-main hidden-lap-and-up"></div>
             </main>
             <footer class="checkout-footer main__footer" role="contentinfo">
               {%- if settings.custom_payment_icons_url != blank -%}
@@ -207,6 +212,7 @@
       {% render 'js-freegift' %}
   
       {{ tracking_code }}
+
     </body>
   </html>
   

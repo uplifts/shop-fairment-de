@@ -503,6 +503,10 @@ font-size: 1.3em;
   margin-right: 12px;
 }
 
+.countdown-panel--text.flex-1.originalText {
+  margin-right: 15px; 
+}
+
 html.no-ablyft .countdown-panel.countdown-2 {
   display: none !important;
 }
@@ -626,3 +630,14 @@ html.no-ablyft .countdown-panel.countdown-2 {
   display: none;
 }
 /* END ID - 20.07.23 - Checkout - Support box */
+
+
+/* Discount Saving Box */
+
+#savings {
+  margin-top:20px;
+  border-radius: 10px;
+  background: #EAF2EB;
+  padding:15px;
+  padding-left:20px;
+}

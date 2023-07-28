@@ -439,7 +439,36 @@
         </cart-drawer-recommendations>
       {%- endif -%}
     </div>
+<div style="border-top: solid #dededf 1px">
+      {%- assign free_shipping_thresholds = settings.cart_free_shipping_threshold | remove: ' ' | split: ',' -%}
+      {%- assign has_found_matching_threshold = false -%}
+      {%- if free_shipping_thresholds.size > 1 -%}
+        {%- for threshold in free_shipping_thresholds -%}
+          {%- assign threshold_parts = threshold | split: ':' -%}
+          {%- assign currency_code = threshold_parts | first | upcase -%}
 
+          {%- if currency_code == cart.currency.iso_code -%}
+            {%- assign free_shipping_calculated_threshold = threshold_parts | last -%}
+            {%- assign has_found_matching_threshold = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- assign free_shipping_calculated_threshold = free_shipping_thresholds | last -%}
+        {%- assign has_found_matching_threshold = true -%}
+      {%- endif -%}
+
+      {%- assign threshold_in_cents = free_shipping_calculated_threshold | times: 100 -%}
+      <free-shipping-bar threshold="{{ threshold_in_cents }}" class="shipping-bar" style="--progress: {{ cart.total_price | times: 1.0 | divided_by: threshold_in_cents | at_most: 1 }}; padding: 8px 40px; margin: 0; {%- if cart.total_price >= threshold_in_cents -%} background-color: #def6df; {% endif %}">
+        {%- if cart.total_price >= threshold_in_cents -%}
+          <span class="shipping-bar__text text--small" style="color: #228927; font-weight: 600;">{{ 'cart.general.free_shipping' | t }}</span>
+        {%- else -%}
+          {%- capture remaining_amount -%}{{ cart.total_price | minus: threshold_in_cents | abs | money }}{%- endcapture -%}
+          <span class="shipping-bar__text text--small">{{ 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount }}</span>
+        {%- endif -%}
+
+        <span class="shipping-bar__progress"></span>
+      </free-shipping-bar>
     <footer class="mini-cart__drawer-footer drawer__footer drawer__footer--tight{% unless has_advantages %} drawer__footer--bordered{% endunless %}">
       {%- if has_advantages -%}
         <div class="mini-cart__drawer-advantages">
@@ -528,6 +557,7 @@
         </div>
       {%- endif -%}
     </footer>
+</div>
   {%- endif -%}
 
   {%- if section.settings.show_order_note -%}

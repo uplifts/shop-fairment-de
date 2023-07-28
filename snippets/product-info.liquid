@@ -61,7 +61,7 @@
         {%- endif -%}
 
         <div class="product-meta__price-list-container{% if has_labels %} has-labels{% endif %}" role="region" aria-live="polite">
-          <div class="price-list" data-product-price-list>
+          <div data-product-price-list>
             {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
               <span class="price price--highlight price--large">
                 <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
@@ -83,16 +83,28 @@
                 {%- endif -%}
               </span>
             {%- else -%}
-              <span class="price price--large">
+              <span class="price price--large {% if product.metafields.custom.price_per_day != blank %}flex-for-price{% endif %}">
                 <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
                 {%- if settings.currency_code_enabled -%}
                   {{- product.selected_or_first_available_variant.price | money_with_currency -}}
                 {%- else -%}
                   {{- product.selected_or_first_available_variant.price | money -}}
                 {%- endif -%}
+              
               </span>
             {%- endif -%}
           </div>
+
+          {%- if product.metafields.custom.price_per_day != blank -%}
+            <div class="price_per_day original">
+                <div class="per_day_arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M6.55868e-08 5.5L10.5 0.73686L10.5 10.2631L6.55868e-08 5.5Z" fill="#D2EFD4"/>
+                  </svg>
+                </div>
+                <span>Nur {{ product.metafields.custom.price_per_day }}€ pro Anwendung</span>
+            </div>
+            {% endif %}
 
           <div class="product-meta__label-list label-list" data-product-label-list>
             {%- unless product.selected_or_first_available_variant.available -%}
@@ -106,22 +118,6 @@
 
               <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
             {%- endunless -%}
-          </div>
-
-          <div class="product-meta__price-per-use">
-            {%- assign selected_var = product.selected_or_first_available_variant -%}
-            {%- for variant in product.variants -%}
-              {%- if variant.metafields.custom.price_per_use != blank -%}
-                {%- assign price_per_use = variant.metafields.custom.price_per_use | metafield_tag -%}
-                <div
-                  class="variantRelated{% unless variant.id == selected_var.id %} d-none{% endunless %}"
-                  data-variant-id="{{ variant.id }}">
-                  <div class="product-meta__priceperuse-bubble">
-                    {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
-                  </div>
-                </div>
-              {%- endif -%}
-            {%- endfor -%}
           </div>
 
           <div class="product-meta__units-taxes text--xxsmall">

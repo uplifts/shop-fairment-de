@@ -245,16 +245,3 @@ function handleElClasses(elems, state, className) {
 document.addEventListener('variant:added', function() {
   document.documentElement.classList.add('success-message-active');
 });
-
-const variantRelated = document.querySelectorAll('.variantRelated');
-document.addEventListener('variant:changed', function(evt) {
-  console.log(evt);
-  let varID = evt.detail.variant.id;
-  let elemsToShow = document.querySelectorAll('.variantRelated[data-variant-id="' + varID + '"]');
-  variantRelated && variantRelated.forEach(elem => {
-    elem.classList.add('d-none');
-  });
-  elemsToShow && elemsToShow.forEach(elem => {
-    elem.classList.remove('d-none');
-  });
-});

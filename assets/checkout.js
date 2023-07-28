@@ -130,3 +130,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+// Adding Discount below Breadcrumbs
+
+// discount();
+//         function discount(){
+//         let saving = document.getElementById('saving');
+
+//          saving.innerHTML = document.getElementsByClassName("visually-hidden skeleton-while-loading-sr")[0].innerHTML.replace('&nbsp;€ Rabatt auf den Gesamtpreis','');
+          
+//         }

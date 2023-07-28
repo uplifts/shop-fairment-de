@@ -101,9 +101,9 @@
                   {%- when 'block' -%}
                     <div class="block-swatch-list">
                       {%- for value in option.values -%}
-                        <div class="block-swatch">
+                        <div class="block-swatch qty-{{ forloop.index }}">
                           <input class="block-swatch__radio visually-hidden" type="radio" name="option{{ option.position }}" form="{{ product_form_id }}" id="{{ option_id }}-{{ forloop.index }}" value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked"{% endif %} data-bind-value="{{ option_id }}-value">
-                          <label class="block-swatch__item" for="{{ option_id }}-{{ forloop.index }}">{{ value }}</label>
+                          <label onclick="showDiv{{ forloop.index }}()" class="block-swatch__item" for="{{ option_id }}-{{ forloop.index }}">{{ value }}</label>
                         </div>
                       {%- endfor -%}
                     </div>
