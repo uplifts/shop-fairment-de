@@ -5267,18 +5267,8 @@
       } else {
         productPrices.innerHTML = "";
         if (variant["compare_at_price"] > variant["price"]) {
-           productPrices.innerHTML += `<span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["price"], currencyFormat)} <span class="price price--compare" style="margin-left:10px;"><span class="visually-hidden">${window.themeVariables.strings.productRegularPrice}</span>${formatMoney(variant["compare_at_price"], currencyFormat)}</span></span>`;
-          productPrices.innerHTML += `
-          <div id="hiddenThree" class="price_per_day discount">
-          <div class="per_day_arrow discount"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M6.55868e-08 5.5L10.5 0.73686L10.5 10.2631L6.55868e-08 5.5Z" fill="#D2EFD4"/></svg></div>
-          <span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span> <span class="cost-per-use-badge">Nur ${formatMoney(variant["compare_at_price"]  / 90 * 0.95, currencyFormat)} pro Anwendung</span></span></div>
-          <style>.price_per_day.original{display:none!important;}.product-meta__price-list-container{align-items:start;}[dir=ltr] .product-meta__label-list:not(:empty){margin-top:10px;}</style>`;
-
-          productPrices.innerHTML += `
-          <div id="hiddenSix" class="price_per_day discount six">
-          <div class="per_day_arrow discount"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M6.55868e-08 5.5L10.5 0.73686L10.5 10.2631L6.55868e-08 5.5Z" fill="#D2EFD4"/></svg></div>
-          <span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span> <span class="cost-per-use-badge">Nur ${formatMoney(variant["compare_at_price"]  / 90 * 0.90, currencyFormat)} pro Anwendung</span></span></div>
-          <style>.price_per_day.original{display:none!important;}.product-meta__price-list-container{align-items:start;}[dir=ltr] .product-meta__label-list:not(:empty){margin-top:10px;}</style>`;
+          productPrices.innerHTML += `<span class="price price--highlight ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["price"], currencyFormat)}</span>`;
+          productPrices.innerHTML += `<span class="price price--compare"><span class="visually-hidden">${window.themeVariables.strings.productRegularPrice}</span>${formatMoney(variant["compare_at_price"], currencyFormat)}</span>`;
         } else {
           productPrices.innerHTML += `<span class="price ${this.priceClass}"><span class="visually-hidden">${window.themeVariables.strings.productSalePrice}</span>${formatMoney(variant["price"], currencyFormat)}</span>`;
         }
@@ -6332,4 +6322,3 @@
 * tabbable 5.2.1
 * @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
 */
-

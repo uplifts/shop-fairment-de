@@ -182,6 +182,7 @@
       "sku": "SKU:",
       "regular_price": "Regulärer Preis",
       "sale_price": "Angebotspreis",
+      "price_per_use_html": "<strong>Nur {{ price }}<\/strong> pro Anwendung",
       "view_in_space": "In deinem Bereich ansehen",
       "zoom": "Zoom",
       "share": "Teilen",

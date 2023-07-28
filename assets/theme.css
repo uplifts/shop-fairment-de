@@ -17531,58 +17531,9 @@ visibility: hidden;
 
 @media (max-width: 600px) {
   .anchor-link-reviews {
-  top:-250px;
+    top:-250px;
+  }
 }
-}
-
-/* Price Per Day Badge */
-
-.hidden {
-  display:none!important;
-}
-
-.product-meta__price-list-container .price.price--large {
-  display:flex;
-      align-items: center;
-}
-
-.price_per_day {
-  margin-left:15px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  border-radius: 4px;
-  background: #D2EFD4;
-  padding:5px;
-  position:relative;
-  height:28px;
-}
-
-.per_day_arrow {
-  position:absolute;
-  left:-10px;
-  bottom: -1px;
-}
-
-.price_per_day.discount {
-  margin-left:0;
-}
-
-.per_day_arrow.discount {
-  left: -10px;
-  top: -40px;
-  bottom: -3px;
-  rotate: 90deg;
-}
-
-.price_per_day span {
-  color: #11904B;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: 14px;
-}
-
 
 /* Product Card Badges */
 
@@ -17635,3 +17586,34 @@ line-height: 14px;
 .product-item--wrapper .label, .product-item .label {
     margin-left: auto;
 }
+
+/* START ID - 27.07.23 - Price per use experiment */
+.product-meta__price-per-use {
+  display: none;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.product-meta__priceperuse-bubble {
+  display: inline-block;
+  background-color: #d2efd4;
+  color: #11904b;
+  font-size: 13px;
+  line-height: 1.1;
+  padding: 6px 12px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.product-meta__priceperuse-bubble:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 12px 5px;
+  border-color: transparent transparent #d2efd4 transparent;
+  position: absolute;
+  left: 12px;
+  bottom: 100%;
+}
+/* END ID - 27.07.23 - Price per use experiment */
