@@ -175,6 +175,7 @@
           <div class="product__thumbnail-list hide-scrollbar">
             <div class="product__thumbnail-list-inner">
               {%- for media in product.media -%}
+                {{media.id}}_{{product.featured_media.id}}<br>
                 {%- if section.settings.hide_variant_images -%}
                   {%- assign skip_media = false -%}
                   {%- for image in product.images -%}
