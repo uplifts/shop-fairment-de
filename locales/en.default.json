@@ -6,7 +6,8 @@
     "label": {
       "color": "Color,Colour",
       "white": "White",
-      "size": "Size"
+      "size": "Size",
+      "var_img_options": "Quantity"
     },
     "breadcrumb": {
       "title": "Breadcrumb",
