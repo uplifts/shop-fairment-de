@@ -6,7 +6,8 @@
     "label": {
       "color": "Farbe",
       "white": "Weiß",
-      "size": "Größe"
+      "size": "Größe",
+      "var_img_options": "Menge"
     },
     "breadcrumb": {
       "title": "Pfadleiste",
