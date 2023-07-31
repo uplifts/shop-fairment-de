@@ -32,8 +32,6 @@
 
               {%- assign selector_type = block.settings.selector_mode -%}
 
-              {{var_img_sel_options_list|json}}
-              {{option_downcase}}
               {% if color_label_list contains option_downcase or var_img_sel_options_list contains option_downcase %}
                 {%- assign selector_type = block.settings.color_mode -%}
 
