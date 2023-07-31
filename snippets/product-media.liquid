@@ -186,7 +186,7 @@
                   {%- endfor -%}
                 {%- endif -%}
                 {%- if skip_media == true -%}
-                  {%- continue -%}
+                  {% comment %} {%- continue -%} {% endcomment %}
                 {%- endif -%}
                 {%- assign alt = media.alt -%}
                 {%- assign is_media_filtered = false -%}
