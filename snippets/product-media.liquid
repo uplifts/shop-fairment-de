@@ -178,7 +178,7 @@
                 {%- if section.settings.hide_variant_images -%}
                   {%- assign skip_media = false -%}
                   {%- for image in product.images -%}
-                    {{image.variants | json}}
+                    {{image.variants.size | json}}
                     {%- capture media_url -%}{{ media | img_url: 'master' }}{%- endcapture -%}
                     {%- capture image_url -%}{{ image | img_url: 'master' }}{%- endcapture -%}
                     {%- if media_url == image_url and media.id != product.featured_media.id -%}
