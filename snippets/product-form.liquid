@@ -33,7 +33,8 @@
               {%- assign selector_type = block.settings.selector_mode -%}
 
               {% if color_label_list contains option_downcase or var_img_sel_options_list contains option_downcase %}
-                color_label_list contains option_downcase or var_img_sel_options_list contains option_downcase
+                {{var_img_sel_options_list|json}}
+                {{option_downcase}}
                 {%- assign selector_type = block.settings.color_mode -%}
 
                 {%- if selector_type == 'variant_image' -%}
