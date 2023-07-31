@@ -20,7 +20,7 @@
             "button_2_link": "",
             "bottom_line_text": "",
             "text_color": "#00148c",
-            "button_background": "#f70000",
+            "button_background": "#ff6c00",
             "button_text_color": "#ffffff",
             "overlay_color": "#00148c",
             "overlay_opacity": 0
@@ -30,7 +30,9 @@
       "block_order": [
         "slide-1"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "css_class": "home-hero",
         "section_height_mobile": 58,
@@ -332,7 +334,9 @@
         "011c8877-d17d-49eb-9510-d644dedb0958",
         "dd8969b6-348c-4de8-b33e-2e9d9ee5da1b"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "css_class": "",
         "subheading": "Entdecke unsere Produkte für ein gutes Bauchgefühl",
