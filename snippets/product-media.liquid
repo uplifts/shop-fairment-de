@@ -179,7 +179,7 @@
                 {%- if section.settings.hide_variant_images -%}
                   {%- for image in product.images -%}
                     {{image.id}}
-                    {%- if image.id == media.id -%}
+                    {%- if image.id == media.image.id -%}
                       prod image
                     {%- endif -%}
                     {% break %}
