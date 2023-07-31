@@ -181,7 +181,6 @@
                     {%- capture media_url -%}{{ media | img_url: 'master' }}{%- endcapture -%}
                     {%- capture image_url -%}{{ image | img_url: 'master' }}{%- endcapture -%}
                     {%- if media_url == image_url and media.id != product.featured_media.id -%}
-                      {{media.id}}_{{product.featured_media.id}}<br>
                       {%- if image.variants.size > 0 -%}
                         {%- assign skip_media = true -%}
                       {%- endif -%}
@@ -189,7 +188,7 @@
                   {%- endfor -%}
                 {%- endif -%}
                 {%- if skip_media == true -%}
-                  {% comment %} {%- continue -%} {% endcomment %}
+                  {%- continue -%}
                 {%- endif -%}
                 {%- assign alt = media.alt -%}
                 {%- assign is_media_filtered = false -%}
