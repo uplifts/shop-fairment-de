@@ -21,7 +21,6 @@
       ----------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
       {%- when 'variant_picker' -%}
-        <h1>Khuiker</h1>
         {%- unless product.has_only_default_variant or block.settings.hide_sold_out_variants and product.available == false -%}
           {%- assign size_chart_page = block.settings.size_chart_page -%}
           {%- assign found_size_option = false -%}
@@ -34,6 +33,7 @@
               {%- assign selector_type = block.settings.selector_mode -%}
 
               {% if color_label_list contains option_downcase or var_img_sel_options_list contains option_downcase %}
+                color_label_list contains option_downcase or var_img_sel_options_list contains option_downcase
                 {%- assign selector_type = block.settings.color_mode -%}
 
                 {%- if selector_type == 'variant_image' -%}
