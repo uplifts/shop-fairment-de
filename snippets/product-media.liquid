@@ -175,6 +175,9 @@
           <div class="product__thumbnail-list hide-scrollbar">
             <div class="product__thumbnail-list-inner">
               {%- for media in product.media -%}
+                {%- if section.settings.hide_variant_images and media.attached_to_variant? -%}
+                  skip
+                {%- endif -%}
                 {%- assign alt = media.alt -%}
                 {%- assign is_media_filtered = false -%}
                 {%- assign media_id_as_string = media.id | append: '' -%}
