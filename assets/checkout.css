@@ -626,9 +626,12 @@ html.no-ablyft .countdown-panel.countdown-2 {
 }
 
 /* TEMP STYLE TO HIDE */
+
+@media (min-width: 1024px) { 
 .sec-support-box {
-  display: none;
+  display: block;
 }
+  }
 /* END ID - 20.07.23 - Checkout - Support box */
 
 
