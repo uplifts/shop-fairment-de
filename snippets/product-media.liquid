@@ -175,13 +175,13 @@
           <div class="product__thumbnail-list hide-scrollbar">
             <div class="product__thumbnail-list-inner">
               {%- for media in product.media -%}
-                {{media.id}}_{{product.featured_media.id}}<br>
                 {%- if section.settings.hide_variant_images -%}
                   {%- assign skip_media = false -%}
                   {%- for image in product.images -%}
                     {%- capture media_url -%}{{ media | img_url: 'master' }}{%- endcapture -%}
                     {%- capture image_url -%}{{ image | img_url: 'master' }}{%- endcapture -%}
                     {%- if media_url == image_url and media.id != product.featured_media.id -%}
+                      {{media.id}}_{{product.featured_media.id}}<br>
                       {%- if image.variants.size > 0 -%}
                         {%- assign skip_media = true -%}
                       {%- endif -%}
