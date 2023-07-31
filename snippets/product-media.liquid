@@ -179,7 +179,7 @@
                   {%- for image in product.images -%}
                     {%- capture media_url -%}{{ media | img_url: 'master' }}{%- endcapture -%}
                     {%- capture image_url -%}{{ image | img_url: 'master' }}{%- endcapture -%}
-                    {%- if media_url == image_url -%}
+                    {%- if media_url == image_url and media.id != product.featured_media.id -%}
                       prod image
                     {%- endif -%}
                   {%- endfor -%}
