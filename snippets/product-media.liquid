@@ -180,8 +180,10 @@
                     {%- if image.id == media.id -%}
                       prod image
                     {%- endif -%}
+                    {% break %}
                   {%- endfor -%}
                 {%- endif -%}
+                {% break %}
                 {%- assign alt = media.alt -%}
                 {%- assign is_media_filtered = false -%}
                 {%- assign media_id_as_string = media.id | append: '' -%}
