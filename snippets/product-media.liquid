@@ -176,13 +176,17 @@
             <div class="product__thumbnail-list-inner">
               {%- for media in product.media -%}
                 {%- if section.settings.hide_variant_images -%}
+                  {%- assign skip_media = false -%}
                   {%- for image in product.images -%}
                     {%- capture media_url -%}{{ media | img_url: 'master' }}{%- endcapture -%}
                     {%- capture image_url -%}{{ image | img_url: 'master' }}{%- endcapture -%}
                     {%- if media_url == image_url and media.id != product.featured_media.id -%}
-                      {%- continue -%}
+                      {%- assign skip_media = true -%}
                     {%- endif -%}
                   {%- endfor -%}
+                {%- endif -%}
+                {%- if skip_media == true -%}
+                  {%- continue -%}
                 {%- endif -%}
                 {%- assign alt = media.alt -%}
                 {%- assign is_media_filtered = false -%}
