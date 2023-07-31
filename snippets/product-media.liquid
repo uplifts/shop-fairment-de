@@ -181,7 +181,9 @@
                     {%- capture media_url -%}{{ media | img_url: 'master' }}{%- endcapture -%}
                     {%- capture image_url -%}{{ image | img_url: 'master' }}{%- endcapture -%}
                     {%- if media_url == image_url and media.id != product.featured_media.id -%}
-                      {%- assign skip_media = true -%}
+                      {%- if image.attached_to_variant? -%}
+                        {%- assign skip_media = true -%}
+                      {%- endif -%}
                     {%- endif -%}
                   {%- endfor -%}
                 {%- endif -%}
