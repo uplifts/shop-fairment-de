@@ -175,8 +175,10 @@
           <div class="product__thumbnail-list hide-scrollbar">
             <div class="product__thumbnail-list-inner">
               {%- for media in product.media -%}
+                {{media.id}}
                 {%- if section.settings.hide_variant_images -%}
                   {%- for image in product.images -%}
+                    {{image.id}}
                     {%- if image.id == media.id -%}
                       prod image
                     {%- endif -%}
