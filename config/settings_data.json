@@ -66,7 +66,7 @@
     "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#f9f9f9",
     "checkout_accent_color": "#00148c",
-    "checkout_button_color": "#f70000",
+    "checkout_button_color": "#ff6c00",
     "checkout_error_color": "#de2a2a",
     "express_checkout_hide_product": "effektivenzyme-premium-verdauungskomplex",
     "cart_success_message": "<strong>Gute Wahl!<\/strong> Hier sind deine Produkte",
