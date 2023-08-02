@@ -47,7 +47,9 @@
                   		{{ tags | remove: "author_" | replace: "-", " " | append: ".png" | file_img_url | img_tag: 'Logo' }}
                       {% endif %}                   
                   {%- endfor -%}                  
-
+                                {%for autor in shop.metaobjects.Autor.values%}
+                        <img src="{{autor.bild_autor}}" alt="Author">
+                        {%endfor%}
                 </div></a>
                {% comment %}
                <div class="author-name"><span><font style="font-family: playfair display;">{{ article.author }}{{ article.excerpt }}</font></span></div>
