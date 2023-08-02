@@ -41,8 +41,9 @@
               {% endfor %}
              <a href="https://stoertebekker.com/pages/martin"><div class="author_inner_container">
                 <div class="image-wrap image-author-wrap" >
-                 {% for autor in shop.metaobjects.autor.values %}
-                        <img src="{{autor.bild_autor}}" alt="Author">
+                  
+                 {% for author in shop.metaobjects.autor.values %}
+                        <img src="{{author.bild_autor}}" alt="Author">
                         {% endfor %}
                   {%- for tags in article.tags -%}
                   	{% if tags contains 'author_' %}
