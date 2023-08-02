@@ -891,3 +891,9 @@ body section.blog-section .row {
     border: 0;
     outline: 0;
 }
+ul.tags-list {
+    display: flex;
+}
+.tag_item{
+  list-style:none;
+}
