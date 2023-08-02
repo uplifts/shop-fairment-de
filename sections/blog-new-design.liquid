@@ -8,6 +8,11 @@
 
   <div class="banner__content">
     {% render 'breadcrumbs' %}
+    {%- for tags in article.tags -%}
+      {% if tags contains 'Gesundheit' %}
+    	{{ tags }}
+      {% endif %}
+      {%- endfor -%}
     <div class="section__title">
       <h1 style="color: #fff;">{{ article.title }}</h1>
     </div>
