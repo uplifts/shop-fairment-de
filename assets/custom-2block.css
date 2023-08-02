@@ -912,10 +912,9 @@ li.tag_item {
     align-items: center;
 }
 .person-block .person-image {
-    flex: 1 1 24% ;
-    border-radius: 50%;
+    flex: 1 1 30%;
 }
-.person-image img{
+
     .person-image img {
     max-width: 100%;
     width: 50px;
@@ -924,7 +923,7 @@ li.tag_item {
     object-fit: cover;
     border: 1px solid #2D4DBD;
 }
-}
+
 .person-block .info {
     flex: 1 1 80%;
     display: flex;
