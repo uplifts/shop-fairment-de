@@ -41,15 +41,15 @@
               {% endfor %}
              <a href="https://stoertebekker.com/pages/martin"><div class="author_inner_container">
                 <div class="image-wrap image-author-wrap" >
-
+                 {% for autor in shop.metaobjects.Autor.values %}
+                        <img src="{{autor.bild_autor}}" alt="Author">
+                        {% endfor %}
                   {%- for tags in article.tags -%}
                   	{% if tags contains 'author_' %}
                   		{{ tags | remove: "author_" | replace: "-", " " | append: ".png" | file_img_url | img_tag: 'Logo' }}
                       {% endif %}                   
                   {%- endfor -%}                  
-                      {% for autor in shop.metaobjects.Autor.values %}
-                        <img src="{{autor.bild_autor}}" alt="Author">
-                        {% endfor %}
+                     
                 </div></a>
                {% comment %}
                <div class="author-name"><span><font style="font-family: playfair display;">{{ article.author }}{{ article.excerpt }}</font></span></div>
