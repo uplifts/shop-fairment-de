@@ -44,6 +44,7 @@
         <button class="accordion">
            {% for author in shop.metaobjects.autor.values %}
           <font style="font-family: playfair display;">{{ author.autor }}</font>
+             <font style="font-family: playfair display;">{{ author.position }}</font>
              {% endfor %}
         </button>
         <div class="author-info panel">
