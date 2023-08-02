@@ -284,6 +284,34 @@
       }
     }
   },
+  "blogs": {
+    "article": {
+      "view_all": "Alle anzeigen",
+      "view_all_blogs": "Alle anzeigen Artikel",
+      "all_topics": "Alle themen",
+      "by_author": "von {{ author }}",
+      "posted_in": "Veröffentlicht in",
+      "read_more": "Weiterlesen",
+      "read_more_title": "Weiterlesen: {{ title }}",
+      "back_to_blog": "Zurück zu {{ title }}",
+      "tags": "Stichworte"
+    },
+    "comments": {
+      "form_title": "Hinterlassen Sie einen Kommentar",
+      "title": "Kommentare",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "post": "Kommentar posten",
+      "moderated": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen",
+      "success_moderated": "Ihr Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen.",
+      "success": "Ihr Kommentar wurde erfolgreich gepostet. Danke!",
+      "comments_with_count": {
+        "one": "{{ count }} Kommentar",
+        "other": "{{ count }} Kommentare"
+      }
+    }
+  },
   "customer": {
     "general": {
       "title": "Mein Account"
