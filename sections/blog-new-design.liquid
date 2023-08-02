@@ -25,9 +25,10 @@
   <div class="section__subtitle">
     {{ article.content | truncate: 150 }}
   </div>
+  {% for author in shop.metaobjects.autor.values %}
   <div class="person-block">
-     {% for author in shop.metaobjects.autor.values %}
-       <div class="person-imag<img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">e">
+     
+       <div class="person-image">
          <img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">
        </div>
        
@@ -36,8 +37,9 @@
          <h4>{{ author.autor }}</h4>
          <p>{{ author.autorenbeschreibung | metafield_tag  }}</p>
        </div>
-       {% endfor %}
+      
   </div>
+   {% endfor %}
     <div class="date__section">
          <div class="reading_time">
       {% if article.metafields.custom.lesezeit != blank %}
