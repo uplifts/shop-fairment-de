@@ -912,6 +912,12 @@ li.tag_item {
     align-items: flex-end;
     margin-bottom: 1.5rem;
 }
+@media screen and (max-width:768px){
+  .person-block {
+   flex-direction: column;
+    align-items: center;
+  }
+}
 .person-block .person-image {
     flex: 1 1 30%;
 }
