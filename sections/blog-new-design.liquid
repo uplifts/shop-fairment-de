@@ -24,11 +24,17 @@
     </div>
 
     <div class="date__section">
+         <div class="reading_time">
+      {% if article.metafields.custom.lesezeit != blank %}
+        Lesezeit ca. {{ article.metafields.custom.lesezeit }} Minuten
+      {% endif %}
+    </div>
       <div class="comments">
         <a href="#comments">{{ article.comments_count }}&nbsp;{{ 'blogs.comments.title' | t }}</a>
       </div>
       <span>{{ article.published_at | date: '%d.%m.%Y' }}</span>
     </div>
+
 
     <div class="reading_time">
       {% if article.metafields.custom.lesezeit != blank %}
