@@ -9,8 +9,8 @@
   <div class="banner__content">
     {% render 'breadcrumbs' %}
     
-  <div class="tags">
-      <ul>
+  <div class="tags-container">
+      <ul class="tags-list">
          {%- for tags in article.tags -%}
         <li class="tag_item">
           {{ tags }}
