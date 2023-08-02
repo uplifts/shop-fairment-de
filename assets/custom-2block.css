@@ -875,7 +875,7 @@ body section.blog-section .row {
 }
 
  .blog-banner .banner__content .date__section {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     margin-bottom: 14px;
       font-family: Playfair Display;
