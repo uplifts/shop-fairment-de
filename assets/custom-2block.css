@@ -918,7 +918,7 @@ li.tag_item {
     border-radius: 50%;
 }
 .person-image img{
-    width:100%
+      max-width:100%;
   object-fit:cover;
 }
 .person-block .info {
