@@ -31,29 +31,32 @@
   <div class="article-content">
     <div class="index-outer-container" id="author_container">
       <div class="author_container">
-        <a href="#">
+      {% for author in shop.metaobjects.autor.values %}
+        <a {% if autor.autorenseite != blank %}href="{{ auto.autorenseite }}"{% else %} href="#" {% endif %}>
+      
           <div class="author_inner_container">
             <div class="image-wrap image-author-wrap">
-              {% for author in shop.metaobjects.autor.values %}
+    
                 <img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">
-              {% endfor %}
+    
             </div>
           </div>
         </a>
 
         <button class="accordion">
-           {% for author in shop.metaobjects.autor.values %}
+          
           <font style="font-family: playfair display; font-size:15px">{{ author.position }} /</font>
              <font style="font-family: playfair display;">{{ author.autor }}</font>
-             {% endfor %}
+            
         </button>
         <div class="author-info panel">
           <div class="author-bio">
-            {% for author in shop.metaobjects.autor.values %}
+            
             <font style="vertical-align: inherit;">{{ author.autorenbeschreibung | metafield_tag  }}</font>
-            {% endfor %}
+            
           </div>
         </div>
+        {% endfor %}
       </div>
       <div class="inhalt-container">
         <span
