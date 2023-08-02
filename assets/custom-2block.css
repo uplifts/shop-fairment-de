@@ -923,10 +923,10 @@ li.tag_item {
     object-fit: cover;
     border: 1px solid #2D4DBD;
 }
-
+.person-block .info > *  {
+  margin:0;
+}
 .person-block .info {
     flex: 1 1 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    text-align: left;
 }
