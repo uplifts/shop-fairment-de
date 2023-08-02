@@ -56,8 +56,8 @@
     {% for doc in shop.metaobjects.doktorin.values %}
       <div class="person-block">
         <div class="info">
+           {% render 'med.liquid' %}
           <h4 style="font-size:15px;">
-            {% render 'med.liquid' %}
             <span style="font-weight:bold">{{ doc.gepruft_text }}</span>
             <span style="border-bottom:1px solid black">{{ doc.name }}</span>
           </h4>
