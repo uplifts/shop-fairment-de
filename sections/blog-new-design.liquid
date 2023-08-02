@@ -39,23 +39,22 @@
              <div class="box_header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Autor*in</font></font><font style="vertical-align: inherit;">{{ article.created_at | date: "%d.%m.%Y" }}</font></div>
           {% endif %}
               {% endfor %}
-             <a href="https://stoertebekker.com/pages/martin"><div class="author_inner_container">
+             <a href="https://stoertebekker.com/pages/martin">
+               <div class="author_inner_container">
                 <div class="image-wrap image-author-wrap" >
                   
                  {% for author in shop.metaobjects.autor.values %}
                         <img src="{{author.bild_autor | img_url :'500x' | img_tag: 'Logo' }}" alt="Author">
-                        {% endfor %}
+                  {% endfor %}
                   {%- for tags in article.tags -%}
                   	{% if tags contains 'author_' %}
                   		{{ tags | remove: "author_" | replace: "-", " " | append: ".png" | file_img_url | img_tag: 'Logo' }}
                       {% endif %}                   
-                  {%- endfor -%}                  
-                     
-                </div></a>
-               {% comment %}
-               <div class="author-name"><span><font style="font-family: playfair display;">{{ article.author }}{{ article.excerpt }}</font></span></div>
-               {% endcomment %}
-            </div>
+                  {%- endfor -%}                       
+                </div>
+                </div>
+                </a>
+            
             <button class="accordion"><font style="font-family: playfair display;">{{ article.author }}</font></button>
             <div class="author-info panel">
                <div class="author-bio"><font style="vertical-align: inherit;">{{ article.excerpt }}</font></div>
