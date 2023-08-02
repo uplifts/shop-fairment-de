@@ -902,3 +902,8 @@ li.tag_item {
     padding: 0.2rem 2rem;
     color: white;
 }
+.section__subtitle p {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+}
