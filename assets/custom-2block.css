@@ -930,3 +930,11 @@ li.tag_item {
     flex: 1 1 80%;
     text-align: left;
 }
+.metafield-rich_text_field p{
+  font-family: Inter;
+font-size: 9px;
+font-weight: 200;
+line-height: 11px;
+letter-spacing: 0em;
+
+}
