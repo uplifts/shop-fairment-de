@@ -22,7 +22,9 @@
     <div class="section__title">
       <h1 style="color: #fff;">{{ article.title }}</h1>
     </div>
-
+  <div class="section__subtitle">
+    {{ article.content | truncate: 25 }}
+  </div>
     <div class="date__section">
          <div class="reading_time">
       {% if article.metafields.custom.lesezeit != blank %}
