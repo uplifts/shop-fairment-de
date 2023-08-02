@@ -34,9 +34,9 @@
         <a href="#">
           <div class="author_inner_container">
             <div class="image-wrap image-author-wrap">
-              
-                <img src="{{shop.metaobjects.autor.values.bild_autor | img_url :'500x' }}" alt="Author">
-              
+              {% for author in shop.metaobjects.autor.values %}
+                <img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">
+              {% endfor %}
             </div>
           </div>
         </a>
@@ -46,7 +46,9 @@
         </button>
         <div class="author-info panel">
           <div class="author-bio">
-            <font style="vertical-align: inherit;">{{ article.excerpt }}</font>
+            {% for author in shop.metaobjects.autor.values %}
+            <font style="vertical-align: inherit;">{{ author.autorenbeschreibung }}</font>
+              {% endfor %}
           </div>
         </div>
       </div>
