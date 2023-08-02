@@ -909,7 +909,6 @@ li.tag_item {
 }
 .person-block {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 }
 .person-block .person-image {
