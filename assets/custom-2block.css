@@ -827,7 +827,7 @@ body section.blog-section .row {
  .blog-banner .banner__content .reading_time {
     color: #282828;
     text-align: left;
-    width: 100%;
+    
 }
  .blog-banner .banner__content .breadcrumbs {
     width: 100%;
@@ -879,10 +879,9 @@ body section.blog-section .row {
     align-items: flex-start;
     margin-bottom: 14px;
       font-family: Playfair Display;
+   gap:1rem;
 }
- .blog-banner .banner__content .date__section span {
-    margin-top: 5px;
-}
+
  .blog-banner .banner__content .reading_time {
     font-weight: bold;
 }
