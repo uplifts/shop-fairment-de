@@ -31,20 +31,7 @@
   <div class="article-content">
     <div class="index-outer-container" id="author_container">
       <div class="author_container">
-        {%- for tags in article.tags -%}
-          {% if tags contains 'auth_male' %}
-            <div class="box_header">
-              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Autor</font></font
-              ><font style="vertical-align: inherit;">{{ article.created_at | date: '%d.%m.%Y' }}</font>
-            </div>
-          {% elsif tags contains 'auth_female' %}
-            <div class="box_header">
-              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Autor*in</font></font
-              ><font style="vertical-align: inherit;">{{ article.created_at | date: '%d.%m.%Y' }}</font>
-            </div>
-          {% endif %}
-        {% endfor %}
-        <a href="https://stoertebekker.com/pages/martin">
+        <a href="#">
           <div class="author_inner_container">
             <div class="image-wrap image-author-wrap">
               {% for author in shop.metaobjects.autor.values %}
