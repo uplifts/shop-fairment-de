@@ -56,15 +56,15 @@
 
      {% for doktorin in shop.metaobjects.doktorin.values %}
   <div class="person-block">
-     
+     <div class="info">     
+         <h4 style="font-size:15px;">{{ doktorin.name }}</h4>
+       </div>
+    
        <div class="person-image">
          <img src="{{doktorin.bild | img_url :'500x' }}" alt="Author">
        </div>
        
-       <div class="info">
-         
-         <h4 style="font-size:15px;">{{ doktorin.name }}</h4>
-       </div>
+       
       
   </div>
    {% endfor %}
