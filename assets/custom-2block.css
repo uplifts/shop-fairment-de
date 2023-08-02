@@ -908,9 +908,10 @@ li.tag_item {
     text-align: left;
 }
 .person-block {
-  text-align: left;
+    width: 100%;
+    text-align: left;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 1.5rem;
 }
 @media screen and (max-width:768px){
