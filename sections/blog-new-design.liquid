@@ -1,5 +1,5 @@
 {% render 'blog-snippets' %}
-{{ 'custom-2block.css' | asset_url | stylesheet_tag }}
+{{ 'custom-2block.css' | asset_url  }}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -44,7 +44,7 @@
                 <div class="image-wrap image-author-wrap" >
                   
                  {% for author in shop.metaobjects.autor.values %}
-                        <img src="{{author.bild_autor | img_url :'500x' | img_tag: 'Logo' }}" alt="Author">
+                        <img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">
                   {% endfor %}
                   {%- for tags in article.tags -%}
                   	{% if tags contains 'author_' %}
