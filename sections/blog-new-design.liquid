@@ -23,8 +23,8 @@
     	{{ tags | remove: "time_" | replace: "_", " " }}
       {% endif %}
       {%- endfor -%}
-        {% if metafield.custom.esezeit != blank %}
-          {{ metafield.custom.esezeit }}
+        {% if article.metafields.custom.lesezeit != blank %}
+          {{ article.metafields.custom.lesezeit }}
   {% endif %}
   	</div>
   </div>
