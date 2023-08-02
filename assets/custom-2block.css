@@ -936,8 +936,11 @@ li.tag_item {
   margin:0;
 }
 .person-block .info {
+    display: flex;
     flex: 1 1 80%;
     text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .metafield-rich_text_field p {
     font-size: 13px;
