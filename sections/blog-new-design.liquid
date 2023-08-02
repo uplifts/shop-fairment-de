@@ -32,7 +32,7 @@
     <div class="index-outer-container" id="author_container">
       <div class="author_container">
       {% for author in shop.metaobjects.autor.values %}
-        <a {% if autor.autorenseite != blank %}href="{{ auto.autorenseite }}"{% else %} href="#" {% endif %}>
+        <a target="_blank" {% if author.autorenseite != blank %}href="{{ author.autorenseite }}"{% else %} href="#" {% endif %}>
       
           <div class="author_inner_container">
             <div class="image-wrap image-author-wrap">
