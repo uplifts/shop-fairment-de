@@ -917,9 +917,9 @@ li.tag_item {
 
     .person-image img {
     max-width: 100%;
-    width: 100px;
+    width: 80px;
     border-radius: 50%;
-    height: 100px;
+    height: 80px;
     object-fit: cover;
     border: 1px solid #2D4DBD;
 }
