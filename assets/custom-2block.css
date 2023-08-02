@@ -903,7 +903,7 @@ li.tag_item {
     color: white;
 }
 .section__subtitle p {
-    margin: 0 !important;
+       margin: 11px 0 !important;
     padding: 0 !important;
     text-align: left;
 }
