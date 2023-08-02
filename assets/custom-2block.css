@@ -907,3 +907,19 @@ li.tag_item {
     padding: 0 !important;
     text-align: left;
 }
+person-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.person-block > img {
+    flex: 1 1 24% ;
+    width: 100%;
+    border-radius: 50%;
+}
+.person-block .info {
+    flex: 1 1 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
