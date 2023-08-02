@@ -23,7 +23,9 @@
     	{{ tags | remove: "time_" | replace: "_", " " }}
       {% endif %}
       {%- endfor -%}
-
+        {% if metafield.custom.esezeit != blank %}
+          {{ metafield.custom.esezeit }}
+  {% endif %}
   	</div>
   </div>
 </div>
