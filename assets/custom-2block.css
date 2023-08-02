@@ -893,7 +893,13 @@ body section.blog-section .row {
 }
 ul.tags-list {
     display: flex;
+    gap: 1rem;
+    padding-left: 0 !important;
 }
-.tag_item{
-  list-style:none;
+li.tag_item {
+    list-style: none;
+    border-radius: 7px;
+    background: #2ABB4A;
+    padding: 0.2rem 2rem;
+    color: white;
 }
