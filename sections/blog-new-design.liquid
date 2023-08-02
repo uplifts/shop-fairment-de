@@ -50,7 +50,9 @@
         <div class="author-info panel">
           <div class="author-bio">
             {% for author in shop.metaobjects.autor.values %}
-              <div>{{ author.autorenbeschreibung.children[0].children[0].value }}</div>
+              {% assign val = author.autorenbeschreibung %}
+              
+            <div>{{ val.children[0].children[0].value }}</div>
             <div>{{ author.autorenbeschreibung | escape_once }}</div>
             <font style="vertical-align: inherit;">{{ author.autorenbeschreibung }}</font>
             {% endfor %}
