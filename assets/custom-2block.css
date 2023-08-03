@@ -800,7 +800,8 @@ body section.blog-section .row {
     display: flex;
     flex-direction: column;
     background: #ECECFA;
-   justify-content: space-around;
+   justify-content: center;
+    gap: 1.5rem;
 } 
  .blog-banner img {
     order: 1;
