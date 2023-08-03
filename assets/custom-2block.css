@@ -765,7 +765,7 @@ body section.blog-section .row {
     cursor: pointer;
     position: relative;
     font-size: 18px;
-    color: #66634e;
+    color: #000;
    text-align:center;
 }
  .article-content div#author_container .author_container button.accordion::after {
