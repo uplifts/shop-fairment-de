@@ -954,3 +954,22 @@ li.tag_item {
 p{
   font-size:20px;
 }
+@media only screen and (max-width:768px){
+  .blog-banner .banner__content .breadcrumbs li{
+    font-size:11px;
+  }
+  .blog-banner .banner__content{
+    gap:1rem;
+  }
+  .blog-banner .banner__content .section__title h1{
+    font-size:23px;
+  }
+  .person-block {
+    width: auto;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+}
