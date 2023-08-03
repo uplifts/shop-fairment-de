@@ -22,9 +22,7 @@
     <div class="section__title">
       <h1 style="color: #fff;">{{ article.title }}</h1>
     </div>
-    <div class="section__subtitle">
-      {{ article.content | truncate: 150 }}
-    </div>
+
 
     {% for author in shop.metaobjects.autor.values %}
       <div class="person-block">
@@ -35,7 +33,6 @@
         <div class="info">
           <h5 style="font-size:10px; font-weight:200;">{{ author.position }}</h5>
           <h4 style="font-size:15px;">{{ author.autor }}</h4>
-          <p>{{ author.autorenbeschreibung | metafield_tag }}</p>
         </div>
       </div>
     {% endfor %}
@@ -56,14 +53,13 @@
     {% for doc in shop.metaobjects.doktorin.values %}
       <div class="person-block">
         <div class="info" style=" flex-direction: row;">
-           {% render 'med.liquid' %}
           <h4 style="font-size:15px;">
             <span style="font-weight:bold">{{ doc.gepruft_text }}</span>
             <span style="border-bottom:1px solid black; font-weight:200;">{{ doc.name }}</span>
           </h4>
         </div>
         <div class="person-image">
-          <img src="{{doc.bild | img_url :'500x' }}" alt="Author">
+          <img src="{{doc.bild | img_url :'500x' }}" alt="doctor">
         </div>
       </div>
     {% endfor %}
