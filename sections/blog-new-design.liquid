@@ -102,7 +102,9 @@
           ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inhalte</font></font></span
         >
         <ul id="article_menu" class="index-container"></ul>
-        {{ article.excerpt }}
+        <div class="to_the_shop to_the_shop_fixed">
+        <p><a style="background:{{ article.metafields.custom.button_color }}; color:{{ article.metafields.custom.button_font_color }};" href="{{ article.metafields.custom.button_link }}" title="{{ article.metafields.custom.button_text }}">{{ article.metafields.custom.button_text }} </a></p>
+        </div>
       </div>
       {% comment %}
         <div class="social_buttons">
