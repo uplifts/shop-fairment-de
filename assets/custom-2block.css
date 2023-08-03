@@ -972,4 +972,7 @@ p{
     align-items: center;
     flex-direction: row;
 }
+  .blog-banner .banner__content .date__section,  div.blog-banner > div > div > div.info > h4 {
+  font-size:12px;
+  }
 }
