@@ -61,7 +61,7 @@
   #shopify-section-blog-new-design .article-container .article__body.rte h3{
     /*     margin-top: 0; */
     margin-bottom: 25px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     font-family: "Playfair Display";
     color: #66634e;
@@ -813,7 +813,7 @@ body section.blog-section .row {
     width: 100%;
 }
  .blog-banner .banner__content .section__title h1 {
-    color: #000 !important;
+    color: #010065 !important;
     margin: 0 0 20px;
     font-family: Playfair Display;
 }
@@ -950,4 +950,7 @@ li.tag_item {
 }
 .article{
   margin:0;
+}
+p{
+  font-size:20px;
 }
