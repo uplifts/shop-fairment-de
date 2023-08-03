@@ -11,10 +11,13 @@
 
     <div class="tags-container">
       <ul class="tags-list">
-        {%- for tags in article.tags -%}
+        {%- for tag in article.tags -%}
+          {% if tag contains 'label_' %}
           <li class="tag_item">
-            {{ tags }}
+            {{ tag | split: "label_" }}
           </li>
+          {% endif %}
+
         {%- endfor -%}
       </ul>
     </div>
