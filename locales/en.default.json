@@ -278,6 +278,34 @@
       }
     }
   },
+  "blogs": {
+    "article": {
+      "view_all": "view all",
+      "view_all_blogs": "view all articles",
+      "all_topics": "all topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "posted in",
+      "read_more": "read more",
+      "read_more_title": "read: {{ title }}",
+      "back_to_blog": "back to {{ title }}",
+      "tags": "tags"
+    },
+    "comments": {
+      "form_title": "add a comment",
+      "title": "comment",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "message",
+      "post": "post",
+      "moderated": "moderated",
+      "success_moderated": "success",
+      "success": "thanks!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    }
+  },
   "customer": {
     "general": {
       "title": "My account"
