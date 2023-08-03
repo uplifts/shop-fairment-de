@@ -908,9 +908,10 @@ li.tag_item {
     text-align: left;
 }
 .person-block {
-    width: 100%;
+    width: auto;
     text-align: left;
     display: flex;
+  gap:1rem;
     align-items: center;
     margin-bottom: 1.5rem;
 }
@@ -920,15 +921,13 @@ li.tag_item {
     align-items: center;
   }
 }
-.person-block .person-image {
-    flex: 1 1 30%;
-}
+
 
     .person-image img {
     max-width: 100%;
-    width: 80px;
+    width: 50px;
     border-radius: 50%;
-    height: 80px;
+    height: 50px;
     object-fit: cover;
     border: 1px solid #2D4DBD;
 }
@@ -937,7 +936,6 @@ li.tag_item {
 }
 .person-block .info {
     display: flex;
-    flex: 1 1 80%;
     text-align: left;
     align-items: flex-start;
     flex-direction: column;
