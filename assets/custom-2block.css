@@ -326,9 +326,7 @@
    .blog-banner .banner__content .breadcrumbs {
     margin: 0;
   }
-   .blog-banner .banner__content .breadcrumbs li:last-of-type a {
-    display: none;
-  }
+
    .blog-banner .banner__content .breadcrumbs li,
    .blog-banner .banner__content .reading_time{
     font-size: 14px;
