@@ -9,7 +9,8 @@
     <a href="{{ routes.root_url }}" itemprop="item"><span itemprop="name">Home</span></a>
     <meta itemprop="position" content="1" />
   </li>
-  {% if template contains 'blog' %}
+  {{ template }}
+  {% if template contains 'article' %}
     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
       {{ divider }}
       <a href="{{ blog.url }}" itemprop="item"><span itemprop="name">{{ blog.title }}</span></a>
