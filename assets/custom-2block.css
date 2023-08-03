@@ -806,7 +806,7 @@ body section.blog-section .row {
     order: 1;
     flex: 0 0 50%;
     max-width: 50%;
-    height: 350px;
+    height: 100%;
 }
  .blog-banner .banner__content .section__title {
     text-align: left;
