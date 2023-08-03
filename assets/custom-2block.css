@@ -799,6 +799,7 @@ body section.blog-section .row {
     display: flex;
     flex-direction: column;
     background: #ECECFA;
+   justify-content: space-around;
 } 
  .blog-banner img {
     order: 1;
