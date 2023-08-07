@@ -16020,6 +16020,55 @@ body .swell-tab {
   max-width: 35px !important;
 }
 
+@media (max-width: 500px) {
+  /* A / B TEST MAXIM */
+
+  .product-list__inner {
+    display: block;
+  }
+
+  .product-list__inner .product-item, .unit-price-measurement {
+    flex-direction: row;
+    font-size: 10px;
+  }
+
+  .product-list__inner .product-item__info {
+    text-align: start;
+    width: 50%;
+  }
+
+  .product-list__inner .product-item-meta__title {
+    font-size: 14px;
+  }
+
+  .product-list__inner .price {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .price-list {
+    flex-wrap: nowrap;
+  }
+
+  .product-item__image-wrapper {
+    width: 140px;
+  }
+
+  .product-item-meta__taxes-included {
+    color: #B1B1B1;
+    padding-top: 0;
+  }
+
+  .badge.bestseller--mobile {
+    font-size: 11px;
+    display: block;
+    position: inherit;
+    margin-bottom: 8px;
+  }
+
+  /* A / B TEST MAXIM */
+}
+
 
 @media (max-width: 390px) {
   .mini-cart__drawer-advantages {

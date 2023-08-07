@@ -5,6 +5,11 @@
 
   <div class="product-item__info {% if reduced_font_size %}text--small{% endif %}">
     <div class="product-item-meta">
+      {% if product.metafields.custom.badge != blank %} 
+      <div class="badge bestseller bestseller--mobile">
+        {{ product.metafields.custom.badge }}
+      </div>
+      {% endif %}
       {%- if settings.show_vendor -%}
         <a class="product-item-meta__vendor heading heading--xsmall" href="#">{{ 'general.onboarding.product_vendor' | t }}</a>
       {%- endif -%}

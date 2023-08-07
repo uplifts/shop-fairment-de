@@ -120,6 +120,11 @@
 
   <div class="product-item__info {% if show_atc %}product-item__info--with-button{% endif %} {% if reduced_font_size %}text--small{% endif %}">
     <div class="product-item-meta">
+      {% if product.metafields.custom.badge != blank %} 
+      <div class="badge bestseller bestseller--mobile">
+        {{ product.metafields.custom.badge }}
+      </div>
+      {% endif %}
       {%- if settings.show_vendor -%}
         {%- assign vendor_handle = product.vendor | handle -%}
         {%- assign collection_for_vendor = collections[vendor_handle] -%}
