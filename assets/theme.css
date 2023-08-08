@@ -16028,7 +16028,7 @@ body .swell-tab {
   }
 
   .product-list__inner .product-item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .product-list__inner .product-item__info {
