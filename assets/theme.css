@@ -12828,11 +12828,6 @@ shopify-payment-terms {
   padding: 5px;
 }
 
-@media screen and (max-width: 740px) {
-.product-item {
-  margin-bottom: -0px !important;
-}}
-
 
 
 
@@ -16030,6 +16025,10 @@ body .swell-tab {
   .product-list__inner .product-item, .unit-price-measurement {
     flex-direction: row;
     font-size: 10px;
+  }
+
+  .product-list__inner .product-item:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   .product-list__inner .product-item__info {
