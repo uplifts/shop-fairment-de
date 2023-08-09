@@ -71,6 +71,9 @@
                   {{ section.settings.announcement_left_text_mobile }}
                 </div>
               {%- endif -%}
+              {%- if section.settings.announcement_left_link != blank -%}
+                <a href="{{ section.settings.announcement_left_link }}" class="announcement-bar--left-link"></a>
+              {%- endif -%}
             </div>
           {%- endif -%}
 
