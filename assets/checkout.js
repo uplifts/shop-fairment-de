@@ -168,9 +168,9 @@ $checkout.on('load', (e) => {
     discountNumber = window.discountAmount;
   }
 
-  let discountTotalTargets = document.querySelectorAll('.discountTotal');
-  if (discountTotalTargets && (typeof discountNumber !== 'undefined')) {
-    setTimeout(() => {
+  setTimeout(() => {
+    let discountTotalTargets = document.querySelectorAll('.discountTotal');
+    if (discountTotalTargets && (typeof discountNumber !== 'undefined')) {
       const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
       const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
 
@@ -183,6 +183,6 @@ $checkout.on('load', (e) => {
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
       handleDiscountSuccessMessage(discountNumber, discountTotalTargets);
-    }, 500);
-  }
+    }
+  }, 500);
 });
