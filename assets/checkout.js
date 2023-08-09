@@ -102,10 +102,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  var config = { attributes: true, childList: true, characterData: true }
+  var changesObserver = { attributes: true, childList: true, characterData: true }
 
-  if (target.length) {
-    changesObserver.observe(target, config);
+  if (checkoutTotalLines.length) {
+    changesObserver.observe(checkoutTotalLines, changesObserver);
   }
 
   const checkoutSupportBoxEl = document.querySelector('.checkoutSupportBoxEl');
