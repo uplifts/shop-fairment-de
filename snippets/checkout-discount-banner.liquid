@@ -6,6 +6,7 @@
   </div>
 
   <script>
+    console.log('MONIKASCH150');
     const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
       if (discountDataEl) {
         let discountMoney = discountDataEl.dataset.checkoutDiscountAmountTarget;
@@ -33,7 +34,6 @@
     var observedElement = document.querySelector('html');
     var changesObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
-        console.log(mutation);
         if (mutation.type === 'childList') {
           // Do some stuff
           setTimeout(() => {
