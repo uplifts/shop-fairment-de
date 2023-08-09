@@ -152,14 +152,14 @@ const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
 }
 
 const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
-const discountSuccessMessage1 = document.querySelector('.checkout-breadcrumbs');
-const discountSuccessMessage2 = document.querySelector('.order-summary__section--discount');
+const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
+const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
 
-if (discountSuccessMessage1) {
-  discountSuccessMessage1.appendChild(discountSuccessMessageRoot.cloneNode(true));
+if (discountSuccessMessageTarget1) {
+  discountSuccessMessageTarget1.appendChild(discountSuccessMessageRoot.cloneNode(true));
 }
-if (discountSuccessMessage2) {
-  discountSuccessMessage2.appendChild(discountSuccessMessageRoot.cloneNode(true));
+if (discountSuccessMessageTarget2) {
+  discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -178,6 +178,10 @@ $checkout.on('load', (e) => {
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   if (discountTotalTargets) {
+    const discountSuccessMessageInSidebar = document.querySelector('.order-summary__section--discount .discountSuccessMessageRoot');
+    if (! discountSuccessMessageInSidebar) {
+      discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
+    }
     handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
   }
 });
