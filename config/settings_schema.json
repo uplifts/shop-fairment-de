@@ -762,5 +762,15 @@
         "label": "Product B"
       }
     ]
+  },
+  {
+    "name": "Checkout",
+    "settings": [
+      {
+        "type": "liquid",
+        "id": "checkout_discount_success_message",
+        "label": "Discount Code for Buy X Get Y"
+      }
+    ]
   }
 ]
