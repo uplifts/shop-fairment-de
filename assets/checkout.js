@@ -136,8 +136,9 @@ const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
     discountNumberEl.forEach(el => {
       el.innerHTML = Number(discountMoney) / 100;
     });
+    document.documentElement.classList.add('discount-applied');
   } else {
-
+    document.documentElement.classList.remove('discount-applied');
   }
 }
 
@@ -160,7 +161,7 @@ var changesObserver = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
     if (mutation.type === 'childList') {
       // Do some stuff
-      console.log('mutation');
+      let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target');
     }
   });
 });
