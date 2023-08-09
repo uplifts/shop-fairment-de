@@ -181,6 +181,7 @@ if (checkoutTotalLines) {
 document.addEventListener('DOMContentLoaded', () => {
   let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
+  console.log(discountTotalTargets);
   if (discountTotalTargets) {
     handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
   }
