@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-import { $checkout } from '@adearriba/shopify-checkout/checkout.js';
+import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => { console.log(e); })
 $checkout.on('field:changed', (e) => { console.log(e); })
 $checkout.on('field:created', (e) => { console.log(e); })
