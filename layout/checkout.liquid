@@ -208,9 +208,9 @@
       </div>
 
       {%- if checkout.discounts_amount > 0 -%}        
-        <script>
+        {% comment %} <script>
           window.discountAmount = '{{ checkout.discounts_amount }}';
-        </script>
+        </script> {% endcomment %}
       {%- endif -%}
       <script type="module" src="{{ 'shopify-checkout.js' | asset_url }}"></script>
       <script type="module" src="{{ 'checkout.js' | asset_url }}"></script>
