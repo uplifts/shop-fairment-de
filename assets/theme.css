@@ -15136,6 +15136,14 @@ shopify-payment-terms {
   position: relative;
 }
 
+.announcement-bar--left-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .announcement-bar--row .announcement-bar {
   flex: 0 0 calc(100% - 164px);
   max-width: calc(100% - 164px);
