@@ -140,3 +140,65 @@ document.addEventListener('DOMContentLoaded', function() {
 //          saving.innerHTML = document.getElementsByClassName("visually-hidden skeleton-while-loading-sr")[0].innerHTML.replace('&nbsp;€ Rabatt auf den Gesamtpreis','');
           
 //         }
+
+const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
+  if (discountDataEl) {
+    let discountMoney = discountDataEl.dataset.checkoutDiscountAmountTarget;
+    discountNumberEl.forEach(el => {
+      el.innerHTML = Number(discountMoney) / 100;
+    });
+    document.documentElement.classList.add('discount-applied');
+  } else {
+    document.documentElement.classList.remove('discount-applied');
+  }
+}
+
+const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
+const discountSuccessMessage1 = document.querySelector('.checkout-breadcrumbs');
+const discountSuccessMessage2 = document.querySelector('.order-summary__section--discount');
+const orderTotalWrapper = document.querySelector('.order-summary__section--discount');
+
+if (discountSuccessMessage1) {
+  discountSuccessMessage1.appendChild(discountSuccessMessageRoot.cloneNode(true));
+}
+if (discountSuccessMessage2) {
+  discountSuccessMessage2.appendChild(discountSuccessMessageRoot.cloneNode(true));
+}
+
+var observedElement = document.querySelector('html');
+var changesObserver = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.type === 'childList') {
+      // Do some stuff
+      setTimeout(() => {
+        let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+        let discountTotalTargets = document.querySelectorAll('.discountTotal');
+        if (discountTotalTargets) {
+          console.log('discountTotalTargets');
+          console.log(discountNumberLineEl);
+          handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+        }
+      }, 500)
+    }
+  });
+});
+var changesObserverConfig = { attributes: true, childList: true, characterData: true }
+
+if (observedElement) {
+  changesObserver.observe(observedElement, changesObserverConfig);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+  let discountTotalTargets = document.querySelectorAll('.discountTotal');
+  if (discountTotalTargets) {
+    console.log('discountTotalTargets');
+    console.log(discountNumberLineEl);
+    handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+  }
+});
+
+$checkout.on('load', (e) => { console.log(e); })
+$checkout.on('field:changed', (e) => { console.log(e); })
+$checkout.on('field:created', (e) => { console.log(e); })
+$checkout.on('field:removed', (e) => { console.log(e); })
