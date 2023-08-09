@@ -641,6 +641,10 @@ html.no-ablyft .countdown-panel.countdown-2 {
   color: #243F24;
   padding: 12px 24px;
 }
+
+.checkout-discount-banner {
+  display: none;
+}
 /* END ID - 09.08.23 - Checkout - Discount success message */
 
 
