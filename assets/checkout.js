@@ -159,6 +159,7 @@ if (discountSuccessMessageRoot) {
 var checkoutTotalLines = document.querySelector('.order-summary__section--total-lines');
 var changesObserver = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
+    console.log(mutation);
     if (mutation.type === 'childList') {
       // Do some stuff
       let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
