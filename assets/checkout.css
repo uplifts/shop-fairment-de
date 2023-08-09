@@ -667,6 +667,10 @@ html.no-ablyft .countdown-panel.countdown-2 {
 .order-summary__section--discount .checkout-discount-banner {
   margin-top: 16px;
 }
+
+.order-summary__section--discount .checkout-discount-banner .banner-success {
+  margin-top: 16px;
+}
 /* END ID - 09.08.23 - Checkout - Discount success message */
 
 
