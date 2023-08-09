@@ -215,11 +215,7 @@
 
       <div class="d-none">
         {%- if settings.checkout_discount_success_message -%}
-          <div class="checkout-discount-banner discountSuccessMessageRoot">
-            <div class="banner-success">
-              {{ settings.checkout_discount_success_message }}
-            </div>
-          </div>
+          {% render 'checkout-discount-banner' %}
         {%- endif -%}
       </div>
 
