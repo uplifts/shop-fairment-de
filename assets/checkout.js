@@ -140,10 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //         }
 
 const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
-  console.log('discountDataEl');
-  console.log(discountDataEl);
   if (discountDataEl) {
-    let discountMoney = discountDataEl.dataset.checkoutDiscountAmountTarget;
+    let discountMoney = discountDataEl;
     discountNumberEl.forEach(el => {
       el.innerHTML = Number(discountMoney) / 100;
     });
@@ -159,6 +157,7 @@ import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
   console.log(e); 
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+  let discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   if (discountTotalTargets) {
     setTimeout(() => {
@@ -173,7 +172,7 @@ $checkout.on('load', (e) => {
         console.log(discountSuccessMessageTarget2);
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
-      handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+      handleDiscountSuccessMessage(discountNumber, discountTotalTargets);
     }, 500);
   }
 });
