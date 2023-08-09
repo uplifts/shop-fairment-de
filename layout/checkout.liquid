@@ -214,9 +214,7 @@
       {{ tracking_code }}
 
       <div class="d-none">
-        {%- if settings.checkout_discount_success_message -%}
-          {% render 'checkout-discount-banner' %}
-        {%- endif -%}
+        {% render 'checkout-discount-banner' %}
       </div>
 
     </body>
