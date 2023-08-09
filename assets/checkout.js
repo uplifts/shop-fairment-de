@@ -104,8 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   var changesObserver = { attributes: true, childList: true, characterData: true }
 
-  if (checkoutTotalLines.length) {
+  if (checkoutTotalLines) {
     console.log(checkoutTotalLines);
+    console.log('checkoutTotalLines');
     changesObserver.observe(checkoutTotalLines, changesObserver);
   }
 
