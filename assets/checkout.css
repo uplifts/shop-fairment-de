@@ -646,6 +646,12 @@ html.no-ablyft .countdown-panel.countdown-2 {
   display: none;
 }
 
+.order-summary__section--discount .tags-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .checkout-breadcrumbs .checkout-discount-banner {
   flex: 0 0 100%;
   max-width: 100%;
