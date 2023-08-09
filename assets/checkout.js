@@ -93,13 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
     secondPaymentMethodTrigger.click();
   }
 
-  var checkoutTotalLines = document.querySelector('#order-summary');
+  var checkoutTotalLines = document.querySelector('.sidebar__content');
   var changesObserver = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.type === 'childList') {
         // Do some stuff
-        console.log('mutate');
+        console.log('mutation');
       }
+      console.log(mutation);
     });
   });
   var changesObserver = { attributes: true, childList: true, characterData: true }
