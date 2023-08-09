@@ -177,6 +177,7 @@ $checkout.on('load', (e) => {
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   console.log(discountSuccessMessageRoot);
   console.log(discountSuccessMessageTarget2);
+  discountSuccessMessageTarget2.classList.add('sukaBlyat');
   if (discountTotalTargets) {
     setTimeout(() => {
       handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
