@@ -178,6 +178,8 @@ $checkout.on('load', (e) => {
   console.log(discountSuccessMessageRoot);
   console.log(discountSuccessMessageTarget2);
   if (discountTotalTargets) {
-    handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+    setTimeout(() => {
+      handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+    }, 1000);
   }
 });
