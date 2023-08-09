@@ -140,6 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //         }
 
 const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
+  console.log('discountDataEl');
+  console.log(discountDataEl);
   if (discountDataEl) {
     let discountMoney = discountDataEl.dataset.checkoutDiscountAmountTarget;
     discountNumberEl.forEach(el => {
