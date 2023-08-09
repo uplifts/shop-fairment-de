@@ -129,18 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-
-const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
-  if (discountDataEl) {
-    let discountMoney = discountDataEl.dataset.checkoutDiscountAmountTarget;
-    discountNumberEl.forEach(el => {
-      el.innerHTML = Number(discountMoney) / 100;
-    });
-    document.documentElement.classList.add('discount-applied');
-  } else {
-    document.documentElement.classList.remove('discount-applied');
-  }
-}
 // Adding Discount below Breadcrumbs
 
 // discount();
