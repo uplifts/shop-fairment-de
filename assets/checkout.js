@@ -152,19 +152,6 @@ const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
 }
 
 const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
-const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
-
-if (discountSuccessMessageTarget1) {
-  discountSuccessMessageTarget1.appendChild(discountSuccessMessageRoot.cloneNode(true));
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
-  let discountTotalTargets = document.querySelectorAll('.discountTotal');
-  if (discountTotalTargets) {
-    handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
-  }
-});
 
 import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
@@ -173,7 +160,12 @@ $checkout.on('load', (e) => {
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   if (discountTotalTargets) {
     setTimeout(() => {
+      const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
       const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
+
+      if (discountSuccessMessageTarget1) {
+        discountSuccessMessageTarget1.appendChild(discountSuccessMessageRoot.cloneNode(true));
+      }
       if (discountSuccessMessageTarget2 && ! discountSuccessMessageTarget2.querySelector('.discountSuccessMessageRoot')) {
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
