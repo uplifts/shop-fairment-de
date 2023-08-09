@@ -36,13 +36,15 @@
         {% comment %} console.log(mutation); {% endcomment %}
         if (mutation.type === 'childList') {
           // Do some stuff
-          let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
-          let discountTotalTargets = document.querySelectorAll('.discountTotal');
-          if (discountTotalTargets) {
-            console.log('discountTotalTargets');
-            console.log(discountNumberLineEl);
-            handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
-          }
+          setTimeout(() => {
+            let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+            let discountTotalTargets = document.querySelectorAll('.discountTotal');
+            if (discountTotalTargets) {
+              console.log('discountTotalTargets');
+              console.log(discountNumberLineEl);
+              handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+            }
+          }, 500)
         }
       });
     });
