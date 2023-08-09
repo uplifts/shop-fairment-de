@@ -156,11 +156,12 @@ const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessa
 import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
   console.log(e);
+  var discountNumber = null;
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   if (discountNumberLineEl) {
-    window.discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
+    discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
   } else if (window.discountAmount) {
-    window.discountNumber = window.discountAmount;
+    discountNumber = window.discountAmount;
   }
 
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
