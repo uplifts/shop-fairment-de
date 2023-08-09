@@ -158,13 +158,13 @@ $checkout.on('load', (e) => {
   console.log(e);
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   if (discountNumberLineEl) {
-    let discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
+    window.discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
   } else if (window.discountAmount) {
-    let discountNumber = window.discountAmount;
+    window.discountNumber = window.discountAmount;
   }
 
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
-  if (discountTotalTargets && (typeof discountNumber !== 'undefined')) {
+  if (discountTotalTargets && (typeof window.discountNumber !== 'undefined')) {
     setTimeout(() => {
       const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
       const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
@@ -177,7 +177,7 @@ $checkout.on('load', (e) => {
         console.log(discountSuccessMessageTarget2);
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
-      handleDiscountSuccessMessage(discountNumber, discountTotalTargets);
+      handleDiscountSuccessMessage(window.discountNumber, discountTotalTargets);
     }, 500);
   }
 });
