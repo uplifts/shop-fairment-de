@@ -55,7 +55,7 @@
     }
     
     document.addEventListener('DOMContentLoaded', () => {
-      let discountNumberLineEl = observedElement.querySelector('[data-checkout-discount-amount-target]');
+      let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
       let discountTotalTargets = document.querySelectorAll('.discountTotal');
       console.log(discountTotalTargets);
       if (discountTotalTargets) {
