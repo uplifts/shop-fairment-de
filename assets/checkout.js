@@ -140,9 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //         }
 
 const handleDiscountSuccessMessage = (discountAmount, discountNumberEl) => {
-  console.log(discountAmount);
   if (discountAmount) {
     discountNumberEl.forEach(el => {
+      console.log(Number(discountAmount) / 100);
       el.innerHTML = Number(discountAmount) / 100;
     });
     document.documentElement.classList.add('discount-applied');
