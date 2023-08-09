@@ -207,9 +207,11 @@
         </div>
       </div>
 
-      <script>
-        window.discountAmount = '{{ checkout.discounts_amount }}';
-      </script>
+      {%- if checkout.discounts_amount > 0 -%}        
+        <script>
+          window.discountAmount = '{{ checkout.discounts_amount }}';
+        </script>
+      {%- endif -%}
       <script type="module" src="{{ 'shopify-checkout.js' | asset_url }}"></script>
       <script type="module" src="{{ 'checkout.js' | asset_url }}"></script>
       {% render 'checkout-discount-banner' %}
