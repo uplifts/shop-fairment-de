@@ -8118,7 +8118,7 @@ input:checked + .popover__choice-label::after,
 /* Free shipping bar */
 
 .shipping-bar {
-  display: none;
+  display: block; 
   margin-top: 16px;
   margin-bottom: 4px;
   margin-left: auto;
@@ -8126,6 +8126,10 @@ input:checked + .popover__choice-label::after,
   width: 100%;
   text-align: center;
   background-color: white;
+}
+
+.docapp-cart-item.docapp-free-shipping-promo {
+  display: none; 
 }
 
 .shipping-bar__text {
