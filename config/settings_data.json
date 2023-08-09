@@ -60,6 +60,7 @@
     "fg_threshold": 60,
     "fg_a": "fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika",
     "fg_b": "kombucha-set-fairment-original-neu",
+    "checkout_discount_success_message": "<div style=\"font-weight:600\">Rabattcode erfolgreich aktiviert! 🥳<\/div>\n<span style=\"font-weight:500\">Du sparst <span class=\"discountTotal\">13,96<\/span> Euro<\/span> auf deine Bestellung!",
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-Header-box-final-alternate.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
