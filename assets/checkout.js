@@ -163,7 +163,7 @@ var changesObserver = new MutationObserver(function(mutations) {
       // Do some stuff
       let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
       let discountTotalTargets = document.querySelectorAll('.discountTotal');
-      console.log(discountNumberLineEl);
+      console.log('childList');
       if (discountTotalTargets) {
         handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
       }
