@@ -99,6 +99,18 @@ document.addEventListener('DOMContentLoaded', function() {
     checkoutSupportBoxMain.appendChild(checkoutSupportBoxEl.cloneNode(true));
   }
 
+  const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
+  const discountSuccessMessage1 = document.querySelector('.checkout-breadcrumbs');
+  const discountSuccessMessage2 = document.querySelector('.order-summary__section--discount');
+  if (discountSuccessMessageRoot) {
+    if (discountSuccessMessage1) {
+      discountSuccessMessage1.appendChild(discountSuccessMessageRoot.cloneNode(true));
+    }
+    if (discountSuccessMessage2) {
+      discountSuccessMessage2.appendChild(discountSuccessMessageRoot.cloneNode(true));
+    }
+  }
+
   // Countdown timer
   var timerCounter = document.querySelectorAll('.timerCounter');
   if (timerCounter) {
