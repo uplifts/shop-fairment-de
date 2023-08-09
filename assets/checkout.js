@@ -158,7 +158,7 @@ $checkout.on('load', (e) => {
   console.log(e);
   var discountNumber = null;
   let discountNumberLineElMain = document.querySelector('[data-checkout-discount-amount-target]');
-  let discountNumberLineEl = document.querySelector('.reduction-code__text');
+  let discountNumberLineEl = document.querySelector('.order-summary__section--product-list .reduction-code__text');
   if (discountNumberLineEl) {
     let splitParts = discountNumberLineEl.innerHTML.split(' (-')[1].split(' €)')[0].replace(',', '');
     discountNumber = splitParts;
