@@ -651,6 +651,12 @@ html.no-ablyft .countdown-panel.countdown-2 {
   max-width: 100%;
   margin-top: 30px;
 }
+
+.checkout-breadcrumbs .checkout-discount-banner {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 40px;
+}
 /* END ID - 09.08.23 - Checkout - Discount success message */
 
 
