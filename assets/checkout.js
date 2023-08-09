@@ -166,8 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   if (discountTotalTargets) {
-    console.log('discountTotalTargets');
-    console.log(discountNumberLineEl);
     handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
   }
 });
@@ -177,6 +175,8 @@ $checkout.on('load', (e) => {
   console.log(e); 
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
+  console.log(discountNumberLineEl);
+  console.log(discountTotalTargets);
   if (discountTotalTargets) {
     const discountSuccessMessageInSidebar = document.querySelector('.order-summary__section--discount .discountSuccessMessageRoot');
     if (! discountSuccessMessageInSidebar) {
