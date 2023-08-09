@@ -178,6 +178,6 @@ $checkout.on('load', (e) => {
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
       handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
-    }, 1000);
+    }, 500);
   }
 });
