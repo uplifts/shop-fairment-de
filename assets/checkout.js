@@ -174,10 +174,7 @@ $checkout.on('load', (e) => {
   if (discountTotalTargets) {
     setTimeout(() => {
       const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
-      console.log(discountSuccessMessageRoot);
-      console.log(discountSuccessMessageTarget2);
-      discountSuccessMessageTarget2.classList.add('sukaBlyat');
-      if (discountSuccessMessageTarget2) {
+      if (discountSuccessMessageTarget2 && ! discountSuccessMessageTarget2.querySelector('.discountSuccessMessageRoot')) {
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
       handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
