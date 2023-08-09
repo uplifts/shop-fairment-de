@@ -171,12 +171,12 @@ $checkout.on('load', (e) => {
   console.log(e); 
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
-  console.log(discountSuccessMessageRoot);
-  console.log(discountSuccessMessageTarget2);
-  discountSuccessMessageTarget2.classList.add('sukaBlyat');
   if (discountTotalTargets) {
     setTimeout(() => {
       const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
+      console.log(discountSuccessMessageRoot);
+      console.log(discountSuccessMessageTarget2);
+      discountSuccessMessageTarget2.classList.add('sukaBlyat');
       if (discountSuccessMessageTarget2) {
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
