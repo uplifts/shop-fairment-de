@@ -18,7 +18,7 @@
       discountSuccessMessage2.appendChild(discountSuccessMessageRoot.cloneNode(true));
     }
     
-    var observedElement = document.querySelector('.sidebar');
+    var observedElement = document.querySelector('body');
     var changesObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
         console.log(mutation);
