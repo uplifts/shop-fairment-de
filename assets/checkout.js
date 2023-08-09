@@ -102,7 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
   const discountSuccessMessage1 = document.querySelector('.checkout-breadcrumbs');
   const discountSuccessMessage2 = document.querySelector('.order-summary__section--discount');
+  const orderTotalWrapper = document.querySelector('.order-summary__section--discount');
   if (discountSuccessMessageRoot) {
+
     if (discountSuccessMessage1) {
       discountSuccessMessage1.appendChild(discountSuccessMessageRoot.cloneNode(true));
     }
