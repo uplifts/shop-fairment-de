@@ -176,6 +176,10 @@ $checkout.on('load', (e) => {
   discountSuccessMessageTarget2.classList.add('sukaBlyat');
   if (discountTotalTargets) {
     setTimeout(() => {
+      const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
+      if (discountSuccessMessageTarget2) {
+        discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
+      }
       handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
     }, 1000);
   }
