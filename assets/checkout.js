@@ -153,13 +153,9 @@ const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
 
 const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
 const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
-const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
 
 if (discountSuccessMessageTarget1) {
   discountSuccessMessageTarget1.appendChild(discountSuccessMessageRoot.cloneNode(true));
-}
-if (discountSuccessMessageTarget2) {
-  discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
