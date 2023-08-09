@@ -180,7 +180,7 @@ $checkout.on('load', (e) => {
         console.log(discountSuccessMessageTarget2);
         discountSuccessMessageTarget2.appendChild(discountSuccessMessageRoot.cloneNode(true));
       }
-      handleDiscountSuccessMessage(window.discountNumber, discountTotalTargets);
+      handleDiscountSuccessMessage(discountNumber, discountTotalTargets);
     }, 500);
   }
 });
