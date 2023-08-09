@@ -161,7 +161,11 @@ var changesObserver = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
     if (mutation.type === 'childList') {
       // Do some stuff
-      let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target');
+      let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
+      let discountTotalTargets = document.querySelectorAll('.discountTotal');
+      if (discountTotalTargets) {
+        handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+      }
     }
   });
 });
