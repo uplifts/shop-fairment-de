@@ -93,6 +93,21 @@ document.addEventListener('DOMContentLoaded', function() {
     secondPaymentMethodTrigger.click();
   }
 
+  var checkoutTotalLines = document.querySelector('.order-summary__section--total-lines');
+  var changesObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'childList') {
+        // Do some stuff
+        console.log('mutate');
+      }
+    });
+  });
+  var config = { attributes: true, childList: true, characterData: true }
+
+  if (target.length) {
+    changesObserver.observe(target, config);
+  }
+
   const checkoutSupportBoxEl = document.querySelector('.checkoutSupportBoxEl');
   const checkoutSupportBoxMain = document.querySelector('.checkoutSupportBoxMain');
   if (checkoutSupportBoxEl && checkoutSupportBoxMain) {
