@@ -15133,6 +15133,7 @@ shopify-payment-terms {
 .announcement-bar--side {
   flex: 0 0 82px;
   max-width: 82px;
+  position: relative;
 }
 
 .announcement-bar--row .announcement-bar {
