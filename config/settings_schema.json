@@ -769,7 +769,8 @@
       {
         "type": "liquid",
         "id": "checkout_discount_success_message",
-        "label": "Checkout discount success message"
+        "label": "Checkout discount success message",
+        "info": "Use <span class=\"discountTotal\">10.00<\/span> for dynamic total amount placeholder"
       }
     ]
   }
