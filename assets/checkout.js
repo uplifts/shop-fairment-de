@@ -102,12 +102,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  var changesObserver = { attributes: true, childList: true, characterData: true }
+  var changesObserverConfig = { attributes: true, childList: true, characterData: true }
 
   if (checkoutTotalLines) {
     console.log(checkoutTotalLines);
     console.log('checkoutTotalLines');
-    changesObserver.observe(checkoutTotalLines, changesObserver);
+    changesObserver.observe(checkoutTotalLines, changesObserverConfig);
   }
 
   const checkoutSupportBoxEl = document.querySelector('.checkoutSupportBoxEl');
