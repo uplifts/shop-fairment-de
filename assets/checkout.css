@@ -635,6 +635,9 @@ html.no-ablyft .countdown-panel.countdown-2 {
 /* END ID - 20.07.23 - Checkout - Support box */
 
 /* START ID - 09.08.23 - Checkout - Discount success message */
+.banner-success {
+  background-color: #EAF2EB;
+}
 /* END ID - 09.08.23 - Checkout - Discount success message */
 
 
