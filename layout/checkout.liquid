@@ -207,11 +207,14 @@
         </div>
       </div>
 
+      <script>
+        window.discountAmount = '{{ checkout.discounts_amount }}';
+      </script>
       <script type="module" src="{{ 'shopify-checkout.js' | asset_url }}"></script>
       <script type="module" src="{{ 'checkout.js' | asset_url }}"></script>
       {% render 'checkout-discount-banner' %}
       {% render 'js-freegift' %}
-  
+      
       {{ tracking_code }}
     </body>
   </html>
