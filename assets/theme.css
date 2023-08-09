@@ -17617,3 +17617,43 @@ visibility: hidden;
   bottom: 100%;
 }
 /* END ID - 27.07.23 - Price per use experiment */
+
+/* Three Column USP Experiment */
+.three_usp_wrapper {
+  display:block;
+}
+
+.three_usp {
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.usp {
+  border-radius: 10px;
+border: 1px dashed #E8E8E8;
+background: #F9F9F9;
+    padding:5px;
+  width: 115px;
+}
+
+.usp p {
+  margin:0;
+  color: #343434;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+
+@media (max-width:600px) {
+  .usp {
+  width: 105px;
+  }
+}
+
+[dir="ltr"] .line-item__price-list-container {
+    flex-direction: column;
+}
