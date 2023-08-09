@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Do some stuff
         console.log('mutation');
       }
-      console.log(mutation);
     });
   });
   var changesObserver = { attributes: true, childList: true, characterData: true }
