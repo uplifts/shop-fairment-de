@@ -764,7 +764,7 @@
     ]
   },
   {
-    "name": "Checkout",
+    "name": "Checkout (custom)",
     "settings": [
       {
         "type": "liquid",
