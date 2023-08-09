@@ -21,7 +21,7 @@
     var observedElement = document.querySelector('body');
     var changesObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
-        console.log(mutation);
+        {% comment %} console.log(mutation); {% endcomment %}
         if (mutation.type === 'childList') {
           // Do some stuff
           let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
