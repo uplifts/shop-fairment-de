@@ -157,7 +157,8 @@ import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
   console.log(e);
   var discountNumber = null;
-  let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+  // let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+  let discountNumberLineEl = document.querySelector('.reduction-code__text');
   if (discountNumberLineEl) {
     discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
   } else if (window.discountAmount) {
