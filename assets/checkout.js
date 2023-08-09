@@ -157,13 +157,13 @@ import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
   console.log(e);
   var discountNumber = null;
-  // let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+  let discountNumberLineElMain = document.querySelector('[data-checkout-discount-amount-target]');
   let discountNumberLineEl = document.querySelector('.reduction-code__text');
   if (discountNumberLineEl) {
     let splitParts = discountNumberLineEl.innerHTML.split(' (-')[1].split(' €)')[0].replace(',', '');
-    console.log(splitParts);
-    console.log(Number(splitParts));
-    discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
+    discountNumber = splitParts;
+  } else if (discountNumberLineElMain) {
+    discountNumber = discountNumberLineElMain.dataset.checkoutDiscountAmountTarget;
   } else if (window.discountAmount) {
     discountNumber = window.discountAmount;
   }
