@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     secondPaymentMethodTrigger.click();
   }
 
-  var checkoutTotalLines = document.querySelector('.sidebar__content');
+  var checkoutTotalLines = document.querySelector('.order-summary__section--total-lines');
   var changesObserver = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.type === 'childList') {
