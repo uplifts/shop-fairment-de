@@ -139,11 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
           
 //         }
 
-const handleDiscountSuccessMessage = (discountDataEl, discountNumberEl) => {
-  if (discountDataEl) {
-    let discountMoney = discountDataEl;
+const handleDiscountSuccessMessage = (discountAmount, discountNumberEl) => {
+  console.log(discountAmount);
+  if (discountAmount) {
     discountNumberEl.forEach(el => {
-      el.innerHTML = Number(discountMoney) / 100;
+      el.innerHTML = Number(discountAmount) / 100;
     });
     document.documentElement.classList.add('discount-applied');
   } else {
