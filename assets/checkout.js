@@ -167,6 +167,7 @@ $checkout.on('load', (e) => {
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   console.log(typeof discountNumber);
   if (discountTotalTargets && (typeof discountNumber !== 'undefined')) {
+    console.log(discountNumber);
     setTimeout(() => {
       const discountSuccessMessageTarget1 = document.querySelector('.checkout-breadcrumbs');
       const discountSuccessMessageTarget2 = document.querySelector('.order-summary__section--discount');
