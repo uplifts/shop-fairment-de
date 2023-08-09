@@ -157,8 +157,10 @@ import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
   console.log(e); 
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
-  let discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
-  
+  if (discountNumberLineEl) {
+    let discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
+  }
+
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
   if (discountTotalTargets) {
     setTimeout(() => {
