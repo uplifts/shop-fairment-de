@@ -1,0 +1,47 @@
+<script>
+  const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessageRoot');
+  const discountSuccessMessage1 = document.querySelector('.checkout-breadcrumbs');
+  const discountSuccessMessage2 = document.querySelector('.order-summary__section--discount');
+  const orderTotalWrapper = document.querySelector('.order-summary__section--discount');
+  if (discountSuccessMessageRoot) {
+  
+    if (discountSuccessMessage1) {
+      discountSuccessMessage1.appendChild(discountSuccessMessageRoot.cloneNode(true));
+    }
+    if (discountSuccessMessage2) {
+      discountSuccessMessage2.appendChild(discountSuccessMessageRoot.cloneNode(true));
+    }
+  }
+  
+  var checkoutTotalLines = document.querySelector('.order-summary__section--total-lines');
+  var changesObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      console.log(mutation);
+      if (mutation.type === 'childList') {
+        // Do some stuff
+        let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
+        let discountTotalTargets = document.querySelectorAll('.discountTotal');
+        console.log(discountTotalTargets);
+        if (discountTotalTargets) {
+          handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+        }
+      }
+    });
+  });
+  var changesObserverConfig = { attributes: true, childList: true, characterData: true }
+  
+  if (checkoutTotalLines) {
+    console.log(checkoutTotalLines);
+    console.log('checkoutTotalLines');
+    changesObserver.observe(checkoutTotalLines, changesObserverConfig);
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
+    let discountTotalTargets = document.querySelectorAll('.discountTotal');
+    console.log(discountTotalTargets);
+    if (discountTotalTargets) {
+      handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+    }
+  });
+</script>
