@@ -155,10 +155,12 @@ const discountSuccessMessageRoot = document.querySelector('.discountSuccessMessa
 
 import { $checkout } from './shopify-checkout.js';
 $checkout.on('load', (e) => {
-  console.log(e); 
+  console.log(e);
   let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   if (discountNumberLineEl) {
     let discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
+  } else if (window.discountAmount) {
+    let discountNumber = window.discountAmount;
   }
 
   let discountTotalTargets = document.querySelectorAll('.discountTotal');
