@@ -769,7 +769,7 @@
       {
         "type": "liquid",
         "id": "checkout_discount_success_message",
-        "label": "Discount Code for Buy X Get Y"
+        "label": "Checkout discount success message"
       }
     ]
   }
