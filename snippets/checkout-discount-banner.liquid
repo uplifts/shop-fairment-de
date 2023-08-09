@@ -33,7 +33,7 @@
     var observedElement = document.querySelector('html');
     var changesObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
-        {% comment %} console.log(mutation); {% endcomment %}
+        console.log(mutation);
         if (mutation.type === 'childList') {
           // Do some stuff
           setTimeout(() => {
