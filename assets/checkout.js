@@ -160,7 +160,7 @@ $checkout.on('load', (e) => {
   // let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
   let discountNumberLineEl = document.querySelector('.reduction-code__text');
   if (discountNumberLineEl) {
-    let splitParts = discountNumberLineEl.innerHTML.split(' (-');
+    let splitParts = discountNumberLineEl.innerHTML.split(' (-')[1].split(' €)')[0];
     console.log(splitParts);
     discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
   } else if (window.discountAmount) {
