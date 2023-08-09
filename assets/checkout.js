@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   var checkoutTotalLines = document.querySelector('.order-summary__section--total-lines');
-  console.log(checkoutTotalLines);
   var changesObserver = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.type === 'childList') {
@@ -106,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var changesObserver = { attributes: true, childList: true, characterData: true }
 
   if (checkoutTotalLines.length) {
+    console.log(checkoutTotalLines);
     changesObserver.observe(checkoutTotalLines, changesObserver);
   }
 
