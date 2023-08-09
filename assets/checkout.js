@@ -163,7 +163,7 @@ if (discountSuccessMessage2) {
   discountSuccessMessage2.appendChild(discountSuccessMessageRoot.cloneNode(true));
 }
 
-var observedElement = document.querySelector('html');
+var observedElement = document.querySelector('html1');
 var changesObserver = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
     if (mutation.type === 'childList') {
@@ -197,7 +197,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 import { $checkout } from './shopify-checkout.js';
-$checkout.on('load', (e) => { console.log(e); })
-$checkout.on('field:changed', (e) => { console.log(e); })
-$checkout.on('field:created', (e) => { console.log(e); })
-$checkout.on('field:removed', (e) => { console.log(e); })
+$checkout.on('load', (e) => {
+  console.log(e); 
+  let discountNumberLineEl = document.querySelector('[data-checkout-discount-amount-target]');
+  let discountTotalTargets = document.querySelectorAll('.discountTotal');
+  if (discountTotalTargets) {
+    console.log('discountTotalTargets');
+    console.log(discountNumberLineEl);
+    handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+  }
+});
