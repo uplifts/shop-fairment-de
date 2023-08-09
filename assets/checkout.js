@@ -177,7 +177,13 @@ if (checkoutTotalLines) {
   changesObserver.observe(checkoutTotalLines, changesObserverConfig);
 }
 
-
+document.addEventListener('DOMContentLoaded', () => {
+  let discountNumberLineEl = checkoutTotalLines.querySelector('[data-checkout-discount-amount-target]');
+  let discountTotalTargets = document.querySelectorAll('.discountTotal');
+  if (discountTotalTargets) {
+    handleDiscountSuccessMessage(discountNumberLineEl, discountTotalTargets);
+  }
+});
 // Adding Discount below Breadcrumbs
 
 // discount();
