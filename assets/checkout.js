@@ -162,6 +162,7 @@ $checkout.on('load', (e) => {
   if (discountNumberLineEl) {
     let splitParts = discountNumberLineEl.innerHTML.split(' (-')[1].split(' €)')[0];
     console.log(splitParts);
+    console.log(Number(splitParts));
     discountNumber = discountNumberLineEl.dataset.checkoutDiscountAmountTarget;
   } else if (window.discountAmount) {
     discountNumber = window.discountAmount;
