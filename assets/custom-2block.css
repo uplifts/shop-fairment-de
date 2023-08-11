@@ -948,8 +948,8 @@ li.tag_item {
 *:not(".announcement-bar--wrapper") { font-family: 'Helvetica' !important;}
 .blog-banner .banner__content .section__title h1{
 
-    font-size: 40px;
-  line-height:40px;
+    font-size: 45px;
+  line-height:45px;
 }
 .article-content .article{
   margin:0;
