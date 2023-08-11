@@ -146,7 +146,6 @@
     },
     "936e9df5-c065-4217-830a-f486006c10e2": {
       "type": "logo-list",
-      "disabled": true,
       "blocks": {
         "782e9dd2-36ed-4c00-9245-7e85f8a3d83f": {
           "type": "logo",
@@ -183,6 +182,7 @@
         "08ac36e0-d1c2-4bf0-90e9-47182a3c960b",
         "77b0d1a7-efce-4383-b5a2-2167d72ed7db"
       ],
+      "disabled": true,
       "settings": {
         "items_per_row_mobile": 2,
         "reveal_on_scroll": true,
@@ -339,7 +339,7 @@
       ],
       "settings": {
         "css_class": "",
-        "subheading": "Entdecke unsere Produkte für ein gutes Bauchgefühl",
+        "subheading": "Entdecke unsere Produkte",
         "title": "LASS MIKROBEN TOBEN!",
         "section_size": "large",
         "have_overlay": true,
@@ -351,7 +351,6 @@
     },
     "featured-collections": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "collection-1": {
           "type": "collection",
@@ -395,6 +394,7 @@
         "91be869c-3344-46a2-ba91-df6d824e9971",
         "49b97828-8769-493e-8998-d8286e22158b"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "Lass die Mikroben toben!",
@@ -413,7 +413,6 @@
     },
     "1662395332e7d208e9": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "1662395332e03334e9-0": {
           "type": "item",
@@ -486,6 +485,7 @@
         "1662395332e03334e9-3",
         "7ab04da6-d6de-4301-bbfa-bb72450af0b3"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -515,7 +515,7 @@
             "subheading": "Über uns",
             "title": "FAIRMENT BRINGT  LEBEN IN DIE BUDE.",
             "title_fallback": "",
-            "content": "<p>fairment hat seine Wurzeln in Berlin. Seit 10 Jahren wachsen wir so natürlich wie unsere Produktpalette. Ganz ohne Zusatzstoffe. Bei fairment stimmt nur die Biochemie. Wir sorgen mit fermentierten Lebensmitteln und innovativen Darmbakterien und Ballaststoffen für ein gutes Bauchgefühl.<\/p>",
+            "content": "<p>fairment hat seine Wurzeln in Berlin. Seit 10 Jahren wachsen wir so natürlich wie unsere Produktpalette. Ganz ohne Zusatzstoffe. Bei fairment stimmt nur die Biochemie. Wir sorgen mit fermentierten Lebensmitteln und innovativen Darmbakterien und Ballaststoffen.<\/p>",
             "content_fallback": "",
             "button_text": "Mehr über uns",
             "button_link": "shopify:\/\/pages\/uber-uns"
@@ -687,7 +687,6 @@
     },
     "35b37711-a6e7-4955-8c1b-45d798612010": {
       "type": "gallery",
-      "disabled": true,
       "blocks": {
         "template--17862827409672__35b37711-a6e7-4955-8c1b-45d798612010-1677694323e05b2fbb-0": {
           "type": "image",
@@ -732,6 +731,7 @@
         "a2ff3131-9134-4c94-860c-92f26aa94109",
         "cd72ad7e-7d77-4122-89bc-a7dbc9a6afc1"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "UGC",
         "title": "UGC",
@@ -795,7 +795,6 @@
     },
     "16625648601f001c2a": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "56b7c172-e5e8-4d89-8b2a-b5a5d92db062": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-text-banner\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -836,6 +835,7 @@
         "56b7c172-e5e8-4d89-8b2a-b5a5d92db062",
         "d990f684-a8a9-492b-a678-2ad993cc560d"
       ],
+      "disabled": true,
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
