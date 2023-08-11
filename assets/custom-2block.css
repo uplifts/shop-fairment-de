@@ -895,10 +895,12 @@ ul.tags-list {
 }
 li.tag_item {
     list-style: none;
-    border-radius: 7px;
-    background: #2ABB4A;
-    padding: 0.2rem 2rem;
-    color: white;
+    border-radius: 6px;
+    background: transparent;
+    padding: 0.2rem 1rem;
+    font-size: 12px;
+    color: #2D3881;
+    border: 1px solid #2D3881;
 }
 .section__subtitle p {
        margin: 11px 0 !important;
