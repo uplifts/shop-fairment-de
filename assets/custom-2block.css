@@ -954,8 +954,8 @@ li.tag_item {
 .article-content .article{
   margin:0;
 }
-.article-content p{
-  font-size:20px;
+.article-container p{
+  font-size:20px !important;
   color:#000;
 }
 #shopify-section-blog-new-design > div.article-content > div > div.article-container > article > div > p:nth-child(2) {
