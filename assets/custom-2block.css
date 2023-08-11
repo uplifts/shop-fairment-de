@@ -945,7 +945,7 @@ li.tag_item {
     line-height: 15px;
     letter-spacing: 0em;
 }
-*:not(.announcement-bar--wrapper) { font-family: 'Helvetica' !important;}
+*:not(".announcement-bar--wrapper") { font-family: 'Helvetica' !important;}
 .blog-banner .banner__content .section__title h1{
 
     font-size: 40px;
