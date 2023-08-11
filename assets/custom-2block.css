@@ -963,7 +963,10 @@ li.tag_item {
 }
 ::marker {
     font-size: 14px !important;
-  font-family:'Open Sans', sans-serif;
+  font-family:'Helvetica', sans-serif;
+}
+.tags-container {
+    font-size: 12px;
 }
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
