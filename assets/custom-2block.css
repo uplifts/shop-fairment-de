@@ -951,10 +951,10 @@ li.tag_item {
     font-size: 40px;
   line-height:40px;
 }
-.article{
+.article-content .article{
   margin:0;
 }
-p{
+.article-content p{
   font-size:20px;
 }
 @media only screen and (max-width:768px){
