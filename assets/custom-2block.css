@@ -957,6 +957,12 @@ li.tag_item {
 .article-content p{
   font-size:20px;
 }
+#shopify-section-blog-new-design > div.article-content > div > div.article-container > article > div > p:nth-child(2) {
+    margin-top: 0;
+}
+::marker {
+    font-size: 14px !important;
+}
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
     font-size:11px;
