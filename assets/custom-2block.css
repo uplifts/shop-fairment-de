@@ -72,7 +72,8 @@
     border-bottom: 1px solid;
     border-bottom-color: #00000026;
     position: relative;
-    display: inline-block;
+    display: none;
+    
   }
   #shopify-section-blog-new-design .article-container .article__body.rte a:not(.rte__image):not(.btn):not(.spr-summary-actions-newreview):after{
     content: "";
