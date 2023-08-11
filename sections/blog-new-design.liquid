@@ -9,6 +9,11 @@
   <div class="banner__content">
       {% render 'breadcrumbs' %}
 
+
+
+    <div class="section__title">
+      <h1 style="color: #fff;">{{ article.title }}</h1>
+    </div>
     <div class="tags-container">
       <ul class="tags-list">
         {%- for tag in article.tags -%}
@@ -21,11 +26,6 @@
         {%- endfor -%}
       </ul>
     </div>
-
-    <div class="section__title">
-      <h1 style="color: #fff;">{{ article.title }}</h1>
-    </div>
-
 
     {% for author in shop.metaobjects.autor.values %}
       <div class="person-block">
@@ -40,18 +40,7 @@
       </div>
     {% endfor %}
 
-    <div class="date__section">
-      <div class="reading_time">
-        {% if article.metafields.custom.lesezeit != blank %}
-          Lesezeit ca. {{ article.metafields.custom.lesezeit }} Minuten
-        {% endif %}
-      </div>
-      <span>{{ article.published_at | date: '%d.%m.%Y' }}</span>
-      <span>{{ article.created_at | date: '%d.%m.%Y' }}</span>
-      <div class="comments">
-        <a href="#comments">{{ article.comments_count }}&nbsp;{{ 'blogs.comments.title' | t }}</a>
-      </div>
-    </div>
+
 
     {% for doc in shop.metaobjects.doktorin.values %}
       <div class="person-block">
@@ -67,6 +56,19 @@
         </div>
       </div>
     {% endfor %}
+
+        <div class="date__section">
+      <div class="reading_time">
+        {% if article.metafields.custom.lesezeit != blank %}
+          Lesezeit ca. {{ article.metafields.custom.lesezeit }} Minuten
+        {% endif %}
+      </div>
+      <span>{{ article.published_at | date: '%d.%m.%Y' }}</span>
+      <span>{{ article.created_at | date: '%d.%m.%Y' }}</span>
+      <div class="comments">
+        <a href="#comments">{{ article.comments_count }}&nbsp;{{ 'blogs.comments.title' | t }}</a>
+      </div>
+    </div>
   </div>
 </div>
 
