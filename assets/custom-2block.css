@@ -790,6 +790,7 @@ body section.blog-section .row {
     display: grid;
     background: #ECECFA;
     margin-top: 0;
+   grid-template-columns:1fr 1fr;
 }
  .blog-banner .banner__content {
     position: static;
