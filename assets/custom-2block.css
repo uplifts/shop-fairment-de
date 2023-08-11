@@ -787,15 +787,14 @@ body section.blog-section .row {
 }
 
  .blog-banner {
-    display: flex;
+    display: grid;
     background: #ECECFA;
     margin-top: 0;
 }
  .blog-banner .banner__content {
     position: static;
     transform: inherit;
-    flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 100%;
     padding: 45px 90px;
     display: flex;
     flex-direction: column;
@@ -805,8 +804,7 @@ body section.blog-section .row {
 } 
  .blog-banner img {
     order: 1;
-    flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 100%;
     height: 100%;
 }
  .blog-banner .banner__content .section__title {
