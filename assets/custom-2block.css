@@ -956,6 +956,7 @@ li.tag_item {
 }
 .article-content p{
   font-size:20px;
+  color:#000;
 }
 #shopify-section-blog-new-design > div.article-content > div > div.article-container > article > div > p:nth-child(2) {
     margin-top: 0;
