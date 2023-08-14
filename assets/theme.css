@@ -13,7 +13,6 @@
     display: none !important;
   }
 }
-.badge
 @media screen and (min-width: 741px) {
   .hidden-tablet-and-up {
     display: none !important;
