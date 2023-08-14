@@ -17574,6 +17574,7 @@ visibility: hidden;
     line-height: normal;
     border-radius: 3px;
     padding:3px 5px;
+    display: none; 
     }
 
     @media (max-width:600px) {
