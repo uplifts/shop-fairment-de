@@ -42,7 +42,7 @@
             "video_url": "",
             "image": "shopify:\/\/shop_images\/Paul_Seelhorst.jpg",
             "tab_label": "Item",
-            "subheading": "Über den Autor",
+            "subheading": "",
             "title": "Paul Seelhorst",
             "title_fallback": "",
             "content": "<p><strong>Ausgebildeter Darm-Immuntherapeut & Food Coach<\/strong><br\/><br\/>Nach einer persönlichen Gesundheitskrise mit Ende 20 schaffte Paul Seelhorst es, sich von Autoimmunsymptomen, Allergien und mentalen Beschwerden zu befreien. <\/p><p>Seitdem hat er es sich zur Mission gemacht, Menschen darüber aufzuklären und ihnen praktische Werkzeuge mit an die Hand zu geben, um ihre Gesundheit selbst zu optimieren und chronischen Leiden nachhaltig in den Griff zu bekommen.<\/p>",
@@ -64,7 +64,7 @@
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
         "rounded_corners": false,
-        "accent_background": "#00148c",
+        "accent_background": "#f17217",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -83,7 +83,7 @@
             "subheading": "",
             "title": "Interviews & Presse",
             "title_fallback": "",
-            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\"><strong>fr.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\"><strong>bz-berlin.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\"><strong>gruender.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\"><strong>vox.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.lebensmittelmagazin.de\/wirtschaft\/20210316-was-lange-gaert-wird-endlich-gut-kombucha\/\" title=\"https:\/\/www.lebensmittelmagazin.de\/wirtschaft\/20210316-was-lange-gaert-wird-endlich-gut-kombucha\/\"><strong>lebensmittelmagazin.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.sueddeutsche.de\/leben\/buntes-blubbernd-und-alkoholfrei-kombucha-selber-machen-dpa.urn-newsml-dpa-com-20090101-170905-99-921385\" title=\"https:\/\/www.sueddeutsche.de\/leben\/buntes-blubbernd-und-alkoholfrei-kombucha-selber-machen-dpa.urn-newsml-dpa-com-20090101-170905-99-921385\"><strong>sueddeutsche.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.tagesspiegel.de\/berlin\/futtern-wie-fred-feuerstein-3644737.html\" title=\"https:\/\/www.tagesspiegel.de\/berlin\/futtern-wie-fred-feuerstein-3644737.html\"><strong>tagesspiegel.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.welt.de\/iconist\/essen-und-trinken\/article197785185\/Start-up-Fairment-Warum-Fermentieren-so-gut-fuer-die-Gesundheit-sein-soll.html\" title=\"https:\/\/www.welt.de\/iconist\/essen-und-trinken\/article197785185\/Start-up-Fairment-Warum-Fermentieren-so-gut-fuer-die-Gesundheit-sein-soll.html\"><strong>welt.de<\/strong><\/a><\/li><li><a href=\"http:\/\/hoehle-der-loewen.de\/kandidaten\/fairment\/\" title=\"http:\/\/hoehle-der-loewen.de\/kandidaten\/fairment\/\"><strong>hoehle-der-loewen.de<\/strong><\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\"><strong>businessinsider.de<\/strong><\/a><\/li><\/ul>",
+            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">gruender.de<\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/li><li><a href=\"https:\/\/www.lebensmittelmagazin.de\/wirtschaft\/20210316-was-lange-gaert-wird-endlich-gut-kombucha\/\" title=\"https:\/\/www.lebensmittelmagazin.de\/wirtschaft\/20210316-was-lange-gaert-wird-endlich-gut-kombucha\/\">lebensmittelmagazin.de<\/a><\/li><li><a href=\"https:\/\/www.sueddeutsche.de\/leben\/buntes-blubbernd-und-alkoholfrei-kombucha-selber-machen-dpa.urn-newsml-dpa-com-20090101-170905-99-921385\" title=\"https:\/\/www.sueddeutsche.de\/leben\/buntes-blubbernd-und-alkoholfrei-kombucha-selber-machen-dpa.urn-newsml-dpa-com-20090101-170905-99-921385\">sueddeutsche.de<\/a><\/li><li><a href=\"https:\/\/www.tagesspiegel.de\/berlin\/futtern-wie-fred-feuerstein-3644737.html\" title=\"https:\/\/www.tagesspiegel.de\/berlin\/futtern-wie-fred-feuerstein-3644737.html\">tagesspiegel.de<\/a><\/li><li><a href=\"https:\/\/www.welt.de\/iconist\/essen-und-trinken\/article197785185\/Start-up-Fairment-Warum-Fermentieren-so-gut-fuer-die-Gesundheit-sein-soll.html\" title=\"https:\/\/www.welt.de\/iconist\/essen-und-trinken\/article197785185\/Start-up-Fairment-Warum-Fermentieren-so-gut-fuer-die-Gesundheit-sein-soll.html\">welt.de<\/a><\/li><li><a href=\"http:\/\/hoehle-der-loewen.de\/kandidaten\/fairment\/\" title=\"http:\/\/hoehle-der-loewen.de\/kandidaten\/fairment\/\">hoehle-der-loewen.de<\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/li><\/ul>",
             "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
             "button_text": "",
             "button_link": ""
@@ -99,9 +99,9 @@
         "background_overlap": "image",
         "image_position": "right",
         "text_alignment": "left",
-        "cycle_speed": 8,
+        "cycle_speed": 7,
         "nav_slidable_mobile": false,
-        "rounded_corners": false,
+        "rounded_corners": true,
         "accent_background": "#f17217",
         "text_color": "#00148c",
         "button_background": "rgba(0,0,0,0)",
@@ -190,7 +190,7 @@
         "desktop_item_size": "medium",
         "spacing": "normal",
         "background": "#f9f9f9",
-        "text_color": "rgba(0,0,0,0)"
+        "text_color": "#00148c"
       }
     },
     "16593489629e61cb22": {
@@ -334,7 +334,7 @@
         "show_category": false,
         "show_excerpt": false,
         "background": "#f9f9f9",
-        "text_color": "rgba(0,0,0,0)"
+        "text_color": "#00148c"
       }
     },
     "b9017090-f613-43a7-a29e-dbe05c56fbe5": {
