@@ -4,12 +4,16 @@
     flex-wrap: wrap;
 }
   a.inner-box {
+    flex: 1 1 calc(50% - 40px);
+    margin: 15px;
     display: flex;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.17) 0 10px 20px;
     border-radius: 10px;
     padding: 37px 20px 35px 35px;
     justify-content: space-between;
+    transition: all 400ms;
+    transition-timing-function: cubic-bezier(0.3, 0.67, 0.54, 0.96);
 }
 {% endstyle %}
 <div class="container">
