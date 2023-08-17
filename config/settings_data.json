@@ -551,7 +551,8 @@
           "60c9497d-1560-4db9-a8a5-46dab5bf5e14": {
             "type": "video",
             "settings": {
-              "link": ""
+              "image": "shopify:\/\/shop_images\/fm_tv_01.jpg",
+              "link": "https:\/\/www.youtube.com\/embed\/UlNNUPT8aXQ"
             }
           }
         },
