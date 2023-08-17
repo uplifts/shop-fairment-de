@@ -967,6 +967,9 @@ li.tag_item {
 .tags-container {
     font-size: 12px;
 }
+.mobile-hide{
+  display:none;
+}
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
     font-size:11px;
@@ -998,5 +1001,8 @@ li.tag_item {
   li.tag_item{
     padding: 0.2rem 0.5rem;
     font-size: 10px;
+  }
+  .desktop-hide{
+        display:none;
   }
 }
