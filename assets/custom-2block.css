@@ -976,7 +976,8 @@ li.tag_item {
     gap:1rem;
   }
   .blog-banner .banner__content .section__title h1{
-    font-size:23px;
+    font-size: 26px;
+    line-height: 29px;
   }
   .person-block {
     width: auto;
