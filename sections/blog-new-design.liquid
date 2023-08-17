@@ -224,8 +224,8 @@
     </div>
     <div class="linked-products">
       {% if article.metafields.custom.linked_products %}
-        {% for prod in  article.metafields.custom.linked_products %}
-          {{ prod }}
+        {% for product in article.metafields.custom.linked_products %}
+          {{ product.title }}
           {% endfor %}
         {% endif %}
     </div>
