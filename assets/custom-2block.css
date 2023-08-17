@@ -981,6 +981,7 @@ p.desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
+  margin-bottom: 3rem;
 }
 .product-card h3{
   text-align: center;
