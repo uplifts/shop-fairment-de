@@ -225,6 +225,9 @@
     <div class="linked-products">
       {% if article.metafields.custom.linked_products %}
         {% for product in article.metafields.custom.linked_products.value %}
+          {%- comment %}<locksmith:d16b>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:d16b>{% endcomment -%}
           <div class="product-card">
           <img src="{{product.featured_image | img_url :'500x' }}" alt="Author">
           <h3>{{ product.title }}</h3>
