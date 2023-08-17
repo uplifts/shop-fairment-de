@@ -75,6 +75,11 @@
 
 <div class="article-content">
   <div class="article-content">
+    {% if article.metafields.custom.blog_paragraph != blank %}
+          <div class="desktop-mobile">
+            {{ article.metafields.custom.blog_paragraph }}
+          </div>
+            {% endif %}
     <div class="index-outer-container" id="author_container">
       <div class="author_container">
         {% for author in shop.metaobjects.autor.values %}
@@ -123,9 +128,13 @@
     <div class="article-container">
       <article class="article">
         <div class="article__body rte">
+          
           {% if article.metafields.custom.blog_paragraph != blank %}
-          {{ article.metafields.custom.blog_paragraph }}
+          <div class="hide-mobile">
+            {{ article.metafields.custom.blog_paragraph }}
+          </div>
             {% endif %}
+            
           {{ article.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}
         </div>
         {% if blog.comments_enabled? %}
