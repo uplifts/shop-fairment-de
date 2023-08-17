@@ -989,7 +989,7 @@ p.desktop {
     font-weight: 700;
     color: #010065;
 }
-  .product-card a {
+  .product-card a:last-child {
     background: red;
     color: white;
     padding: 0.4rem 0;
