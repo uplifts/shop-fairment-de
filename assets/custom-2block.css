@@ -970,6 +970,9 @@ li.tag_item {
 .mobile{
   display:none;
 }
+p.desktop {
+    font-style: italic;
+}
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
     font-size:11px;
