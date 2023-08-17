@@ -1,3 +1,59 @@
+{% style %}
+  .video-container {
+              background-color: rgba(255,255,255,0.7);
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              width: 100%;
+              height: 100%;
+              z-index: 9999;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              opacity: 0;
+            transform:translate(-50%, -50%);
+              pointer-events: none;
+              transition: all 0.3s;
+          }
+
+          .video-container .close {
+              position: absolute;
+              top: 20%;
+              right: 25%;
+              font-size: 20px;
+              cursor: pointer;
+              z-index: 900;
+              background: #fff;
+              width: 25px;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+
+            .video-container iframe {
+                width: 50vw;
+                height: 28.125vw;
+                transform: scale(0);
+                outline: none;
+                border: none;
+                outline: 0;
+                box-shadow: 0 0 0 0;
+            }
+
+          .video-container.show {
+              pointer-events: all;
+              opacity: 1;
+          }
+
+          .video-container.show iframe {
+              transform: scale(1);
+          }
+    img.video_thumbnail {
+      width: 100%;
+      height: 100%;
+  }
+  {% endstyle %}
 <div class="container vertical-breather">
   <div class="video-container">
   <span class="close">&#10006;</span>
