@@ -2,9 +2,8 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "page_width": "medium"
       }
     },
@@ -84,7 +83,7 @@
             "subheading": "",
             "title": "Interviews & Presse",
             "title_fallback": "",
-            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">gruender.de<\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/li><\/ul>",
+            "content": "<ul><li><h3><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/h3><\/li><li><h3><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/h3><\/li><li><h3><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">gruender.de<\/a><\/h3><\/li><li><h3><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/h3><\/li><li><h3><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/h3><\/li><\/ul>",
             "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
             "button_text": "",
             "button_link": ""
@@ -142,21 +141,6 @@
             "text_alignment": "left"
           }
         },
-        "165934893735c45f7e-2": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Youtube",
-            "content": "",
-            "liquid_text": "",
-            "liquid_text_fallback": "",
-            "link_text": "Fairment Kanal",
-            "link_url": "https:\/\/www.youtube.com\/c\/fairment-Kulturkanal",
-            "link_style": "button",
-            "text_alignment": "left"
-          }
-        },
         "c591a33e-7cda-4ea7-9828-8e3f53a0933b": {
           "type": "item",
           "settings": {
@@ -171,13 +155,28 @@
             "link_style": "button",
             "text_alignment": "left"
           }
+        },
+        "165934893735c45f7e-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Youtube",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Fairment",
+            "link_url": "https:\/\/www.youtube.com\/c\/fairment-Kulturkanal",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
         }
       },
       "block_order": [
         "165934893735c45f7e-0",
         "165934893735c45f7e-1",
-        "165934893735c45f7e-2",
-        "c591a33e-7cda-4ea7-9828-8e3f53a0933b"
+        "c591a33e-7cda-4ea7-9828-8e3f53a0933b",
+        "165934893735c45f7e-2"
       ],
       "settings": {
         "css_class": "",
