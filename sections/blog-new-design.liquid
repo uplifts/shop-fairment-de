@@ -227,7 +227,7 @@
         {% for product in article.metafields.custom.linked_products.value %}
           <div class="product-card">
           <img src="{{product.featured_image | img_url :'500x' }}" alt="Author">
-             {{ product.title }}
+          {{ product.title }}
            <a href="{{ product.url }}">Zum Product</a>
           </div>
          
