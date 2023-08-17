@@ -18,6 +18,10 @@
   a.inner-box:hover{
     transform: scale(1.02);
   }
+  .text {
+    display: flex;
+    flex-direction: column;
+}
 {% endstyle %}
 <div class="container">
   <div class="main-link-box">
@@ -26,8 +30,8 @@
 
       <a class="inner-box" href="{{ item.page_url }}">
         <div class="text">
-          {{ item.title }}
-          {{ item.sub-title }}
+          <h3>{{ item.title }}</h3>
+          <h4>{{ item.sub-title }}</h4>
         </div>
       <span>ARROW</span>
         </a>
