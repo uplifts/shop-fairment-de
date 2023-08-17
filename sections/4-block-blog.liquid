@@ -5,15 +5,15 @@
   <div class="main-link-box">
     {% for block in section.blocks %}
       {% assign item = block.settings %}
-      <div class="inner-box">
-      <a href="{{ item.page_url }}">
+
+      <a class="inner-box" href="{{ item.page_url }}">
         <div class="text">
           {{ item.title }}
           {{ item.sub-title }}
         </div>
       <span>ARROW</span>
         </a>
-      </div>
+      
         
     {% endfor %}
   </div>
