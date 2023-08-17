@@ -6,12 +6,15 @@
     {% for block in section.blocks %}
       {% assign item = block.settings %}
       <div class="inner-box">
+      <a href="{{ item.page_url }}">
         <div class="text">
           {{ item.title }}
           {{ item.sub-title }}
         </div>
       <span>ARROW</span>
+        </a>
       </div>
+        
     {% endfor %}
   </div>
 </div>
@@ -23,6 +26,11 @@
       "name": "link Item",
       "type": "faq",
       "settings": [
+        {
+          "type": "url",
+          "id": "page_url",
+          "label": "Page Link"
+        },
         {
           "type": "text",
           "id": "title",
