@@ -499,6 +499,7 @@
           "349e5c7c-62e5-4be0-b8ef-fbadf9aa3387": {
             "type": "faq",
             "settings": {
+              "page_url": "https:\/\/www.fairment.de\/rezepte",
               "title": "Fairment Rezepte",
               "sub-title": "Lass dich inspirieren!"
             }
@@ -506,6 +507,7 @@
           "bba8fc4c-3bd6-425c-b5df-2b83540fcdb4": {
             "type": "faq",
             "settings": {
+              "page_url": "https:\/\/www.fairment.de\/lernen\/",
               "title": "Fairment Wissen",
               "sub-title": "Mach dich Schlau!"
             }
@@ -513,6 +515,7 @@
           "faecf7d4-d509-46a3-a402-ccbb9b8e44e8": {
             "type": "faq",
             "settings": {
+              "page_url": "https:\/\/support.fairment.de\/",
               "title": "Fairment FAQ",
               "sub-title": "Lass dir helfen."
             }
@@ -520,6 +523,7 @@
           "38bfd828-3789-4bc1-a751-7bcfe6ed9d9a": {
             "type": "faq",
             "settings": {
+              "page_url": "https:\/\/www.facebook.com\/fairment",
               "title": "Fairment auf Facebook",
               "sub-title": "Besuch die Community!"
             }
