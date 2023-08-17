@@ -16,3 +16,37 @@
   {% endfor %}
   </div>
 </div>
+{% schema %}
+  {
+  "name" : "TV section",
+  "settings" : [
+     {
+      "type": "text",
+      "id": "title",
+      "default": "Fairment TV",
+      "label": "Section Title"
+    }
+  ],
+     "blocks": [
+    {
+      "type": "video",
+      "name": "video",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "video thumbnail"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "youtube embed link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {  "name": "Tv Section"}
+  ]
+  }
+{% endschema %}
