@@ -79,11 +79,12 @@
           "settings": {
             "use_video": false,
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/apfel_35a4eaaa-d4a3-4584-9b0e-fa311dc60bf3.jpg",
             "tab_label": "Item",
-            "subheading": "Subheading",
-            "title": "Image with text",
+            "subheading": "",
+            "title": "Interviews & Presse",
             "title_fallback": "",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">gruender.de<\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/li><\/ul>",
             "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
             "button_text": "",
             "button_link": ""
@@ -93,7 +94,6 @@
       "block_order": [
         "12a169dd-bd93-40f8-8f27-8f20b78019ae"
       ],
-      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -117,13 +117,13 @@
           "settings": {
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Presse",
-            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">Gruender.de<\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/li><\/ul>",
+            "title": "Instagram",
+            "content": "",
             "liquid_text": "",
             "liquid_text_fallback": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
+            "link_text": "Paul Seelhorst",
+            "link_url": "https:\/\/www.instagram.com\/paulseelhorst\/",
+            "link_style": "button",
             "text_alignment": "left"
           }
         },
@@ -132,14 +132,14 @@
           "settings": {
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Column 1",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Facebook",
+            "content": "",
             "liquid_text": "",
             "liquid_text_fallback": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center"
+            "link_text": "Paul Seelhorst",
+            "link_url": "https:\/\/www.facebook.com\/paul.histaman",
+            "link_style": "button",
+            "text_alignment": "left"
           }
         },
         "165934893735c45f7e-2": {
@@ -147,31 +147,47 @@
           "settings": {
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Column 1",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Youtube",
+            "content": "",
             "liquid_text": "",
             "liquid_text_fallback": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center"
+            "link_text": "Fairment Kanal",
+            "link_url": "https:\/\/www.youtube.com\/c\/fairment-Kulturkanal",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
+        },
+        "c591a33e-7cda-4ea7-9828-8e3f53a0933b": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "LinkedIn",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Paul Seelhorst",
+            "link_url": "https:\/\/www.linkedin.com\/in\/paul-seelhorst-986aa5106\/",
+            "link_style": "button",
+            "text_alignment": "left"
           }
         }
       },
       "block_order": [
         "165934893735c45f7e-0",
         "165934893735c45f7e-1",
-        "165934893735c45f7e-2"
+        "165934893735c45f7e-2",
+        "c591a33e-7cda-4ea7-9828-8e3f53a0933b"
       ],
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
         "stack_items": true,
         "subheading": "",
-        "title": "Presse",
+        "title": "Social Media",
         "content": "",
-        "column_alignment": "center",
-        "mobile_item_size": "medium",
+        "column_alignment": "left",
+        "mobile_item_size": "small",
         "desktop_item_size": "medium",
         "spacing": "normal",
         "background": "rgba(0,0,0,0)",
@@ -250,7 +266,6 @@
     },
     "1659082402d944bfd7": {
       "type": "image-with-text-block",
-      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
