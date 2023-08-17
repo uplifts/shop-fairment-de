@@ -5300,7 +5300,7 @@ select:focus,
   display: flex;
   flex-direction: column;
   top: 0;
-  width: 89vw;
+  width: 95vw;
   max-width: 400px;
   height: 100%;
   max-height: 100vh;
