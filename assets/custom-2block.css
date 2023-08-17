@@ -1007,5 +1007,9 @@ li.tag_item {
   }
   .mobile{
     display:block;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 24px;
   }
 }
