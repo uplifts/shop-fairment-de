@@ -537,31 +537,6 @@
         ],
         "settings": {
         }
-      },
-      "tv-section": {
-        "type": "tv-section",
-        "blocks": {
-          "d0da5a98-ad51-48a1-857c-02b604034a5f": {
-            "type": "video",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/fm_tv_01.jpg",
-              "link": "https:\/\/www.youtube.com\/embed\/83DCWpKomCc"
-            }
-          },
-          "4bf9c699-dc9a-43f4-a54d-1ff57e3d4470": {
-            "type": "video",
-            "settings": {
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "d0da5a98-ad51-48a1-857c-02b604034a5f",
-          "4bf9c699-dc9a-43f4-a54d-1ff57e3d4470"
-        ],
-        "settings": {
-          "title": "Fairment TV"
-        }
       }
     },
     "content_for_index": [
