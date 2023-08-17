@@ -1,12 +1,40 @@
+<div class="page-width">
+  <div class="main-link-box">
+    {% for block in section.blocks %}
+      {% assign item = block.settings %}
+      <div class="inner-box">
+        <div class="text">
+          {{ item.title }}
+          {{ item.sub-title }}
+        </div>
+      <span>ARROW</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "4 block section",
+  "blocks": [
+    {
+      "name": "link Item",
+      "type": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+          {
+          "type": "text",
+          "id": "sub-title",
+          "label": "Sub title",
+          "default": "Sub title"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "4 block section" }]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
