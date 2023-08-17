@@ -998,6 +998,7 @@ p.desktop {
     border-radius: 11px;
     width: 100%;
     font-weight: 700;
+    margin-top: 0.8rem;
 }
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
