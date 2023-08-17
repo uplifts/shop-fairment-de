@@ -967,7 +967,7 @@ li.tag_item {
 .tags-container {
     font-size: 12px;
 }
-.mobile-hide{
+.hide-mobile{
   display:none;
 }
 @media only screen and (max-width:768px){
