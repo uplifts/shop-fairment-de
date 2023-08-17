@@ -967,7 +967,7 @@ li.tag_item {
 .tags-container {
     font-size: 12px;
 }
-.hide-mobile{
+.mobile{
   display:none;
 }
 @media only screen and (max-width:768px){
@@ -1002,7 +1002,7 @@ li.tag_item {
     padding: 0.2rem 0.5rem;
     font-size: 10px;
   }
-  .hide-desktop{
+  .desktop{
         display:none;
   }
 }
