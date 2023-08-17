@@ -16,6 +16,26 @@
   {% endfor %}
   </div>
 </div>
+<script>
+  const btn = document.querySelectorAll('.btn');
+  const videoContainer = document.querySelector('.video-container');
+  const videoPlayer = document.querySelector('#video_player');
+  const close = document.querySelector('.close');
+
+  btn.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      videoPlayer.setAttribute('src', e.target.dataset.src);
+      document.querySelector('body').style.overflow = 'hidden';
+      videoContainer.classList.add('show');
+      console.log(e.target);
+    });
+  });
+  close.addEventListener('click', () => {
+    document.querySelector('body').style.overflow = 'auto';
+    videoContainer.classList.remove('show');
+    videoPlayer.removeAttribute('src');
+  });
+</script>
 {% schema %}
   {
   "name" : "TV section",
