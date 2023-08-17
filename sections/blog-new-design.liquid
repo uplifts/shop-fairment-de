@@ -225,10 +225,12 @@
     <div class="linked-products">
       {% if article.metafields.custom.linked_products %}
         {% for product in article.metafields.custom.linked_products.value %}
-          {%- comment %}<locksmith:31a8>{% endcomment -%}
-            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-          {%- comment %}</locksmith:31a8>{% endcomment -%}
-          {{ product.title }}
+          <div class="product-card">
+           {{ product.featured_image }}
+             {{ product.title }}
+           <a href="{{ product.url }}">Zum Product</a>
+          </div>
+         
           {% endfor %}
         {% endif %}
     </div>
