@@ -999,6 +999,7 @@ p.desktop {
     width: 100%;
     font-weight: 700;
     margin-top: 0.8rem;
+    text-transform:uppercase;
 }
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
