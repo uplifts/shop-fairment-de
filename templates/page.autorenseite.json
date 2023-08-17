@@ -322,6 +322,35 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "010dfd14-b2df-4399-863d-a9627233c479": {
+      "type": "slideshow",
+      "settings": {
+        "css_class": "",
+        "section_height_mobile": 76,
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "mobile_text_below": false
+      }
+    },
+    "b9017090-f613-43a7-a29e-dbe05c56fbe5": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=oaf5dCsei30",
+        "subheading2": "",
+        "title2": "",
+        "video_url2": "https:\/\/www.youtube.com\/watch?v=KDKUnzlwDd0",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -332,6 +361,8 @@
     "1659348938f6df9a2f",
     "16593489629e61cb22",
     "1659082402d944bfd7",
-    "16589075887c730d6b"
+    "16589075887c730d6b",
+    "010dfd14-b2df-4399-863d-a9627233c479",
+    "b9017090-f613-43a7-a29e-dbe05c56fbe5"
   ]
 }
