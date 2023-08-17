@@ -76,9 +76,9 @@
 <div class="article-content">
   <div class="article-content">
     {% if article.metafields.custom.blog_paragraph != blank %}
-          <div class="mobile">
+          <p class="mobile">
             {{ article.metafields.custom.blog_paragraph }}
-          </div>
+          </p>
             {% endif %}
     <div class="index-outer-container" id="author_container">
       <div class="author_container">
@@ -130,9 +130,9 @@
         <div class="article__body rte">
           
           {% if article.metafields.custom.blog_paragraph != blank %}
-          <div class="desktop">
+          <p class="desktop">
             {{ article.metafields.custom.blog_paragraph }}
-          </div>
+          </p>
             {% endif %}
             
           {{ article.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}
