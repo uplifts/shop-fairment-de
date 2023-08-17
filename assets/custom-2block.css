@@ -973,7 +973,7 @@ li.tag_item {
     font-size:11px;
   }
   .blog-banner .banner__content{
-    gap:1rem;
+    gap: 0.6rem;
   }
   .blog-banner .banner__content .section__title h1{
     font-size: 26px;
@@ -996,4 +996,8 @@ li.tag_item {
     margin-top: 0;
     grid-template-columns: 1fr;
 }
+  li.tag_item{
+    padding: 0.2rem 0.5rem;
+    font-size: 10px;
+  }
 }
