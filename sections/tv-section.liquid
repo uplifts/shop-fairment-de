@@ -4,6 +4,12 @@
     display: flex;
     gap: 6rem;
 }
+  .tv-section-title{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+    color: #010065;
+  }
   .video-container {
               background-color: rgba(255,255,255,0.7);
               position: fixed;
@@ -94,8 +100,7 @@
   <iframe id="video_player"> </iframe>
 </div>
 <div class="container vertical-breather">
-
-   <h3> {{ section.settings.title }} </h3>
+   <h3 class="tv-section-title"> {{ section.settings.title }} </h3>
   <div class="main-video-container">
   {% for block in section.blocks %}
     <div class="video-card">
