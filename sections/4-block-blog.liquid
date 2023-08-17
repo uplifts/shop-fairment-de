@@ -1,43 +1,43 @@
 {% style %}
-  .main-link-box {
-    display: flex;
-    flex-wrap: wrap;
-}
-  a.inner-box {
-    flex: 1 1 calc(50% - 40px);
-    margin: 15px;
-    display: flex;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.17) 0 10px 20px;
-    border-radius: 10px;
-    padding: 25px 20px;
-    justify-content: space-between;
-    transition: all 400ms;
-    transition-timing-function: cubic-bezier(0.3, 0.67, 0.54, 0.96);
-    align-items: center;
-}
-  a.inner-box:hover{
-    transform: scale(1.02);
+    .main-link-box {
+      display: flex;
+      flex-wrap: wrap;
   }
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-  .text > * {
-    margin: 0;
-}
-  .text > h3{
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #283583;
+    a.inner-box {
+      flex: 1 1 calc(50% - 40px);
+      margin: 15px;
+      display: flex;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.17) 0 10px 20px;
+      border-radius: 10px;
+      padding: 25px 20px;
+      justify-content: space-between;
+      transition: all 400ms;
+      transition-timing-function: cubic-bezier(0.3, 0.67, 0.54, 0.96);
+      align-items: center;
   }
-  .text > h4{
-    color: #283583;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight:400;
+    a.inner-box:hover{
+      transform: scale(1.02);
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
   }
+    .text > * {
+      margin: 0;
+  }
+    .text > h3{
+      text-transform: uppercase;
+      font-size: 25px;
+      color: #283583;
+    }
+    .text > h4{
+      color: #283583;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight:400;
+    }
 {% endstyle %}
 <div class="container vertical-breather">
   <div class="main-link-box">
@@ -47,15 +47,15 @@
       <a class="inner-box" href="{{ item.page_url }}">
         <div class="text">
           <h3>{{ item.title }}</h3>
-          <h4>{{ item.sub-title }}</h4>
+          <h4>{{ item['sub-title'] }}</h4>
         </div>
-      <span><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
-  <path d="M0 7H15" stroke="{{ settings.text_color }}" stroke-width="{{ settings.icon_stroke_width }}"/>
-  <path d="M9 1L15 7L9 13" stroke="{{ settings.text_color }}" stroke-width="{{ settings.icon_stroke_width }}"/>
-</svg></span>
-        </a>
-      
-        
+        <span>
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
+            <path d="M0 7H15" stroke="{{ settings.text_color }}" stroke-width="{{ settings.icon_stroke_width }}"/>
+            <path d="M9 1L15 7L9 13" stroke="{{ settings.text_color }}" stroke-width="{{ settings.icon_stroke_width }}"/>
+          </svg>
+        </span>
+      </a>
     {% endfor %}
   </div>
 </div>
