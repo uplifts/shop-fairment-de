@@ -40,13 +40,13 @@
           "type": "item",
           "settings": {
             "use_video": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "",
             "image": "shopify:\/\/shop_images\/Paul_Seelhorst.jpg",
             "tab_label": "Item",
-            "subheading": "Subheading",
-            "title": "Image with text",
+            "subheading": "Über den Autor",
+            "title": "Paul Seelhorst",
             "title_fallback": "",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "content": "<p><strong>Ausgebildeter Darm-Immuntherapeut & Food Coach<\/strong><br\/><br\/>Nach einer persönlichen Gesundheitskrise mit Ende 20 schaffte Paul Seelhorst es, sich von Autoimmunsymptomen, Allergien und mentalen Beschwerden zu befreien. <\/p><p>Seitdem hat er es sich zur Mission gemacht, Menschen darüber aufzuklären und ihnen praktische Werkzeuge mit an die Hand zu geben, um ihre Gesundheit selbst zu optimieren und chronischen Leiden nachhaltig in den Griff zu bekommen.<\/p>",
             "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
             "button_text": "",
             "button_link": ""
@@ -117,14 +117,14 @@
           "settings": {
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Column 1",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Presse",
+            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">Gruender.de<\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/li><\/ul>",
             "liquid_text": "",
             "liquid_text_fallback": "",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
-            "text_alignment": "center"
+            "text_alignment": "left"
           }
         },
         "165934893735c45f7e-1": {
@@ -163,13 +163,12 @@
         "165934893735c45f7e-1",
         "165934893735c45f7e-2"
       ],
-      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
         "stack_items": true,
-        "subheading": "Lorem ipsum",
-        "title": "Lorem ipsum",
+        "subheading": "",
+        "title": "Presse",
         "content": "",
         "column_alignment": "center",
         "mobile_item_size": "medium",
