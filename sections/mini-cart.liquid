@@ -467,7 +467,7 @@
       {%- endif -%}
 
       {%- assign threshold_in_cents = free_shipping_calculated_threshold | times: 100 -%}
-      <free-shipping-bar threshold="{{ threshold_in_cents }}" class="shipping-bar" style="--progress: {{ cart.total_price | times: 1.0 | divided_by: threshold_in_cents | at_most: 1 }}; padding: 8px 40px; margin: 0; {%- if cart.total_price >= threshold_in_cents -%} background-color: #def6df; {% endif %}">
+      <free-shipping-bar threshold="{{ threshold_in_cents }}" class="shipping-bar" style="--progress: {{ cart.total_price | times: 1.0 | divided_by: threshold_in_cents | at_most: 1 }}; padding: 8px 30px; margin: 0; {%- if cart.total_price >= threshold_in_cents -%} background-color: #def6df; {% endif %}">
         {%- if cart.total_price >= threshold_in_cents -%}
           <span class="shipping-bar__text text--small" style="color: #228927; font-weight: 600;">{{ 'cart.general.free_shipping' | t }}</span>
         {%- else -%}
