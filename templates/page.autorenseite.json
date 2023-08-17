@@ -323,17 +323,18 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "010dfd14-b2df-4399-863d-a9627233c479": {
-      "type": "slideshow",
+    "f0a519d7-1a4c-4f49-8a0f-61b1b58d0191": {
+      "type": "blog-posts",
       "settings": {
-        "css_class": "",
-        "section_height_mobile": 76,
-        "section_height": "auto",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)",
-        "mobile_text_below": false
+        "blog": "news",
+        "subheading": "",
+        "title": "Unser Magazin",
+        "articles_count": 2,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)"
       }
     },
     "b9017090-f613-43a7-a29e-dbe05c56fbe5": {
@@ -362,7 +363,7 @@
     "16593489629e61cb22",
     "1659082402d944bfd7",
     "16589075887c730d6b",
-    "010dfd14-b2df-4399-863d-a9627233c479",
+    "f0a519d7-1a4c-4f49-8a0f-61b1b58d0191",
     "b9017090-f613-43a7-a29e-dbe05c56fbe5"
   ]
 }
