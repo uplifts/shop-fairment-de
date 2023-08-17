@@ -123,6 +123,7 @@
     <div class="article-container">
       <article class="article">
         <div class="article__body rte">
+          {{ custom.blog_paragraph }}
           {{ article.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}
         </div>
         {% if blog.comments_enabled? %}
