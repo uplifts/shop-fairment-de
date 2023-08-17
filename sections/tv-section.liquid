@@ -1,23 +1,21 @@
 <div class="container vertical-breather">
   {{ section.settings.title }}
+  <div class="main-video-container">
   {% for block in section.blocks %}
-      <div class="card card_with_shadows">
-
-                
-                <button class="btn" id="play-video" data-src="{{ block.settings.link }}">
-     {{
-                block.settings.image
-                | image_url: width: 750
-                | image_tag:
-                  loading: 'lazy',
-                  widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                  sizes: 750,
-                  class: 'video_thumbnail'
-              }}
-                  {{ block.settings.text }}
-                  {% render 'icon' with play %}
-                </button>
-              
-            </div>
-    {% endfor %}
+    <div class="video-card">
+      <button class="btn" id="play-video" data-src="{{ block.settings.link }}">
+        {{
+          block.settings.image
+          | image_url: width: 750
+          | image_tag:
+            loading: 'lazy',
+            widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+            sizes: 750,
+            class: 'video_thumbnail'
+        }}
+        {% render 'icon' with play %}
+      </button>
+    </div>
+  {% endfor %}
+  </div>
 </div>
