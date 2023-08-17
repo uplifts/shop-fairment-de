@@ -802,7 +802,7 @@ body section.blog-section .row {
     flex-direction: column;
     background: #ECECFA;
    justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 } 
  .blog-banner img {
     order: 1;
