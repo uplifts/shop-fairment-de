@@ -65,7 +65,7 @@
         "nav_slidable_mobile": false,
         "rounded_corners": false,
         "accent_background": "#f17217",
-        "text_color": "rgba(0,0,0,0)",
+        "text_color": "#00148c",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
