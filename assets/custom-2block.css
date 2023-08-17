@@ -973,6 +973,11 @@ li.tag_item {
 p.desktop {
     font-style: italic;
 }
+
+.linked-products{
+  flex : 1 1;
+}
+
 @media only screen and (max-width:768px){
   .blog-banner .banner__content .breadcrumbs li{
     font-size:11px;
