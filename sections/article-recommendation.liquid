@@ -11,8 +11,9 @@
     margin-top: 10px;
   }
   {% endstyle %}
-<div class="container vertical-breather article-container">
+<div class="container vertical-breather">
   <h2 class="article_section_title">PASSENDE ARTIKEL</h2>
+  <div class="article-container">
   <div class="article_rec">
     {% if article.metafields.custom.rec_link_one %}
       <a href="{{ article.metafields.custom.rec_link_one }}">
@@ -45,4 +46,5 @@
       </a>
       {% endif %}
   </div>
+ </div>
 </div>
