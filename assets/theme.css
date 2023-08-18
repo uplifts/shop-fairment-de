@@ -17674,3 +17674,7 @@ line-height: normal;
 [dir="ltr"] .line-item__price-list-container {
     flex-direction: column;
 }
+
+.mini-cart__recommendations .badge.bestseller {
+  display: none !important;
+}
