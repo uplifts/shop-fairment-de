@@ -306,7 +306,8 @@
                 </div>
                 <div class="product-item-meta__price-list-container text--xsmall"> 
                   <div class="price-list hidden-tablet-and-up testing"> 
-                    {{- line_price -}} {{- unit_price -}} 
+                    <div class="hidden-phone">{{- line_price -}}</div>
+                    {{- unit_price -}} 
                   </div>
                   {%- if unit_price != blank -%}
                     <div class="price-list hidden-phone">{{- unit_price -}}</div> 
