@@ -115,6 +115,7 @@
   <span class="close">&#10006;</span>
   <iframe id="video_player"> </iframe>
 </div>
+
 <div class="container vertical-breather">
    <h3 class="tv-section-title"> {{ section.settings.title }} </h3>
   <div class="main-video-container">
@@ -145,7 +146,7 @@
       videoPlayer.setAttribute('src', e.target.dataset.src);
       document.querySelector('body').style.overflow = 'hidden';
       videoContainer.classList.add('show');
-      console.log(e.target);
+      console.log("e.target");
     });
   });
   close.addEventListener('click', () => {
