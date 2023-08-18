@@ -17513,6 +17513,7 @@ visibility: hidden;
 }
 
 .drawer__success-tile {
+  display: none;
   font-size: 14px;
   background-color: #DEF6DF;
   color: #228927;
