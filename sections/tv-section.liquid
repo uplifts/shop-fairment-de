@@ -143,7 +143,6 @@
   btn.forEach((item) => {
     item.addEventListener('click', (e) => {
       videoPlayer.setAttribute('src', e.target.dataset.src);
-      console.log("url test",e.target.dataset.src)
       document.querySelector('body').style.overflow = 'hidden';
       videoContainer.classList.add('show');
       console.log(e.target);
