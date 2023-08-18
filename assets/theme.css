@@ -17528,7 +17528,7 @@ visibility: hidden;
 .success-message-active .drawer__success {
   display: block;
 }
-.drawer-ab-message-1 {display:none}
+.drawer-ab-message-1, .drawer-ab-message-2 {display:none}
 /* END ID - 10.07.23 - Cart drawer message */
 
 
