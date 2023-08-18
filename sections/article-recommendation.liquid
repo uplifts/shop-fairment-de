@@ -7,4 +7,28 @@
       </a>
       {% endif %}
   </div>
+  <div class="article_rec">
+    {% if article.metafields.custom.rec_link_two %}
+      <a href="{{ article.metafields.custom.rec_link_two }}">
+       <img src="{{article.metafields.custom.rec_image_two | img_url :'500x' }}" alt="Article">
+      <h3>{{ article.metafields.custom.rec_title_two }}</h3>
+      </a>
+      {% endif %}
+  </div>
+  <div class="article_rec">
+    {% if article.metafields.custom.rec_link_three %}
+      <a href="{{ article.metafields.custom.rec_link_three }}">
+       <img src="{{article.metafields.custom.rec_image_three | img_url :'500x' }}" alt="Article">
+      <h3>{{ article.metafields.custom.rec_title_three }}</h3>
+      </a>
+      {% endif %}
+  </div>
+  <div class="article_rec">
+    {% if article.metafields.custom.rec_link_four %}
+      <a href="{{ article.metafields.custom.rec_link_four }}">
+       <img src="{{article.metafields.custom.rec_image_four | img_url :'500x' }}" alt="Article">
+      <h3>{{ article.metafields.custom.rec_title_four }}</h3>
+      </a>
+      {% endif %}
+  </div>
 </div>
