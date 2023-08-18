@@ -122,7 +122,7 @@
   <div class="main-video-container">
   {% for block in section.blocks %}
     <div class="video-card">
-      <button class="btn{{ forloop.index }}" id="play-video" data-src="{{ block.settings.link }}">
+      <button class="btn btn{{ forloop.index }}" id="play-video" data-src="{{ block.settings.link }}">
         {% render 'icon' with 'play' %}
         {{
           block.settings.image
