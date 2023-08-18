@@ -1,4 +1,18 @@
+{% style %}
+  .article-container {
+    display: flex;
+    gap: 5rem;
+}
+  .article_rec a {
+    text-align: center;
+}
+  .article_rec a h3{
+    color: #010065;
+    margin-top: 10px;
+  }
+  {% endstyle %}
 <div class="container vertical-breather article-container">
+  <h2 class="article_section_title">PASSENDE ARTIKEL</h2>
   <div class="article_rec">
     {% if article.metafields.custom.rec_link_one %}
       <a href="{{ article.metafields.custom.rec_link_one }}">
