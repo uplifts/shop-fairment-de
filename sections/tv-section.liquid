@@ -113,7 +113,7 @@
   {% endstyle %}
   {% for block in section.blocks %}
     <div class="video-container video-container{{ forloop.index }}">
-  <span class="close{{ forloop.index }}">&#10006;</span>
+  <span class="close close{{ forloop.index }}">&#10006;</span>
   <iframe id="video_player" class="video_player{{ forloop.index }}" src="{{ block.settings.link }}"> </iframe>
 </div>
 {% endfor %}
