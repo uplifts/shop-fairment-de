@@ -112,9 +112,9 @@
     }
   {% endstyle %}
   {% for block in section.blocks %}
-    <div class="video-container{{ forloop.index }}">
-  <span class="close">&#10006;</span>
-  <iframe id="video_player{{ forloop.index }}" src="{{ block.settings.link }}"> </iframe>
+    <div class="video-container video-container{{ forloop.index }}">
+  <span class="close{{ forloop.index }}">&#10006;</span>
+  <iframe id="video_player" class="video_player{{ forloop.index }}" src="{{ block.settings.link }}"> </iframe>
 </div>
 {% endfor %}
 <div class="container vertical-breather">
@@ -122,7 +122,7 @@
   <div class="main-video-container">
   {% for block in section.blocks %}
     <div class="video-card">
-      <button class="btn" id="play-video" data-src="{{ block.settings.link }}">
+      <button class="btn{{ forloop.index }}" id="play-video" data-src="{{ block.settings.link }}">
         {% render 'icon' with 'play' %}
         {{
           block.settings.image
@@ -137,24 +137,33 @@
   </div>
 </div>
 <script>
-  const btn = document.querySelectorAll('.btn');
-  const videoContainer = document.querySelector('.video-container');
-  const videoPlayer = document.querySelector('#video_player');
-  const close = document.querySelector('.close');
+  const btn1 = document.querySelector('.btn1');
+  const btn2 = document.querySelector('.btn2');
+  const videoContainer1 = document.querySelector('.video-container1');
+  const videoContainer2 = document.querySelector('.video-container2');
+  const close1 = document.querySelector('.close1');
+  const close2 = document.querySelector('.close2');
 
-  btn.forEach((item) => {
-    item.addEventListener('click', (e) => {
-      videoPlayer.setAttribute('src', e.target.dataset.src);
+      btn1.addEventListener('click', (e) => {
       document.querySelector('body').style.overflow = 'hidden';
-      videoContainer.classList.add('show');
-      console.log("e.target");
+      videoContainer1.classList.add('show');
     });
-  });
-  close.addEventListener('click', () => {
+
+  close1.addEventListener('click', () => {
     document.querySelector('body').style.overflow = 'auto';
-    videoContainer.classList.remove('show');
-    videoPlayer.removeAttribute('src');
+    videoContainer1.classList.remove('show');
   });
+
+        btn2.addEventListener('click', (e) => {
+      document.querySelector('body').style.overflow = 'hidden';
+      videoContainer2.classList.add('show');
+    });
+
+  close2.addEventListener('click', () => {
+    document.querySelector('body').style.overflow = 'auto';
+    videoContainer2.classList.remove('show');
+  });
+  
 </script>
 {% schema %}
   {
