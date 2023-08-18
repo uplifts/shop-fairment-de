@@ -152,6 +152,9 @@
   close1.addEventListener('click', () => {
     document.querySelector('body').style.overflow = 'auto';
     videoContainer1.classList.remove('show');
+        document.querySelectorAll(".video-stream.html5-main-video").forEach(item =>{
+      item.pause();
+    });
   });
 
         btn2.addEventListener('click', (e) => {
@@ -162,6 +165,9 @@
   close2.addEventListener('click', () => {
     document.querySelector('body').style.overflow = 'auto';
     videoContainer2.classList.remove('show');
+    document.querySelectorAll(".video-stream.html5-main-video").forEach(item =>{
+      item.pause();
+    });
   });
   
 </script>
