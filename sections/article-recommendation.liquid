@@ -1,12 +1,10 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<div class="container vertical-breather">
+  <div class="article_rec">
+    {% if article.metafields.custom.rec_link_one %}
+      <a href="{{ article.metafields.custom.rec_link_one }}">
+       <img src="{{article.metafields.custom.rec_image_one | img_url :'500x' }}" alt="Article">
+      <h3>{{ article.metafields.custom.rec_title_one }}</h3>
+      </a>
+      {% endif %}
+  </div>
+</div>
