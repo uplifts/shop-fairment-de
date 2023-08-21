@@ -1,0 +1,354 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "5c313c66-3ec3-4b12-b91c-3182fe496a44": {
+      "type": "image-with-text-block",
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/Paul_Seelhorst.jpg",
+        "has_border": false,
+        "has_product_tabs": false,
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to hjlkhklgive your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "liquid": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "youtube_video_url": "",
+        "video_caption": ""
+      }
+    },
+    "1644422436e5687919": {
+      "type": "image-with-text",
+      "blocks": {
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/Paul_Seelhorst.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Paul Seelhorst",
+            "title_fallback": "",
+            "content": "<p><strong>Ausgebildeter Darm-Immuntherapeut & Food Coach<\/strong><br\/><br\/>Nach einer persönlichen Gesundheitskrise mit Ende 20 schaffte Paul Seelhorst es, sich von Autoimmunsymptomen, Allergien und mentalen Beschwerden zu befreien. <\/p><p>Seitdem hat er es sich zur Mission gemacht, Menschen darüber aufzuklären und ihnen praktische Werkzeuge mit an die Hand zu geben, um ihre Gesundheit selbst zu optimieren und chronischen Leiden nachhaltig in den Griff zu bekommen.<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#f17217",
+        "text_color": "#00148c",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1659088832ca9f9962": {
+      "type": "image-with-text",
+      "blocks": {
+        "12a169dd-bd93-40f8-8f27-8f20b78019ae": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/apfel_35a4eaaa-d4a3-4584-9b0e-fa311dc60bf3.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Interviews & Presse",
+            "title_fallback": "",
+            "content": "<ul><li><a href=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\" title=\"https:\/\/www.fr.de\/ratgeber\/blubbernd-alkoholfrei-kombucha-selber-machen-11013581.html\">fr.de<\/a><\/li><li><a href=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\" title=\"https:\/\/www.bz-berlin.de\/archiv-artikel\/in-friedrichshain-kann-man-das-steinzeit-leben-ausprobieren\">bz-berlin.de<\/a><\/li><li><a href=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\" title=\"https:\/\/www.gruender.de\/events\/eintrag\/fermentationskongress-2020\/\">gruender.de<\/a><\/li><li><a href=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\" title=\"https:\/\/www.vox.de\/cms\/game-of-chefs-der-kampf-der-koch-philosophien-exklusiv-vorab-2229518.html\">vox.de<\/a><\/li><li><a href=\"https:\/\/www.lebensmittelmagazin.de\/wirtschaft\/20210316-was-lange-gaert-wird-endlich-gut-kombucha\/\" title=\"https:\/\/www.lebensmittelmagazin.de\/wirtschaft\/20210316-was-lange-gaert-wird-endlich-gut-kombucha\/\">lebensmittelmagazin.de<\/a><\/li><li><a href=\"https:\/\/www.sueddeutsche.de\/leben\/buntes-blubbernd-und-alkoholfrei-kombucha-selber-machen-dpa.urn-newsml-dpa-com-20090101-170905-99-921385\" title=\"https:\/\/www.sueddeutsche.de\/leben\/buntes-blubbernd-und-alkoholfrei-kombucha-selber-machen-dpa.urn-newsml-dpa-com-20090101-170905-99-921385\">sueddeutsche.de<\/a><\/li><li><a href=\"https:\/\/www.tagesspiegel.de\/berlin\/futtern-wie-fred-feuerstein-3644737.html\" title=\"https:\/\/www.tagesspiegel.de\/berlin\/futtern-wie-fred-feuerstein-3644737.html\">tagesspiegel.de<\/a><\/li><li><a href=\"https:\/\/www.welt.de\/iconist\/essen-und-trinken\/article197785185\/Start-up-Fairment-Warum-Fermentieren-so-gut-fuer-die-Gesundheit-sein-soll.html\" title=\"https:\/\/www.welt.de\/iconist\/essen-und-trinken\/article197785185\/Start-up-Fairment-Warum-Fermentieren-so-gut-fuer-die-Gesundheit-sein-soll.html\">welt.de<\/a><\/li><li><a href=\"http:\/\/hoehle-der-loewen.de\/kandidaten\/fairment\/\" title=\"http:\/\/hoehle-der-loewen.de\/kandidaten\/fairment\/\">hoehle-der-loewen.de<\/a><\/li><li><a href=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\" title=\"https:\/\/www.businessinsider.de\/gruenderszene\/business\/fairment-kombucha-verdauung-dhdl\/\">businessinsider.de<\/a><\/li><\/ul>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "12a169dd-bd93-40f8-8f27-8f20b78019ae"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 7,
+        "nav_slidable_mobile": false,
+        "rounded_corners": true,
+        "accent_background": "#f17217",
+        "text_color": "#00148c",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1659348938f6df9a2f": {
+      "type": "multi-column",
+      "blocks": {
+        "165934893735c45f7e-0": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Instagram",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Zu Instagram",
+            "link_url": "https:\/\/www.instagram.com\/paulseelhorst\/",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
+        },
+        "165934893735c45f7e-1": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Facebook",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Zu Facebook",
+            "link_url": "https:\/\/www.facebook.com\/paul.histaman",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
+        },
+        "c591a33e-7cda-4ea7-9828-8e3f53a0933b": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "LinkedIn",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Zu LinkedIn",
+            "link_url": "https:\/\/www.linkedin.com\/in\/paul-seelhorst-986aa5106\/",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
+        },
+        "165934893735c45f7e-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Youtube",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Zu Youtube",
+            "link_url": "https:\/\/www.youtube.com\/c\/fairment-Kulturkanal",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "165934893735c45f7e-0",
+        "165934893735c45f7e-1",
+        "c591a33e-7cda-4ea7-9828-8e3f53a0933b",
+        "165934893735c45f7e-2"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "",
+        "title": "Social Media",
+        "content": "",
+        "column_alignment": "left",
+        "mobile_item_size": "small",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "#f9f9f9",
+        "text_color": "#00148c"
+      }
+    },
+    "16593489629e61cb22": {
+      "type": "multi-column",
+      "blocks": {
+        "16593489621646493c-0": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "16593489621646493c-1": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "16593489621646493c-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16593489621646493c-0",
+        "16593489621646493c-1",
+        "16593489621646493c-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1659082402d944bfd7": {
+      "type": "image-with-text-block",
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "has_border": false,
+        "has_product_tabs": false,
+        "subheading": "Lorem ipsum",
+        "title": "Lorem ipsum",
+        "content": "<p>Lorem ipsum<\/p><p><\/p>",
+        "liquid": "",
+        "button_text": "Kontakt aufnehmen",
+        "button_link": "shopify:\/\/pages\/contact",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "youtube_video_url": "",
+        "video_caption": ""
+      }
+    },
+    "16589075887c730d6b": {
+      "type": "featured-collections",
+      "blocks": {
+        "165890758815e98f23-0": {
+          "type": "collection",
+          "settings": {
+            "hide_differentiation_tags": false,
+            "product_item_badge_color": "#fff8ef",
+            "product_item_badge_text_color": "#2c1c05",
+            "collection": "frontpage",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "165890758815e98f23-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "slider_mode_mobile": false,
+        "stack_products": false,
+        "show_atc": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "b9017090-f613-43a7-a29e-dbe05c56fbe5": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=oaf5dCsei30",
+        "subheading2": "",
+        "title2": "",
+        "video_url2": "https:\/\/www.youtube.com\/watch?v=KDKUnzlwDd0",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5c313c66-3ec3-4b12-b91c-3182fe496a44",
+    "1644422436e5687919",
+    "1659088832ca9f9962",
+    "1659348938f6df9a2f",
+    "16593489629e61cb22",
+    "1659082402d944bfd7",
+    "16589075887c730d6b",
+    "b9017090-f613-43a7-a29e-dbe05c56fbe5"
+  ]
+}
