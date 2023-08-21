@@ -116,12 +116,12 @@
           "settings": {
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "LinkedIn",
+            "title": "Facebook",
             "content": "",
             "liquid_text": "",
             "liquid_text_fallback": "",
-            "link_text": "Zu LinkedIn",
-            "link_url": "https:\/\/www.linkedin.com\/in\/sarahneidler\/",
+            "link_text": "Zu Facebook",
+            "link_url": "https:\/\/www.facebook.com\/cleveressen.info",
             "link_style": "button",
             "text_alignment": "left"
           }
@@ -140,11 +140,27 @@
             "link_style": "button",
             "text_alignment": "left"
           }
+        },
+        "8ca3cd66-b28c-4070-9c44-579728514578": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Instagram",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "Zu Instagram",
+            "link_url": "https:\/\/www.instagram.com\/cleveressen.info\/",
+            "link_style": "button",
+            "text_alignment": "left"
+          }
         }
       },
       "block_order": [
         "c591a33e-7cda-4ea7-9828-8e3f53a0933b",
-        "165934893735c45f7e-2"
+        "165934893735c45f7e-2",
+        "8ca3cd66-b28c-4070-9c44-579728514578"
       ],
       "settings": {
         "css_class": "",
