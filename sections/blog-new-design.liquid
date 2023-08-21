@@ -48,7 +48,7 @@
         <div class="info" style=" flex-direction: row;">
            {% render 'med.liquid' %}
           <h4 style="font-size:15px;">
-            <span style="font-weight:bold">{{ doc.gepruft_text }}</span>
+            <span style="font-weight:bold"><a href="{{ doc.seite }}">{{ doc.gepruft_text }}</a></span>
             <span style="border-bottom:1px solid black; font-weight:200;">{{ doc.name }}</span>
           </h4>
         </div>
