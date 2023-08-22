@@ -911,7 +911,7 @@ body section.blog-section .row {
 
 .blog-banner {
   display: grid;
-  background: #ececfa;
+  /* background: #ececfa; */
   margin-top: 0;
   grid-template-columns: 1fr 1fr;
 }
@@ -1158,7 +1158,7 @@ p.desktop {
   }
   .blog-banner {
     display: grid;
-    /* background: #ececfa; */
+    background: #ececfa;
     margin-top: 0;
     grid-template-columns: 1fr;
   }
