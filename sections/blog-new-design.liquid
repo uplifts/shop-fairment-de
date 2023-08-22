@@ -232,11 +232,12 @@
             <a href="{{ product.url }}">
                <img src="{{product.featured_image | img_url :'700x' }}" alt="Product">
           <h3>{{ product.title }}</h3>
-               <button type="button" id="product-{{ product.id }}-reviews-desktop" class="tabs-nav__item heading heading--small anchor" aria-controls="block-{{ section.id }}-{{ block.id }}" {{ block.shopify_attributes }}>
+             
+            </a>
+              <button type="button" id="product-{{ product.id }}-reviews-desktop" class="tabs-nav__item heading heading--small anchor" aria-controls="block-{{ section.id }}-{{ block.id }}" {{ block.shopify_attributes }}>
               {%- assign rating_count = product.metafields.reviews.rating_count.value | default: 0 -%}
               {{- 'product.general.reviews' | t: rating_count: rating_count }}
             </button>
-            </a>
            <a href="/collections/all">Zum fairment shop</a>
           </div>
          
