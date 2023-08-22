@@ -1066,7 +1066,7 @@ li.tag_item {
   line-height: 15px;
   letter-spacing: 0em;
 }
-#main * :not(.rating) {
+#main * :not(.rating span, .ruk_rating_snippet i) {
   font-family: "Helvetica" !important;
 }
 .blog-banner .banner__content .section__title h1 {
