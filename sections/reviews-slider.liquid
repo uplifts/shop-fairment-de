@@ -2,11 +2,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 {% style %}
+  .comment_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+}
   .rating .checked{
     color: #283583;
     letter-spacing: 5px;
     font-size: 15px;
   }
+  p.description {
+    text-align: center;
+    width: 60%;
+}
 {% endstyle %}
 <div id="default-carousel" class="container vertical-breather relative w-full" data-carousel="static">
   <!-- Carousel wrapper -->
