@@ -111,18 +111,13 @@
       }
     }
   {% endstyle %}
-  {% for block in section.blocks %}
-    <div class="video-container video-container{{ forloop.index }}">
-  <span class="close close{{ forloop.index }}">&#10006;</span>
-  <iframe id="video_player" class="video_player{{ forloop.index }}" src="{{ block.settings.link }}"> </iframe>
-</div>
-{% endfor %}
+
 <div class="container vertical-breather">
    <h3 class="tv-section-title"> {{ section.settings.title }} </h3>
   <div class="main-video-container">
   {% for block in section.blocks %}
     <div class="video-card">
-      <button class="btn btn{{ forloop.index }}" id="play-video" data-src="{{ block.settings.link }}">
+      <a class="btn btn{{ forloop.index }}" id="play-video" href="{{ block.settings.link }}" target="_blank">
         {% render 'icon' with 'play' %}
         {{
           block.settings.image
@@ -131,42 +126,12 @@
             class: 'video_thumbnail'
         }}
         
-      </button>
+      </a>
     </div>
   {% endfor %}
   </div>
 </div>
-<script>
-  const btn1 = document.querySelector('.btn1');
-  const btn2 = document.querySelector('.btn2');
-  const videoContainer1 = document.querySelector('.video-container1');
-  const videoContainer2 = document.querySelector('.video-container2');
-  const close1 = document.querySelector('.close1');
-  const close2 = document.querySelector('.close2');
 
-      btn1.addEventListener('click', (e) => {
-      document.querySelector('body').style.overflow = 'hidden';
-      videoContainer1.classList.add('show');
-    });
-
-  close1.addEventListener('click', () => {
-    document.querySelector('body').style.overflow = 'auto';
-    videoContainer1.classList.remove('show');
-document.querySelectorAll(".video-stream.html5-main-video").forEach(item => {item.pause()})
-  });
-
-        btn2.addEventListener('click', (e) => {
-      document.querySelector('body').style.overflow = 'hidden';
-      videoContainer2.classList.add('show');
-    });
-
-  close2.addEventListener('click', () => {
-    document.querySelector('body').style.overflow = 'auto';
-    videoContainer2.classList.remove('show');
-document.querySelectorAll(".video-stream.html5-main-video").forEach(item => {item.pause()})
-  });
-  
-</script>
 {% schema %}
   {
   "name" : "TV section",
