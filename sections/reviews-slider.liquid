@@ -35,7 +35,8 @@
 <div id="default-carousel" class="container vertical-breather relative w-full" data-carousel="static">
   <!-- Carousel wrapper -->
   <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-    <!-- Item 1 -->
+    {% for block in section.blocks %}
+    <!-- Item -->
     <div class="hidden duration-700 ease-in" data-carousel-item>
       <div class="comment_container">
         <div class="rating">
@@ -45,7 +46,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
         </div>
-        <span class="title">„Fairment hat meine Küche erobert. Ich backe jetzt auch mein eigenes Sauerteig Brot.“</span>
+        <span class="title">{{  }}</span>
         <p class="description">
           An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment
           klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und
@@ -56,7 +57,7 @@
         </p>
       </div>
     </div>
-  
+  {% endfor %}
   </div>
 
   
@@ -104,6 +105,15 @@
 {% schema %}
 {
   "name": "reviews slider",
+   "settings" : [
+     {
+      "type": "text",
+      "id": "title",
+      "default": "DAS SAGEN UNSERE KUNDEN",
+      "label": "Section Title"
+    }
+  ],
+  "blocks" : [],
     "presets": [
   {  "name": "reviews Section"}
 ]
