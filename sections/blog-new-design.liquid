@@ -3,7 +3,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<div class="blog-banner">
+<div class="container blog-banner">
   <img src="{{ article.image.src | img_url: '2048x' }}" alt="{{ article.image.alt }}">
 
   <div class="banner__content">
@@ -70,7 +70,7 @@
   </div>
 </div>
 
-<div class="article-content">
+<div class="container article-content">
   {% if article.metafields.custom.blog_paragraph != blank %}
     <p class="mobile">
       {{ article.metafields.custom.blog_paragraph }}
@@ -228,9 +228,10 @@
   <div class="linked-products">
     {% if article.metafields.custom.linked_products %}
       {% for product in article.metafields.custom.linked_products.value %}
-        {%- comment %}<locksmith:9e7e>{% endcomment -%}
-          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-        {%- comment %}</locksmith:9e7e>{% endcomment -%}
+        {%- comment %}<locksmith:56d5>{%- endcomment %}
+        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture -%}
+        {%- if var == 'true' %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:56d5>{%- endcomment %}
         <div class="product-card">
           <a href="{{ product.url }}">
             <img src="{{product.featured_image | img_url :'700x' }}" alt="Product">
