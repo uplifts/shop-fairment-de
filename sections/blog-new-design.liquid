@@ -228,10 +228,9 @@
   <div class="linked-products">
     {% if article.metafields.custom.linked_products %}
       {% for product in article.metafields.custom.linked_products.value %}
-        {%- comment %}<locksmith:56d5>{%- endcomment %}
-        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture -%}
-        {%- if var == 'true' %}{% else %}{% continue %}{% endif -%}
-        {%- comment %}</locksmith:56d5>{%- endcomment %}
+        {%- comment %}<locksmith:5ad6>{% endcomment -%}
+          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:5ad6>{% endcomment -%}
         <div class="product-card">
           <a href="{{ product.url }}">
             <img src="{{product.featured_image | img_url :'500x' }}" alt="Product">
