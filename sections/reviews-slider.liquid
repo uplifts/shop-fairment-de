@@ -46,14 +46,12 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
         </div>
-        <span class="title">{{  }}</span>
+        <span class="title">{{ block.settings.review_title }}</span>
         <p class="description">
-          An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment
-          klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und
-          stylisch.
+         {{ block.settings.review_description}}
         </p>
         <p class="meta">
-          <strong>Thomas Neuenhagen</strong>
+          <strong> {{ block.settings.review_name}}</strong>
         </p>
       </div>
     </div>
@@ -113,7 +111,32 @@
       "label": "Section Title"
     }
   ],
-  "blocks" : [],
+  "blocks" : [
+    {
+      "name" : "Review",
+      "type" : "review",
+      "settings" : [
+        {
+      "type": "text",
+      "id": "review_title",
+      "default": "review title...",
+      "label": "Review Title"
+    },
+         {
+      "type": "richtext",
+      "id": "review_description",
+      "default": "<p>review description...</p>",
+      "label": "Review Description"
+    },
+            {
+      "type": "text",
+      "id": "review_name",
+      "default": "reviewname...",
+      "label": "Review Name"
+    }
+      ]
+    }
+  ],
     "presets": [
   {  "name": "reviews Section"}
 ]
