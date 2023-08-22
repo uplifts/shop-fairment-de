@@ -32,9 +32,15 @@
     max-width: 60%;
     margin: 0 auto;
 }
+  .rev_custom_section_title{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 23px;
+  }
+  
 {% endstyle %}
 <div id="default-carousel" class="container vertical-breather relative w-full" data-carousel="static">
-  <h2 class="custom_section_title">{{ section.settings.title }}</h2>
+  <h4 class="rev_custom_section_title">{{ section.settings.title }}</h4>
   <!-- Carousel wrapper -->
   <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
     {% for block in section.blocks %}
