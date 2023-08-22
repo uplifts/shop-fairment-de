@@ -1,9 +1,10 @@
 {% style %}
-  .article_section_title{
+  .custom_section_title{
    text-align: center;
     font-size: 29px;
     font-weight: 700;
     color: #010065;
+    margin-bottom:2rem;
   }
   .article-container {
     display: flex;
@@ -35,7 +36,7 @@
   }
   {% endstyle %}
 <div class="container vertical-breather">
-  <h2 class="article_section_title">PASSENDE ARTIKEL</h2>
+  <h2 class="custom_section_title">PASSENDE ARTIKEL</h2>
   <div class="article-container">
   <div class="article_rec">
     {% if article.metafields.custom.rec_link_one %}
