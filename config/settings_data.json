@@ -279,6 +279,7 @@
           },
           "eef3eb13-ecfc-4556-8291-0cf2c6a37e2e": {
             "type": "gift_offer",
+            "disabled": true,
             "settings": {
               "threshold": 100,
               "product": "mikroben-futter-premium-ballaststoffe"
