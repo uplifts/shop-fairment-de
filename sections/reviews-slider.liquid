@@ -1,57 +1,81 @@
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
+{% style %}
+  .rating:before{
+    content : "SSSSS";
+    color: #283583;
+    letter-spacing: 5px;
+    font-size: 15px;
+  }
+  {% endstyle %}
 <div id="default-carousel" class="container vertical-breather relative w-full" data-carousel="static">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in" data-carousel-item>
-            <div class="comment_container">
-              <div class="rating"></div>
-              <span class="title"></span>
-              <p class="description"></p>
-            </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in" data-carousel-item>
-            Item 2
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in" data-carousel-item>
-            Item 3
-        </div>
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in" data-carousel-item>
+      <div class="comment_container">
+        <div class="rating"></div>
+        <span class="title">„Fairment hat meine Küche erobert. Ich backe jetzt auch mein eigenes Sauerteig Brot.“</span>
+        <p class="description">
+          An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment
+          klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und
+          stylisch.
+        </p>
+        <p class="meta">
+          <strong>Thomas Neuenhagen</strong>
+        </p>
+      </div>
     </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #010065">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #010065">
-            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in" data-carousel-item>Item 2</div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in" data-carousel-item>Item 3</div>
+  </div>
+  <!-- Slider controls -->
+  <button
+    type="button"
+    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-prev
+  >
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #010065">
+      <svg
+        class="w-4 h-4 text-white dark:text-gray-800"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  <button
+    type="button"
+    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-next
+  >
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #010065">
+      <svg
+        class="w-4 h-4 text-white dark:text-gray-800"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
 </div>
-
-
-
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
 {% schema %}
-  {
-    "name": "reviews slider",
-      "presets": [
-    {  "name": "reviews Section"}
-  ]
-  }
+{
+  "name": "reviews slider",
+    "presets": [
+  {  "name": "reviews Section"}
+]
+}
 {% endschema %}
