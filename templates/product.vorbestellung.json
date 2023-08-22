@@ -59,7 +59,8 @@
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
-          "settings": {}
+          "settings": {
+          }
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
           "type": "line_item_property",
@@ -142,6 +143,7 @@
         "show_share_buttons": false,
         "custom_rating_snippet": "<div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div>",
         "help_page": "",
+        "hide_variant_images": false,
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -272,7 +274,8 @@
     "product-content": {
       "type": "product-content",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "16625671683f7f5938": {
       "type": "image-with-text",
@@ -299,6 +302,7 @@
       "block_order": [
         "1662567167d1d36377-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -339,6 +343,7 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -360,7 +365,8 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -404,7 +410,6 @@
     },
     "16624728032cdcd5d3": {
       "type": "product-recommendations",
-      "disabled": true,
       "blocks": {
         "d0ef47c7-93cd-4186-8823-0bebab2b11de": {
           "type": "product",
@@ -444,6 +449,7 @@
         "1b1f4331-0634-49fd-9b32-3ea1191f47fa",
         "32bb258d-769c-4d1a-83d0-8af6a4107a42"
       ],
+      "disabled": true,
       "settings": {
         "show_atc": false,
         "show_cta": false,
