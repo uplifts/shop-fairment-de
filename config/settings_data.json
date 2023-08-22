@@ -565,6 +565,39 @@
         "settings": {
           "title": "Fairment - TV"
         }
+      },
+      "article-recommendation": {
+        "type": "article-recommendation",
+        "settings": {
+        }
+      },
+      "reviews-slider": {
+        "type": "reviews-slider",
+        "blocks": {
+          "e00e2c6f-ed65-4e15-ace9-6e36fd1e27e5": {
+            "type": "review",
+            "settings": {
+              "review_title": "„Kombucha hat meine Oma damals schon immer gemacht. Mit Fairment bin ich in ihre Fußstapfen getreten“",
+              "review_description": "<p>Danke Fairment. Dank euch gibt es bei mir jetzt immer frische Fermente auf den Tisch. Das tut dem Geldbeutel aber vor allem der Gesundheit ganz gut. Die Community hat mich immer mit Rezepten inspiriert.<\/p>",
+              "review_name": "Annika Föhr"
+            }
+          },
+          "c8c828fe-a864-43e3-80ac-aace2b9f0ba8": {
+            "type": "review",
+            "settings": {
+              "review_title": "„Fairment hat meine Küche erobert. Ich backe jetzt auch mein eigenes Sauerteig Brot.“",
+              "review_description": "<p>An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und stylisch.<\/p>",
+              "review_name": "Thomas Neuenhagen"
+            }
+          }
+        },
+        "block_order": [
+          "e00e2c6f-ed65-4e15-ace9-6e36fd1e27e5",
+          "c8c828fe-a864-43e3-80ac-aace2b9f0ba8"
+        ],
+        "settings": {
+          "title": "DAS SAGEN UNSERE KUNDEN"
+        }
       }
     },
     "content_for_index": [
