@@ -7,9 +7,7 @@
   <img src="{{ article.image.src | img_url: '2048x' }}" alt="{{ article.image.alt }}">
 
   <div class="banner__content">
-      {% render 'breadcrumbs' %}
-
-
+    {% render 'breadcrumbs' %}
 
     <div class="section__title">
       <h1 style="color: #fff;">{{ article.title }}</h1>
@@ -19,11 +17,10 @@
       <ul class="tags-list">
         {%- for tag in article.tags -%}
           {% if tag contains 'label_' %}
-          <li class="tag_item">
-            {{ tag | split: "label_" }}
-          </li>
+            <li class="tag_item">
+              {{ tag | split: 'label_' }}
+            </li>
           {% endif %}
-
         {%- endfor -%}
       </ul>
     </div>
@@ -41,15 +38,15 @@
       </div>
     {% endfor %}
 
-
-
     {% for doc in shop.metaobjects.doktorin.values %}
       <div class="person-block">
         <div class="info" style=" flex-direction: row;">
-           {% render 'med.liquid' %}
+          {% render 'med.liquid' %}
           <h4 style="font-size:15px;">
             <span style="font-weight:bold">{{ doc.gepruft_text }}</span>
-            <span style="border-bottom:1px solid black; font-weight:200;"><a href="{{ doc.seite }}">{{ doc.name }}</a></span>
+            <span style="border-bottom:1px solid black; font-weight:200;"
+              ><a href="{{ doc.seite }}">{{ doc.name }}</a></span
+            >
           </h4>
         </div>
         <div class="person-image">
@@ -58,7 +55,7 @@
       </div>
     {% endfor %}
 
-        <div class="date__section">
+    <div class="date__section">
       <div class="reading_time">
         {% if article.metafields.custom.lesezeit != blank %}
           Lesezeit ca. {{ article.metafields.custom.lesezeit }} Minuten
@@ -73,177 +70,186 @@
   </div>
 </div>
 
-
-  <div class="article-content">
-    {% if article.metafields.custom.blog_paragraph != blank %}
-          <p class="mobile">
-            {{ article.metafields.custom.blog_paragraph }}
-          </p>
-            {% endif %}
-    <div class="index-outer-container" id="author_container">
-      <div class="author_container">
-        {% for author in shop.metaobjects.autor.values %}
-          <a
-            target="_blank"
-            {% if author.autorenseite != blank %}
-              href="{{ author.autorenseite }}"
-            {% else %}
-              href="#"
-            {% endif %}
-          >
-            <div class="author_inner_container">
-              <div class="image-wrap image-author-wrap">
-                <img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">
-              </div>
-            </div>
-          </a>
-
-          <button class="accordion">
-            <font style="font-family: playfair display;">{{ author.autor }}</font>
-          </button>
-          <div class="author-info panel">
-            <div class="author-bio">
-              <font style="vertical-align: inherit;">{{ author.autorenbeschreibung | metafield_tag }}</font>
+<div class="article-content">
+  {% if article.metafields.custom.blog_paragraph != blank %}
+    <p class="mobile">
+      {{ article.metafields.custom.blog_paragraph }}
+    </p>
+  {% endif %}
+  <div class="index-outer-container" id="author_container">
+    <div class="author_container">
+      {% for author in shop.metaobjects.autor.values %}
+        <a
+          target="_blank"
+          {% if author.autorenseite != blank %}
+            href="{{ author.autorenseite }}"
+          {% else %}
+            href="#"
+          {% endif %}
+        >
+          <div class="author_inner_container">
+            <div class="image-wrap image-author-wrap">
+              <img src="{{author.bild_autor | img_url :'500x' }}" alt="Author">
             </div>
           </div>
-        {% endfor %}
-      </div>
-      <div class="inhalt-container">
-        <span
-          ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inhalte</font></font></span
-        >
-        <ul id="article_menu" class="index-container"></ul>
-        <div class="to_the_shop to_the_shop_fixed">
-        <p><a style="background:{{ article.metafields.custom.button_color }}; color:{{ article.metafields.custom.button_font_color }}; text-decoration:none;" href="{{ article.metafields.custom.button_link }}" title="{{ article.metafields.custom.button_text }}">{{ article.metafields.custom.button_text }} </a></p>
+        </a>
+
+        <button class="accordion">
+          <font style="font-family: playfair display;">{{ author.autor }}</font>
+        </button>
+        <div class="author-info panel">
+          <div class="author-bio">
+            <font style="vertical-align: inherit;">{{ author.autorenbeschreibung | metafield_tag }}</font>
+          </div>
         </div>
-      </div>
-      {% comment %}
-        <div class="social_buttons">
-           <div class="social-sharing">
-              {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: 'x48' %}
-           </div>
-        </div>
-      {% endcomment %}
+      {% endfor %}
     </div>
-    <div class="article-container">
-      <article class="article">
-        <div class="article__body rte">
-          
-          {% if article.metafields.custom.blog_paragraph != blank %}
+    <div class="inhalt-container">
+      <span
+        ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inhalte</font></font></span
+      >
+      <ul id="article_menu" class="index-container"></ul>
+      <div class="to_the_shop to_the_shop_fixed">
+        <p>
+          <a
+            style="background:{{ article.metafields.custom.button_color }}; color:{{ article.metafields.custom.button_font_color }}; text-decoration:none;"
+            href="{{ article.metafields.custom.button_link }}"
+            title="{{ article.metafields.custom.button_text }}"
+          >
+            {{- article.metafields.custom.button_text }}
+          </a>
+        </p>
+      </div>
+    </div>
+    {% comment %}
+      <div class="social_buttons">
+         <div class="social-sharing">
+            {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: 'x48' %}
+         </div>
+      </div>
+    {% endcomment %}
+  </div>
+  <div class="article-container">
+    <article class="article">
+      <div class="article__body rte">
+        {% if article.metafields.custom.blog_paragraph != blank %}
           <p class="desktop">
             {{ article.metafields.custom.blog_paragraph }}
           </p>
-            {% endif %}
-            
-          {{ article.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}
-        </div>
-        {% if blog.comments_enabled? %}
-          <div class="border-top comment-feedback__section" data-cc-animate>
-            <div class="containers">
-              <div id="comments" class="comments reading-column">
-                {% if article.comments.size > 0 or comment.created_at %}
-                  <div class="section padless-bottom">
-                    <h2 class="comment-title" id="page_comments">
-                      {{ article.comments_count }}
-                      {{ 'blogs.comments.title' | t }}
-                    </h2>
+        {% endif %}
 
-                    {% comment %}
-                      {% if comment and comment.created_at %}
-                          {% render 'comment', comment: comment, article: article %}
-                      {% endif %}
-                    {% endcomment %}
+        {{ article.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}
+      </div>
+      {% if blog.comments_enabled? %}
+        <div class="border-top comment-feedback__section" data-cc-animate>
+          <div class="containers">
+            <div id="comments" class="comments reading-column">
+              {% if article.comments.size > 0 or comment.created_at %}
+                <div class="section padless-bottom">
+                  <h2 class="comment-title" id="page_comments">
+                    {{ article.comments_count }}
+                    {{ 'blogs.comments.title' | t }}
+                  </h2>
 
-                    {% for comment in article.comments %}
-                      {% render 'comment', comment: comment, article: article %}
-                    {% endfor %}
-
-                    {% render 'pagination', paginate: paginate %}
-                  </div>
-                {% endif %}
-
-                <div id="comment-form" class="comment-form section">
-                  {% form 'new_comment', article %}
-                    <h2 class="comment-title">{{ 'blogs.comments.form_title' | t }}</h2>
-
-                    {% if form.posted_successfully? %}
-                      {% if blog.moderated? %}
-                        <p class="notification success">{{ 'blogs.comments.success_moderated' | t }}</p>
-                      {% else %}
-                        <p class="notification success">{{ 'blogs.comments.success' | t }}</p>
-                      {% endif %}
+                  {% comment %}
+                    {% if comment and comment.created_at %}
+                        {% render 'comment', comment: comment, article: article %}
                     {% endif %}
+                  {% endcomment %}
 
-                    {% if form.errors %}
-                      <div class="notification errors">
-                        {{ 'blogs.comments.error' | t }}
-                        {{ form.errors | default_errors }}
-                      </div>
-                    {% endif %}
+                  {% for comment in article.comments %}
+                    {% render 'comment', comment: comment, article: article %}
+                  {% endfor %}
 
-                    <div class="input-row half-design">
-                      <label for="comment_author">{{ 'blogs.comments.name' | t }}</label>
-                      <input type="text" id="comment_author" name="comment[author]" size="40" class="text">
-                    </div>
-                    <div class="input-row half-design last">
-                      <label for="comment_email">{{ 'blogs.comments.email' | t }}</label>
-                      <input type="text" id="comment_email" name="comment[email]" size="40" class="text">
-                    </div>
-                    <div class="input-row full-design">
-                      <label for="comment_body">{{ 'blogs.comments.message' | t }}</label>
-                      <textarea
-                        id="comment_body"
-                        name="comment[body]"
-                        cols="40"
-                        rows="5"
-                        class="text"
-                      >{{form.body}}</textarea>
-                    </div>
-
-                    {% if blog.moderated? %}
-                      <p>
-                        <em>{{ 'blogs.comments.moderated' | t }}</em>
-                      </p>
-                    {% endif %}
-
-                    <div class="input-row">
-                      <input
-                        type="submit"
-                        value="{{ 'blogs.comments.post' | t }}"
-                        class="alt outline"
-                        id="comment-submit"
-                      >
-                    </div>
-                  {% endform %}
+                  {% render 'pagination', paginate: paginate %}
                 </div>
+              {% endif %}
+
+              <div id="comment-form" class="comment-form section">
+                {% form 'new_comment', article %}
+                  <h2 class="comment-title">{{ 'blogs.comments.form_title' | t }}</h2>
+
+                  {% if form.posted_successfully? %}
+                    {% if blog.moderated? %}
+                      <p class="notification success">{{ 'blogs.comments.success_moderated' | t }}</p>
+                    {% else %}
+                      <p class="notification success">{{ 'blogs.comments.success' | t }}</p>
+                    {% endif %}
+                  {% endif %}
+
+                  {% if form.errors %}
+                    <div class="notification errors">
+                      {{ 'blogs.comments.error' | t }}
+                      {{ form.errors | default_errors }}
+                    </div>
+                  {% endif %}
+
+                  <div class="input-row half-design">
+                    <label for="comment_author">{{ 'blogs.comments.name' | t }}</label>
+                    <input type="text" id="comment_author" name="comment[author]" size="40" class="text">
+                  </div>
+                  <div class="input-row half-design last">
+                    <label for="comment_email">{{ 'blogs.comments.email' | t }}</label>
+                    <input type="text" id="comment_email" name="comment[email]" size="40" class="text">
+                  </div>
+                  <div class="input-row full-design">
+                    <label for="comment_body">{{ 'blogs.comments.message' | t }}</label>
+                    <textarea
+                      id="comment_body"
+                      name="comment[body]"
+                      cols="40"
+                      rows="5"
+                      class="text"
+                    >{{form.body}}</textarea>
+                  </div>
+
+                  {% if blog.moderated? %}
+                    <p>
+                      <em>{{ 'blogs.comments.moderated' | t }}</em>
+                    </p>
+                  {% endif %}
+
+                  <div class="input-row">
+                    <input
+                      type="submit"
+                      value="{{ 'blogs.comments.post' | t }}"
+                      class="alt outline"
+                      id="comment-submit"
+                    >
+                  </div>
+                {% endform %}
               </div>
             </div>
           </div>
-        {% endif %}
-      </article>
-    </div>
-    <div class="linked-products">
-      {% if article.metafields.custom.linked_products %}
-        {% for product in article.metafields.custom.linked_products.value %}
-          {%- comment %}<locksmith:56d5>{% endcomment -%}
-            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-          {%- comment %}</locksmith:56d5>{% endcomment -%}
-          <div class="product-card">
-            <a href="{{ product.url }}">
-               <img src="{{product.featured_image | img_url :'700x' }}" alt="Product">
-          <h3>{{ product.title }}</h3>
-             
-            </a>
-        <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
-           <a href="/collections/all">Zum fairment shop</a>
-          </div>
-          {% endfor %}
-        {% endif %}
-    </div>
+        </div>
+      {% endif %}
+    </article>
   </div>
-
+  <div class="linked-products">
+    {% if article.metafields.custom.linked_products %}
+      {% for product in article.metafields.custom.linked_products.value %}
+        {%- comment %}<locksmith:56d5>{%- endcomment %}
+        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: article.metafields.custom.linked_products, variable: 'transparent' %}{% endcapture -%}
+        {%- if var == 'true' %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:56d5>{%- endcomment %}
+        <div class="product-card">
+          <a href="{{ product.url }}">
+            <img src="{{product.featured_image | img_url :'700x' }}" alt="Product">
+            <h3>{{ product.title }}</h3>
+          </a>
+          <div
+            class="ruk_rating_snippet"
+            data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"
+          ></div>
+          <a href="/collections/all">Zum fairment shop</a>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
 
 <script>
+  
   
   
   
@@ -272,6 +278,7 @@
       }
     });
   });
+
 
 
 
