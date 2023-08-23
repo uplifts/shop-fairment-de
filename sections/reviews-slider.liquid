@@ -51,12 +51,10 @@
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -72,21 +70,14 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
-.slide {
-  animation-name: slide;
-  animation-duration: 1.5s;
-}
-
 
   @media screen and (max-width:768px){
     .title{
@@ -104,7 +95,7 @@
   <div class="slideshow-container">
     {% for block in section.blocks %}
     <!-- Item -->
-    <div class="mySlides slide">
+    <div class="mySlides">
       <div class="comment_container">
         <div class="rating">
           <span class="fa fa-star checked"></span>
