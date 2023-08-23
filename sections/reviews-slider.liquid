@@ -51,14 +51,14 @@
     
   }
 {% endstyle %}
-<div id="default-carousel" class="container vertical-breather relative w-full" data-carousel="static">
+<div id="default-carousel" class="container vertical-breather" data-carousel="static">
   <h4 class="rev_custom_section_title">{{ section.settings.title }}</h4>
   <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+  <div class="">
     {% for block in section.blocks %}
     <!-- Item -->
     <div class="hidden duration-700 ease-linear" data-carousel-item>
-      <div class="comment_container absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+      <div class="comment_container">
         <div class="rating">
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
