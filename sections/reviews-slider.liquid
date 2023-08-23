@@ -43,12 +43,7 @@
     letter-spacing: 2px;
     line-height: 23px;
   }
-  @media screen and (max-width:768px){
-    .title{
-        font-size: 26px;
-    }
-    
-  }
+
   /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -87,7 +82,21 @@
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+.slide {
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
 
+@keyframes slide {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  @media screen and (max-width:768px){
+    .title{
+        font-size: 26px;
+    }
+    
+  }
 {% endstyle %}
 <div class="container vertical-breather">
   <h4 class="rev_custom_section_title">{{ section.settings.title }}</h4>
@@ -98,7 +107,7 @@
   <div class="slideshow-container">
     {% for block in section.blocks %}
     <!-- Item -->
-    <div class="mySlides">
+    <div class="mySlides slide">
       <div class="comment_container">
         <div class="rating">
           <span class="fa fa-star checked"></span>
