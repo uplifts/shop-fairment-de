@@ -53,7 +53,7 @@
 
 .slides {
   display: none;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; /* Add this line */
 }
 
 
@@ -146,17 +146,15 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slides");
-  
+
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-     slides[i].style.opacity = 0;  /* Change display to opacity */ 
+    slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.opacity = 1;  /* Change display to opacity */
-  dots[slideIndex-1].className += " active";
+
+  slides[slideIndex-1].style.display = "block";  
+  
 }
 </script>
 
