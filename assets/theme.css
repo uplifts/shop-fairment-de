@@ -17678,3 +17678,60 @@ line-height: normal;
 .mini-cart__recommendations .badge.bestseller {
   display: none !important;
 }
+
+/* Amazon style collection pages */
+
+@media (max-width: 500px) {
+
+  .product-list__inner {
+    display: block !important;
+  }
+
+  .product-list__inner .product-item, .unit-price-measurement {
+    flex-direction: row;
+    font-size: 10px;
+  }
+
+  .product-list__inner .product-item:not(:last-child) {
+    margin-bottom: 6px !important;
+  }
+
+  .product-list__inner .product-item__info {
+    text-align: start;
+    width: 50%;
+  }
+
+  .product-list__inner .product-item-meta__title {
+    font-size: 14px;
+  }
+
+  .product-list__inner .price {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .price-list {
+    flex-wrap: nowrap;
+  }
+
+  .product-item__image-wrapper {
+    width: 140px;
+  }
+
+  .product-item-meta__taxes-included {
+    color: #B1B1B1;
+    padding-top: 0;
+  }
+
+  .badge.bestseller--mobile {
+    font-size: 11px;
+    display: block;
+    position: inherit;
+    margin-bottom: 8px;
+  }
+  
+  .price-list--centered {
+    justify-content: left !important;
+}
+
+}
