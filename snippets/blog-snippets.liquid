@@ -1,43 +1,28 @@
 <style>
 /* ############################## Anpassbare Inhalte ############################## */
 :root{
-  --ws-color-primary: #00148C !important;
-  --ws-section-background: #ffffff !important;
+  --ws-color-primary: green;
+  --ws-section-background: #f7f7f7;
   --ws-section-spacing: 15px 0;
-  
 }
 
-/* Für das Überschreiben bestehender Theme Styles muss in einigen Fällen !important genutzt werden */
+/* Für das überschreiben bestehender Theme Styles muss in einigen Fällen !important genutzt werden */
 
 /* Buttons */
 .ws-blog__button{
   color: white !important;
-  background: #f27217 !important;
-  padding: 14px 25px;
+  background: var(--ws-color-primary);
+  padding: 1.2rem 3rem;
   text-decoration: none;
-  display: block !important;
-  border-radius: 10px !important;
+  display: inline-block;
 }
 
 /* Heading */
 .ws-blog__title{
-  color: #00148C;
-  font-family: Helvetica !important;
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 3rem;
   margin-bottom: .5rem;
-  text-align: left;   
 }
-  /*Bild CTA Anpassung */
-.ws-blog-text-image__img {
-  align-self: stretch;
-}
-
-img.ws-blog-text-image__img-tag {
-    object-fit: cover !important;
-  object-position: 50% !important;
-}
-  
 /* ############################## Anpassbare Inhalte END ################################# */
 
 
@@ -54,20 +39,8 @@ img.ws-blog-text-image__img-tag {
   flex: 1 0 300px;
   text-align: center;
   padding: 15px;
-  
 }
 
-div.ws-blog-text-image__wrapper {
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    background: #EFECE0 !important;
-}
-
-div.ws-blog-text-image__text {
-  background: #efece0 !important;
-}
-  
 .ws-blog-text-image  .ws-blog-text-image__img{
   flex: 1 1 250px;
 }
@@ -78,21 +51,16 @@ div.ws-blog-text-image__text {
 
 .ws-blog-text-image .ws-blog-text-image__bullet {
   max-width: 80%;
- /* margin: 15px auto 20px auto; */
-  padding-left: 0 !important;
-
+  margin: 15px auto 20px auto;
 }
 
-.ws-blog-text-image .ws-blog-text-image__bullet li {
+.ws-blog-text-image .ws-blog-text-image__bullet li{
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
   align-items: center;
-  text-align: left !important;
+  text-align: left;
   margin-bottom: 5px;
-  padding-left: 0 !important;
-  max-width: 80%;
-  
 }
 
 .ws-blog-text-image .ws-blog-text-image__bullet li svg{
@@ -142,7 +110,7 @@ div.ws-blog-text-image__text {
                 <ul class="ws-blog-text-image__bullet">
                   <li>
                     <div class="ws-blog-text-bullet-icon-container">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/></svg>
                     </div>
                     <div>
                       ${elDataset.wsBulletFirst}
@@ -150,7 +118,7 @@ div.ws-blog-text-image__text {
                   </li>
                   <li>
                     <div class="ws-blog-text-bullet-icon-container">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/></svg>
                     </div>
                     <div>
                       ${elDataset.wsBulletSecond}
@@ -158,7 +126,7 @@ div.ws-blog-text-image__text {
                   </li>
                   <li>
                     <div class="ws-blog-text-bullet-icon-container">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/></svg>
                     </div>
                     <div>
                       ${elDataset.wsBulletThird}
