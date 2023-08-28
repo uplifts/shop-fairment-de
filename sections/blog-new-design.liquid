@@ -240,7 +240,7 @@
             class="ruk_rating_snippet"
             data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"
           ></div>
-          <a href="/collections/all">Zum fairment shop</a>
+          <a href="{{ product.url }}">Zum fairment shop</a>
         </div>
       {% endfor %}
     {% endif %}
