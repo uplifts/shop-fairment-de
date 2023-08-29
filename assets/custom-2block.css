@@ -1181,4 +1181,14 @@ p.desktop {
   article.article {
     width: 100%;
 }
+  #shopify-section-blog-new-design .article-container .article__body.rte a:not(.rte__image):not(.btn):not(.spr-summary-actions-newreview) {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom-color: #00000026;
+    width: 100% !important;
+    word-break: break-word;
+    position: relative;
+    display: block;
+}
 }
