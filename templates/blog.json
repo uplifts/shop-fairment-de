@@ -2,7 +2,13 @@
   "sections": {
     "main": {
       "type": "main-blog",
-      "settings": {}
+      "settings": {
+        "show_blog_title": true,
+        "show_tags": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "articles_per_page": 12
+      }
     }
   },
   "order": [
