@@ -955,6 +955,9 @@
       "block_order": [
         "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1"
       ],
+      "custom_css": [
+        ".image-with-text__wrapper {padding-top: 30px !important; padding-bottom: 30px !important;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "boxed",
