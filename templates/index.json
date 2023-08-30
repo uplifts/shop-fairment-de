@@ -938,7 +938,8 @@
           "type": "item",
           "settings": {
             "use_video": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/fairment-community-crop.jpg",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/Bewertungen_png_webp.png",
             "subheading": "4.8 \/ 5",
@@ -954,17 +955,16 @@
       "block_order": [
         "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1"
       ],
-      "disabled": true,
       "settings": {
-        "reveal_on_scroll": true,
-        "background_type": "full_width",
-        "background_overlap": "image",
+        "reveal_on_scroll": false,
+        "background_type": "boxed",
+        "background_overlap": "both",
         "image_position": "right",
         "text_alignment": "left",
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
         "rounded_corners": false,
-        "accent_background": "rgba(0,0,0,0)",
+        "accent_background": "#ffffff",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
