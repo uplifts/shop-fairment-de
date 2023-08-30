@@ -939,16 +939,16 @@
           "settings": {
             "use_video": false,
             "video_url": "",
-            "image": "shopify:\/\/shop_images\/fairment-community-crop.jpg",
+            "image": "shopify:\/\/shop_images\/fairment-community-2.jpg",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/Bewertungen_png_webp.png",
             "subheading": "4.8 \/ 5",
-            "title": "Über 100.000 glückliche Kunden vertrauen Fairment",
+            "title": "Über 100.000 glückliche Kunden & Kundinnen vertrauen Fairment",
             "title_fallback": "",
             "content": "",
             "content_fallback": "",
-            "button_text": "",
-            "button_link": ""
+            "button_text": "Beliebteste Produkte entdecken",
+            "button_link": "shopify:\/\/collections\/bestseller"
           }
         }
       },
@@ -956,15 +956,15 @@
         "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1"
       ],
       "settings": {
-        "reveal_on_scroll": false,
+        "reveal_on_scroll": true,
         "background_type": "boxed",
         "background_overlap": "both",
         "image_position": "right",
         "text_alignment": "left",
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
-        "rounded_corners": false,
-        "accent_background": "#ffffff",
+        "rounded_corners": true,
+        "accent_background": "#ececfa",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
