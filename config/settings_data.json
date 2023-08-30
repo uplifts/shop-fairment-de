@@ -55,7 +55,7 @@
     "favicon": "shopify:\/\/shop_images\/cropped-fairment-logo-192x192.png",
     "dhl_logo": "shopify:\/\/shop_images\/dhl-gogreen.png",
     "custom_announcement_bar_snippet": "<div id=\"qab_placeholder\"><\/div>\n<style>\n#shopify-section-header {\n  margin-top: 52px !important;\n}\n@media (min-width: 518px) {\n  #shopify-section-header {\n    margin-top: 40px !important;\n  }\n}\n<\/style>",
-    "fg_enable": true,
+    "fg_enable": false,
     "fg_discount": "GRATIS-GLAS",
     "fg_threshold": 250,
     "fg_a": "fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika",
