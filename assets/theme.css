@@ -8354,12 +8354,6 @@ font-size: 12px;
   }
 }
 
-@media screen and (max-width: 768px) {
-[dir"ltr] .line-item__price-list-container {
-min-width: 55px; 
- }
-}
-
 /* TABLE */
 
 .line-item-table {
