@@ -240,6 +240,49 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "612bcc53-c717-4f5f-819e-50a286164fc2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/fairment-community-3.jpg",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/Bewertungen_png_webp.png",
+            "subheading": "4.86 \/ 5",
+            "title": "Über 100.000 glückliche Kundinnen vertrauen Fairment",
+            "title_fallback": "",
+            "content": "",
+            "content_fallback": "",
+            "button_text": "Bestseller entdecken",
+            "button_link": "shopify:\/\/collections\/bestseller"
+          }
+        }
+      },
+      "block_order": [
+        "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1"
+      ],
+      "custom_css": [
+        ".image-with-text__wrapper {padding-top: 0px !important; padding-bottom: 0px !important;}",
+        ".image-with-text__image-wrapper {min-width: 45%;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "boxed",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": true,
+        "accent_background": "#ececfa",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1662632521a358d2df": {
       "type": "promotion-blocks",
       "blocks": {
@@ -930,49 +973,6 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
-    },
-    "612bcc53-c717-4f5f-819e-50a286164fc2": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1": {
-          "type": "item",
-          "settings": {
-            "use_video": false,
-            "video_url": "",
-            "image": "shopify:\/\/shop_images\/fairment-community-3.jpg",
-            "tab_label": "Item",
-            "subheading_icon": "shopify:\/\/shop_images\/Bewertungen_png_webp.png",
-            "subheading": "4.86 \/ 5",
-            "title": "Über 100.000 glückliche Kunden vertrauen Fairment",
-            "title_fallback": "",
-            "content": "",
-            "content_fallback": "",
-            "button_text": "Bestseller entdecken",
-            "button_link": "shopify:\/\/collections\/bestseller"
-          }
-        }
-      },
-      "block_order": [
-        "template--18067159777544__612bcc53-c717-4f5f-819e-50a286164fc2-item-1"
-      ],
-      "custom_css": [
-        ".image-with-text__wrapper {padding-top: 0px !important; padding-bottom: 0px !important;}",
-        ".image-with-text__image-wrapper {min-width: 45%;}"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "background_type": "boxed",
-        "background_overlap": "both",
-        "image_position": "right",
-        "text_alignment": "left",
-        "cycle_speed": 8,
-        "nav_slidable_mobile": false,
-        "rounded_corners": true,
-        "accent_background": "#ececfa",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -980,6 +980,7 @@
     "1642984483bc62f870",
     "936e9df5-c065-4217-830a-f486006c10e2",
     "4a80a714-acd8-47a6-820a-7d1960de026e",
+    "612bcc53-c717-4f5f-819e-50a286164fc2",
     "1662632521a358d2df",
     "featured-collections",
     "1662395332e7d208e9",
@@ -989,7 +990,6 @@
     "caf24f6c-12f1-4fa6-bbe4-65fecb74d9ee",
     "4fb65238-e3b4-4de4-8c46-7620f2f606bc",
     "16625648601f001c2a",
-    "7d981f1b-aa8a-4e80-9725-16928ca9d1c3",
-    "612bcc53-c717-4f5f-819e-50a286164fc2"
+    "7d981f1b-aa8a-4e80-9725-16928ca9d1c3"
   ]
 }
