@@ -17370,7 +17370,6 @@ visibility: hidden;
 }
 
 .mini-cart__gift-title {
-  font-size: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -17384,7 +17383,7 @@ visibility: hidden;
 .mini-cart__gift-title,
 .mini-cart__gift-price {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .mini-cart__gift-footer .mini-cart__gift-price {
