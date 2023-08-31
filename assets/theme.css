@@ -17734,3 +17734,7 @@ line-height: normal;
 }
 
 }
+
+[dir=ltr] .line-item__price-list-container {
+  min-width: 55px; 
+}
