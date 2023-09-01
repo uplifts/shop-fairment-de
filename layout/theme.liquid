@@ -155,7 +155,7 @@ f=false,d=document,vwoCodeEl=document.querySelector('#vwoCode'),code={use_existi
 </head>
   {%- assign feature_classes = '' -%}
 
-  {% assign feature_classes = feature_classes | append: ' ' | append: request.page_type %}
+  {% assign feature_classes = feature_classes | append: ' template-' | append: request.page_type %}
 
   {%- if settings.show_image_zoom -%}
     {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
