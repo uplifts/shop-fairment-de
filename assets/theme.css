@@ -17636,7 +17636,7 @@ visibility: hidden;
 
 /* Three Column USP Experiment */
 .three_usp_wrapper {
-  display: none;
+  display: block;
 }
 
 .three_usp {
