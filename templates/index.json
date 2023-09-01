@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/230421_Fairment_custom_2000px.jpg",
-            "split_image": "shopify:\/\/shop_images\/230421_Fair_Header_Mockup_groesser.png",
+            "split_image": "shopify:\/\/shop_images\/Fairment-Hero-banner-mobile-2-crop.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Fairment-Hero-banner-mobile-crop.jpg",
             "stretch_1st_image": true,
             "text_position": "middle_left",
