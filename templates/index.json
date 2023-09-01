@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/230421_Fairment_custom_2000px.jpg",
             "split_image": "shopify:\/\/shop_images\/230421_Fair_Header_Mockup_groesser.png",
-            "mobile_image": "shopify:\/\/shop_images\/Fairment-Hero-banner-mobile-crop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Fairment-Hero-banner-mobile-2-crop.jpg",
             "stretch_1st_image": true,
             "text_position": "middle_left",
             "subheading": "",
@@ -35,7 +35,7 @@
       ],
       "settings": {
         "css_class": "home-hero",
-        "section_height_mobile": 64,
+        "section_height_mobile": 62,
         "section_height": "small",
         "transition_type": "fade",
         "autoplay": true,
