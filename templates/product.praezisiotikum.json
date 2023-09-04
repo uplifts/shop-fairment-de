@@ -1,0 +1,671 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "fd813bdd-83af-4883-9091-dc5f57f1fbcc": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "",
+            "liquid": "{% render 'buybox-highlights', text: product.metafields.custom.product_highlights %}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "variant_image",
+            "size_chart_page": ""
+          }
+        },
+        "420a442f-982e-4faf-88a8-0ad285dd978d": {
+          "type": "availability_status",
+          "settings": {
+            "css_class": "",
+            "available_text": "{{ product.metafields.custom.shipping_time}}",
+            "soldout_text": "{{ product.metafields.custom.soldout_text}}"
+          }
+        },
+        "0c30b7c0-e457-4d64-b353-f114abecb928": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{ product }}"
+          }
+        },
+        "6f68bbc7-ce12-447c-929c-d36fe7a77cb0": {
+          "type": "social_proof",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4_1.png",
+            "label": "<p>Von<strong> Dr. Freese und weiteren <\/strong>für den Darm empfohlen<\/p>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "buybox-bundle-link",
+            "liquid": "{%- if product.metafields.custom.buybox_bundle_link != blank -%}\n<a href=\"{{ product.metafields.custom.buybox_bundle_link }}\">{{ product.metafields.custom.buybox_bundle_link_text }}<\/a>\n{%- endif -%}"
+          }
+        },
+        "5b90bba3-a67f-47a3-b6de-c051c8dd907b": {
+          "type": "advantage",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icons8-prize.svg",
+            "content": "Laborgeprüft"
+          }
+        },
+        "3e25850f-95ef-45d4-b934-4fb4faa611d4": {
+          "type": "advantage",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icons8-heart_health.svg",
+            "content": "Hochdosiert"
+          }
+        },
+        "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
+          "type": "advantages",
+          "settings": {
+          }
+        },
+        "96a7aa85-8d92-4300-951f-deacf7eb7860": {
+          "type": "line_item_property",
+          "disabled": true,
+          "settings": {
+            "label": "Your label",
+            "type": "text",
+            "required": false,
+            "allow_long_text": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No"
+          }
+        },
+        "24a23161-1c87-4409-9595-813b0c57a726": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "css_class": "buybox-storage-conditions",
+            "liquid": "<span style='color: #CF3441'>Bitte im Kühlschrank bei + 3 °C bis +7 °C lagern. <\/span>"
+          }
+        },
+        "7704f86c-990b-4996-8afd-296c56ee6011": {
+          "type": "accordion_item",
+          "settings": {
+            "is_open": false,
+            "label": "(Neu) Spar-Abo",
+            "content": "Spare jetzt bares Geld mit dem neuen Spar-Abo. Wähle selbst das Lieferintervall, das zu dir passt. 100% flexibel und monatlich kündbar. Keine versteckten Kosten.\n<br><br>\nIn unserem Spar-Abo Login kannst du bequem deine Lieferintervalle anpassen, deine Adresse aktualisieren oder die Zahlungsinformationen aktualisieren."
+          }
+        },
+        "18fb818f-b83d-491b-88ff-8b188b41cb33": {
+          "type": "accordion_item",
+          "settings": {
+            "is_open": false,
+            "label": "{{ product.metafields.custom.product_tab_1_title.value }}",
+            "content": "{{ product.metafields.custom.product_tab_1_content }}"
+          }
+        },
+        "7a71bc25-959d-4256-9db7-fb69ef0d6c01": {
+          "type": "accordion_item",
+          "settings": {
+            "is_open": false,
+            "label": "{{ product.metafields.custom.product_tab_2_title.value }}",
+            "content": "{{ product.metafields.custom.product_tab_2_content }}"
+          }
+        },
+        "7b740d7e-4a85-4ca8-86ac-001044937892": {
+          "type": "accordion_item",
+          "settings": {
+            "is_open": false,
+            "label": "{{ product.metafields.custom.product_tab_3_title.value }}",
+            "content": "{{ product.metafields.custom.product_tab_3_content }}"
+          }
+        },
+        "55619357-015c-4d2e-b0a6-5531f976f5ad": {
+          "type": "text",
+          "settings": {
+            "css_class": "",
+            "text_color": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "fd813bdd-83af-4883-9091-dc5f57f1fbcc",
+        "variant_picker",
+        "420a442f-982e-4faf-88a8-0ad285dd978d",
+        "0c30b7c0-e457-4d64-b353-f114abecb928",
+        "6f68bbc7-ce12-447c-929c-d36fe7a77cb0",
+        "buy_buttons",
+        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1",
+        "5b90bba3-a67f-47a3-b6de-c051c8dd907b",
+        "3e25850f-95ef-45d4-b934-4fb4faa611d4",
+        "fbba2ac9-6ad4-4b85-901e-ffd776df2530",
+        "96a7aa85-8d92-4300-951f-deacf7eb7860",
+        "24a23161-1c87-4409-9595-813b0c57a726",
+        "7704f86c-990b-4996-8afd-296c56ee6011",
+        "18fb818f-b83d-491b-88ff-8b188b41cb33",
+        "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
+        "7b740d7e-4a85-4ca8-86ac-001044937892",
+        "55619357-015c-4d2e-b0a6-5531f976f5ad"
+      ],
+      "custom_css": [
+        ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
+        ".buybox-bundle-link a:hover {color: #f38388; text-decoration: none;}"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": true,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "custom_rating_snippet": "<a href=\"#bewertung\"><div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div><\/a>",
+        "help_page": "",
+        "hide_variant_images": true,
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide"
+      }
+    },
+    "22ebbe31-b029-4c8d-9c7a-ae8251375d8b": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 32px;}"
+      ],
+      "settings": {
+        "subheading": "Für ein gutes Bauchgefühl",
+        "title": "Nachschub für die Darmflora",
+        "content": "<p>Der moderne Lebensstil mit unausgewogener Ernährung, übermäßigem Stress oder weiteren ungünstigen Umwelteinflüssen begünstigt das Wachstum schlechter Bakterien im menschlichen Darm. Das Mikrobiom, also die Gesamtheit aller Darmbakterien, kommt so schnell aus dem Gleichgewicht. <br\/>Aus diesem Grund kann es sehr förderlich für dein Wohlbefinden sein, mit guten, natürlich vorkommenden Darmbakterien für Nachschub zu sorgen. <br\/>Als erstes Produkt in Deutschland bieten wir Premium-Biotika an, die auf <strong>sporenbasierten Bakterienstämmen<\/strong> beruhen. Durch ihre schützende Proteinhülle sind sie besonders resistent gegen Magensäure und Hitze.  <br\/>Im Gegensatz zu anderen Bakterien (z.B. den oft als Biotika verwendeten Laktobakterien) können die sporenbasierten Mikroben sich nach der Einnahme ganz natürlich im Darm ansiedeln und sogar bis zu 28 Tage dort verweilen und vermehren. (Cutting, 2011; Setlow, 2014; Hoffmann et al.)<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "3942d0a2-603b-40ad-8038-e168272b44a6": {
+      "type": "testimonials",
+      "blocks": {
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-0": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Die Fairment Super Mikroben® stellen eine hervorragende Unterstützung für den menschlichen Organismus dar. Sporenbasierte Bakterien gehören zu den wissenschaftlich am besten untersuchten Mikroben überhaupt. Die hohe Resistenz ist ein wichtiger Faktor für die Reise der Biotika durch die Magensäure an ihren Bestimmungsort: Den Darm.",
+            "author": "Dr. Jens Freese, Darmexperte und wissenschaftlicher Berater von Fairment"
+          }
+        },
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-1": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        },
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-2": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        }
+      },
+      "block_order": [
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-0",
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-1",
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-2"
+      ],
+      "custom_css": [
+        "span {font-size: 18px;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662566489f2987f24": {
+      "type": "multi-column",
+      "blocks": {
+        "1662566489346634da-0": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_feature_image_1.value }}",
+            "image_fallback": "shopify:\/\/shop_images\/221025_FAIRMENT_ICONS_Darmflora_11.png",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "{{ product.metafields.custom.product_feature_text_1.value }}",
+            "liquid_text_fallback": "<h6>Fermentieren für deine Darmflora<\/h6>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "1662566489346634da-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_feature_image_2.value }}",
+            "image_fallback": "shopify:\/\/shop_images\/221025_FAIRMENT_ICONS_Kinderleicht_10.png",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "{{ product.metafields.custom.product_feature_text_2.value }}",
+            "liquid_text_fallback": "<h6>Kinderleicht & Schnell<\/h6>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "1662566489346634da-2": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_feature_image_3.value }}",
+            "image_fallback": "shopify:\/\/shop_images\/221025_FAIRMENT_ICONS_Immunsystem_13.png",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "{{ product.metafields.custom.product_feature_text_3.value }}",
+            "liquid_text_fallback": "<h6>Fermentieren für dein Immunsystem<\/h6>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "1662566489346634da-3": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_feature_image_4.value }}",
+            "image_fallback": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Baer_15.png",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "{{ product.metafields.custom.product_feature_text_4.value }}",
+            "liquid_text_fallback": "<h6>Entwickelt in Berlin<\/h6>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1662566489346634da-0",
+        "1662566489346634da-1",
+        "1662566489346634da-2",
+        "1662566489346634da-3"
+      ],
+      "settings": {
+        "css_class": "pdp-multicolumn",
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "small",
+        "desktop_item_size": "medium",
+        "spacing": "tight",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16625671683f7f5938": {
+      "type": "image-with-text",
+      "blocks": {
+        "c3a0fa95-00fa-4631-9235-ddf36b837949": {
+          "type": "item",
+          "settings": {
+            "use_video": true,
+            "video_url": "raiDJyBvYaQ&ab",
+            "image": "shopify:\/\/shop_images\/221024_Fair_Darmgesindheit_01.1.png",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
+            "subheading": "",
+            "title": "Klasse statt Masse: Die 3 Superhelden für dein Mikrobiom",
+            "title_fallback": "",
+            "content": "",
+            "content_fallback": "<p>Als Vorreiter in Deutschland setzen wir auf die Wirkung von sogenannten sporenbasierten Mikroben. In wissenschaftlichen Studien wurde gezeigt, dass sich die Bakterien durch ihre hohe Resistenz besonders gut im Darm ansiedeln und vermehren können. In den Super-Mikroben findest du drei ausgewählte “Superhelden” unter den Mikroben. Das Bacillus coagulans, das Bacillus clausii und das Bacillus subtilis. <\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c3a0fa95-00fa-4631-9235-ddf36b837949"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662567200ba271a25": {
+      "type": "image-with-text",
+      "blocks": {
+        "1662567200b586aa8f-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image_fallback": "shopify:\/\/shop_images\/220606_Fair_Darmgesindheit_05.png",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
+            "subheading": "",
+            "title": "",
+            "title_fallback": "Eine einzigartige Wirkformel, die Standards setzt",
+            "content": "",
+            "content_fallback": "<p>Gesundheit fängt im Darm an. Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe. Neben den 3 “Superstar-Bakterien” profitierst du von hochwertigen Akazienfasern, die als Ballaststoffe die Grundlage für den Aufbau guter Bakterienkulturen bieten. Zink als wertvolles Spurenelement sorgt zusätzlich für eine normale Funktion deines Immunsystems.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662567200b586aa8f-0"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c840d2ca-4069-4077-a7e2-652d831c0ba5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/Expertenrat_Fairment.png",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
+            "subheading": "",
+            "title": "Speziell entwickelt von Ärzten und Experten.",
+            "title_fallback": "",
+            "content": "",
+            "content_fallback": "<p>Gute Produkte, die im Zusammenhang mit dem sensiblen menschlichen Körper stehen, sollten von Experten entwickelt werden. Unsere Darmbakterien wurden speziell von Mikroben-Experten, Ärzten, Heilpraktikern und Biochemikern entwickelt, um größtmögliches Wohlbefinden zu erzielen. Wir haben unser Expertenteam sorgfältig ausgewählt, um sicherzustellen, dass unsere Produkte die marktführende Qualitätsansprüche erfüllen.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "13172787-51a3-467b-bf03-1238e810001e": {
+      "type": "benefits-compare",
+      "custom_css": [
+        ".sec--benefits-compare {background-color: white;}"
+      ],
+      "settings": {
+        "title": "Fairment vs. Andere",
+        "text": "Für beste Ergebnisse für dein Wohlbefinden setzen wir auf zwei Punkte: Sporenbasierte Darmbakterien und 100% natürliche Wirkung ohne unnötige Zusatzstoffe. Unsere Produkte werden in streng geprüften Anlagen hergestellt, um höchste Qualität und Sicherheit zu gewährleisten.",
+        "benefits_title": "Fairment",
+        "dynamic_benefits": "",
+        "benefits": "Hochresistente sporenbasierte Bakterienkulturen |\nKomplexe Wirkformel für beste Ergebnisse |\nHergestellt in Deutschland & EU |\nLaborgeprüft in Köln |\nEntwickelt mit Experten |",
+        "antibenefits_title": "Andere",
+        "dynamic_antibenefits": "",
+        "antibenefits": "Werden von Magensäure zersetzt |\nNur Mikroben - ohne Ballaststoffe |\nHergestellt in Drittländern  |\nUngeprüfte Inhaltsstoffe  |\nUnbekannte Herkunft |"
+      }
+    },
+    "68f9cc3d-b2cd-478d-846d-da14d915b437": {
+      "type": "gallery",
+      "blocks": {
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/221025_Fair_Essenundtrinken_01.png",
+            "caption": ""
+          }
+        },
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/221026_Fair_Zubehoer.png",
+            "caption": ""
+          }
+        },
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/supermikroben-mikrobenfutter.png",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-0",
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-1",
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Über 10.000 glückliche Kund:innen",
+        "content": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "075c9937-78de-4f77-9923-8ec34fe236d1": {
+      "type": "custom-html",
+      "custom_css": [
+        "> {margin: 0 !important;}"
+      ],
+      "settings": {
+        "remove_margins": true,
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"relative\"><div id=\"bewertung\" class=\"anchor-link-reviews\"><\/div><\/div>",
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16660020168146ef1b": {
+      "type": "apps",
+      "blocks": {
+        "a3412a40-aea4-468b-856a-26cb9fdc31de": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "99279bdb-e250-4dac-a6ea-b699eb03765b": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#ffca28",
+            "review_type": "product_review,questions",
+            "per_page": 8,
+            "primary_btn_bg_color": "#00148c",
+            "primary_btn_border_color": "#00148c",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#e2e2e2",
+            "heading_text_color": "#2d2d2d",
+            "heading_font": "avenir_next_n6",
+            "body_text_color": "#2d2d2d",
+            "badge_icon_color": "#2e9e7b",
+            "badge_text_color": "#137355",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_replies": false,
+            "widget_spacing": 0,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "a3412a40-aea4-468b-856a-26cb9fdc31de",
+        "99279bdb-e250-4dac-a6ea-b699eb03765b"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "16624728032cdcd5d3": {
+      "type": "product-recommendations",
+      "blocks": {
+        "d0ef47c7-93cd-4186-8823-0bebab2b11de": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "f37ae761-0556-49a9-8718-dad180520917": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "4255ca71-6e46-4400-81cc-8eb072070504": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "1b1f4331-0634-49fd-9b32-3ea1191f47fa": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "32bb258d-769c-4d1a-83d0-8af6a4107a42": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "d0ef47c7-93cd-4186-8823-0bebab2b11de",
+        "f37ae761-0556-49a9-8718-dad180520917",
+        "4255ca71-6e46-4400-81cc-8eb072070504",
+        "1b1f4331-0634-49fd-9b32-3ea1191f47fa",
+        "32bb258d-769c-4d1a-83d0-8af6a4107a42"
+      ],
+      "settings": {
+        "show_atc": false,
+        "show_cta": false,
+        "subheading": "",
+        "title": "Das könnte dir auch gefallen...",
+        "recommendations_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "566ef7b6-d019-4da1-8df9-e7135645144e": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "subheading": "Your subheading",
+        "title": "Your title",
+        "liquid": "<script src=\"https:\/\/widget.reviews.io\/carousel-inline-iframeless\/dist.js?_t=2022101710\"><\/script>\n<link rel=\"stylesheet\" href=\"https:\/\/assets.reviews.io\/css\/widgets\/carousel-widget.css?_t=2022101710\">\n<link rel=\"stylesheet\" href=\"https:\/\/assets.reviews.io\/iconfont\/reviewsio-icons\/style.css?_t=2022101710\">\n<div id=\"reviewsio-carousel-widget\"><\/div>\n<script>\n\nnew carouselInlineWidget('reviewsio-carousel-widget',{\n      \/*Your REVIEWS.io account ID:*\/\n      store: 'shop.fairment.de',\n      sku: '',\n      lang: 'de',\n      carousel_type: 'topHeader',\n      styles_carousel: 'CarouselWidget--topHeader--withcards',\n\n      \/*Widget settings:*\/\n      options:{\n        general:{\n          \/*What reviews should the widget display? Available options: company, product, third_party. You can choose one type or multiple separated by comma.*\/\n          review_type: 'company, product',\n          \/*Minimum number of reviews required for widget to be displayed*\/\n          min_reviews: '1',\n          \/*Maximum number of reviews to include in the carousel widget.*\/\n          max_reviews: '30',\n          address_format: 'CITY, COUNTRY',\n          \/*Carousel auto-scrolling speed. 3000 = 3 seconds. If you want to disable auto-scroll, set this value to false.*\/\n          enable_auto_scroll: 10000,\n        },\n        header:{\n          \/*Show overall rating stars*\/\n          enable_overall_stars: true,\n          rating_decimal_places: 2,\n        },\n        reviews: {\n          \/*Show customer name*\/\n          enable_customer_name: true,\n          \/*Show customer location*\/\n          enable_customer_location: true,\n          \/*Show \"verified review\" badge*\/\n          enable_verified_badge: true,\n          \/*Show \"I recommend this product\" badge (Only for product reviews)*\/\n          enable_recommends_badge: true,\n          \/*Show photos attached to reviews*\/\n          enable_photos: true,\n          \/*Show videos attached to reviews*\/\n          enable_videos: true,\n          \/*Show when review was written*\/\n          enable_review_date: true,\n          \/*Hide reviews written by the same customer (This may occur when customer reviews multiple products)*\/\n          disable_same_customer: true,\n          \/*Minimum star rating*\/\n          min_review_percent: 4,\n          \/*Show 3rd party review source*\/\n          third_party_source: true,\n          \/*Hide reviews without comments (still shows if review has a photo)*\/\n          hide_empty_reviews: true,\n          \/*Show product name*\/\n          enable_product_name: true,\n          \/*Show only reviews which have specific tags (multiple semicolon separated tags allowed i.e tag1;tag2)*\/\n          tags: \"\",\n          \/*Show branch, only one input*\/\n          branch: \"\",\n          enable_branch_name: false,\n        },\n        popups: {\n          \/*Make review items clickable (When they are clicked, a popup appears with more information about a customer and review)*\/\n          enable_review_popups:  true,\n          \/*Show \"was this review helpful\" buttons*\/\n          enable_helpful_buttons: true,\n          \/*Show how many times review was upvoted as helpful*\/\n          enable_helpful_count: true,\n          \/*Show share buttons*\/\n          enable_share_buttons: true,\n        },\n    },\n    translations: {\n      verified_customer:  \"Verified Customer\",\n    },\n    styles:{\n      \/*Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.*\/\n      '--base-font-size': '16px',\n      '--base-maxwidth':'100%',\n\n      \/*Logo styles:*\/\n      '--reviewsio-logo-style':'var(--logo-normal)',\n\n      \/*Star styles:*\/\n      '--common-star-color':'#FFCA28',\n      '--common-star-disabled-color':' rgba(0,0,0,0.25)',\n      '--medium-star-size':' 22px',\n      '--small-star-size':'19px', \/*Modal*\/\n      '--x-small-star-size':'16px',\n      '--x-small-star-display':'inline-flex',\n\n      \/*Header styles:*\/\n      '--header-order':'1',\n      '--header-width':'160px',\n      '--header-bg-start-color':'transparent',\n      '--header-bg-end-color':'transparent',\n      '--header-gradient-direction':'135deg',\n      '--header-padding':'0.5em',\n      '--header-border-width':'0px',\n      '--header-border-color':'rgba(0,0,0,0.1)',\n      '--header-border-radius':'7px',\n      '--header-shadow-size':'0px',\n      '--header-shadow-color':'rgba(0, 0, 0, 0.1)',\n\n      \/*Header content styles:*\/\n      '--header-star-color':'inherit',\n      '--header-disabled-star-color':'inherit',\n      '--header-heading-text-color':'inherit',\n      '--header-heading-font-size':'inherit',\n      '--header-heading-font-weight':'inherit',\n      '--header-heading-line-height':'inherit',\n      '--header-heading-text-transform':'inherit',\n      '--header-subheading-text-color':'inherit',\n      '--header-subheading-font-size':'inherit',\n      '--header-subheading-font-weight':'inherit',\n      '--header-subheading-line-height':'inherit',\n      '--header-subheading-text-transform':'inherit',\n\n      \/*Review item styles:*\/\n      '--item-maximum-columns':'5',\/*Must be 3 or larger*\/\n      '--item-background-start-color':'#ffffff',\n      '--item-background-end-color':'#ffffff',\n      '--item-gradient-direction':'135deg',\n      '--item-padding':'1.5em',\n      '--item-border-width':'1px',\n      '--item-border-color':'#f2f2f2',\n      '--item-border-radius':'5px',\n      '--item-shadow-size':'10px',\n      '--item-shadow-color':'rgba(0,0,0,0.05)',\n\n      \/*Heading styles:*\/\n      '--heading-text-color':'#2d2d2d',\n      '--heading-text-font-weight':' 600',\n      '--heading-text-font-family':'avenir next',\n      '--heading-text-line-height':'4.4',\n      '--heading-text-letter-spacing':'0',\n      '--heading-text-transform':'none',\n\n      \/*Body text styles:*\/\n      '--body-text-color':'#333333',\n      '--body-text-font-weight':'400',\n      '--body-text-font-family':'avenir next',\n      '--body-text-line-height':'1.5',\n      '--body-text-letter-spacing':'0',\n      '--body-text-transform':'none',\n\n      \/*Scroll button styles:*\/\n      '--scroll-button-icon-color':'#0E1311',\n      '--scroll-button-icon-size':'24px',\n      '--scroll-button-bg-color':'transparent',\n\n      '--scroll-button-border-width':'0px',\n      '--scroll-button-border-color':'rgba(0,0,0,0.1)',\n\n      '--scroll-button-border-radius':'60px',\n      '--scroll-button-shadow-size':'0px',\n      '--scroll-button-shadow-color':'rgba(0,0,0,0.1)',\n      '--scroll-button-horizontal-position':'0px',\n      '--scroll-button-vertical-position':'0px',\n\n      \/*Badge styles:*\/\n      '--badge-icon-color':'#2B91E3',\n      '--badge-icon-font-size':'17px',\n      '--badge-text-color':'#0E1311',\n      '--badge-text-font-size':'inherit',\n      '--badge-text-letter-spacing':'inherit',\n      '--badge-text-transform':'inherit',\n\n      \/*Author styles:*\/\n      '--author-font-size':'inherit',\n      '--author-font-weight':'inherit',\n      '--author-text-transform':'inherit',\n\n      \/*Product photo or review photo styles:*\/\n      '--photo-video-thumbnail-size':'80px',\n      '--photo-video-thumbnail-border-radius':'0px',\n\n      \/*Popup styles:*\/\n      '--popup-backdrop-color':'rgba(0,0,0,0.75)',\n      '--popup-color':'#ffffff',\n      '--popup-star-color':'inherit',\n      '--popup-disabled-star-color':'inherit',\n      '--popup-heading-text-color':'inherit',\n      '--popup-body-text-color':'inherit',\n      '--popup-badge-icon-color':'inherit',\n      '--popup-badge-icon-font-size':'19px',\n      '--popup-badge-text-color':'inherit',\n      '--popup-badge-text-font-size':'14px',\n      '--popup-border-width':'0px',\n      '--popup-border-color':'rgba(0,0,0,0.1)',\n      '--popup-border-radius':'0px',\n      '--popup-shadow-size':'0px',\n      '--popup-shadow-color':'rgba(0,0,0,0.1)',\n      '--popup-icon-color':'#0E1311',\n\n      \/*Tooltip styles:*\/\n      '--tooltip-bg-color':'#0E1311',\n      '--tooltip-text-color':'#ffffff',\n    },\n  });\n\n<\/script>",
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "22ebbe31-b029-4c8d-9c7a-ae8251375d8b",
+    "3942d0a2-603b-40ad-8038-e168272b44a6",
+    "1662566489f2987f24",
+    "product-content",
+    "16625671683f7f5938",
+    "1662567200ba271a25",
+    "c840d2ca-4069-4077-a7e2-652d831c0ba5",
+    "13172787-51a3-467b-bf03-1238e810001e",
+    "68f9cc3d-b2cd-478d-846d-da14d915b437",
+    "075c9937-78de-4f77-9923-8ec34fe236d1",
+    "16660020168146ef1b",
+    "16624728032cdcd5d3",
+    "566ef7b6-d019-4da1-8df9-e7135645144e"
+  ]
+}
