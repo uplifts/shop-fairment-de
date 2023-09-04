@@ -17640,7 +17640,7 @@ visibility: hidden;
 }
 
 .three_usp {
-  display:flex;
+  display: none; 
   justify-content:space-between;
   margin-bottom:20px;
 }
