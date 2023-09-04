@@ -19,7 +19,12 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
-<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}" fontify-lang="{{ shop.locale }}">
+<html
+  class="no-js"
+  lang="{{ request.locale.iso_code }}"
+  dir="{{ direction }}"
+  fontify-lang="{{ shop.locale }}"
+  {% if request.page_type == 'product' %}data-product-id="{{ product.id }}"{% endif %}}>
   <head>
 {{ locksmith_initializations }}
 {% render 'replo-head' %}
@@ -155,7 +160,7 @@ f=false,d=document,vwoCodeEl=document.querySelector('#vwoCode'),code={use_existi
 </head>
   {%- assign feature_classes = '' -%}
 
-  {% assign feature_classes = feature_classes | append: ' template-' | append: request.page_type %}
+  {% assign feature_classes = feature_classes | append: ' page-type-' | append: request.page_type %}
 
   {%- if settings.show_image_zoom -%}
     {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
