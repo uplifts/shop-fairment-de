@@ -359,7 +359,7 @@
             "title": "",
             "title_fallback": "Smart, Stark & Wirksam",
             "content": "",
-            "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p><p>(1) Fructo-Oligosaccharide zur Unterstützung der Verdauung, der Nährstoffaufnahme und des Immunsystems.<br\/>(2) Riboflavin (= Vitamin B2) trägt zum Erhalt normaler Schleimhäute bei.<\/p>",
+            "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -610,7 +610,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "content": "<p>(1) Fructo-Oligosaccharide zur Unterstützung der Verdauung, der Nährstoffaufnahme und des Immunsystems.<br\/>(2) Riboflavin (= Vitamin B2) trägt zum Erhalt normaler Schleimhäute bei.<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
