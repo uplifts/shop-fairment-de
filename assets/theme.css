@@ -17636,37 +17636,41 @@ visibility: hidden;
 
 /* Three Column USP Experiment */
 .three_usp_wrapper {
+  display: none;
+}
+
+[data-product-id="7531822252289"] .three_usp_wrapper {
   display: block;
 }
 
 .three_usp {
-  display: none; 
-  justify-content:space-between;
-  margin-bottom:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .usp {
   border-radius: 10px;
-border: 1px dashed #E8E8E8;
-background: #F9F9F9;
-    padding:5px;
+  border: 1px dashed #E8E8E8;
+  background: #F9F9F9;
+  padding: 5px;
   width: 115px;
 }
 
 .usp p {
   margin:0;
   color: #343434;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 
 @media (max-width:600px) {
   .usp {
-  width: 105px;
+    width: 105px;
   }
 }
 
