@@ -17680,54 +17680,55 @@ line-height: normal;
 
 /* START ID - 04.09.23 - Amazon-like layout for mobile collections */
 @media (max-width: 500px) {
-  .product-list__inner {
+  .collection-listing .product-list__inner {
     display: block !important;
   }
 
-  .product-list__inner .product-item, .unit-price-measurement {
+  .collection-listing .product-list__inner .product-item, 
+  .collection-listing .unit-price-measurement {
     flex-direction: row;
     font-size: 10px;
   }
 
-  .product-list__inner .product-item:not(:last-child) {
+  .collection-listing .product-list__inner .product-item:not(:last-child) {
     margin-bottom: 6px !important;
   }
 
-  .product-list__inner .product-item__info {
+  .collection-listing .product-list__inner .product-item__info {
     text-align: start;
     width: 50%;
   }
 
-  .product-list__inner .product-item-meta__title {
+  .collection-listing .product-list__inner .product-item-meta__title {
     font-size: 14px;
   }
 
-  .product-list__inner .price {
+  .collection-listing .product-list__inner .price {
     font-size: 15px;
     white-space: nowrap;
   }
 
-  .price-list {
+  .collection-listing .price-list {
     flex-wrap: nowrap;
   }
 
-  .product-item__image-wrapper {
+  .collection-listing .product-item__image-wrapper {
     width: 140px;
   }
 
-  .product-item-meta__taxes-included {
+  .collection-listing .product-item-meta__taxes-included {
     color: #B1B1B1;
     padding-top: 0;
   }
 
-  .badge.bestseller--mobile {
+  .collection-listing .badge.bestseller--mobile {
     font-size: 11px;
     display: block;
     position: inherit;
     margin-bottom: 8px;
   }
   
-  .price-list--centered {
+  .collection-listing .price-list--centered {
     justify-content: start !important;
   }
 }
