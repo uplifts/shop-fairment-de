@@ -206,6 +206,7 @@
       "blocks": {
         "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-0": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "content": "Die Fairment Super Mikroben® stellen eine hervorragende Unterstützung für den menschlichen Organismus dar. Sporenbasierte Bakterien gehören zu den wissenschaftlich am besten untersuchten Mikroben überhaupt. Die hohe Resistenz ist ein wichtiger Faktor für die Reise der Biotika durch die Magensäure an ihren Bestimmungsort: Den Darm.",
             "author": "Dr. Jens Freese, Darmexperte und wissenschaftlicher Berater von Fairment"
