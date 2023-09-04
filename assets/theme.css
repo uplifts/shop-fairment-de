@@ -17716,6 +17716,11 @@ line-height: normal;
     width: 140px;
   }
 
+  .collection-listing .product-item__primary-image,
+  .collection-listing .product-item__secondary-image {
+    border-bottom: none;
+  }
+
   .collection-listing .product-item-meta__taxes-included {
     color: #B1B1B1;
     padding-top: 0;
