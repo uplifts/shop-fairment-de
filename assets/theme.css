@@ -17718,7 +17718,7 @@ line-height: normal;
 
   .collection-listing .product-item__primary-image,
   .collection-listing .product-item__secondary-image {
-    border-bottom: none;
+    border-bottom-color: transparent;
   }
 
   .collection-listing .product-item-meta__taxes-included {
