@@ -17646,8 +17646,8 @@ visibility: hidden;
 .three_usp {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 20px;
+  gap: 8px;
 }
 
 .usp {
@@ -17670,6 +17670,9 @@ visibility: hidden;
 @media (max-width:600px) {
   .usp {
     width: 105px;
+  }
+  .three_usp {
+    gap: 2px;
   }
 }
 
