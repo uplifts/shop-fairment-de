@@ -17680,30 +17680,30 @@ line-height: normal;
 
 /* START ID - 04.09.23 - Amazon-like layout for mobile collections */
 @media (max-width: 500px) {
-  .collection-listing .product-list__inner {
+  .collection-listing.product-list__inner {
     display: block !important;
   }
 
-  .collection-listing .product-list__inner .product-item, 
+  .collection-listing.product-list__inner .product-item, 
   .collection-listing .unit-price-measurement {
     flex-direction: row;
     font-size: 10px;
   }
 
-  .collection-listing .product-list__inner .product-item:not(:last-child) {
+  .collection-listing.product-list__inner .product-item:not(:last-child) {
     margin-bottom: 6px !important;
   }
 
-  .collection-listing .product-list__inner .product-item__info {
+  .collection-listing.product-list__inner .product-item__info {
     text-align: start;
     width: 50%;
   }
 
-  .collection-listing .product-list__inner .product-item-meta__title {
+  .collection-listing.product-list__inner .product-item-meta__title {
     font-size: 14px;
   }
 
-  .collection-listing .product-list__inner .price {
+  .collection-listing.product-list__inner .price {
     font-size: 15px;
     white-space: nowrap;
   }
