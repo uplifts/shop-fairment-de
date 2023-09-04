@@ -605,7 +605,7 @@
     "bf04a008-9e24-45dd-9d29-54fb8e978574": {
       "type": "rich-text",
       "custom_css": [
-        "p {font-size: 12 px;}"
+        "p {font-size: 12px !important;}"
       ],
       "settings": {
         "subheading": "",
