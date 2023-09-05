@@ -17688,6 +17688,11 @@ visibility: hidden;
   text-align: right;
 }
 
+.line-item__price-list-container .unit-price-measurement {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
 /* START ID - 04.09.23 - Amazon-like layout for mobile collections */
 @media (max-width: 500px) {
   .collection-listing.product-list__inner {
