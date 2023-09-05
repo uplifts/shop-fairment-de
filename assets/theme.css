@@ -17684,6 +17684,10 @@ visibility: hidden;
   display: none !important;
 }
 
+.line-item__price-list-container {
+  text-align: right;
+}
+
 /* START ID - 04.09.23 - Amazon-like layout for mobile collections */
 @media (max-width: 500px) {
   .collection-listing.product-list__inner {
