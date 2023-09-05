@@ -17686,6 +17686,7 @@ visibility: hidden;
 
 .line-item__price-list-container {
   text-align: right;
+  padding-left: 4px;
 }
 
 .line-item__price-list-container .unit-price-measurement {
