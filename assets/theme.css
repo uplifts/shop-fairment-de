@@ -17700,6 +17700,14 @@ visibility: hidden;
   }
 }
 
+[dir="ltr"] .line-item__image-wrapper {
+  margin-right: 12px;
+}
+
+[dir="rtl"] .line-item__image-wrapper {
+  margin-left: 12px;
+}
+
 /* START ID - 04.09.23 - Amazon-like layout for mobile collections */
 @media (max-width: 500px) {
   .collection-listing.product-list__inner {
