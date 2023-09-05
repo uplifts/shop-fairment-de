@@ -17693,6 +17693,12 @@ visibility: hidden;
   flex-wrap: nowrap;
 }
 
+@media (max-width: 420px) {
+  .mini-cart .line-item__quantity .line-item__remove-button {
+    display: none;
+  }
+}
+
 /* START ID - 04.09.23 - Amazon-like layout for mobile collections */
 @media (max-width: 500px) {
   .collection-listing.product-list__inner {
