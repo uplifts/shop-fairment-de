@@ -973,6 +973,85 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "29335949-d0ba-449c-8064-833e50ddc459": {
+      "type": "featured-product",
+      "blocks": {
+        "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "a29ad5f5-29dd-4feb-bc2a-ee8b3acfb5b3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ALLES DRIN:<\/strong> <br\/>Enthält alle Utensilien die du benötigst um direkt loszulegen.<\/p><p><strong>SELBERMACHEN STATT KAUFEN: <\/strong><br\/>Fermentiere deine eigene Fermente, gesünder, nachhaltiger und günstiger.<\/p><p><strong>ANFÄNGER-FREUNDLICH:<\/strong> <br\/>Dank einfacher Anleitungen wird Fermentieren zum Kinderspiel.<\/p><p><strong>PERFEKTES DIY SET FÜR ANFÄNGER & PROFIS:<\/strong> <br\/>Mit unseren Fermentationssets wird Fermentieren leicht gemacht.<\/p>"
+          }
+        },
+        "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-quantity_selector-1": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "262f12ff-6216-42af-be8a-5a47ea128c22": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-text-banner\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {
+            "star": "#ffca28",
+            "text_color": "#353535",
+            "css": "\/* Add Custom CSS Here... *\/"
+          }
+        },
+        "03e30117-2bfa-49ab-b924-36b58df5d400": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-variant_picker-1",
+        "a29ad5f5-29dd-4feb-bc2a-ee8b3acfb5b3",
+        "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-quantity_selector-1",
+        "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-buy_buttons-1",
+        "262f12ff-6216-42af-be8a-5a47ea128c22",
+        "03e30117-2bfa-49ab-b924-36b58df5d400"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "starter-kit-special-5-kits",
+        "subheading": "Dein perfektes Startpaket",
+        "title": "für mehr Wohlbefinden",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -990,6 +1069,7 @@
     "caf24f6c-12f1-4fa6-bbe4-65fecb74d9ee",
     "4fb65238-e3b4-4de4-8c46-7620f2f606bc",
     "16625648601f001c2a",
-    "7d981f1b-aa8a-4e80-9725-16928ca9d1c3"
+    "7d981f1b-aa8a-4e80-9725-16928ca9d1c3",
+    "29335949-d0ba-449c-8064-833e50ddc459"
   ]
 }
