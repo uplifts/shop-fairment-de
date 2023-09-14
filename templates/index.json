@@ -137,7 +137,7 @@
         "title": "",
         "button_text": "",
         "button_link": "",
-        "stack_logos": true,
+        "stack_logos": false,
         "background": "#ffffff",
         "text_color": "#aeaeae",
         "button_background": "rgba(0,0,0,0)",
