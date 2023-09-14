@@ -639,6 +639,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "8141285270076847652": {
+        "type": "shopify:\/\/apps\/speed-kit\/blocks\/speed-kit-installation\/80ceebdf-9344-464b-989b-ffce65a9af7a",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
