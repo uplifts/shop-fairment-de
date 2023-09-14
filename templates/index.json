@@ -65,6 +65,7 @@
         },
         "9f3f31cb-07bc-4283-b9c9-e07c5cb87fcb": {
           "type": "logo",
+          "disabled": true,
           "settings": {
             "logo": "shopify:\/\/shop_images\/Apothekenumschau_Logo_svg.png",
             "link": ""
