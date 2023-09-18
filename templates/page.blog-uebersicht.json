@@ -46,28 +46,28 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "1644422436e5687919": {
+    "bc71b264-9fbd-4679-84ec-400e475d5044": {
       "type": "image-with-text",
       "blocks": {
-        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd": {
+        "template--18123870372104__bc71b264-9fbd-4679-84ec-400e475d5044-item-1": {
           "type": "item",
           "settings": {
             "use_video": false,
             "video_url": "",
-            "image": "shopify:\/\/shop_images\/Der_Darm.png",
+            "image": "shopify:\/\/shop_images\/Fairment-Hero-banner.jpg",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Themenwelt: Rezepte & Gerichte",
+            "title": "Themenwelt: Fermentation, Kefir & Co",
             "title_fallback": "",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "content": "<p>Die Fermentation ist ein bemerkenswerter biologische Prozess, bei dem Mikroorganismen wie Hefen und Milchsäurebakterien eine Schlüsselrolle spielen. Erfahre alles wichtige zum Thema.<\/p>",
             "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-            "button_text": "ZU UNSEREN REZEPZEN",
-            "button_link": "shopify:\/\/blogs\/rezepte"
+            "button_text": "ZU DEN ARTIKELN",
+            "button_link": "shopify:\/\/blogs\/wissen"
           }
         }
       },
       "block_order": [
-        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd"
+        "template--18123870372104__bc71b264-9fbd-4679-84ec-400e475d5044-item-1"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -84,28 +84,28 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "bc71b264-9fbd-4679-84ec-400e475d5044": {
+    "1644422436e5687919": {
       "type": "image-with-text",
       "blocks": {
-        "template--18123870372104__bc71b264-9fbd-4679-84ec-400e475d5044-item-1": {
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd": {
           "type": "item",
           "settings": {
             "use_video": false,
             "video_url": "",
-            "image": "shopify:\/\/shop_images\/Fairment-Hero-banner.jpg",
+            "image": "shopify:\/\/shop_images\/Der_Darm.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Themenwelt: Fermentation, Kefir & Co",
+            "title": "Rezepte & Gerichte",
             "title_fallback": "",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "content": "<p>Von Sauerkraut bis Kimchi, von Kombucha bis Kefir - fermentierte Lebensmittel erfreuen sich zunehmender Beliebtheit, da immer mehr Menschen die gesundheitlichen Vorteile und den einzigartigen Geschmack dieser kulinarischen Kreationen entdecken.<\/p>",
             "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-            "button_text": "ZU DEN ARTIKELN",
-            "button_link": "shopify:\/\/blogs\/wissen"
+            "button_text": "ZU UNSEREN REZEPZEN",
+            "button_link": "shopify:\/\/blogs\/rezepte"
           }
         }
       },
       "block_order": [
-        "template--18123870372104__bc71b264-9fbd-4679-84ec-400e475d5044-item-1"
+        "cc3c32f2-66fc-4ea5-981f-8cef410d67dd"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -327,8 +327,8 @@
   "order": [
     "main",
     "1659088832ca9f9962",
-    "1644422436e5687919",
     "bc71b264-9fbd-4679-84ec-400e475d5044",
+    "1644422436e5687919",
     "1659348938f6df9a2f",
     "16593489629e61cb22",
     "1659082402d944bfd7",
