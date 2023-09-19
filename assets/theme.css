@@ -17768,3 +17768,7 @@ visibility: hidden;
   }
 }
 /* END ID - 04.09.23 - Amazon-like layout for mobile collections */
+
+#pn-mixed-cart-warning #pn-mixed-cart-warning-content {
+  z-index: 99999999990;
+}
