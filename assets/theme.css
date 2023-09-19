@@ -17770,7 +17770,7 @@ visibility: hidden;
 /* END ID - 04.09.23 - Amazon-like layout for mobile collections */
 
 /* START ID - 19.09.23 - Mixed cart warning popup overlay */
-#pn-mixed-cart-warning #pn-mixed-cart-warning-content {
+#pn-mixed-cart-warning.pn-manual-modal-container {
   z-index: 99999999990;
 }
 /* END ID - 19.09.23 - Mixed cart warning popup overlay */
