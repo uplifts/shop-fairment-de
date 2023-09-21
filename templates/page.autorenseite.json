@@ -7,31 +7,6 @@
         "page_width": "medium"
       }
     },
-    "5c313c66-3ec3-4b12-b91c-3182fe496a44": {
-      "type": "image-with-text-block",
-      "settings": {
-        "css_class": "",
-        "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/Paul_Seelhorst.jpg",
-        "has_border": false,
-        "has_product_tabs": false,
-        "subheading": "Subheading",
-        "title": "Image with text block",
-        "content": "<p>Use block text to hjlkhklgive your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
-        "liquid": "",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_position": "left",
-        "text_alignment": "center",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)",
-        "youtube_video_url": "",
-        "video_caption": ""
-      }
-    },
     "1644422436e5687919": {
       "type": "image-with-text",
       "blocks": {
@@ -342,7 +317,6 @@
   },
   "order": [
     "main",
-    "5c313c66-3ec3-4b12-b91c-3182fe496a44",
     "1644422436e5687919",
     "1659088832ca9f9962",
     "1659348938f6df9a2f",
