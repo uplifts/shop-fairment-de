@@ -52,6 +52,7 @@
         },
         "0b8f9f7a-96f0-426a-931d-94a54c9b84e1": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "css_class": "buybox-bundle-link",
             "liquid": "{%- if product.metafields.custom.buybox_bundle_link != blank -%}\n<a href=\"{{ product.metafields.custom.buybox_bundle_link }}\">{{ product.metafields.custom.buybox_bundle_link_text }}<\/a>\n{%- endif -%}"
@@ -483,7 +484,6 @@
     },
     "68f9cc3d-b2cd-478d-846d-da14d915b437": {
       "type": "gallery",
-      "disabled": true,
       "blocks": {
         "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-0": {
           "type": "image",
@@ -512,6 +512,7 @@
         "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-1",
         "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-2"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "Über 10.000 glückliche Kund:innen",
