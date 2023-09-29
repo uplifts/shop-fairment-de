@@ -17563,7 +17563,8 @@ visibility: hidden;
 }
 
 .label {
-
+  letter-spacing: 0;
+  border-radius: 3px;
 }
 
 .badge {
@@ -17589,7 +17590,7 @@ visibility: hidden;
   }
 }
 
-.labe--bestseller {
+.label--bestseller {
   background: #E67A00;
 }
 
