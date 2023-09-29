@@ -17560,6 +17560,7 @@ visibility: hidden;
 
 .label {
   letter-spacing: 0;
+  text-transform: unset;
 }
 
 .label--bestseller {
