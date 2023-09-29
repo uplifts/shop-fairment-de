@@ -17562,6 +17562,10 @@ visibility: hidden;
   flex-direction: row;
 }
 
+.product-item__label-list.label-list .label {
+  margin: 0 !important;
+}
+
 .label {
   letter-spacing: 0;
   text-transform: unset;
