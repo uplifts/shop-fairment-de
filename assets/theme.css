@@ -17558,6 +17558,10 @@ visibility: hidden;
   position:relative;
 }
 
+.label {
+
+}
+
 .badge {
   color: #fff;
   text-align: center;
@@ -17589,14 +17593,12 @@ visibility: hidden;
 
 /* Moving Sale Badge to Right */
 
-.product-item--wrapper .product-item__label-list,  .product-item .product-item__label-list {
-  left:0!important;
-  right:5px!important;
-  top:5px!important;
-}
-
-.product-item--wrapper .label, .product-item .label {
-    margin-left: auto;
+.product-item--wrapper .product-item__label-list,
+.product-item .product-item__label-list {
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 5px;
 }
 
 /* START ID - 27.07.23 - Price per use experiment */
