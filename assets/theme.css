@@ -17558,6 +17558,10 @@ visibility: hidden;
   position:relative;
 }
 
+.product-item__label-list.label-list {
+  flex-direction: row;
+}
+
 .label {
   letter-spacing: 0;
   text-transform: unset;
