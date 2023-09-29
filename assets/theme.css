@@ -17560,6 +17560,7 @@ visibility: hidden;
 
 .product-item__label-list.label-list {
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
