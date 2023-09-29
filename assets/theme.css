@@ -17558,6 +17558,10 @@ visibility: hidden;
   position:relative;
 }
 
+.product-item__label-list.label-list {
+
+}
+
 .label {
 
 }
@@ -17567,9 +17571,7 @@ visibility: hidden;
   text-align: center;
   font-style: normal;
   line-height: normal;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
@@ -17587,7 +17589,7 @@ visibility: hidden;
   }
 }
 
-.bestseller {
+.labe--bestseller {
   background: #E67A00;
 }
 
