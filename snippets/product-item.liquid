@@ -24,6 +24,12 @@
 
 <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" {% if reveal %}reveal{% endif %}>
   {%- capture product_labels -%}
+    {% if product.metafields.custom.badge != blank %} 
+      <div class="badge bestseller">
+        {{ product.metafields.custom.badge }}
+      </div>
+    {% endif %}
+    
     {%- for tag in product.tags -%}
       {%- if tag contains '__label' -%}
         <span class="label label--custom{% if tag contains '__label2' %}2{% endif %}">{{ tag | split: ':' | last }}</span>
@@ -55,11 +61,6 @@
     {%- endif -%}
 
     <a href="{{ product.url }}" class="product-item__aspect-ratio aspect-ratio {% if settings.product_image_size != 'natural' %}aspect-ratio--{{ settings.product_image_size }}{% endif %}" style="padding-bottom: {{ 100.0 | divided_by: product.featured_media.preview_image.aspect_ratio }}%; --aspect-ratio: {{ product.featured_media.preview_image.aspect_ratio }}">
-    
-    {% if product.metafields.custom.badge != blank %} 
-      <div class="badge bestseller">
-        {{ product.metafields.custom.badge }}</div>
-      {% endif %}
       
       <img class="product-item__primary-image" loading="lazy" data-media-id="{{ product.featured_media.id | escape }}" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.featured_media, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
 
