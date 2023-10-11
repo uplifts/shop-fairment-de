@@ -283,6 +283,13 @@
               "threshold": 100,
               "product": "mikroben-futter-premium-ballaststoffe"
             }
+          },
+          "4b95d267-68e7-4c6d-a9c6-489965fd4757": {
+            "type": "gift_offer",
+            "settings": {
+              "threshold": 20,
+              "product": "fairment-miso-gelbe-erbse"
+            }
           }
         },
         "block_order": [
@@ -290,7 +297,8 @@
           "a7310a58-c5fe-4710-a46d-a32c915d6921",
           "b9ba5b93-fdbd-45a6-972f-4aadfbefc683",
           "6181359e-d100-4b2e-a906-6ffcc9d0e7ff",
-          "eef3eb13-ecfc-4556-8291-0cf2c6a37e2e"
+          "eef3eb13-ecfc-4556-8291-0cf2c6a37e2e",
+          "4b95d267-68e7-4c6d-a9c6-489965fd4757"
         ],
         "custom_css": [
           ".mini-cart__drawer-footer.drawer__footer.drawer__footer--tight.drawer__footer--bordered {opacity: 1; padding-top: 0px !important; padding-bottom: 3px !important;}",
