@@ -997,7 +997,6 @@
   "platform_customizations": {
     "custom_css": [
       "#_form_59_ {background-color: #5e6ab5 !important; color: white !important; border-radius: 12px !important;}",
-      "#mobile-menu-drawer {padding-left: 20px !important; padding-right: 20px !important;}",
       "#search-drawer {padding-left: 20px !important; padding-right: 20px !important;}"
     ]
   }
