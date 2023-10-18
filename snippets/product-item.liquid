@@ -327,7 +327,7 @@
         {%- endfor -%}
       {%- endif -%}
     </div>
-
+    {% render 'Quick_Add_To_Cart', product: product %}
     {%- if product.available and reduced_content or show_atc -%}
       <div class="product-item__cta-wrapper">
         {%- if product.variants.size == 1 -%}
