@@ -1,0 +1,128 @@
+<div class="quick-atc-button">
+  <form
+    method="post"
+    action="/cart/add"
+    accept-charset="UTF-8"
+    class="collection_form shopify-product-form"
+    enctype="multipart/form-data"
+    is="product-form"
+  >
+    <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"
+    ><input type="hidden" name="id" value="{{ product.variants.first.id }}">
+    <product-payment-container id="MainPaymentContainer" class="product-form__payment-container">
+      <button
+        id="AddToCart"
+        type="submit"
+        is="loader-button"
+        data-use-primary=""
+        data-product-add-to-cart-button=""
+        data-button-content="In den Warenkorb"
+        class="product-form__add-button button button--primary button--full"
+      >
+        <span class="loader-button__text">
+          <span class="btn-text">In den Warenkorb</span>
+          <span class="loader-button__loader" hidden="">
+            <div class="spinner">
+              <svg focusable="false" width="24" height="24" class="icon icon--spinner" viewBox="25 25 50 50">
+                <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle>
+              </svg>
+            </div>
+          </span>
+        </span>
+        <span class="loader-button__loader" hidden="">
+          <div class="spinner">
+            <svg focusable="false" width="24" height="24" class="icon icon--spinner" viewBox="25 25 50 50">
+              <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle>
+            </svg>
+          </div>
+        </span></button></product-payment-container
+    ><input id="_customerReferenceId" hidden="" type="hidden" name="properties[_customerReferenceId]"
+    ><input
+      id="_customerReferenceId"
+      hidden=""
+      type="hidden"
+      name="properties[_customerReferenceId]"
+      value="056bb8b0-4313-5323-93d8-889cdda6e6e7"
+    >
+  </form>
+</div>
+
+<style>
+  .quick-atc-button{
+    display: none;
+
+  }
+  #shopify-section-mini-cart div.quick-atc-button{
+    display: none;
+  }
+  .page-type-collection .quick-atc-button{
+  flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+    .quick-atc-button .product-item  .product-item__info{
+  	justify-content: space-between;
+  }
+  .quick-atc-button .collection_form{
+  	padding-top: 6px;
+  }
+  .quick-atc-button .collection_form .product-form__payment-container{
+  	justify-content: center;
+  	border-radius: 8px;
+      background: #FCE1CE;
+      color: #F17218;
+      font-family: Inter;
+      font-weight: 500;
+      max-width: 198px;
+      max-height: 38px;
+      margin: 0 auto;
+  }
+  .quick-atc-button .collection_form .loader-button__text span.btn-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  	max-width: 198px;
+      max-height: 38px;
+  }
+
+  .quick-atc-button .collection_form button{
+  	max-height: 38px;
+      max-width: 198px;
+      background: #FCE1CE;
+      color: #F17218;
+  	transform: unset;
+  }
+
+  @media (max-width: 500px){
+  	.quick-atc-button .collection_form .loader-button__text span.btn-text{
+  		font-size: 13px;
+  	}
+  	.quick-atc-button .collection_form button{
+  		padding: 0 5px;
+  	}
+  	.quick-atc-button .collection_form .product-form__payment-container {
+  		margin: unset;
+  	}
+  	.quick-atc-button .product-item__image-wrapper {
+  	    display: flex;
+  	    /*width: 100%;*/
+  	    background: #F6F6F6;
+  	    margin-bottom: 0px;
+  	}
+  	.quick-atc-button .product-item__aspect-ratio {
+  		height: auto;
+  	    width: 100%;
+  	}
+  	.quick-atc-button .product-item {
+  		display: flex;
+  	    background-color: #ffffff;
+  	    border: 1px solid #F2F2F2;
+  	    border-radius: 5px;
+  	    padding: 0 5px 0 0;
+  	}
+  	.quick-atc-button .product-list__inner .product-item:not(:last-child) {
+      	margin-bottom: 10px !important;
+  	}
+  }
+</style>
