@@ -17775,6 +17775,10 @@ visibility: hidden;
 }
 
 /* START ID - 19.10.23 - New menu layout */
+#qab_container #qab_background {
+  z-index: 900 !important;
+}
+
 .drawer-mob-menu {
   --gap: 20px;
 }
