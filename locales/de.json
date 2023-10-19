@@ -54,7 +54,8 @@
       "collection_title": "Produktkategorie"
     },
     "miscellaneous": {
-      "online": "Online"
+      "online": "Online",
+      "menu": "Menü"
     }
   },
   "header": {
