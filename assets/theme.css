@@ -17812,6 +17812,6 @@ visibility: hidden;
 }
 
 .mobile-nav__link.mobile-nav__link-block {
-  width: calc();
+  width: calc(100% - var(--gap) * 2);
 }
 /* END ID - 19.10.23 - New menu layout */
