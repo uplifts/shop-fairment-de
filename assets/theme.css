@@ -17801,4 +17801,13 @@ visibility: hidden;
   text-transform: var(--heading-text-transform);
   flex: 1;
 }
+
+.mobile-nav__submenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 /* END ID - 19.10.23 - New menu layout */
