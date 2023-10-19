@@ -4610,7 +4610,9 @@
       });
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
-        alert(openLevelTriggers.length);
+        if (openLevelTriggers.length == 1) {
+          this.drawerHeader.classList.remove('has-open');
+        }
       });
     }
 
