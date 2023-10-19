@@ -17801,6 +17801,7 @@ visibility: hidden;
 }
 
 .mobile-nav__submenu {
+  background: rgb(var(--background));
   position: absolute;
   left: 0;
   top: 0;
