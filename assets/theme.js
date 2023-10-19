@@ -4610,11 +4610,8 @@
       });
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
+        alert(openLevelTriggers.length);
       });
-    }
-
-    setDefaultDrawerState() {
-
     }
 
     get apparitionAnimation() {
