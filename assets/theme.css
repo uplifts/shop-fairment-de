@@ -17826,4 +17826,8 @@ visibility: hidden;
 .mobile-nav__link * {
   pointer-events: none;
 }
+
+.drawer__back-button {
+  display: none;
+}
 /* END ID - 19.10.23 - New menu layout */
