@@ -4,12 +4,16 @@
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
-<mobile-navigation append-body id="mobile-menu-drawer" class="drawer drawer-mob-menu {% if direction == 'ltr' %}drawer--from-left{% endif %}">
+<mobile-navigation
+  append-body
+  id="mobile-menu-drawer"
+  class="drawer drawer-mob-menu {% if direction == 'ltr' %}drawer--from-left{% endif %}"
+  data-main-title="{{ 'general.miscellaneous.menu' | t }}"
+>
   <span class="drawer__overlay"></span>
 
   <div class="drawer__header drawer__header--shadowed">
     <button type="button" class="drawer__back-button drawer__close-button--block tap-area" data-action="back" title="{{ 'general.accessibility.back' | t | escape }}">
-      {%- render 'icon' with 'arrow-left' -%}
       {%- render 'icon' with 'nav-arrow-left' -%}
     </button>
     <div class="drawer__header-title text-center {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">
@@ -85,6 +89,7 @@
         <li class="mobile-nav__item" data-level="1">
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
             <button is="toggle-button" class="mobile-nav__link mobile-nav__link-block heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false">
+              {%- render 'icon' with 'nav-arrow-left' -%}
               {{- link.title -}}
 
               {%- if link.url != blank -%}
