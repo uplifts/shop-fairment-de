@@ -4601,6 +4601,14 @@
   var MobileNavigation = class extends DrawerContent {
     connectedCallback() {
       this.backLevelButton = this.querySelector('.drawer__back-button');
+      this.delegate.on('shopify:block:select', (event) => this.openDropdown(event.target.parentElement));
+    }
+
+    goLevelDown() {
+      this.delegate.on("click", ".drawer__back-button", () => {
+        let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
+        console.log(openLevelTriggers);
+      });
     }
 
     get apparitionAnimation() {
