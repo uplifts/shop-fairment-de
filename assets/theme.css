@@ -17808,6 +17808,7 @@ visibility: hidden;
   right: 0;
   bottom: 0;
   z-index: 1;
+  margin: 0;
 }
 
 .mobile-nav__submenu .mobile-nav {
