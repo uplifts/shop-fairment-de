@@ -88,7 +88,7 @@
               {{- link.title -}}
 
               {%- if link.url != blank -%}
-                <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ link.url }}">{{ 'header.navigation.view_all' | t }}</a>
+                {% comment %} <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ link.url }}">{{ 'header.navigation.view_all' | t }}</a> {% endcomment %}
               {%- endif -%}
               <span class="animated-plus"></span>
             </button>
