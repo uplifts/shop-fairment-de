@@ -4606,12 +4606,12 @@
       this.delegate.on("click", "[is='toggle-button']", (e) => {
         let currentTitle = e.target.dataset.title;
         this.headerTitleEl.innerHTML = currentTitle;
-        this.drawerHeader.classList.add('has-open');
+        this.drawerHeader.classList.add('has-open-levels');
       });
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
         if (openLevelTriggers.length == 1) {
-          this.drawerHeader.classList.remove('has-open');
+          this.drawerHeader.classList.remove('has-open-levels');
         }
       });
     }
