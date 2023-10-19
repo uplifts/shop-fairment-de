@@ -17778,6 +17778,8 @@ visibility: hidden;
 .drawer-mob-menu .drawer__header {
   border-bottom: 1px solid #43484C26;
   padding: 20px;
+  max-height: 64px;
+  font-size: 19px;
 }
 
 .drawer-mob-menu .drawer__content {
