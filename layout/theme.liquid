@@ -24,7 +24,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
   lang="{{ request.locale.iso_code }}"
   dir="{{ direction }}"
   fontify-lang="{{ shop.locale }}"
-  {% if request.page_type == 'product' %}data-product-id="{{ product.id }}"{% endif %}}>
+  {% if request.page_type == 'product' %}data-product-id="{{ product.id }}"{% endif %}>
   <head>
 {{ locksmith_initializations }}
 {% render 'replo-head' %}
