@@ -21,6 +21,7 @@
     "accessibility": {
       "skip_to_content": "Skip to content",
       "close": "Close",
+      "back": "Back",
       "previous": "Previous",
       "next": "Next",
       "play_video": "Play video",
