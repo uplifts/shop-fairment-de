@@ -147,7 +147,7 @@
               {%- endif -%}
             </collapsible-content>
           {%- else -%}
-            <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="mobile-nav__link heading mobile-nav__link-block {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ link.title }}</a>
           {%- endif -%}
         </li>
       {%- endfor -%}
