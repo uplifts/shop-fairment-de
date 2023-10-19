@@ -16567,7 +16567,7 @@ html {
 }
 
 .product__info-higlights-item {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: #43484C;
   line-height: 1.2em; 
@@ -16776,7 +16776,7 @@ html {
     grid-column: var(--column-position);
   }
   .product__info-higlights-item {
-    font-size: 16px;
+    font-size: 13px;
   }
   .product__info-higlights-item-icon {
     margin-right: 10px;
