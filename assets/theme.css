@@ -17785,4 +17785,8 @@ visibility: hidden;
 .drawer-mob-menu .drawer__content {
   position: relative;
 }
+
+.drawer-mob-menu .drawer__header {
+  gap: 8px;
+}
 /* END ID - 19.10.23 - New menu layout */
