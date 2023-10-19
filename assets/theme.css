@@ -17776,8 +17776,9 @@ visibility: hidden;
 
 /* START ID - 19.10.23 - New menu layout */
 .drawer-mob-menu .drawer__header {
+  --gap: 20px;
   border-bottom: 1px solid #43484C26;
-  padding: 20px;
+  padding: var(--gap);
   max-height: 64px;
 }
 
@@ -17791,8 +17792,6 @@ visibility: hidden;
 }
 
 .drawer-mob-menu .drawer__header-title {
-  font-size: 19px;
-  color: rgb(var(--heading-color));
   flex: 1;
 }
 
@@ -17810,5 +17809,9 @@ visibility: hidden;
 .mobile-nav__submenu .mobile-nav {
   margin: 0;
   padding: 0;
+}
+
+.mobile-nav__link.mobile-nav__link-block {
+  width: calc();
 }
 /* END ID - 19.10.23 - New menu layout */
