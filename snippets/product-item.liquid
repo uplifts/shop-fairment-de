@@ -22,8 +22,8 @@
   {%- assign product_url_contains_query = false -%}
 {%- endif -%}
 
-<product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}"
-  data-invertory="{{ product.selected_or_first_available_variant.invertory_quantity }}" {% if reveal %}reveal{% endif %}>
+<product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" 
+  data-invertory="{{ product.variants.first.invertory_quantity }}" {% if reveal %}reveal{% endif %}>
   {%- capture product_labels -%}
     {% if product.metafields.custom.badge != blank %} 
       <div class="label label--bestseller">
