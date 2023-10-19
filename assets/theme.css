@@ -17830,4 +17830,8 @@ visibility: hidden;
 .drawer__back-button {
   display: none;
 }
+
+.drawer.has-open-levels .drawer__back-button {
+  display: inline-block;
+}
 /* END ID - 19.10.23 - New menu layout */
