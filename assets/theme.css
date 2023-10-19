@@ -17791,7 +17791,7 @@ visibility: hidden;
 
 .drawer-mob-menu .drawer__header-title {
   font-size: 19px;
-  color: var(--heading-color);
+  color: rgb(var(--heading-color));
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
