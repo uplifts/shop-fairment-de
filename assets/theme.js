@@ -4604,6 +4604,7 @@
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
         console.log(openLevelTriggers);
+        alert('openLevelTriggers');
       });
     }
 
