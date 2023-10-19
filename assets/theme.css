@@ -17768,7 +17768,8 @@ visibility: hidden;
 
 /* Anpassungen webstube Expertentipp */ 
 
- .expertentipp {
-    background-color: #f2721954 !important;
-    padding: 30px !important;
-    border-radius: 20px !important;
+.expertentipp {
+  background-color: #f2721954 !important;
+  padding: 30px !important;
+  border-radius: 20px !important;
+}
