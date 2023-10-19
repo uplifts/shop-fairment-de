@@ -4605,6 +4605,7 @@
       this.backLevelButton = this.querySelector('.drawer__back-button');
       this.headerTitleEl = this.querySelector('.drawer__header-title');
       this.delegate.on("click", "[is='toggle-button']", (e) => {
+        alert("[is='toggle-button']");
         let currentTitle = e.target.dataset.title;
         this.headerTitleEl.innerHTML = currentTitle;
         this.drawerHeader.classList.add('has-open-levels');
