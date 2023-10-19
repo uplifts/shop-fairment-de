@@ -125,7 +125,7 @@
                                 {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_sub_link, subject_parent: sub_link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
                               {%- comment %}</locksmith:130d>{% endcomment -%}
                               <li class="mobile-nav__item" data-level="3">
-                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link">{{ sub_sub_link.title }}</a>
+                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link mobile-nav__link-block">{{ sub_sub_link.title }}</a>
                               </li>
                             {%- endfor -%}
                           </ul>
