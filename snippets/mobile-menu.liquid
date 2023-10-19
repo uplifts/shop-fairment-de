@@ -12,7 +12,7 @@
       {%- render 'icon' with 'arrow-left' -%}
       {%- render 'icon' with 'nav-arrow-left' -%}
     </button>
-    <div class="drawer__header-title text-center">
+    <div class="drawer__header-title text-center {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">
       {{ 'general.miscellaneous.menu' | t }}
     </div>
     <button type="button" class="drawer__close-button drawer__close-button--block tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
