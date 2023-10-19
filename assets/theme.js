@@ -4599,6 +4599,10 @@
 
   // js/custom-element/section/header/mobile-navigation.js
   var MobileNavigation = class extends DrawerContent {
+    connectedCallback() {
+      this.backLevelButton = this.querySelector('.drawer__back-button');
+    }
+
     get apparitionAnimation() {
       if (this._apparitionAnimation) {
         return this._apparitionAnimation;
