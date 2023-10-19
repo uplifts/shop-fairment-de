@@ -4600,6 +4600,7 @@
   // js/custom-element/section/header/mobile-navigation.js
   var MobileNavigation = class extends DrawerContent {
     connectedCallback() {
+      this.defaultTitle = this.dataset.mainTitle;
       this.drawerHeader = this.querySelector('.drawer__header');
       this.backLevelButton = this.querySelector('.drawer__back-button');
       this.headerTitleEl = this.querySelector('.drawer__header-title');
