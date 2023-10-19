@@ -4602,8 +4602,9 @@
     connectedCallback() {
       this.backLevelButton = this.querySelector('.drawer__back-button');
       this.headerTitleEl = this.querySelector('.drawer__header-title');
-      this.delegate.on("click", "[is='toggle-button']", () => {
-        let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
+      this.delegate.on("click", "[is='toggle-button']", (e) => {
+        let currentTitle = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
+        this.headerTitleEl.innerHTML = 
       });
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
