@@ -55,7 +55,8 @@
       "collection_title": "Collection"
     },
     "miscellaneous": {
-      "online": "Online"
+      "online": "Online",
+      "menu": "Menu"
     }
   },
   "header": {
