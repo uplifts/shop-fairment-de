@@ -17800,6 +17800,8 @@ visibility: hidden;
 
 .drawer-mob-menu .drawer__header-title {
   flex: 1;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
 }
 
 .mobile-nav__submenu {
