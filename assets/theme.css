@@ -17850,4 +17850,8 @@ visibility: hidden;
   padding: 0 !important;
   border: none !important;
 }
+
+.mobile-nav__item + .mobile-nav__item > .mobile-nav__link-block {
+  border-top: 1px solid rgb(var(--root-border-color));
+}
 /* END ID - 19.10.23 - New menu layout */
