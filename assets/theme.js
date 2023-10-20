@@ -4619,6 +4619,7 @@
         }
       });
       this.delegate.on("click", '[data-action="close"]', (event) => {
+        alert('[data-action="close"]');
         this.open = false;
       });
     }
