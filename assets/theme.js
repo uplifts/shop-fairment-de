@@ -4614,7 +4614,7 @@
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
         if (openLevelTriggers.length == 1) {
           this.classList.remove('has-open-levels');
-          this.headerTitleEl.innerHTML = defaultTitle;
+          this.headerTitleEl.innerHTML = this.defaultTitle;
         }
       });
     }
