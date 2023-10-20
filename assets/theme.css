@@ -17880,4 +17880,9 @@ visibility: hidden;
   gap: 40px 24px;
   text-align: center;
 }
+
+.mobile-nav.mod-icons-grid .mobile-nav__link-image {
+  justify-content: center;
+  text-align: center;
+}
 /* END ID - 19.10.23 - New menu layout */
