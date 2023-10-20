@@ -4618,7 +4618,7 @@
           this.classList.remove('has-open-levels');
           this.headerTitleEl.innerHTML = this.defaultTitle;
         } else {
-          this.headerTitleEl.innerHTML = openLevelTriggers[triggersCount-2] && openLevelTriggers[triggersCount-2].dataset.title;
+          this.headerTitleEl.innerHTML = openLevelTriggers[triggersCount-2] ? openLevelTriggers[triggersCount-2].dataset.title : this.defaultTitle;
         }
       });
       this.delegate.on("click", '[data-action="close"]', () => {
