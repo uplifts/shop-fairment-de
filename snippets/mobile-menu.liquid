@@ -109,8 +109,10 @@
                       {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_e674_forloop__index == nil %}{% assign locksmith_e674_forloop__index = 1 %}{% assign locksmith_e674_forloop__index0 = 0 %}{% else %}{% assign locksmith_e674_forloop__index = locksmith_e674_forloop__index | plus: 1 %}{% assign locksmith_e674_forloop__index0 = locksmith_e674_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_e674_forloop__index == 1 %}{% assign locksmith_e674_forloop__first = true %}{% else %}{% assign locksmith_e674_forloop__first = false %}{% endif %}{% if locksmith_e674_forloop__index == locksmith_e674_forloop__size %}{% assign locksmith_e674_forloop__last = true %}{% else %}{% assign locksmith_e674_forloop__last = false %}{% endif %}{% assign locksmith_e674_forloop__rindex = locksmith_e674_forloop__size | minus: locksmith_e674_forloop__index | minus: 1 %}{% assign locksmith_e674_forloop__rindex0 = locksmith_e674_forloop__size | minus: locksmith_e674_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
                     {%- comment %}</locksmith:2bdd>{% endcomment -%}
                     <li class="mobile-nav__item" data-level="2">
+                      {%- assign subsublinks_as_images = false -%}
                       {%- assign sublink_class = 'mobile-nav__link-block' -%}
                       {%- if show_level_icons_triggers contains link.title -%}
+                        {%- assign subsublinks_as_images = true -%}
                         {%- assign sublink_class = 'mobile-nav__link-image' -%}
                       {%- endif -%}
                       {%- if sub_link.links.size > 0 -%}
@@ -138,7 +140,7 @@
                               {%- comment %}</locksmith:130d>{% endcomment -%}
                               <li class="mobile-nav__item" data-level="3">
                                 {%- assign sub_sublink_class = 'mobile-nav__link-block' -%}
-                                {%- if show_level_icons_triggers contains link.title -%}
+                                {%- if show_level_icons_triggers contains sub_link.title -%}
                                   {%- assign sub_sublink_class = 'mobile-nav__link-image' -%}
                                 {%- endif -%}
                                 <a href="{{ sub_sub_link.url }}" class="mobile-nav__link {{ sub_sublink_class }}">
