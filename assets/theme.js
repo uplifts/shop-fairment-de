@@ -996,6 +996,7 @@
 				document.documentElement.classList.remove('success-message-active');
 			});
       this.delegate.on("click", '[data-action="close"]', (event) => {
+        alert('[data-action="close"]');
         event.stopPropagation();
         this.open = false;
 				document.documentElement.classList.remove('success-message-active');
