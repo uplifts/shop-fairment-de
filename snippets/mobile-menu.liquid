@@ -146,7 +146,7 @@
                                 {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_sub_link, subject_parent: sub_link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
                               {%- comment %}</locksmith:130d>{% endcomment -%}
                               <li class="mobile-nav__item" data-level="3">
-                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link {{ sub_sublink_class }}">
+                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sub_sublink_class }}">
                                   {%- if subsublinks_as_images -%}
 
                                   {%- endif -%}
@@ -159,7 +159,7 @@
                           </ul>
                         </collapsible-content>
                       {%- else -%}
-                        <a href="{{ sub_link.url }}" class="mobile-nav__link {{ sublink_class }}">{{ sub_link.title }}</a>
+                        <a href="{{ sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}">{{ sub_link.title }}</a>
                       {%- endif -%}
                     </li>
                   {%- endfor -%}
