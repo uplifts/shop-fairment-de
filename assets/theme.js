@@ -4612,7 +4612,9 @@
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
         let triggersCount = openLevelTriggers.length;
+        let currentOpenLevel = openLevelTriggers[triggersCount - 1];
         openLevelTriggers[triggersCount - 1].click();
+        this.headerTitleEl.innerHTML = currentOpenLevel.dataset.title;
         if (openLevelTriggers.length == 1) {
           this.classList.remove('has-open-levels');
           this.headerTitleEl.innerHTML = this.defaultTitle;
