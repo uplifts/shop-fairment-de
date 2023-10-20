@@ -996,7 +996,6 @@
 				document.documentElement.classList.remove('success-message-active');
 			});
       this.delegate.on("click", '[data-action="close"]', (event) => {
-        alert('[data-action="close"]');
         event.stopPropagation();
         this.open = false;
 				document.documentElement.classList.remove('success-message-active');
@@ -4618,9 +4617,6 @@
           this.classList.remove('has-open-levels');
           // this.headerTitleEl.innerHTML = this.defaultTitle;
         }
-      });
-      this.delegate.on("click", ".drawer__close-button", () => {
-        alert(".drawer__close-button");
       });
     }
 
