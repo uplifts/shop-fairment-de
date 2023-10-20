@@ -17874,9 +17874,10 @@ visibility: hidden;
 }
 
 .mobile-nav.mod-icons-grid {
-  padding: 20px;
+  padding: 20px !important;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 24px;
+  text-align: center;
 }
 /* END ID - 19.10.23 - New menu layout */
