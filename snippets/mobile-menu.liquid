@@ -4,7 +4,7 @@
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 {%- assign show_level_icons_triggers = 'Shop' -%}
-{%- capture link_css_class -%}{% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}{%- endcapture -%}
+{%- capture link_css_class -%}heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}{%- endcapture -%}
 
 <mobile-navigation
   append-body
