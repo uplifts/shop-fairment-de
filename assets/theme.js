@@ -4605,13 +4605,11 @@
       this.backLevelButton = this.querySelector('.drawer__back-button');
       this.headerTitleEl = this.querySelector('.drawer__header-title');
       this.delegate.on("click", "[is='toggle-button']", (e) => {
-        alert("[is='toggle-button']");
         let currentTitle = e.target.dataset.title;
         this.headerTitleEl.innerHTML = currentTitle;
         this.classList.add('has-open-levels');
       });
       this.delegate.on("click", ".drawer__back-button", () => {
-        alert(".drawer__back-button");
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
         if (openLevelTriggers.length == 1) {
           this.classList.remove('has-open-levels');
@@ -4619,7 +4617,6 @@
         }
       });
       this.delegate.on("click", '[data-action="close"]', (event) => {
-        alert('[data-action="close"]');
         this.open = false;
       });
     }
