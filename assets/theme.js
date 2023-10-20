@@ -4611,12 +4611,14 @@
       });
       this.delegate.on("click", ".drawer__back-button", () => {
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
+        let triggersCount = openLevelTriggers.length;
+        openLevelTriggers[triggersCount - 1].click();
         if (openLevelTriggers.length == 1) {
           this.classList.remove('has-open-levels');
           this.headerTitleEl.innerHTML = this.defaultTitle;
         }
       });
-      this.delegate.on("click", '[data-action="close"]', (event) => {
+      this.delegate.on("click", '[data-action="close"]', () => {
         this.open = false;
       });
     }
