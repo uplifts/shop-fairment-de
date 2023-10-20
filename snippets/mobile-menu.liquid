@@ -4,6 +4,7 @@
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 {%- assign show_level_icons_triggers = 'Shop' -%}
+{%- capture link_css_class -%}{% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}{%- endcapture -%}
 
 <mobile-navigation
   append-body
@@ -17,7 +18,7 @@
     <button type="button" class="drawer__back-button drawer__close-button--block tap-area mobMenuDrawerBack" data-action="back" title="{{ 'general.accessibility.back' | t | escape }}">
       {%- render 'icon' with 'nav-arrow-left' -%}
     </button>
-    <div class="drawer__header-title mobMenuDrawerTitle text-center {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">
+    <div class="drawer__header-title mobMenuDrawerTitle text-center {{ link_css_class }}">
       {{ 'general.miscellaneous.menu' | t }}
     </div>
     <button type="button" class="drawer__close-button drawer__close-button--block tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
@@ -89,7 +90,7 @@
 
         <li class="mobile-nav__item" data-level="1">
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <button is="toggle-button" class="mobile-nav__link mobile-nav__link-block heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false" data-title="{{- link.title -}}">
+            <button is="toggle-button" class="mobile-nav__link mobile-nav__link-block heading {{ link_css_class }}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false" data-title="{{- link.title -}}">
               {{- link.title -}}
 
               {%- if link.url != blank -%}
@@ -174,7 +175,7 @@
               {%- endif -%}
             </collapsible-content>
           {%- else -%}
-            <a href="{{ link.url }}" class="mobile-nav__link heading mobile-nav__link-block {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="mobile-nav__link heading mobile-nav__link-block {{ link_css_class }}">{{ link.title }}</a>
           {%- endif -%}
         </li>
       {%- endfor -%}
