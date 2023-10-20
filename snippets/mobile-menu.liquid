@@ -100,7 +100,7 @@
 
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile-nav__submenu collapsible">
               {%- if link.links.size > 0 -%}
-                <ul class="mobile-nav list--unstyled" role="list">
+                <ul class="mobile-nav list--unstyled{% if show_level_icons_triggers contains link.title %} mod-icons-grid{% endif %}" role="list">
                   {%- comment %}<locksmith:b6f7>{% endcomment -%}
                     {%- assign locksmith_e674_forloop__size = 0 %}{%- for sub_link in link.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_e674_forloop__size = locksmith_e674_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_e674_forloop__index = nil -%}
                   {%- comment %}</locksmith:b6f7>{% endcomment -%}
@@ -111,7 +111,9 @@
                     <li class="mobile-nav__item" data-level="2">
                       {%- if sub_link.links.size > 0 -%}
                         <button is="toggle-button" class="mobile-nav__link mobile-nav__link-image" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
-                          {{- sub_link.title -}}
+                          <span class="mobile-nav__link-text">
+                            {{- sub_link.title -}}
+                          </span>
 
                           {%- if sub_link.url != blank -%}
                             {% comment %} <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ sub_link.url }}">{{ 'header.navigation.view_all' | t }}</a> {% endcomment %}
