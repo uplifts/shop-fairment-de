@@ -17798,6 +17798,10 @@ visibility: hidden;
   color: rgb(var(--heading-color));
 }
 
+.drawer-mob-menu .drawer__footer {
+  padding: var(--gap) !important;
+}
+
 .drawer-mob-menu .drawer__header-title {
   flex: 1;
   font-family: var(--heading-font-family);
