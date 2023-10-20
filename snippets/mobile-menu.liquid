@@ -5,6 +5,7 @@
 {%- endcase -%}
 {%- assign show_level_icons_triggers = 'Shop' -%}
 {%- capture link_css_class -%}{% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}{%- endcapture -%}
+{%- assign links_images = section.settings.links_images -%}
 
 <mobile-navigation
   append-body
