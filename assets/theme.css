@@ -17843,10 +17843,8 @@ visibility: hidden;
   pointer-events: all;
 }
 
-.mobile-nav__submenu {
-  margin: 0 !important;
-}
-
+.mobile-nav__submenu,
+.mobile-nav__submenu > .mobile-nav,
 .drawer-mob-menu .mobile-nav__item {
   margin: 0 !important;
   padding: 0 !important;
