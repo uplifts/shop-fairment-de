@@ -17827,6 +17827,7 @@ visibility: hidden;
 .mobile-nav__link.mobile-nav__link-block {
   width: calc(100% - var(--gap) * 2);
   margin: 0 var(--gap);
+  padding: 20px 0;
 }
 
 .mobile-nav__link * {
