@@ -4618,6 +4618,9 @@
           // this.headerTitleEl.innerHTML = this.defaultTitle;
         }
       });
+      this.delegate.on("click", ".drawer__close-button", () => {
+        alert(".drawer__close-button");
+      });
     }
 
     get apparitionAnimation() {
