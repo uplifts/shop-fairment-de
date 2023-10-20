@@ -100,7 +100,13 @@
 
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile-nav__submenu collapsible">
               {%- if link.links.size > 0 -%}
-                <ul class="mobile-nav list--unstyled{% if show_level_icons_triggers contains link.title %} mod-icons-grid{% endif %}" role="list">
+                {%- assign sublinks_as_images = false -%}
+                {%- assign sublink_class = 'mobile-nav__link-block' -%}
+                {%- if show_level_icons_triggers contains link.title -%}
+                  {%- assign sublinks_as_images = true -%}
+                  {%- assign sublink_class = 'mobile-nav__link-image' -%}
+                {%- endif -%}
+                <ul class="mobile-nav list--unstyled{% if sublinks_as_images %} mod-icons-grid{% endif %}" role="list">
                   {%- comment %}<locksmith:b6f7>{% endcomment -%}
                     {%- assign locksmith_e674_forloop__size = 0 %}{%- for sub_link in link.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_e674_forloop__size = locksmith_e674_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_e674_forloop__index = nil -%}
                   {%- comment %}</locksmith:b6f7>{% endcomment -%}
@@ -109,15 +115,15 @@
                       {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_e674_forloop__index == nil %}{% assign locksmith_e674_forloop__index = 1 %}{% assign locksmith_e674_forloop__index0 = 0 %}{% else %}{% assign locksmith_e674_forloop__index = locksmith_e674_forloop__index | plus: 1 %}{% assign locksmith_e674_forloop__index0 = locksmith_e674_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_e674_forloop__index == 1 %}{% assign locksmith_e674_forloop__first = true %}{% else %}{% assign locksmith_e674_forloop__first = false %}{% endif %}{% if locksmith_e674_forloop__index == locksmith_e674_forloop__size %}{% assign locksmith_e674_forloop__last = true %}{% else %}{% assign locksmith_e674_forloop__last = false %}{% endif %}{% assign locksmith_e674_forloop__rindex = locksmith_e674_forloop__size | minus: locksmith_e674_forloop__index | minus: 1 %}{% assign locksmith_e674_forloop__rindex0 = locksmith_e674_forloop__size | minus: locksmith_e674_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
                     {%- comment %}</locksmith:2bdd>{% endcomment -%}
                     <li class="mobile-nav__item" data-level="2">
-                      {%- assign subsublinks_as_images = false -%}
-                      {%- assign sublink_class = 'mobile-nav__link-block' -%}
-                      {%- if show_level_icons_triggers contains link.title -%}
-                        {%- assign subsublinks_as_images = true -%}
-                        {%- assign sublink_class = 'mobile-nav__link-image' -%}
-                      {%- endif -%}
                       {%- if sub_link.links.size > 0 -%}
+                        {%- assign subsublinks_as_images = false -%}
+                        {%- assign sub_sublink_class = 'mobile-nav__link-block' -%}
+                        {%- if show_level_icons_triggers contains sub_link.title -%}
+                          {%- assign subsublinks_as_images = true -%}
+                          {%- assign sub_sublink_class = 'mobile-nav__link-image' -%}
+                        {%- endif -%}
                         <button is="toggle-button" class="mobile-nav__link {{ sublink_class }}" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
-                          {%- if show_level_icons_triggers contains link.title -%}
+                          {%- if sublinks_as_images -%}
 
                           {%- endif -%}
                           <span class="mobile-nav__link-text">
@@ -127,24 +133,20 @@
                           {%- if sub_link.url != blank -%}
                             {% comment %} <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ sub_link.url }}">{{ 'header.navigation.view_all' | t }}</a> {% endcomment %}
                           {%- endif -%}
-                          {%- unless show_level_icons_triggers contains link.title -%}
+                          {%- unless sublinks_as_images -%}
                             <span class="animated-plus"></span>
                           {%- endunless -%}
                         </button>
 
                         <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" class="mobile-nav__submenu collapsible">
-                          <ul class="mobile-nav list--unstyled{% if show_level_icons_triggers contains sub_link.title %} mod-icons-grid{% endif %}" role="list">
+                          <ul class="mobile-nav list--unstyled{% if subsublinks_as_images %} mod-icons-grid{% endif %}" role="list">
                             {%- for sub_sub_link in sub_link.links -%}
                               {%- comment %}<locksmith:130d>{% endcomment -%}
                                 {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_sub_link, subject_parent: sub_link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
                               {%- comment %}</locksmith:130d>{% endcomment -%}
                               <li class="mobile-nav__item" data-level="3">
-                                {%- assign sub_sublink_class = 'mobile-nav__link-block' -%}
-                                {%- if show_level_icons_triggers contains sub_link.title -%}
-                                  {%- assign sub_sublink_class = 'mobile-nav__link-image' -%}
-                                {%- endif -%}
                                 <a href="{{ sub_sub_link.url }}" class="mobile-nav__link {{ sub_sublink_class }}">
-                                  {%- if show_level_icons_triggers contains sub_link.title -%}
+                                  {%- if subsublinks_as_images -%}
 
                                   {%- endif -%}
                                   <span class="mobile-nav__link-text">
