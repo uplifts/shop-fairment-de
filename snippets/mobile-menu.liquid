@@ -111,6 +111,9 @@
                     <li class="mobile-nav__item" data-level="2">
                       {%- if sub_link.links.size > 0 -%}
                         <button is="toggle-button" class="mobile-nav__link mobile-nav__link-image" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
+                          {%- if show_level_icons_triggers contains link.title -%}
+
+                          {%- endif -%}
                           <span class="mobile-nav__link-text">
                             {{- sub_link.title -}}
                           </span>
