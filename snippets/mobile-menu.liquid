@@ -106,7 +106,7 @@
                 {%- assign sublink_class = 'mobile-nav__link-block' -%}
                 {%- if show_level_icons_triggers contains link.title -%}
                   {%- assign sublinks_as_images = true -%}
-                  {%- assign sublink_class = 'mobile-nav__link-image' -%}
+                  {%- assign sublink_class = 'mobile-nav__link-picture' -%}
                 {%- endif -%}
                 <ul class="mobile-nav list--unstyled{% if sublinks_as_images %} mod-icons-grid{% endif %}" role="list">
                   {%- comment %}<locksmith:b6f7>{% endcomment -%}
@@ -122,7 +122,7 @@
                         {%- assign sub_sublink_class = 'mobile-nav__link-block' -%}
                         {%- if show_level_icons_triggers contains sub_link.title -%}
                           {%- assign subsublinks_as_images = true -%}
-                          {%- assign sub_sublink_class = 'mobile-nav__link-image' -%}
+                          {%- assign sub_sublink_class = 'mobile-nav__link-picture' -%}
                         {%- endif -%}
                         <button is="toggle-button" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
                           {%- if sublinks_as_images -%}
