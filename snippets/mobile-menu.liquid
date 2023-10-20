@@ -123,7 +123,7 @@
                           {%- assign subsublinks_as_images = true -%}
                           {%- assign sub_sublink_class = 'mobile-nav__link-image' -%}
                         {%- endif -%}
-                        <button is="toggle-button" class="mobile-nav__link {{ sublink_class }}" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
+                        <button is="toggle-button" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
                           {%- if sublinks_as_images -%}
 
                           {%- endif -%}
