@@ -120,7 +120,7 @@
                         </button>
 
                         <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" class="mobile-nav__submenu collapsible">
-                          <ul class="mobile-nav list--unstyled" role="list">
+                          <ul class="mobile-nav list--unstyled{% if show_level_icons_triggers contains sub_link.title %} mod-icons-grid{% endif %}" role="list">
                             {%- for sub_sub_link in sub_link.links -%}
                               {%- comment %}<locksmith:130d>{% endcomment -%}
                                 {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_sub_link, subject_parent: sub_link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
