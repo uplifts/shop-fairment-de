@@ -4613,11 +4613,12 @@
         let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
         let triggersCount = openLevelTriggers.length;
         let currentOpenLevel = openLevelTriggers[triggersCount - 1];
-        openLevelTriggers[triggersCount - 1].click();
-        this.headerTitleEl.innerHTML = currentOpenLevel.dataset.title;
+        currentOpenLevel.click();
         if (openLevelTriggers.length == 1) {
           this.classList.remove('has-open-levels');
           this.headerTitleEl.innerHTML = this.defaultTitle;
+        } else {
+          this.headerTitleEl.innerHTML = openLevelTriggers[triggersCount-2] && openLevelTriggers[triggersCount-2].dataset.title;
         }
       });
       this.delegate.on("click", '[data-action="close"]', () => {
