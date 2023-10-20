@@ -175,7 +175,9 @@
               {%- endif -%}
             </collapsible-content>
           {%- else -%}
-            <a href="{{ link.url }}" class="mobile-nav__link heading mobile-nav__link-block {{ link_css_class }}">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="mobile-nav__link heading mobile-nav__link-block {{ link_css_class }}">
+              <span class="mobile-nav__link-text">{{ link.title }}</span>
+            </a>
           {%- endif -%}
         </li>
       {%- endfor -%}
