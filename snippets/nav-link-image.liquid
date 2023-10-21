@@ -5,10 +5,9 @@
   {%- assign name = group_split[0] -%}
   {%- assign image = group_split[1] -%}
 
-  {%- if link.title == name -%}
-    link.title == name
+  {% if link.title == name %}
     {%- assign image_url = image -%}
-  {%- endif -%}
+  {% endif %}
 {%- endfor -%}
 {%- if image_url != '' -%}
   <span class="mobile-nav__link-image">
