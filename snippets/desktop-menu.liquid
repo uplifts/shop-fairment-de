@@ -67,13 +67,13 @@
           {%- endcapture -%}
 
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" data-menu-item="{{ link.title | escape }}" {{ mega_menu_block.shopify_attributes }}>
+            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" data-menu-item="{{ link.title | escape | strip }}" {{ mega_menu_block.shopify_attributes }}>
               <div class="container">
                 <div class="mega-menu__inner{% if mega_menu_block.settings.two_columns_layout %} mod-2cols{% endif %}">
                   {%- if mega_menu_block.settings.two_columns_layout and link.links.size > 0 -%}
                     <div class="mega-menu__top-level">
                       {%- if mega_menu_block.settings.show_extra_top_level_item -%}
-                        <a href="{{ link.url }}" class="mega-menu__top-level-item" data-item-title="{{ link.title }}">
+                        <a href="{{ link.url }}" class="mega-menu__top-level-item" data-item-title="{{ link.title | strip }}">
                           {% render 'nav-link-image', link: link %}
                           <span class="mega-menu__top-level-item">
                             {{ link.title }}
@@ -81,7 +81,7 @@
                         </a>
                       {%- else -%}
                         {%- for sub_link in link.links -%}
-                          <a href="{{ sub_link.url }}" class="mega-menu__top-level-item" data-item-title="{{ sub_link.title }}">
+                          <a href="{{ sub_link.url }}" class="mega-menu__top-level-item" data-item-title="{{ sub_link.title | strip }}">
                             {% render 'nav-link-image', link: sub_link %}
                             <span class="mega-menu__top-level-item">
                               {{ sub_link.title }}
