@@ -17926,4 +17926,8 @@ visibility: hidden;
 .mega-menu__inner.mod-2cols {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.mega-menu__inner.mod-2cols .mega-menu__column {
+  margin: 0;
+}
 /* END ID - 19.10.23 - New menu layout */
