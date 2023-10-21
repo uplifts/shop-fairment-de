@@ -3,13 +3,11 @@
 {%- assign title_clean = link.title | strip -%}
 
 {%- for group in links_images_arr -%}
-  {{group}}<hr>
   {%- assign group_split = group | strip | split: '::' -%}
+  {{group_split | json}}
   {%- assign name = group_split[0] -%}
   {%- assign name_clean = name | split -%}
   {%- assign image = group_split[1] -%}
-  {{title_clean}}<br>
-Sooka: {{name_clean}}<br>===========<br>
   {% if title_clean == name_clean %}
     {% assign image_url = image %}
   {% endif %}
