@@ -4624,6 +4624,9 @@
       this.delegate.on("click", '[data-action="close"]', () => {
         this.open = false;
       });
+      this.delegate.on("click", '.drawer__overlay', () => {
+        this.open = false;
+      });
     }
 
     get apparitionAnimation() {
