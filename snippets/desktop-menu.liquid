@@ -81,7 +81,12 @@
                         </a>
                       {%- else -%}
                         {%- for sub_link in link.links -%}
-
+                          <a href="{{ sub_link.url }}" class="mega-menu__top-level-item">
+                            {% render 'nav-link-image', link: sub_link %}
+                            <span class="mega-menu__top-level-item">
+                              {{ sub_link.title }}
+                            </span>
+                          </a>
                         {%- endfor -%}
                       {%- endif -%}
                     </div>
