@@ -17893,4 +17893,8 @@ visibility: hidden;
   height: 112px;
   object-fit: contain;
 }
+
+.header__linklist-link:hover {
+  font-weight: bold;
+}
 /* END ID - 19.10.23 - New menu layout */
