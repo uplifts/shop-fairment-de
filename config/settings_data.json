@@ -149,10 +149,36 @@
               "image_6_text": "",
               "image_6_link": ""
             }
+          },
+          "fdf22451-0fb4-4003-8abc-fdc98cbbcfb0": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Lernen",
+              "images_position": "right",
+              "image_1_heading": "",
+              "image_1_text": "",
+              "image_1_link": "",
+              "image_2_heading": "",
+              "image_2_text": "",
+              "image_2_link": "",
+              "image_3_heading": "",
+              "image_3_text": "",
+              "image_3_link": "",
+              "image_4_heading": "",
+              "image_4_text": "",
+              "image_4_link": "",
+              "image_5_heading": "",
+              "image_5_text": "",
+              "image_5_link": "",
+              "image_6_heading": "",
+              "image_6_text": "",
+              "image_6_link": ""
+            }
           }
         },
         "block_order": [
-          "f20cfd25-fbf4-4e9b-8269-d6dc52bf498f"
+          "f20cfd25-fbf4-4e9b-8269-d6dc52bf498f",
+          "fdf22451-0fb4-4003-8abc-fdc98cbbcfb0"
         ],
         "settings": {
           "enable_sticky_header": true,
@@ -162,7 +188,6 @@
           "navigation_menu": "hauptmen-uplifts-oct-2023",
           "sidebar_navigation_menu": "",
           "secondary_mobile_menu": "",
-          "links_images": "",
           "header_layout": "logo_left_navigation_center",
           "show_icons": true,
           "reduce_desktop_padding": true,
