@@ -17888,7 +17888,7 @@ visibility: hidden;
   flex-direction: column;
 }
 
-.mobile-nav.mod-icons-grid .mobile-nav__link-picture .mobile-nav__link-image {
+.mobile-nav.mod-icons-grid .mobile-nav__link-picture .mobile-nav__link-image img {
   width: 112px;
   height: 112px;
   object-fit: contain;
