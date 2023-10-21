@@ -17885,5 +17885,6 @@ visibility: hidden;
   justify-content: center;
   text-align: center;
   font-size: 15px;
+  flex-direction: column;
 }
 /* END ID - 19.10.23 - New menu layout */
