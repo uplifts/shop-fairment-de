@@ -126,7 +126,7 @@
                         {%- endif -%}
                         <button is="toggle-button" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
                           {%- if sublinks_as_images -%}
-                            {% render 'nav-link-image', object: links_images, link: sub_link %}
+                            {% render 'nav-link-image', link: sub_link %}
                           {%- endif -%}
                           <span class="mobile-nav__link-text">
                             {{- sub_link.title -}}
@@ -149,7 +149,7 @@
                               <li class="mobile-nav__item" data-level="3">
                                 <a href="{{ sub_sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sub_sublink_class }}">
                                   {%- if subsublinks_as_images -%}
-                                    {% render 'nav-link-image', object: links_images, link: sub_sub_link %}
+                                    {% render 'nav-link-image', link: sub_sub_link %}
                                   {%- endif -%}
                                   <span class="mobile-nav__link-text">
                                     {{ sub_sub_link.title }}
@@ -162,7 +162,7 @@
                       {%- else -%}
                         <a href="{{ sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}">
                           {%- if sublinks_as_images -%}
-                            {% render 'nav-link-image', object: links_images, link: sub_link %}
+                            {% render 'nav-link-image', link: sub_link %}
                           {%- endif -%}
                           {{ sub_link.title }}
                         </a>
