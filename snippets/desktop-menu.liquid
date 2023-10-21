@@ -67,7 +67,7 @@
           {%- endcapture -%}
 
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" data-menu-item="{{ link.title }}" {{ mega_menu_block.shopify_attributes }}>
+            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" data-menu-item="{{ link.title | escape }}" {{ mega_menu_block.shopify_attributes }}>
               <div class="container">
                 <div class="mega-menu__inner">
                   {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
@@ -82,7 +82,7 @@
                         {%- comment %}<locksmith:5669>{% endcomment -%}
                           {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
                         {%- comment %}</locksmith:5669>{% endcomment -%}
-                        <div class="mega-menu__column">
+                        <div class="mega-menu__column" data-link-title="{{ sub_link.title | escape }}">
                           {%- if sub_link.url == '#' -%}
                             <span class="mega-menu__title heading heading--small">{{ sub_link.title }}</span>
                           {%- else -%}
