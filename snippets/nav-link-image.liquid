@@ -1,7 +1,13 @@
-{%- assign links_images_arr = links_images | newline_to_br | split: '<br />'  -%}\
+{%- assign image_url = '' -%}
+{%- assign links_images_arr = links_images | newline_to_br | split: '<br />'  -%}
 {%- for group in links_images_arr -%}
   {%- assign group_split = group | split: '::' -%}
-  {%- assign name = value -%}
+  {%- assign name = group_split[0] -%}
+  {%- assign image = group_split[1] -%}
+
+  {%- if name == link.title -%}
+    {%- assign image_url = image -%}
+  {%- endif -%}
 {%- endfor -%}
 <span class="mobile-nav__link-image">
 
