@@ -160,7 +160,12 @@
                           </ul>
                         </collapsible-content>
                       {%- else -%}
-                        <a href="{{ sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}">{{ sub_link.title }}</a>
+                        <a href="{{ sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}">
+                          {%- if sublinks_as_images -%}
+                            {% render 'nav-link-image', object: links_images, link: sub_link %}
+                          {%- endif -%}
+                          {{ sub_link.title }}
+                        </a>
                       {%- endif -%}
                     </li>
                   {%- endfor -%}
