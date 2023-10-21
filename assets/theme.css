@@ -17906,5 +17906,10 @@ visibility: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
+}
+
+.mega-menu__top-level-item .nav__link-image {
+  width: 80px;
 }
 /* END ID - 19.10.23 - New menu layout */
