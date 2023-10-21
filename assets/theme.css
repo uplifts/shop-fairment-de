@@ -17932,6 +17932,11 @@ visibility: hidden;
   gap: 0;
 }
 
+.mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
+  padding-left: 40px;
+  border-left: 1px solid rgb(var(--root-border-color));
+}
+
 .mega-menu__inner.mod-2cols .mega-menu__column {
   margin: 0;
 }
