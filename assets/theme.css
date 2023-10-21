@@ -17917,4 +17917,8 @@ visibility: hidden;
 .mega-menu[data-menu-item="Shop"] .mega-menu__column[data-link-title="Alle ansehen"] {
   display: none;
 }
+
+.mega-menu__inner.mod-2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
 /* END ID - 19.10.23 - New menu layout */
