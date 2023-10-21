@@ -17925,6 +17925,7 @@ visibility: hidden;
 
 .mega-menu__inner.mod-2cols {
   grid-template-columns: repeat(2, 1fr);
+  gap: 0;
 }
 
 .mega-menu__inner.mod-2cols .mega-menu__column {
