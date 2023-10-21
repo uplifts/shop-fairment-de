@@ -129,6 +129,8 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Shop",
+              "two_columns_layout": true,
+              "show_extra_top_level_item": false,
               "images_position": "right",
               "image_1_heading": "",
               "image_1_text": "",
@@ -154,6 +156,8 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Lernen",
+              "two_columns_layout": true,
+              "show_extra_top_level_item": true,
               "images_position": "right",
               "image_1_heading": "",
               "image_1_text": "",
