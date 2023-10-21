@@ -4,7 +4,6 @@
 custom.menu_image
 {%- for group in links_images_arr -%}
   {%- assign group_split = group | strip | split: '::' -%}
-  {{group_split | json}}
   {%- assign url = group_split[0] -%}
   {%- assign name_clean = name | split -%}
   {%- assign image = group_split[1] -%}
