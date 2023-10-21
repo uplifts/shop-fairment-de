@@ -6,7 +6,7 @@
   {%- assign image = group_split[1] -%}
 
   {% if link.title == name %}
-    {%- assign image_url = image -%}
+    {% assign image_url = image %}
   {% endif %}
 {%- endfor -%}
 {%- if image_url != '' -%}
