@@ -1,13 +1,14 @@
 {%- assign image_url = '' -%}
 {%- assign links_images_arr = object | newline_to_br | split: '<br />'  -%}
-{%- assign link_clean = link | strip -%}
+{%- assign title_clean = link.title | strip -%}
 {%- for group in links_images_arr -%}
   {%- assign group_split = group | split: '::' -%}
   {%- assign name = group_split[0] -%}
   {%- assign name_clean = name | split -%}
   {%- assign image = group_split[1] -%}
 
-  {% if link.title == name %}
+  {% if title_clean == name_clean %}
+    sooak
     {% assign image_url = image %}
   {% endif %}
 {%- endfor -%}
