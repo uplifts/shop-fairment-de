@@ -17939,5 +17939,10 @@ visibility: hidden;
 
 .mega-menu__inner.mod-2cols .mega-menu__column {
   margin: 0;
+  display: none;
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__column.is-active {
+  display: block;
 }
 /* END ID - 19.10.23 - New menu layout */
