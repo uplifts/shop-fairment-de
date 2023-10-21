@@ -17942,6 +17942,10 @@ visibility: hidden;
   display: none;
 }
 
+.mega-menu__inner.mod-2cols .mega-menu__column .mega-menu__title {
+  display: none;
+}
+
 .mega-menu__inner.mod-2cols .mega-menu__column.is-active {
   display: block;
 }
