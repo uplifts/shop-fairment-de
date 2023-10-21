@@ -17913,7 +17913,7 @@ visibility: hidden;
   width: 80px;
 }
 
-.header__linklist-item [data-item-title="Shop"] {
+.mega-menu[data-menu-item="Shop"] .mega-menu__top-level-item[data-item-title="Alle ansehen"] {
   display: none;
 }
 /* END ID - 19.10.23 - New menu layout */
