@@ -5,6 +5,7 @@
   {%- assign name = group_split[0] -%}
   {%- assign image = group_split[1] -%}
 
+  {{link.title}}
   {%- if link.title contains name -%}
     {%- assign image_url = image -%}
   {%- endif -%}
