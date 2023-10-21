@@ -1,18 +1,6 @@
-{%- assign image_url = '' -%}
-{%- assign links_images_arr = object | newline_to_br | split: '<br />'  -%}
-{%- assign title_clean = link.title | strip -%}
-{% comment %} custom.menu_image {% endcomment %}
-{%- for group in links_images_arr -%}
-  {%- assign group_split = group | strip | split: '::' -%}
-  {%- assign url = group_split[0] -%}
-  {%- assign name_clean = name | split -%}
-  {%- assign image = group_split[1] -%}
-  {% if title_clean == name_clean %}
-    {% assign image_url = image %}
-  {% endif %}
-{%- endfor -%}
-{%- if image_url != '' -%}
+{%- assign image = link.object.metafields.custom.menu_image -%}
+{%- if image != blank -%}
   <span class="mobile-nav__link-image">
-    <img loading="lazy" src="{{ image_url }}" alt="{{ link.title }}">
+    <img loading="lazy" src="{{ image | img_url: 'master' }}" alt="{{ link.title }}">
   </span>
 {%- endif -%}
