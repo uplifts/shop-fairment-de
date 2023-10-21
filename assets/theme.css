@@ -17912,4 +17912,8 @@ visibility: hidden;
 .mega-menu__top-level-item .nav__link-image {
   width: 80px;
 }
+
+.header__linklist-item [data-item-title="Shop"] {
+  display: none;
+}
 /* END ID - 19.10.23 - New menu layout */
