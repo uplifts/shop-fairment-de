@@ -75,6 +75,9 @@
                       {%- if mega_menu_block.settings.show_extra_top_level_item -%}
                         <a href="{{ link.url }}" class="mega-menu__top-level-item">
                           {% render 'nav-link-image', link: link %}
+                          <span class="mega-menu__top-level-item">
+                            {{ link.title }}
+                          </span>
                         </a>
                       {%- else -%}
                         {%- for sub_link in link.links -%}
