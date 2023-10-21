@@ -4,6 +4,8 @@
   {%- assign group_split = group | split: '::' -%}
   {%- assign name = group_split[0] -%}
   {%- assign image = group_split[1] -%}
+  {{name}}
+  {{image}}
 
   {%- if name == link.title -%}
     {%- assign image_url = image -%}
