@@ -67,7 +67,7 @@
           {%- endcapture -%}
 
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" {{ mega_menu_block.shopify_attributes }}>
+            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" data-menu-item="{{ link.title }}" {{ mega_menu_block.shopify_attributes }}>
               <div class="container">
                 <div class="mega-menu__inner">
                   {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
