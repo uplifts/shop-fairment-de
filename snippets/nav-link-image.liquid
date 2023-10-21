@@ -4,7 +4,7 @@
 
 {%- for group in links_images_arr -%}
   {{group}}<hr>
-  {%- assign group_split = group | split: '::' -%}
+  {%- assign group_split = group | strip | split: '::' -%}
   {%- assign name = group_split[0] -%}
   {%- assign name_clean = name | split -%}
   {%- assign image = group_split[1] -%}
