@@ -6,7 +6,7 @@
   {%- assign name = group_split[0] -%}
   {%- assign name_clean = name | split -%}
   {%- assign image = group_split[1] -%}
-  {{title_clean}}{{name_clean}}
+  {{title_clean}}{{name_clean}}<br>
   {% if title_clean == name_clean %}
     {% assign image_url = image %}
   {% endif %}
