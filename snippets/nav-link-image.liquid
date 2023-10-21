@@ -3,6 +3,7 @@
 {%- assign title_clean = link.title | strip -%}
 
 {%- for group in links_images_arr -%}
+  {{group}}<hr>
   {%- assign group_split = group | split: '::' -%}
   {%- assign name = group_split[0] -%}
   {%- assign name_clean = name | split -%}
