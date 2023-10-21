@@ -17918,6 +17918,10 @@ visibility: hidden;
   display: none;
 }
 
+.mega-menu__top-level {
+  padding-right: 40px;
+}
+
 .mega-menu__top-level-inner {
   display: grid;
   gap: 16px;
