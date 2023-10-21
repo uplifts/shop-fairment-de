@@ -105,7 +105,7 @@
                         {%- comment %}<locksmith:5669>{% endcomment -%}
                           {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
                         {%- comment %}</locksmith:5669>{% endcomment -%}
-                        <div class="mega-menu__column" data-link-title="{{ sub_link.title | escape | strip }}">
+                        <div class="mega-menu__column{% if forloop.index0 == 0 %} is-active{% endif %}" data-link-title="{{ sub_link.title | escape | strip }}">
                           {%- if sub_link.url == '#' -%}
                             <span class="mega-menu__title heading heading--small">{{ sub_link.title }}</span>
                           {%- else -%}
