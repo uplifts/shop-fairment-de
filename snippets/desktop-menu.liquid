@@ -76,7 +76,7 @@
                         {%- if mega_menu_block.settings.show_extra_top_level_item -%}
                           <a href="{{ link.url }}" class="mega-menu__top-level-item" data-item-title="{{ link.title | strip }}">
                             {% render 'nav-link-image', link: link %}
-                            <span class="mega-menu__top-level-item">
+                            <span class="mega-menu__top-level-item-title">
                               {{ link.title }}
                             </span>
                           </a>
@@ -84,7 +84,7 @@
                           {%- for sub_link in link.links -%}
                             <a href="{{ sub_link.url }}" class="mega-menu__top-level-item" data-item-title="{{ sub_link.title | strip }}">
                               {% render 'nav-link-image', link: sub_link %}
-                              <span class="mega-menu__top-level-item">
+                              <span class="mega-menu__top-level-item-title">
                                 {{ sub_link.title }}
                               </span>
                             </a>
