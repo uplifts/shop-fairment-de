@@ -277,4 +277,13 @@ megaMenuLevel && megaMenuLevel.forEach((el) => {
     el.classList.add('is-active');
     targetColumn.classList.add('is-active');
   })
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  var mouseHoverEvnt = new MouseEvent('mouseover', {
+    'view': window,
+    'bubbles': true,
+    'cancelable': true
+  });
+  document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Kits & Kulturen"]').dispatchEvent(mouseHoverEvnt);
 })
