@@ -17968,8 +17968,18 @@ visibility: hidden;
   margin: 0;
 }
 
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 10px;
+}
+
 .mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__column .mega-menu__title,
 .mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__column {
+  display: block !important;
+}
+
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__title {
   display: block !important;
 }
 /* END ID - 19.10.23 - New menu layout */
