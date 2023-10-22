@@ -17963,4 +17963,8 @@ visibility: hidden;
 .mega-menu__inner.mod-2cols * {
   box-sizing: border-box;
 } 
+
+.mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
+  margin: 0;
+} 
 /* END ID - 19.10.23 - New menu layout */
