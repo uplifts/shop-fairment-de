@@ -286,4 +286,5 @@ document.addEventListener('DOMContentLoaded', () => {
     'cancelable': true
   });
   document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Kits & Kulturen"]').dispatchEvent(mouseHoverEvnt);
+  document.querySelector('.mega-menu[data-menu-item="Lernen"] .megaMenuLevel[data-item-title="Lernen"]').dispatchEvent(mouseHoverEvnt);
 })
