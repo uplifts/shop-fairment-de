@@ -263,9 +263,15 @@ const megaMenuLevel = document.querySelectorAll('.megaMenuLevel');
 megaMenuLevel && megaMenuLevel.forEach((el) => {
   let id = el.dataset.itemTitle;
   let parent = el.closest('.megaMenuLevels');
-  let columns = el.closest('.mega-menu').querySelector('.megaMenuColumns');
+  let otherLevels = parent.querySelectorAll('.megaMenuLevel');
+  let columns = el.closest('.mega-menu').querySelector('.megaMenuColumn');
+  let targetColumn = columns.querySelector('.megaMenuColumns[data-link-title="' + id + '"]');
 
   el.addEventListener('mouseenter', () => {
-
+    otherLevels.forEach((lvl) => {
+      lvl.classList.remove('is-active');
+    });
+    el.classList.add('is-active');
+    targetColumn.classList.add('is-active');
   })
 })
