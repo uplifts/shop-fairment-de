@@ -17971,7 +17971,7 @@ visibility: hidden;
 .mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px 10px;
+  gap: 10px 40px;
 }
 
 .mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__column .mega-menu__title,
