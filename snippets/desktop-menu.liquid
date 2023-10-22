@@ -72,7 +72,7 @@
                 <div class="mega-menu__inner{% if mega_menu_block.settings.two_columns_layout %} mod-2cols{% endif %}">
                   {%- if mega_menu_block.settings.two_columns_layout and link.links.size > 0 -%}
                     <div class="mega-menu__top-level">
-                      <div class="mega-menu__top-level-inner">
+                      <div class="mega-menu__top-level-inner megaMenuLevels">
                         {%- if mega_menu_block.settings.show_extra_top_level_item -%}
                           <a href="{{ link.url }}" class="mega-menu__top-level-item megaMenuLevel" data-item-title="{{ link.title | strip }}">
                             {% render 'nav-link-image', link: link %}
@@ -100,7 +100,7 @@
                   {%- endif -%}
 
                   {%- if link.links.size > 0 -%}
-                    <div class="mega-menu__columns-wrapper">
+                    <div class="mega-menu__columns-wrapper megaMenuColumns">
                       {%- for sub_link in link.links -%}
                         {%- comment %}<locksmith:5669>{% endcomment -%}
                           {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
