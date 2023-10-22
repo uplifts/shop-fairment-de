@@ -261,6 +261,11 @@ document.addEventListener('variant:changed', function(evt) {
 
 const megaMenuLevel = document.querySelectorAll('.megaMenuLevel');
 megaMenuLevel && megaMenuLevel.forEach((el) => {
+  let id = el.dataset.itemTitle;
   let parent = el.closest('.megaMenuLevels');
   let columns = el.closest('.mega-menu').querySelector('.megaMenuColumns');
+
+  el.addEventListener('mouseenter', () => {
+
+  })
 })
