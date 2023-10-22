@@ -17984,4 +17984,8 @@ visibility: hidden;
   font-weight: 400;
   color: #43484C;
 }
+
+.mega-menu__top-level-item.is-active .mega-menu__top-level-item-title {
+  font-weight: bold;
+}
 /* END ID - 19.10.23 - New menu layout */
