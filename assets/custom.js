@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'bubbles': true,
     'cancelable': true
   });
-  document.querySelector('.mega-menu[data-menu-item="Shop"]').classList.add('soooooka');
+  document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Kits & Kulturen"]').classList.add('soooooka');
   document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Kits & Kulturen"]').dispatchEvent(mouseHoverEvnt);
   document.querySelector('.mega-menu[data-menu-item="Lernen"] .megaMenuLevel[data-item-title="Lernen"]').dispatchEvent(mouseHoverEvnt);
 })
