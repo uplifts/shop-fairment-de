@@ -265,7 +265,7 @@ megaMenuLevel && megaMenuLevel.forEach((el) => {
   let parent = el.closest('.megaMenuLevels');
   let otherLevels = parent.querySelectorAll('.megaMenuLevel');
   let columns = el.closest('.mega-menu').querySelectorAll('.megaMenuColumn');
-  let targetColumn = el.closest('.mega-menu').querySelector('.megaMenuColumns[data-link-title="' + id + '"]');
+  let targetColumn = el.closest('.mega-menu').querySelector('.megaMenuColumn[data-link-title="' + id + '"]');
 
   el.addEventListener('mouseenter', () => {
     otherLevels.forEach((lvl) => {
