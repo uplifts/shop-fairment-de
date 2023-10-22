@@ -258,3 +258,9 @@ document.addEventListener('variant:changed', function(evt) {
     elem.classList.remove('d-none');
   });
 });
+
+const megaMenuLevel = document.querySelectorAll('.megaMenuLevel');
+megaMenuLevel && megaMenuLevel.forEach((el) => {
+  let parent = el.closest('.megaMenuLevels');
+  let columns = el.closest('.mega-menu').querySelector('.megaMenuColumns');
+})
