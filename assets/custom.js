@@ -280,12 +280,11 @@ megaMenuLevel && megaMenuLevel.forEach((el) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  var mouseHoverEvnt = new MouseEvent('mouseover', {
+  var mouseHoverEvnt = new MouseEvent('mouseenter', {
     'view': window,
     'bubbles': true,
     'cancelable': true
   });
-  document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Kits & Kulturen"]').classList.add('soooooka');
   document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Kits & Kulturen"]').dispatchEvent(mouseHoverEvnt);
   document.querySelector('.mega-menu[data-menu-item="Lernen"] .megaMenuLevel[data-item-title="Lernen"]').dispatchEvent(mouseHoverEvnt);
 })
