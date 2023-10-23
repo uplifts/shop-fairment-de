@@ -17992,6 +17992,7 @@ visibility: hidden;
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist {
   display: grid;
   gap: 10px;
+  padding-top: 8px;
   grid-template-rows: repeat(8, 1fr);
   grid-auto-flow: column;
 }
