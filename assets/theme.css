@@ -17906,7 +17906,7 @@ visibility: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 .mega-menu__top-level-item .nav__link-image {
