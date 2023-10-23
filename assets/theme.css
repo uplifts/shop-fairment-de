@@ -17999,4 +17999,8 @@ visibility: hidden;
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist .linklist__item {
   padding-top: 0 !important;
 }
+
+.mega-menu {
+  --background: 255, 255, 255;
+}
 /* END ID - 19.10.23 - New menu layout */
