@@ -17847,7 +17847,6 @@ visibility: hidden;
 .mobile-nav__submenu.collapsible {
   transition: none !important;
   height: auto !important;
-  visibility: visible !important;
 }
 
 .mobile-nav__submenu,
