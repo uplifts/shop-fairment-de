@@ -17924,7 +17924,7 @@ visibility: hidden;
 
 .mega-menu__top-level-inner {
   display: grid;
-  gap: 16px;
+  gap: 8px;
 }
 
 .mega-menu__inner.mod-2cols {
