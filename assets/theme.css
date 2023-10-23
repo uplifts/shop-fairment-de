@@ -17955,7 +17955,7 @@ visibility: hidden;
 }
 
 .mega-menu__top-level-inner {
-  max-width: 285px;
+  max-width: 290px;
   margin-left: auto;
 }
 
@@ -17992,6 +17992,8 @@ visibility: hidden;
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist {
   display: grid;
   gap: 10px;
+  grid-template-rows: repeat(8, 1fr);
+  grid-auto-flow: column;
 }
 
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist .linklist__item {
