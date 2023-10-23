@@ -17989,6 +17989,10 @@ visibility: hidden;
   font-weight: bold;
 }
 
+.mega-menu__inner.mod-2cols .mega-menu__column .linklist {
+  display: grid;
+}
+
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist .linklist__item {
   padding-top: 0 !important;
 }
