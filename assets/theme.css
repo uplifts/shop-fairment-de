@@ -17808,7 +17808,7 @@ visibility: hidden;
   font-weight: var(--heading-font-weight);
 }
 
-.mobile-nav__submenu {
+.drawer-mob-menu .mobile-nav__submenu {
   background: rgb(var(--background));
   position: absolute;
   left: 0;
@@ -17819,18 +17819,18 @@ visibility: hidden;
   margin: 0;
 }
 
-.mobile-nav__submenu .mobile-nav {
+.drawer-mob-menu .mobile-nav__submenu .mobile-nav {
   margin: 0;
   padding: 0;
 }
 
-.mobile-nav__link.mobile-nav__link-block {
+.drawer-mob-menu .mobile-nav__link.mobile-nav__link-block {
   width: calc(100% - var(--gap) * 2);
   margin: 0 var(--gap);
   padding: 20px 0 !important;
 }
 
-.mobile-nav__link * {
+.drawer-mob-menu .mobile-nav__link * {
   pointer-events: none;
 }
 
