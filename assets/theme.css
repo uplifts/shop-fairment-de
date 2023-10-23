@@ -17991,6 +17991,7 @@ visibility: hidden;
 
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist {
   display: grid;
+  gap: 10px;
 }
 
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist .linklist__item {
