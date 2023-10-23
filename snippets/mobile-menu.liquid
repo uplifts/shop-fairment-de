@@ -99,7 +99,7 @@
               <span class="animated-plus"></span>
             </button>
 
-            <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile-nav__submenu collapsible">
+            <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile-nav__submenu collapsible" data-duration="0">
               {%- if link.links.size > 0 -%}
                 {%- assign sublinks_as_images = false -%}
                 {%- assign sublink_class = 'mobile-nav__link-block' -%}
@@ -139,7 +139,7 @@
                           {%- endunless -%}
                         </button>
 
-                        <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" class="mobile-nav__submenu collapsible">
+                        <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" class="mobile-nav__submenu collapsible" data-duration="0">
                           <ul class="mobile-nav list--unstyled{% if subsublinks_as_images %} mod-icons-grid{% endif %}" role="list">
                             {%- for sub_sub_link in sub_link.links -%}
                               {%- comment %}<locksmith:130d>{% endcomment -%}
