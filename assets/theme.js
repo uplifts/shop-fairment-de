@@ -1071,6 +1071,7 @@
     constructor() {
       super();
       this.ignoreNextTransition = this.open;
+      this.animationDuration = this.getAttribute('data-duration') ? Number(this.getAttribute('data-duration')) : 0;
       this.addEventListener("shopify:block:select", () => this.open = true);
       this.addEventListener("shopify:block:deselect", () => this.open = false);
     }
@@ -1092,7 +1093,8 @@
             keyframes["opacity"] = this.open ? [0, 0] : [0, 1];
           }
           this.animate(keyframes, {
-            duration: 500,
+            // duration: 500,
+            duration: this.animationDuration,
             direction: this.open ? "normal" : "reverse",
             easing: "cubic-bezier(0.75, 0, 0.175, 1)"
           }).onfinish = () => {
