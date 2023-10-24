@@ -17995,6 +17995,10 @@ visibility: hidden;
   color: #43484C;
 }
 
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__title:hover {
+  opacity: 0.7;
+}
+
 .mega-menu__top-level-item.is-active .mega-menu__top-level-item-title {
   font-weight: bold;
 }
