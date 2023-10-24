@@ -258,3 +258,33 @@ document.addEventListener('variant:changed', function(evt) {
     elem.classList.remove('d-none');
   });
 });
+
+const megaMenuLevel = document.querySelectorAll('.megaMenuLevel');
+megaMenuLevel && megaMenuLevel.forEach((el) => {
+  let id = el.dataset.itemTitle;
+  let parent = el.closest('.megaMenuLevels');
+  let otherLevels = parent.querySelectorAll('.megaMenuLevel');
+  let columns = el.closest('.mega-menu').querySelectorAll('.megaMenuColumn');
+  let targetColumn = el.closest('.mega-menu').querySelector('.megaMenuColumn[data-link-title="' + id + '"]');
+
+  el.addEventListener('mouseenter', () => {
+    otherLevels.forEach((lvl) => {
+      lvl.classList.remove('is-active');
+    });
+    columns.forEach((col) => {
+      col.classList.remove('is-active');
+    });
+    el.classList.add('is-active');
+    targetColumn.classList.add('is-active');
+  })
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  var mouseHoverEvnt = new MouseEvent('mouseenter', {
+    'view': window,
+    'bubbles': true,
+    'cancelable': true
+  });
+  document.querySelector('.mega-menu[data-menu-item="Shop"] .megaMenuLevel[data-item-title="Nahrungsergänzung"]').dispatchEvent(mouseHoverEvnt);
+  document.querySelector('.mega-menu[data-menu-item="Lernen"] .megaMenuLevel[data-item-title="Lernen"]').dispatchEvent(mouseHoverEvnt);
+})

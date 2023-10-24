@@ -17774,7 +17774,262 @@ visibility: hidden;
 }
 
 /* START ID - 19.10.23 - New menu layout */
+#qab_container #qab_background {
+  z-index: 900 !important;
+}
+
+.drawer-mob-menu {
+  --gap: 20px;
+}
+
+.drawer-mob-menu .drawer__header {
+  border-bottom: 1px solid #43484C26;
+  padding: var(--gap);
+  max-height: 64px;
+}
+
 .drawer-mob-menu .drawer__content {
   position: relative;
+}
+
+.drawer-mob-menu .drawer__header {
+  gap: 8px;
+  color: rgb(var(--heading-color));
+}
+
+.drawer-mob-menu .drawer__footer {
+  padding: var(--gap) !important;
+}
+
+.drawer-mob-menu .drawer__header-title {
+  flex: 1;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+}
+
+.drawer-mob-menu .mobile-nav__submenu {
+  background: rgb(var(--background));
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.drawer-mob-menu .mobile-nav__submenu .mobile-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.drawer-mob-menu .mobile-nav__link.mobile-nav__link-block {
+  width: calc(100% - var(--gap) * 2);
+  margin: 0 var(--gap);
+  padding: 20px 0 !important;
+}
+
+.drawer-mob-menu .mobile-nav__link * {
+  pointer-events: none;
+}
+
+.drawer__back-button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.drawer.has-open-levels .drawer__back-button {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-nav__submenu.collapsible {
+  transition: none !important;
+  height: auto !important;
+}
+
+.mobile-nav__submenu,
+.mobile-nav__submenu > .mobile-nav,
+.drawer-mob-menu .mobile-nav__item {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.mobile-nav__item + .mobile-nav__item > .mobile-nav__link-block {
+  border-top: 1px solid rgb(var(--root-border-color));
+}
+
+.drawer-mob-menu .mobile-nav .mobile-nav .mobile-nav {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.drawer-mob-menu .mobile-nav__link {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+.mobile-nav.mod-icons-grid {
+  padding: 20px !important;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 24px;
+  text-align: center;
+}
+
+.mobile-nav.mod-icons-grid .mobile-nav__link-picture {
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+.mobile-nav.mod-icons-grid .mobile-nav__link-picture .nav__link-image img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+
+.header__linklist-link:hover {
+  font-weight: bold;
+}
+
+.header__linklist-link:after {
+  display: none;
+}
+
+.mega-menu__top-level-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.mega-menu__top-level-item .nav__link-image {
+  width: 80px;
+}
+
+.mega-menu[data-menu-item="Shop"] .mega-menu__top-level-item[data-item-title="Alle ansehen"],
+.mega-menu[data-menu-item="Shop"] .mega-menu__column[data-link-title="Alle ansehen"] {
+  display: none;
+}
+
+.mega-menu__top-level {
+  padding-right: 40px;
+}
+
+.mega-menu__top-level-inner {
+  display: grid;
+  gap: 8px;
+}
+
+.mega-menu__inner.mod-2cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
+  padding-left: 40px;
+  border-left: 1px solid rgb(var(--root-border-color));
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__column {
+  margin: 0;
+  display: none;
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__column .mega-menu__title {
+  display: none;
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__column.is-active {
+  display: block;
+}
+
+.mega-menu__top-level-item-title {
+  font-size: 20px;
+}
+
+.mega-menu__top-level-inner {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.mega-menu__inner.mod-2cols,
+.mega-menu__inner.mod-2cols * {
+  box-sizing: border-box;
+} 
+
+.mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
+  margin: 0;
+}
+
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__columns-wrapper {
+  display: grid;
+  gap: 10px 40px;
+  padding-top: 8px;
+  grid-template-rows: repeat(4,1fr);
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__column .mega-menu__title,
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__column {
+  display: block !important;
+}
+
+.mega-menu[data-menu-item="Lernen"] .mega-menu__top-level-inner {
+  width: fit-content;
+  max-width: fit-content;
+}
+
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__title {
+  display: block !important;
+  font-size: 17px;
+  line-height: 1.7333333333;
+  font-weight: 400;
+  color: #43484C;
+}
+
+.mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__title:hover {
+  opacity: 0.7;
+}
+
+.mega-menu__top-level-item.is-active .mega-menu__top-level-item-title {
+  font-weight: bold;
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__column .linklist {
+  display: grid;
+  gap: 10px;
+  padding-top: 8px;
+  grid-template-rows: repeat(8, 1fr);
+  grid-auto-flow: column;
+}
+
+.mega-menu__inner.mod-2cols .mega-menu__column .linklist .linklist__item {
+  padding-top: 0 !important;
+}
+
+.mega-menu {
+  --background: 255, 255, 255;
+}
+
+.mega-menu__inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.shopify-section--logo-list {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 999px) {
+  .F023-subcollection-slider .F023-slider-content {
+    width: calc(100% - 40px);
+  }
 }
 /* END ID - 19.10.23 - New menu layout */

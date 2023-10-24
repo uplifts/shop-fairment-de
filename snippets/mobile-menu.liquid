@@ -3,11 +3,24 @@
   {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
+{%- assign show_level_icons_triggers = 'Shop' -%}
+{%- capture link_css_class -%}{% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}{%- endcapture -%}
 
-<mobile-navigation append-body id="mobile-menu-drawer" class="drawer {% if direction == 'ltr' %}drawer--from-left{% endif %}">
+<mobile-navigation
+  append-body
+  id="mobile-menu-drawer"
+  class="drawer drawer-mob-menu mobMenuDrawer {% if direction == 'ltr' %}drawer--from-left{% endif %}"
+  data-main-title="{{ 'general.miscellaneous.menu' | t }}"
+>
   <span class="drawer__overlay"></span>
 
   <div class="drawer__header drawer__header--shadowed">
+    <button type="button" class="drawer__back-button drawer__close-button--block tap-area mobMenuDrawerBack" data-action="back" title="{{ 'general.accessibility.back' | t | escape }}">
+      {%- render 'icon' with 'nav-arrow-left' -%}
+    </button>
+    <div class="drawer__header-title mobMenuDrawerTitle text-center {{ link_css_class }}">
+      {{ 'general.miscellaneous.menu' | t }}
+    </div>
     <button type="button" class="drawer__close-button drawer__close-button--block tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
       {%- render 'icon' with 'close' -%}
     </button>
@@ -16,7 +29,7 @@
   <div class="drawer__content">
     <ul class="mobile-nav list--unstyled" role="list">
       {%- comment %}<locksmith:f2bd>{% endcomment -%}
-        {%- assign locksmith_ed55_forloop__size = 0 %}{%- for link in menu.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: menu, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_ed55_forloop__size = locksmith_ed55_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_ed55_forloop__index = nil -%}
+      {%- assign locksmith_ed55_forloop__size = 0 %}{%- for link in menu.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: menu, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_ed55_forloop__size = locksmith_ed55_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_ed55_forloop__index = nil -%}
       {%- comment %}</locksmith:f2bd>{% endcomment -%}
       {%- for link in menu.links -%}
         {%- comment %}<locksmith:1020>{% endcomment -%}
@@ -77,18 +90,24 @@
 
         <li class="mobile-nav__item" data-level="1">
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <button is="toggle-button" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false">
+            <button is="toggle-button" class="mobile-nav__link mobile-nav__link-block heading {{ link_css_class }}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false" data-title="{{- link.title -}}">
               {{- link.title -}}
 
               {%- if link.url != blank -%}
-                <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ link.url }}">{{ 'header.navigation.view_all' | t }}</a>
+                {% comment %} <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ link.url }}">{{ 'header.navigation.view_all' | t }}</a> {% endcomment %}
               {%- endif -%}
               <span class="animated-plus"></span>
             </button>
 
-            <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile-nav__item-inner collapsible">
+            <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile-nav__submenu collapsible" data-duration="0">
               {%- if link.links.size > 0 -%}
-                <ul class="mobile-nav list--unstyled" role="list">
+                {%- assign sublinks_as_images = false -%}
+                {%- assign sublink_class = 'mobile-nav__link-block' -%}
+                {%- if show_level_icons_triggers contains link.title -%}
+                  {%- assign sublinks_as_images = true -%}
+                  {%- assign sublink_class = 'mobile-nav__link-picture' -%}
+                {%- endif -%}
+                <ul class="mobile-nav list--unstyled{% if sublinks_as_images %} mod-icons-grid{% endif %}" role="list">
                   {%- comment %}<locksmith:b6f7>{% endcomment -%}
                     {%- assign locksmith_e674_forloop__size = 0 %}{%- for sub_link in link.links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_link, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_e674_forloop__size = locksmith_e674_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_e674_forloop__index = nil -%}
                   {%- comment %}</locksmith:b6f7>{% endcomment -%}
@@ -98,29 +117,54 @@
                     {%- comment %}</locksmith:2bdd>{% endcomment -%}
                     <li class="mobile-nav__item" data-level="2">
                       {%- if sub_link.links.size > 0 -%}
-                        <button is="toggle-button" class="mobile-nav__link" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false">
-                          {{- sub_link.title -}}
+                        {%- assign subsublinks_as_images = false -%}
+                        {%- assign sub_sublink_class = 'mobile-nav__link-block' -%}
+                        {%- if show_level_icons_triggers contains sub_link.title -%}
+                          {%- assign subsublinks_as_images = true -%}
+                          {%- assign sub_sublink_class = 'mobile-nav__link-picture' -%}
+                        {%- endif -%}
+                        <button is="toggle-button" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" aria-expanded="false" data-title="{{- sub_link.title -}}">
+                          {%- if sublinks_as_images -%}
+                            {% render 'nav-link-image', link: sub_link %}
+                          {%- endif -%}
+                          <span class="mobile-nav__link-text">
+                            {{- sub_link.title -}}
+                          </span>
 
                           {%- if sub_link.url != blank -%}
-                            <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ sub_link.url }}">{{ 'header.navigation.view_all' | t }}</a>
+                            {% comment %} <a class="mobile-nav__toggle-link toggleButtonLink" href="{{ sub_link.url }}">{{ 'header.navigation.view_all' | t }}</a> {% endcomment %}
                           {%- endif -%}
-                          <span class="animated-plus"></span>
+                          {%- unless sublinks_as_images -%}
+                            <span class="animated-plus"></span>
+                          {%- endunless -%}
                         </button>
 
-                        <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" class="collapsible">
-                          <ul class="mobile-nav list--unstyled" role="list">
+                        <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ locksmith_e674_forloop__index }}" class="mobile-nav__submenu collapsible" data-duration="0">
+                          <ul class="mobile-nav list--unstyled{% if subsublinks_as_images %} mod-icons-grid{% endif %}" role="list">
                             {%- for sub_sub_link in sub_link.links -%}
                               {%- comment %}<locksmith:130d>{% endcomment -%}
                                 {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: sub_sub_link, subject_parent: sub_link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
                               {%- comment %}</locksmith:130d>{% endcomment -%}
                               <li class="mobile-nav__item" data-level="3">
-                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link">{{ sub_sub_link.title }}</a>
+                                <a href="{{ sub_sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sub_sublink_class }}">
+                                  {%- if subsublinks_as_images -%}
+                                    {% render 'nav-link-image', link: sub_sub_link %}
+                                  {%- endif -%}
+                                  <span class="mobile-nav__link-text">
+                                    {{ sub_sub_link.title }}
+                                  </span>
+                                </a>
                               </li>
                             {%- endfor -%}
                           </ul>
                         </collapsible-content>
                       {%- else -%}
-                        <a href="{{ sub_link.url }}" class="mobile-nav__link">{{ sub_link.title }}</a>
+                        <a href="{{ sub_link.url }}" class="mobile-nav__link {{ link_css_class }} {{ sublink_class }}">
+                          {%- if sublinks_as_images -%}
+                            {% render 'nav-link-image', link: sub_link %}
+                          {%- endif -%}
+                          {{ sub_link.title }}
+                        </a>
                       {%- endif -%}
                     </li>
                   {%- endfor -%}
@@ -136,7 +180,9 @@
               {%- endif -%}
             </collapsible-content>
           {%- else -%}
-            <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ link.title }}</a>
+            <a href="{{ link.url }}" class="mobile-nav__link heading mobile-nav__link-block {{ link_css_class }}">
+              <span class="mobile-nav__link-text">{{ link.title }}</span>
+            </a>
           {%- endif -%}
         </li>
       {%- endfor -%}

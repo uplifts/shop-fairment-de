@@ -21,6 +21,7 @@
     "accessibility": {
       "skip_to_content": "Direkt zum Inhalt",
       "close": "Schließen",
+      "back": "Zurück",
       "previous": "Zurück",
       "next": "Weiter",
       "play_video": "Video abspielen",
@@ -54,7 +55,8 @@
       "collection_title": "Produktkategorie"
     },
     "miscellaneous": {
-      "online": "Online"
+      "online": "Online",
+      "menu": "Menü"
     }
   },
   "header": {

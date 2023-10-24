@@ -1,0 +1,6 @@
+{%- assign image = link.object.metafields.custom.menu_image -%}
+{%- if image != blank -%}
+  <span class="nav__link-image">
+    <img loading="lazy" src="{{ image | img_url: 'master' }}" alt="{{ link.title }}">
+  </span>
+{%- endif -%}

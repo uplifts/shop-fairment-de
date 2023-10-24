@@ -1071,6 +1071,7 @@
     constructor() {
       super();
       this.ignoreNextTransition = this.open;
+      this.animationDuration = this.getAttribute('data-duration') ? Number(this.getAttribute('data-duration')) : 0;
       this.addEventListener("shopify:block:select", () => this.open = true);
       this.addEventListener("shopify:block:deselect", () => this.open = false);
     }
@@ -1092,7 +1093,8 @@
             keyframes["opacity"] = this.open ? [0, 0] : [0, 1];
           }
           this.animate(keyframes, {
-            duration: 500,
+            // duration: 500,
+            duration: this.animationDuration,
             direction: this.open ? "normal" : "reverse",
             easing: "cubic-bezier(0.75, 0, 0.175, 1)"
           }).onfinish = () => {
@@ -4599,6 +4601,36 @@
 
   // js/custom-element/section/header/mobile-navigation.js
   var MobileNavigation = class extends DrawerContent {
+    connectedCallback() {
+      this.defaultTitle = this.dataset.mainTitle;
+      this.drawerHeader = this.querySelector('.drawer__header');
+      this.backLevelButton = this.querySelector('.drawer__back-button');
+      this.headerTitleEl = this.querySelector('.drawer__header-title');
+      this.delegate.on("click", "[is='toggle-button']", (e) => {
+        let currentTitle = e.target.dataset.title;
+        this.headerTitleEl.innerHTML = currentTitle;
+        this.classList.add('has-open-levels');
+      });
+      this.delegate.on("click", ".drawer__back-button", () => {
+        let openLevelTriggers = this.querySelectorAll('[is="toggle-button"][aria-expanded="true"]');
+        let triggersCount = openLevelTriggers.length;
+        let currentOpenLevel = openLevelTriggers[triggersCount - 1];
+        currentOpenLevel.click();
+        if (openLevelTriggers.length == 1) {
+          this.classList.remove('has-open-levels');
+          this.headerTitleEl.innerHTML = this.defaultTitle;
+        } else {
+          this.headerTitleEl.innerHTML = openLevelTriggers[triggersCount-2] ? openLevelTriggers[triggersCount-2].dataset.title : this.defaultTitle;
+        }
+      });
+      this.delegate.on("click", '[data-action="close"]', () => {
+        this.open = false;
+      });
+      this.delegate.on("click", '.drawer__overlay', () => {
+        this.open = false;
+      });
+    }
+
     get apparitionAnimation() {
       if (this._apparitionAnimation) {
         return this._apparitionAnimation;
