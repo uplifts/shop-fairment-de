@@ -1,6 +1,6 @@
-{%- comment %}<locksmith:a98e>{% endcomment -%}
+{%- comment %}<locksmith:9d85>{% endcomment -%}
   {%- include 'locksmith' -%}
-{%- comment %}</locksmith:a98e>{% endcomment -%}
+{%- comment %}</locksmith:9d85>{% endcomment -%}
 
 {%- comment -%}
 ------------------------------------------------------------------------------------------------------------------------
@@ -26,11 +26,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
   fontify-lang="{{ shop.locale }}"
   {% if request.page_type == 'product' %}data-product-id="{{ product.id }}"{% endif %}}>
   <head>
+    {{ locksmith_initializations }}
     
   <!-- ABlyft Snippet from Uplifts -->
   <script src="https://cdn.ablyft.com/s/41759244.js"></script>
     
-{{ locksmith_initializations }}
 {% render 'replo-head' %}
     {% assign redirect_url = product.metafields.custom.redirect_url %}
     {% assign noindex = product.metafields.custom.noindex %}
@@ -57,10 +57,10 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
 
     {%- if page_description -%}
-      {%- comment %}<locksmith:9913>{% endcomment -%}
+      {%- comment %}<locksmith:36f7>{% endcomment -%}
         {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="description" content="{{ page_description | escape }}">{% endif -%}
         {%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}
-      {%- comment %}</locksmith:9913>{% endcomment -%}
+      {%- comment %}</locksmith:36f7>{% endcomment -%}
     {%- endif -%}
 
     <link rel="canonical" href="{{ canonical_url }}">
