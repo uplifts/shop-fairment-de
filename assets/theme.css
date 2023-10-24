@@ -17982,6 +17982,11 @@ visibility: hidden;
   display: block !important;
 }
 
+.mega-menu[data-menu-item="Lernen"] .mega-menu__top-level-inner {
+  width: fit-content;
+  max-width: fit-content;
+}
+
 .mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__title {
   display: block !important;
   font-weight: 400;
