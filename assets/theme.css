@@ -18004,4 +18004,9 @@ visibility: hidden;
 .mega-menu {
   --background: 255, 255, 255;
 }
+
+.mega-menu__inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 /* END ID - 19.10.23 - New menu layout */
