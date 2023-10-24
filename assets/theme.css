@@ -17894,7 +17894,7 @@ visibility: hidden;
 }
 
 .header__linklist-link:hover {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .header__linklist-link:after {
