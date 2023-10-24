@@ -16567,7 +16567,7 @@ html {
 }
 
 .product__info-higlights-item {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: #43484C;
   line-height: 1.2em; 
@@ -16776,7 +16776,7 @@ html {
     grid-column: var(--column-position);
   }
   .product__info-higlights-item {
-    font-size: 16px;
+    font-size: 13px;
   }
   .product__info-higlights-item-icon {
     margin-right: 10px;
@@ -17767,7 +17767,6 @@ visibility: hidden;
 /* END ID - 19.09.23 - Mixed cart warning popup overlay */
 
 /* Anpassungen webstube Expertentipp */ 
-
 .expertentipp {
   background-color: #f2721954 !important;
   padding: 30px !important;
