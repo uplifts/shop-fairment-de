@@ -18023,4 +18023,8 @@ visibility: hidden;
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+.shopify-section--logo-list {
+  overflow: hidden;
+}
 /* END ID - 19.10.23 - New menu layout */
