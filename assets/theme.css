@@ -17989,6 +17989,7 @@ visibility: hidden;
 
 .mega-menu[data-menu-item="Lernen"] .mega-menu__inner.mod-2cols .mega-menu__title {
   display: block !important;
+  font-size: 17px;
   font-weight: 400;
   color: #43484C;
 }
