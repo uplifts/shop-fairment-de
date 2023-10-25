@@ -4636,17 +4636,17 @@
         return this._apparitionAnimation;
       }
       if (!MediaFeatures.prefersReducedMotion()) {
-        const navItems = Array.from(this.querySelectorAll('.mobile-nav__item[data-level="1"]')), effects = [];
-        effects.push(new ParallelEffect(navItems.map((item, index) => {
-          return new CustomKeyframeEffect(item, {
-            // opacity: [0, 1],
-            // transform: ["translateX(-40px)", "translateX(0)"]
-          }, {
-            duration: 300,
-            delay: 300 + 120 * index - Math.min(2 * index * index, 120 * index),
-            easing: "cubic-bezier(0.25, 1, 0.5, 1)"
-          });
-        })));
+        // const navItems = Array.from(this.querySelectorAll('.mobile-nav__item[data-level="1"]')), effects = [];
+        // effects.push(new ParallelEffect(navItems.map((item, index) => {
+        //   return new CustomKeyframeEffect(item, {
+        //     opacity: [0, 1],
+        //     transform: ["translateX(-40px)", "translateX(0)"]
+        //   }, {
+        //     duration: 300,
+        //     delay: 300 + 120 * index - Math.min(2 * index * index, 120 * index),
+        //     easing: "cubic-bezier(0.25, 1, 0.5, 1)"
+        //   });
+        // })));
         const bottomBar = this.querySelector(".drawer__footer");
         if (bottomBar) {
           effects.push(new CustomKeyframeEffect(bottomBar, {
