@@ -4639,8 +4639,8 @@
         const navItems = Array.from(this.querySelectorAll('.mobile-nav__item[data-level="1"]')), effects = [];
         effects.push(new ParallelEffect(navItems.map((item, index) => {
           return new CustomKeyframeEffect(item, {
-            opacity: [0, 1],
-            transform: ["translateX(-40px)", "translateX(0)"]
+            // opacity: [0, 1],
+            // transform: ["translateX(-40px)", "translateX(0)"]
           }, {
             duration: 300,
             delay: 300 + 120 * index - Math.min(2 * index * index, 120 * index),
