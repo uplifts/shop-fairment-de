@@ -17999,7 +17999,7 @@ visibility: hidden;
 }
 
 .mega-menu__top-level-item.is-active .mega-menu__top-level-item-title {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .mega-menu__inner.mod-2cols .mega-menu__column .linklist {
