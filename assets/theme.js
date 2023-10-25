@@ -4636,6 +4636,7 @@
         return this._apparitionAnimation;
       }
       if (!MediaFeatures.prefersReducedMotion()) {
+        // Disabled nav drawer top level items animations
         // const navItems = Array.from(this.querySelectorAll('.mobile-nav__item[data-level="1"]')), effects = [];
         // effects.push(new ParallelEffect(navItems.map((item, index) => {
         //   return new CustomKeyframeEffect(item, {
