@@ -33,6 +33,13 @@
             "product": "{{ product }}"
           }
         },
+        "6f68bbc7-ce12-447c-929c-d36fe7a77cb0": {
+          "type": "social_proof",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4_1.png",
+            "label": "<p>Von<strong> Dr. Freese und weiteren <\/strong>für den Darm empfohlen<\/p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -43,25 +50,26 @@
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
         },
-        "fc44c2b2-958b-4d00-99f0-bcff18f47ea4": {
+        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
-            "css_class": "buybox-bundle-link-block",
+            "css_class": "buybox-bundle-link",
             "liquid": "{%- if product.metafields.custom.buybox_bundle_link != blank -%}\n<a href=\"{{ product.metafields.custom.buybox_bundle_link }}\">{{ product.metafields.custom.buybox_bundle_link_text }}<\/a>\n{%- endif -%}"
           }
         },
         "5b90bba3-a67f-47a3-b6de-c051c8dd907b": {
           "type": "advantage",
           "settings": {
-            "icon": "{{ product.metafields.custom.buy_box_advantage_icon_1.value }}",
-            "content": "{{ product.metafields.custom.buy_box_advantage_1_.value }}"
+            "icon": "shopify:\/\/shop_images\/icons8-prize.svg",
+            "content": "Laborgeprüft"
           }
         },
         "3e25850f-95ef-45d4-b934-4fb4faa611d4": {
           "type": "advantage",
           "settings": {
-            "icon": "{{ product.metafields.custom.buy_box_advantage_icon_2.value }}",
-            "content": "{{ product.metafields.custom.buy_box_advantage_2.value }}"
+            "icon": "shopify:\/\/shop_images\/icons8-heart_health.svg",
+            "content": "Hochdosiert"
           }
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
@@ -89,6 +97,14 @@
             "liquid": "<span style='color: #CF3441'>Bitte im Kühlschrank bei + 3 °C bis +7 °C lagern. <\/span>"
           }
         },
+        "7704f86c-990b-4996-8afd-296c56ee6011": {
+          "type": "accordion_item",
+          "settings": {
+            "is_open": false,
+            "label": "(Neu) Spar-Abo",
+            "content": "Spare jetzt bares Geld mit dem neuen Spar-Abo. Wähle selbst das Lieferintervall, das zu dir passt. 100% flexibel und monatlich kündbar. Keine versteckten Kosten.\n<br><br>\nIn deinem Kundenkonto kannst du bequem deine Lieferintervalle anpassen, deine Adresse aktualisieren, oder die Zahlungsinformationen aktualisieren."
+          }
+        },
         "18fb818f-b83d-491b-88ff-8b188b41cb33": {
           "type": "accordion_item",
           "settings": {
@@ -112,6 +128,14 @@
             "label": "{{ product.metafields.custom.product_tab_3_title.value }}",
             "content": "{{ product.metafields.custom.product_tab_3_content }}"
           }
+        },
+        "55619357-015c-4d2e-b0a6-5531f976f5ad": {
+          "type": "text",
+          "settings": {
+            "css_class": "",
+            "text_color": "",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -119,20 +143,23 @@
         "variant_picker",
         "420a442f-982e-4faf-88a8-0ad285dd978d",
         "0c30b7c0-e457-4d64-b353-f114abecb928",
+        "6f68bbc7-ce12-447c-929c-d36fe7a77cb0",
         "buy_buttons",
-        "fc44c2b2-958b-4d00-99f0-bcff18f47ea4",
+        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1",
         "5b90bba3-a67f-47a3-b6de-c051c8dd907b",
         "3e25850f-95ef-45d4-b934-4fb4faa611d4",
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530",
         "96a7aa85-8d92-4300-951f-deacf7eb7860",
         "24a23161-1c87-4409-9595-813b0c57a726",
+        "7704f86c-990b-4996-8afd-296c56ee6011",
         "18fb818f-b83d-491b-88ff-8b188b41cb33",
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
-        "7b740d7e-4a85-4ca8-86ac-001044937892"
+        "7b740d7e-4a85-4ca8-86ac-001044937892",
+        "55619357-015c-4d2e-b0a6-5531f976f5ad"
       ],
       "custom_css": [
-        ".buybox-bundle-link-block a {color: #eb807f; border-bottom: 2px solid rgba(51, 51, 51, 0.1);}",
-        ".buybox-bundle-link-block a:hover {border-bottom-color: transparent;}"
+        ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
+        ".buybox-bundle-link a:hover {color: #f38388; text-decoration: none;}"
       ],
       "settings": {
         "show_vendor": false,
@@ -141,8 +168,9 @@
         "show_product_rating": true,
         "show_sticky_add_to_cart": true,
         "show_share_buttons": false,
-        "custom_rating_snippet": "<div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div>",
+        "custom_rating_snippet": "<a href=\"#bewertung\"><div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div><\/a>",
         "help_page": "",
+        "hide_variant_images": true,
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -151,15 +179,81 @@
         "transition_effect": "slide"
       }
     },
+    "22ebbe31-b029-4c8d-9c7a-ae8251375d8b": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 32px;}"
+      ],
+      "settings": {
+        "subheading": "Für ein gutes Bauchgefühl",
+        "title": "Nachschub für die Darmflora",
+        "content": "<p>Der moderne Lebensstil mit unausgewogener Ernährung, übermäßigem Stress oder weiteren ungünstigen Umwelteinflüssen begünstigt das Wachstum schlechter Bakterien im menschlichen Darm. Das Mikrobiom, also die Gesamtheit aller Darmbakterien, kommt so schnell aus dem Gleichgewicht. <br\/>Aus diesem Grund kann es sehr förderlich für dein Wohlbefinden sein, mit guten, natürlich vorkommenden Darmbakterien für Nachschub zu sorgen. <br\/>Als erstes Produkt in Deutschland bieten wir Premium-Biotika an, die auf <strong>sporenbasierten Bakterienstämmen<\/strong> beruhen. Durch ihre schützende Proteinhülle sind sie besonders resistent gegen Magensäure und Hitze.  <br\/>Im Gegensatz zu anderen Bakterien (z.B. den oft als Biotika verwendeten Laktobakterien) können die sporenbasierten Mikroben sich nach der Einnahme ganz natürlich im Darm ansiedeln und sogar bis zu 28 Tage dort verweilen und vermehren. (Cutting, 2011; Setlow, 2014; Hoffmann et al.)<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "3942d0a2-603b-40ad-8038-e168272b44a6": {
+      "type": "testimonials",
+      "blocks": {
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-0": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Die Fairment Super Mikroben® stellen eine hervorragende Unterstützung für den menschlichen Organismus dar. Sporenbasierte Bakterien gehören zu den wissenschaftlich am besten untersuchten Mikroben überhaupt. Die hohe Resistenz ist ein wichtiger Faktor für die Reise der Biotika durch die Magensäure an ihren Bestimmungsort: Den Darm.",
+            "author": "Dr. Jens Freese, Darmexperte und wissenschaftlicher Berater von Fairment"
+          }
+        },
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-1": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        },
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-2": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        }
+      },
+      "block_order": [
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-0",
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-1",
+        "template--17906664177928__3942d0a2-603b-40ad-8038-e168272b44a6-16862173826582aad9-2"
+      ],
+      "custom_css": [
+        "span {font-size: 18px;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1662566489f2987f24": {
       "type": "multi-column",
       "blocks": {
         "1662566489346634da-0": {
           "type": "item",
           "settings": {
-            "image": "{{ product.metafields.custom.product_feature_image_1.value }}",
+            "image": "shopify:\/\/shop_images\/231017_FAIRMENT_ICONS_Enzyme_04.png",
             "image_fallback": "shopify:\/\/shop_images\/221025_FAIRMENT_ICONS_Darmflora_11.png",
-            "image_width": 40,
+            "image_width": 50,
             "image_border": "rgba(0,0,0,0)",
             "title": "",
             "content": "",
@@ -174,9 +268,9 @@
         "1662566489346634da-1": {
           "type": "item",
           "settings": {
-            "image": "{{ product.metafields.custom.product_feature_image_2.value }}",
+            "image": "shopify:\/\/shop_images\/231017_FAIRMENT_ICONS_Enzyme_01.png",
             "image_fallback": "shopify:\/\/shop_images\/221025_FAIRMENT_ICONS_Kinderleicht_10.png",
-            "image_width": 40,
+            "image_width": 50,
             "image_border": "rgba(0,0,0,0)",
             "title": "",
             "content": "",
@@ -191,9 +285,9 @@
         "1662566489346634da-2": {
           "type": "item",
           "settings": {
-            "image": "{{ product.metafields.custom.product_feature_image_3.value }}",
+            "image": "shopify:\/\/shop_images\/231017_FAIRMENT_ICONS_Enzyme_02.png",
             "image_fallback": "shopify:\/\/shop_images\/221025_FAIRMENT_ICONS_Immunsystem_13.png",
-            "image_width": 40,
+            "image_width": 50,
             "image_border": "rgba(0,0,0,0)",
             "title": "",
             "content": "",
@@ -208,9 +302,9 @@
         "1662566489346634da-3": {
           "type": "item",
           "settings": {
-            "image": "{{ product.metafields.custom.product_feature_image_4.value }}",
+            "image": "shopify:\/\/shop_images\/231017_FAIRMENT_ICONS_Enzyme_03.png",
             "image_fallback": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Baer_15.png",
-            "image_width": 40,
+            "image_width": 50,
             "image_border": "rgba(0,0,0,0)",
             "title": "",
             "content": "",
@@ -244,32 +338,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "16625675624167a085": {
-      "type": "image-with-text-block",
-      "settings": {
-        "css_class": "",
-        "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/221025_Fair_headerbild_1920_landingpage_illustrationen_2143px.jpg",
-        "has_border": false,
-        "has_product_tabs": false,
-        "subheading": "",
-        "title": "{{ product.title }}",
-        "content": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>",
-        "liquid": "",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_position": "left",
-        "text_alignment": "left",
-        "text_background": "#ffffff",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)",
-        "youtube_video_url": "{{ product.metafields.custom.youtube_url.value }}",
-        "video_caption": "{{ product.metafields.custom.video_highlights.value }}",
-        "media_image": "{{ product.metafields.custom.tabs_image.value }}"
-      }
-    },
     "product-content": {
       "type": "product-content",
       "disabled": true,
@@ -279,39 +347,38 @@
     "16625671683f7f5938": {
       "type": "image-with-text",
       "blocks": {
-        "1662567167d1d36377-0": {
+        "c3a0fa95-00fa-4631-9235-ddf36b837949": {
           "type": "item",
           "settings": {
             "use_video": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "image": "{{ product.metafields.custom.pdp_block_image_1_.value }}",
-            "image_fallback": "shopify:\/\/shop_images\/221024_Fair_Fermente_04.1.png",
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/231017_FAIR_Enzyme_Moodbilder_05.jpg",
+            "image_fallback": "shopify:\/\/shop_images\/221024_Fair_Darmgesindheit_01.1.png",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
-            "title": "{{ product.metafields.custom.pdp_block_headline_1.value }}",
-            "title_fallback": "Alles dreht sich ums Bauchgefühl.",
-            "content": "<p>{{ product.metafields.custom.pdp_block_text_1_ | metafield_tag }}<\/p>",
-            "content_fallback": "<p><\/p><p>90 % unseres Immunsystems sitzt im Darm. Die Summe aller <br\/>Mikroorganismen in und auf uns ergibt unser Mikrobiom. <br\/>Wir können es fördern, indem wir bestimmte Mikroben und <br\/>bestimmte Lebensmittel, wie Fermente zu uns nehmen.<br\/>Maximal gut fürs Mikrobiom.<br\/>Millionen Mikroben toben in den fairment Produkten:<br\/>Unsere Lebensmittel sind traditionell fermentiert, gut <\/p>",
+            "title": "Essen mit Genuss. Wohlbefinden im Anschluss.",
+            "title_fallback": "",
+            "content": "<p>Die EffektivEnzyme® sind ein hochwertiger Verdauungsenzymkomplex. <\/p><p>Er wurde entwickelt, um dir eine unkomplizierte, direkte Möglichkeit zur Unterstützung deines Wohlbefindens zu bieten.<br\/><\/p>",
+            "content_fallback": "",
             "button_text": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "1662567167d1d36377-0"
+        "c3a0fa95-00fa-4631-9235-ddf36b837949"
       ],
-      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
         "background_overlap": "both",
-        "image_position": "left",
+        "image_position": "right",
         "text_alignment": "left",
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
         "rounded_corners": false,
-        "accent_background": "#ffffff",
+        "accent_background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -325,15 +392,14 @@
           "settings": {
             "use_video": false,
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "image": "{{ product.metafields.custom.pdp_block_image_2.value }}",
-            "image_fallback": "shopify:\/\/shop_images\/221024_Fair_Fermente_02.2.png",
+            "image_fallback": "shopify:\/\/shop_images\/220606_Fair_Darmgesindheit_05.png",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
-            "title": "{{ product.metafields.custom.pdp_block_headline_2.value }}",
-            "title_fallback": "Maximal gut fürs Mikrobiom.",
-            "content": "<p>{{ product.metafields.custom.pdp_block_text_2 | metafield_tag }}<\/p>",
-            "content_fallback": "<p>Millionen Mikroben toben in den fairment Produkten:<br\/>Unsere Lebensmittel sind traditionell fermentiert und quick lebendig. Mit unseren Fermentations-<br\/>Kits kannst du dir Fermente wie Kimchi, Kombucha, Kefir <br\/>oder Joghurt ganz einfach selbst herstellen. <br\/>Lass Mikroben toben!<\/p>",
+            "title": "",
+            "title_fallback": "Federleicht statt ballongebläht: Fühl dich gut in deinem Körper.",
+            "content": "<p>Unser perfekt abgestimmter und hochwertiger Verdauungskomplex unterstützt dich und deinen Bauch bei einem vitalisierenden und angenehmen Gefühl nach jeder schweren Mahlzeit.<br\/><br\/>Das Besondere der EffektivEnzyme® liegt in der einzigartigen Zusammenstellung, die auf dem neuesten Stand wissenschaftlicher Forschung beruht. Sie enthalten 17 wertvolle Enzyme wie Bromelain - eine Protease, die aus der Ananas extrahiert wird und Proteine zerlegen kann. Papain, ein Enzym, das aus Papaya gewonnen wird und zusätzlich Proteine aufspaltet. Auch Amylase, ein essenzielles Enzym für den Abbau von Kohlenhydraten, sowie Laktase für die<br\/>Laktoseverdauung und Fettspaltung sind Bestandteile dieses Komplexes.<br\/><br\/>Zusätzlich ist er angereichert mit verdauungsförderndem und entzündungshemmendem Fenchel-Extrakt, probiotischer Hefe mit einer antientzündlichen und immunmodulierenden Wirkung und sporenbildenden Bakterien für die Linderung von Bauchschmerzen, Blähungen, Übelkeit und Krämpfen. Abgerundet wird unsere Zutatenliste mit Calcium, welches die normale Funktion von Verdauungsenzymen unterstützt.<\/p>",
+            "content_fallback": "<p>Gesundheit fängt im Darm an. Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe. Neben den 3 “Superstar-Bakterien” profitierst du von hochwertigen Akazienfasern, die als Ballaststoffe die Grundlage für den Aufbau guter Bakterienkulturen bieten. Zink als wertvolles Spurenelement sorgt zusätzlich für eine normale Funktion deines Immunsystems.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -342,7 +408,52 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
-      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c840d2ca-4069-4077-a7e2-652d831c0ba5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/fairment-experten_93e97bed-f85f-4f97-96c9-e6550849be1b.jpg",
+            "image_fallback": "shopify:\/\/shop_images\/Expertenrat_Fairment_1000x_4d66e5f1-d7fe-4416-9726-eb32ab22a64e.webp",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
+            "subheading": "",
+            "title": "Speziell entwickelt von Ärzt:innen und Expert:innen.",
+            "title_fallback": "",
+            "content": "<p>Gute Produkte, die im Zusammenhang mit dem sensiblen menschlichen Körper stehen, sollten von Expert:innen entwickelt werden. <\/p><p>Unsere Enzyme wurden speziell von Expert:innen, Ärzt:innen, Heilpraktiker:innen und Biochemiker:innen entwickelt, um größtmögliches Wohlbefinden zu erzielen. Wir haben unser Expertenteam sorgfältig ausgewählt, um sicherzustellen, dass unsere Produkte marktführende Qualitätsansprüche erfüllen.<\/p>",
+            "content_fallback": "<p>Gute Produkte, die im Zusammenhang mit dem sensiblen menschlichen Körper stehen, sollten von Experten entwickelt werden. Unsere Darmbakterien wurden speziell von Mikroben-Experten, Ärzten, Heilpraktikern und Biochemikern entwickelt, um größtmögliches Wohlbefinden zu erzielen. Wir haben unser Expertenteam sorgfältig ausgewählt, um sicherzustellen, dass unsere Produkte marktführende Qualitätsansprüche erfüllen.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0"
+      ],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -352,10 +463,82 @@
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
         "rounded_corners": false,
-        "accent_background": "#ffffff",
+        "accent_background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "13172787-51a3-467b-bf03-1238e810001e": {
+      "type": "benefits-compare",
+      "disabled": true,
+      "custom_css": [
+        ".sec--benefits-compare {background-color: white;}"
+      ],
+      "settings": {
+        "title": "Fairment vs. Andere",
+        "text": "Für beste Ergebnisse für dein Wohlbefinden setzen wir auf zwei Punkte: Sporenbasierte Darmbakterien und 100% natürliche Wirkung ohne unnötige Zusatzstoffe. Unsere Produkte werden in streng geprüften Anlagen hergestellt, um höchste Qualität und Sicherheit zu gewährleisten.",
+        "benefits_title": "Fairment",
+        "dynamic_benefits": "",
+        "benefits": "Hochresistente sporenbasierte Bakterienkulturen |\nKomplexe Wirkformel für beste Ergebnisse |\nHergestellt in Deutschland & EU |\nLaborgeprüft in Köln |\nEntwickelt mit Experten |",
+        "antibenefits_title": "Andere",
+        "dynamic_antibenefits": "",
+        "antibenefits": "Werden von Magensäure zersetzt |\nNur Mikroben - ohne Ballaststoffe |\nHergestellt in Drittländern  |\nUngeprüfte Inhaltsstoffe  |\nUnbekannte Herkunft |"
+      }
+    },
+    "68f9cc3d-b2cd-478d-846d-da14d915b437": {
+      "type": "gallery",
+      "blocks": {
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/221025_Fair_Essenundtrinken_01.png",
+            "caption": ""
+          }
+        },
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/221026_Fair_Zubehoer.png",
+            "caption": ""
+          }
+        },
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/supermikroben-mikrobenfutter.png",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-0",
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-1",
+        "template--17906664177928__68f9cc3d-b2cd-478d-846d-da14d915b437-16805990755ef7570b-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Über 10.000 glückliche Kund:innen",
+        "content": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "075c9937-78de-4f77-9923-8ec34fe236d1": {
+      "type": "custom-html",
+      "custom_css": [
+        "> {margin: 0 !important;}"
+      ],
+      "settings": {
+        "remove_margins": true,
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"relative\"><div id=\"bewertung\" class=\"anchor-link-reviews\"><\/div><\/div>",
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
       }
     },
     "16660020168146ef1b": {
@@ -401,6 +584,10 @@
       "block_order": [
         "a3412a40-aea4-468b-856a-26cb9fdc31de",
         "99279bdb-e250-4dac-a6ea-b699eb03765b"
+      ],
+      "disabled": true,
+      "custom_css": [
+
       ],
       "settings": {
         "include_horizontal_margins": true,
@@ -473,11 +660,16 @@
   },
   "order": [
     "main",
+    "22ebbe31-b029-4c8d-9c7a-ae8251375d8b",
+    "3942d0a2-603b-40ad-8038-e168272b44a6",
     "1662566489f2987f24",
-    "16625675624167a085",
     "product-content",
     "16625671683f7f5938",
     "1662567200ba271a25",
+    "c840d2ca-4069-4077-a7e2-652d831c0ba5",
+    "13172787-51a3-467b-bf03-1238e810001e",
+    "68f9cc3d-b2cd-478d-846d-da14d915b437",
+    "075c9937-78de-4f77-9923-8ec34fe236d1",
     "16660020168146ef1b",
     "16624728032cdcd5d3",
     "566ef7b6-d019-4da1-8df9-e7135645144e"
