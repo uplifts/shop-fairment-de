@@ -18066,4 +18066,8 @@ visibility: hidden;
   font-size: 12px;
   font-weight: 500;
 }
+
+.icontext-box--text {
+  font-size: 10px;
+}
 /* END ID - 27.10.23 - Icon w/ text PDP block */
