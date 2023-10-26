@@ -365,7 +365,7 @@
                         alt="{{ icon.alt }}">
                     </div>
                   {%- endif -%}
-                  {%- if icon != blank -%}
+                  {%- if content != blank -%}
                     <div class="product-meta__advantage-content">
                       {{ content }}
                     </div>
@@ -520,8 +520,17 @@
                     <img loading="lazy" src="{{ icon | img_url: 'master' }}" alt="{{ icon.alt }}">
                   </div>
                 {%- endif -%}
-                <div class="flex-1">
-                  
+                <div class="icontext-box--main flex-1">
+                  {%- if title != blank -%}
+                    <div class="icontext-box--title">
+                      {{ title }}
+                    </div>
+                  {%- endif -%}
+                  {%- if text != blank -%}
+                    <div class="icontext-box--text">
+                      {{ text }}
+                    </div>
+                  {%- endif -%}
                 </div>
               </div>
             </div>
