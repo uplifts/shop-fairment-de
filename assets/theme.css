@@ -18048,6 +18048,12 @@ visibility: hidden;
 }
 
 .icontext-box--inner-icon {
+  display: inline-flex;
   width: var(--icon-width);
+}
+
+.icontext-box--inner-icon img {
+  max-width: 100%;
+  height: auto;
 }
 /* END ID - 27.10.23 - Icon w/ text PDP block */
