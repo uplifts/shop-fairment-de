@@ -503,13 +503,13 @@
       {%- endcomment -%}
       {%- when 'icon_w_text' -%}
         {% if block.settings.icon != blank or block.settings.title != blank or block.settings.text != blank %}
-          {%- assign css_class = block.settinhs.css_class -%}
-          {%- assign icon_width = block.settinhs.icon_width -%}
-          {%- assign icon = block.settinhs.icon -%}
-          {%- assign title = block.settinhs.title -%}
-          {%- assign text = block.settinhs.text -%}
-          {%- assign background_color = block.settinhs.background_color -%}
-          {%- assign text_color = block.settinhs.text_color -%}
+          {%- assign css_class = block.settings.css_class -%}
+          {%- assign icon_width = block.settings.icon_width -%}
+          {%- assign icon = block.settings.icon -%}
+          {%- assign title = block.settings.title -%}
+          {%- assign text = block.settings.text -%}
+          {%- assign background_color = block.settings.background_color -%}
+          {%- assign text_color = block.settings.text_color -%}
           <div class="product-form__icontext {{ css_class }}"
             style="--icon-width:{{ icon_width | default: 30 }}px;--bg-color:{{ background_color }};--txt-color:{{ text_color }};"
             {{ block.shopify_attributes }}>
