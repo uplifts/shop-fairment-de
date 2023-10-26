@@ -515,6 +515,11 @@
             {{ block.shopify_attributes }}>
             <div class="icontext-box">
               <div class="icontext-box--inner">
+                {%- if icon != blank -%}
+                  <div class="icontext-box--inner-icon">
+                    <img loading="lazy" src="{{ icon | img_url: 'master' }}" alt="{{ icon.alt }}">
+                  </div>
+                {%- endif -%}
                 
               </div>
             </div>
