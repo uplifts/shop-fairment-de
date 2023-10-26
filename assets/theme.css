@@ -18051,6 +18051,7 @@ visibility: hidden;
 .icontext-box--icon {
   display: inline-flex;
   width: var(--icon-width);
+  align-items: flex-start;
 }
 
 .icontext-box--icon img {
