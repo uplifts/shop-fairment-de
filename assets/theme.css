@@ -18035,4 +18035,9 @@ visibility: hidden;
 /* END ID - 19.10.23 - New menu layout */
 
 /* START ID - 27.10.23 - Icon w/ text PDP block */
+.icontext-box {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  border-radius: 10px;
+}
 /* END ID - 27.10.23 - Icon w/ text PDP block */
