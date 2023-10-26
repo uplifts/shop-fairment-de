@@ -18039,6 +18039,7 @@ visibility: hidden;
   background-color: var(--bg-color);
   color: var(--txt-color);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .icontext-box--inner {
