@@ -18047,12 +18047,12 @@ visibility: hidden;
   gap: 6px;
 }
 
-.icontext-box--inner-icon {
+.icontext-box--icon {
   display: inline-flex;
   width: var(--icon-width);
 }
 
-.icontext-box--inner-icon img {
+.icontext-box--icon img {
   max-width: 100%;
   height: auto;
 }
