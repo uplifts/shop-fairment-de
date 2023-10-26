@@ -18046,4 +18046,8 @@ visibility: hidden;
   flex-wrap: wrap;
   gap: 6px;
 }
+
+.icontext-box--inner-icon {
+  width: var(--icon-width);
+}
 /* END ID - 27.10.23 - Icon w/ text PDP block */
