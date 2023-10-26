@@ -496,6 +496,31 @@
           {{ block.settings.label }}
         </div>
       {%- endif -%}
+      {%- comment -%}
+      ----------------------------------------------------------------------------------------------------------------
+      ICON WITH TEXT
+      ----------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+      {%- when 'social_proof' -%}
+        {% if block.settings.icon != blank or block.settings.title != blank or block.settings.text != blank %}
+          {%- assign css_class = block.settinhs.css_class -%}
+          {%- assign icon_width = block.settinhs.icon_width -%}
+          {%- assign icon = block.settinhs.icon -%}
+          {%- assign title = block.settinhs.title -%}
+          {%- assign text = block.settinhs.text -%}
+          {%- assign background_color = block.settinhs.background_color -%}
+          {%- assign text_color = block.settinhs.text_color -%}
+          <div class="product-form__icontext {{ css_class }}"
+            style="--icon-width:{{ icon_width | default: 30 }}px;--bg-color:{{ background_color }};--txt-color:{{ text_color }};"
+            {{ block.shopify_attributes }}>
+            <div class="icontext-box">
+              
+            </div>
+            {%- capture image_sizes -%}{{ 100 }}, {{ 100 | times: 2 }}, {{ 100 | times: 3 }}{%- endcapture -%}
+            <img loading="lazy" style="max-width: {{ 100 }}px" {% render 'image-attributes', image: block.settings.image, sizes: image_sizes %}>
+            {{ block.settings.label }}
+          </div>
+        {%- endif -%}
     {%- endcase -%}
   {%- endfor -%}
 
