@@ -332,12 +332,14 @@
                 {%- assign first_variant = product.variants.first -%}
                 {%- assign item_is_not_added = true -%}
                 {%- for line_item in cart.items -%}
+                  {%- for alloc in line_item.discount_allocations -%}
+                    {%- if alloc.discount_application.type == 'script' and line_item.variant.id == first_variant.id -%}
+                      {%- assign item_is_not_added = false -%}
+                    {%- endif -%}
+                  {%- endfor -%}
                   {% comment %} {%- if line_item.variant.id == first_variant.id -%}
-                    {%- assign item_is_not_added = true -%}
-                  {%- endif -%} {% endcomment %}
-                  {%- if line_item.variant.id == first_variant.id -%}
                     {%- assign item_is_not_added = false -%}
-                  {%- endif -%}
+                  {%- endif -%} {% endcomment %}
                 {%- endfor -%}
                 {%- if product != blank and product.available and item_is_not_added -%}
                   {%- form 'product', product, data-productid: first_variant.id, is: 'product-form', class: 'mini-cart__gift customATCForm', id: form_id -%}
