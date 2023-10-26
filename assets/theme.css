@@ -18056,4 +18056,9 @@ visibility: hidden;
   max-width: 100%;
   height: auto;
 }
+
+.icontext-box--main {
+  display: grid;
+  gap: 4px;
+}
 /* END ID - 27.10.23 - Icon w/ text PDP block */
