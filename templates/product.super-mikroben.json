@@ -136,6 +136,13 @@
             "text_color": "",
             "text": ""
           }
+        },
+        "04ff7680-a5b2-4ce7-8e4c-7c876de90dae": {
+          "type": "social_proof",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/varBInfoIcon_f7775cd6-8a03-44c8-a3ed-396f480d1d61.png",
+            "label": "<p>Label<\/p>"
+          }
         }
       },
       "block_order": [
@@ -155,7 +162,8 @@
         "18fb818f-b83d-491b-88ff-8b188b41cb33",
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
         "7b740d7e-4a85-4ca8-86ac-001044937892",
-        "55619357-015c-4d2e-b0a6-5531f976f5ad"
+        "55619357-015c-4d2e-b0a6-5531f976f5ad",
+        "04ff7680-a5b2-4ce7-8e4c-7c876de90dae"
       ],
       "custom_css": [
         ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
