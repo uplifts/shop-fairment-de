@@ -136,6 +136,17 @@
             "text_color": "",
             "text": ""
           }
+        },
+        "927da4ae-3672-40df-baef-1ff68d800a7e": {
+          "type": "icon_w_text",
+          "settings": {
+            "css_class": "",
+            "icon_width": 30,
+            "title": "",
+            "text": "",
+            "background_color": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -155,7 +166,8 @@
         "18fb818f-b83d-491b-88ff-8b188b41cb33",
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
         "7b740d7e-4a85-4ca8-86ac-001044937892",
-        "55619357-015c-4d2e-b0a6-5531f976f5ad"
+        "55619357-015c-4d2e-b0a6-5531f976f5ad",
+        "927da4ae-3672-40df-baef-1ff68d800a7e"
       ],
       "custom_css": [
         ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
