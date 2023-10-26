@@ -5,9 +5,6 @@
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
 <div class="product-form">
-  {% comment %} {% if product.handle contains 'fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika' %}
-    {% render 'Note-Intolerance' %}
-  {% endif %} {% endcomment %}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- comment -%}
