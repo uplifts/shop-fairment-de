@@ -5,9 +5,6 @@
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
 <div class="product-form">
-  {% if product.handle contains 'fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika' %}
-    {% render 'Note-Intolerance' %}
-  {% endif %}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- comment -%}
@@ -365,7 +362,7 @@
                         alt="{{ icon.alt }}">
                     </div>
                   {%- endif -%}
-                  {%- if icon != blank -%}
+                  {%- if content != blank -%}
                     <div class="product-meta__advantage-content">
                       {{ content }}
                     </div>
@@ -496,6 +493,46 @@
           {{ block.settings.label }}
         </div>
       {%- endif -%}
+      {%- comment -%}
+      ----------------------------------------------------------------------------------------------------------------
+      ICON WITH TEXT
+      ----------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+      {%- when 'icon_w_text' -%}
+        {% if block.settings.icon != blank or block.settings.title != blank or block.settings.text != blank %}
+          {%- assign css_class = block.settings.css_class -%}
+          {%- assign icon_width = block.settings.icon_width -%}
+          {%- assign icon = block.settings.icon -%}
+          {%- assign title = block.settings.title -%}
+          {%- assign text = block.settings.text -%}
+          {%- assign background_color = block.settings.background_color -%}
+          {%- assign text_color = block.settings.text_color -%}
+          <div class="product-form__icontext {{ css_class }}"
+            style="--icon-width:{{ icon_width | default: 30 }}px;--bg-color:{{ background_color }};--txt-color:{{ text_color }};"
+            {{ block.shopify_attributes }}>
+            <div class="icontext-box">
+              <div class="icontext-box--inner">
+                {%- if icon != blank -%}
+                  <div class="icontext-box--icon">
+                    <img loading="lazy" src="{{ icon | img_url: 'master' }}" alt="{{ icon.alt }}">
+                  </div>
+                {%- endif -%}
+                <div class="icontext-box--main flex-1">
+                  {%- if title != blank -%}
+                    <div class="icontext-box--title">
+                      {{ title }}
+                    </div>
+                  {%- endif -%}
+                  {%- if text != blank -%}
+                    <div class="icontext-box--text">
+                      {{ text }}
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
     {%- endcase -%}
   {%- endfor -%}
 

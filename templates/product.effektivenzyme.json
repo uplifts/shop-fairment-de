@@ -3,6 +3,18 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "927da4ae-3672-40df-baef-1ff68d800a7e": {
+          "type": "icon_w_text",
+          "settings": {
+            "css_class": "",
+            "icon_width": 24,
+            "icon": "shopify:\/\/shop_images\/varBInfoIcon_f7775cd6-8a03-44c8-a3ed-396f480d1d61.png",
+            "title": "Verträglich bei folgenden Intoleranzen:",
+            "text": "Histaminintoleranz, Glutenintoleranz, Fructose-Intoleranz, Laktoseintoleranz",
+            "background_color": "#eef0fa",
+            "text_color": "#343434"
+          }
+        },
         "fd813bdd-83af-4883-9091-dc5f57f1fbcc": {
           "type": "liquid",
           "settings": {
@@ -139,6 +151,7 @@
         }
       },
       "block_order": [
+        "927da4ae-3672-40df-baef-1ff68d800a7e",
         "fd813bdd-83af-4883-9091-dc5f57f1fbcc",
         "variant_picker",
         "420a442f-982e-4faf-88a8-0ad285dd978d",
