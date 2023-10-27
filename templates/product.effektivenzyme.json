@@ -5,6 +5,7 @@
       "blocks": {
         "9a9d9a1a-6eb2-41d1-b28d-aa3a3ca2bf08": {
           "type": "icon_w_text",
+          "disabled": true,
           "settings": {
             "css_class": "",
             "icon_width": 24,
