@@ -2779,7 +2779,458 @@ if(SI.Config.isInlineFormEnabled) {
     }
 }
 
-      
+      if (SI.urlIsProductPage() === true) {
+  SI.popup.ready.then(function() {
+    if (SI.popup.variants.length < 1 || !SI.Config.button.widget_button_enabled) {
+      return;
+    }
+
+    var KT_TOTAL = 0;
+    if(SI.Config.button.countdown_timer_enabled) {
+        var style = document.createElement('style');
+          style.id = "CountdownTimerUltimate";
+          style.innerHTML = `.countdown-KT-full-width {
+    width: 100%
+  }
+
+  @media (min-width: 981px) {
+    .countdown-KT-full-width {
+      text-align: center
+    }
+  }
+
+  @media (max-width: 980px) {
+    .countdown-KT-full-width {
+      text-align: center
+    }
+  }
+
+  .countdown-KT {
+    margin-top: 0;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3
+  }
+
+  .countdown-KT .countdown-section-KT {
+    display: inline-block
+  }
+
+  .countdown-KT .separator-KT {
+    color: rgba(0, 0, 0, 1.00);
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 46px;
+    top: 13px;
+    margin: 0 5px;
+    font-weight: 900
+  }
+
+  .countdown-KT .message-KT {
+    display: inline-block;
+    color: rgba(0, 0, 0, 1.00);
+    text-align: center;
+    font-family: Josefin Sans, serif;
+    font-size: 16pt;
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 5px;
+    padding-right: 5px
+  }
+
+  .countdown-KT .digit-KT {
+    display: inline-block;
+    margin: 0 2px;
+    width: 28px;
+    height: 45px;
+    -webkit-perspective: 100px;
+    perspective: 100px
+  }
+
+  .countdown-KT .title-KT {
+    display: block;
+    color: rgba(0, 0, 0, 1.00);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    position: relative;
+    text-align: center;
+    margin-top: 5px
+  }
+
+  .countdown-KT .digit-KT .card-back-KT, .countdown-KT .digit-KT .card-KT {
+    background-color: rgba(255, 255, 255, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+    font-family: Josefin Sans, serif;
+    font-size: 24pt;
+    position: absolute;
+    border-radius: 6px 6px 0 0;
+    width: 28px;
+    height: 22px;
+    overflow: hidden;
+    text-align: center
+  }
+
+  .countdown-KT .digit-KT .card-back-KT, .countdown-KT .digit-KT .card-bottom-back-KT {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5)
+  }
+
+  .countdown-KT .digit-KT .card-bottom-back-KT, .countdown-KT .digit-KT .card-bottom-KT {
+    background-color: rgba(255, 255, 255, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+    font-family: Josefin Sans, serif;
+    font-size: 24pt;
+    position: absolute;
+    top: 23px;
+    border-radius: 0 0 6px 6px;
+    width: 28px;
+    height: 22px;
+    overflow: hidden;
+    text-align: center
+  }
+
+  .countdown-KT .digit-KT .card-KT, .countdown-KT .digit-KT .card-bottom-back-KT {
+    z-index: 1
+  }
+
+  .countdown-KT .digit-KT .card-back-KT, .countdown-KT .digit-KT .card-bottom-KT {
+    z-index: 0
+  }
+
+  .countdown-KT .digit-KT .card-back-text-KT, .countdown-KT .digit-KT .card-text-KT {
+    line-height: 1.19;
+    position: relative;
+    top: 6px
+  }
+
+  .countdown-KT .digit-KT .card-bottom-back-text-KT, .countdown-KT .digit-KT .card-bottom-text-KT {
+    line-height: 1.19;
+    position: relative;
+    top: -17px
+  }
+
+  .countdown-KT .flip-KT .card-KT {
+    -webkit-animation: flipTop-KT .5s cubic-bezier(0.56, 0.56, 0.69, 0.69);
+    animation: flipTop-KT .5s cubic-bezier(0.56, 0.56, 0.69, 0.69);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom
+  }
+
+  .countdown-KT .flip-KT .card-bottom-KT {
+    z-index: 2;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: flipBottom-KT 1.0s cubic-bezier(0.56, 0.56, 0.69, 0.69);
+    animation: flipBottom-KT 1.0s cubic-bezier(0.56, 0.56, 0.69, 0.69)
+  }
+
+  @-webkit-keyframes flipTop-KT {
+    0% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg)
+    }
+    99% {
+      -webkit-transform: rotateX(-90deg);
+      transform: rotateX(-90deg);
+      opacity: 1
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+  @keyframes flipTop-KT {
+    0% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg)
+    }
+    99% {
+      -webkit-transform: rotateX(-90deg);
+      transform: rotateX(-90deg);
+      opacity: 1
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+  @-webkit-keyframes flipBottom-KT {
+    0% {
+      opacity: 0
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: rotateX(90deg);
+      transform: rotateX(90deg)
+    }
+    51% {
+      opacity: 1
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg)
+    }
+  }
+
+  @keyframes flipBottom-KT {
+    0% {
+      opacity: 0
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: rotateX(90deg);
+      transform: rotateX(90deg)
+    }
+    51% {
+      opacity: 1
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg)
+    }
+  }
+
+  .hide-KT {
+    display: none
+  }
+
+  .fade-in-KT {
+    -webkit-animation: fade-in-anim-KT 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-anim-KT 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+  }
+
+  @media (max-width: 768px) {
+    .countdown-KT .message-KT {
+      text-align: center !important
+    }
+  }
+
+  @-webkit-keyframes fade-in-anim-KT {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade-in-anim-KT {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1
+    }
+  }`;
+
+          logic();
+
+
+          function logic() {
+            document.head.appendChild(style);
+            jQuery('body').append(`<div id="KILATECH_CountdownTimer_MAIN" style="display: none !important;">
+</div>`);
+          }
+
+    loadAppkionTimer();
+
+    function loadAppkionTimer() {
+      //var KT_TOTAL = 0;
+      var KT_countdown_update = null;
+
+      function playanimation(old_value, new_value, type) {
+        old_value = '0' + old_value;
+        old_value = old_value.split("").reverse();
+        new_value = '0' + new_value;
+        new_value = new_value.split("").reverse();
+        var left = '.countdown-KT .' + type + '0';
+        var right = '.countdown-KT .' + type + '1';
+        var isRightFlip = false;
+        var isLeftFlip = false;
+        isRightFlip = jQuery(right + ' .card-text-KT').text() != jQuery(right + ' .card-back-text-KT').text();
+        isLeftFlip = jQuery(left + ' .card-text-KT').text() != jQuery(left + ' .card-back-text-KT').text();
+        if (isRightFlip) {
+          jQuery(right).addClass("flip-KT");
+        }
+        if (isLeftFlip) {
+          jQuery(left).addClass("flip-KT");
+        }
+        setTimeout(function () {
+          jQuery(right + ' .card-text-KT').html(old_value[0]);
+          jQuery(right + ' .card-bottom-back-text-KT').html(old_value[0]);
+          jQuery(right + ' .card-back-text-KT').html(new_value[0]);
+          jQuery(right + ' .card-bottom-text-KT').html(new_value[0]);
+          jQuery(left + ' .card-text-KT').html(old_value[1]);
+          jQuery(left + ' .card-bottom-back-text-KT').html(old_value[1]);
+          jQuery(left + ' .card-back-text-KT').html(new_value[1]);
+          jQuery(left + ' .card-bottom-text-KT').html(new_value[1]);
+          if (isLeftFlip) {
+            jQuery(left).removeClass("flip-KT");
+          }
+          if (isRightFlip) {
+            jQuery(right).removeClass("flip-KT");
+          }
+        }, 900);
+      }
+
+      function update_KT_CT() {
+        var days_old = Math.floor(KT_TOTAL / (60 * 60 * 24));
+        var hrs_old = Math.floor((KT_TOTAL % (60 * 60 * 24)) / (60 * 60));
+        var mins_old = Math.floor((KT_TOTAL % (60 * 60)) / 60);
+        var secs_old = KT_TOTAL % (60);
+        KT_TOTAL--;
+        var days = Math.floor(KT_TOTAL / (60 * 60 * 24));
+        var hrs = Math.floor((KT_TOTAL % (60 * 60 * 24)) / (60 * 60));
+        var mins = Math.floor((KT_TOTAL % (60 * 60)) / 60);
+        var secs = KT_TOTAL % (60);
+        if (KT_TOTAL < 0) {
+          jQuery('.countdown-KT-full-width').css("display", "none");
+          clearInterval(KT_countdown_update);
+          return;
+        }
+        playanimation(days_old, days, 'days');
+        playanimation(hrs_old, hrs, 'hrs');
+        playanimation(mins_old, mins, 'mins');
+        playanimation(secs_old, secs, 'secs');
+      }
+
+      function initDigit(old_value, new_value, type) {
+        old_value = '0' + old_value;
+        old_value = old_value.split("").reverse();
+        new_value = '0' + new_value;
+        new_value = new_value.split("").reverse();
+        var left = '.countdown-KT .' + type + '0';
+        var right = '.countdown-KT .' + type + '1';
+        jQuery(right + ' .card-text-KT').html(old_value[0]);
+        jQuery(right + ' .card-bottom-back-text-KT').html(old_value[0]);
+        jQuery(right + ' .card-back-text-KT').html(new_value[0]);
+        jQuery(right + ' .card-bottom-text-KT').html(new_value[0]);
+        jQuery(left + ' .card-text-KT').html(old_value[1]);
+        jQuery(left + ' .card-bottom-back-text-KT').html(old_value[1]);
+        jQuery(left + ' .card-back-text-KT').html(new_value[1]);
+        jQuery(left + ' .card-bottom-text-KT').html(new_value[1]);
+      }
+
+      function initValues() {
+        var days_old = Math.floor(KT_TOTAL / (60 * 60 * 24));
+        var hrs_old = Math.floor((KT_TOTAL % (60 * 60 * 24)) / (60 * 60));
+        var mins_old = Math.floor((KT_TOTAL % (60 * 60)) / 60);
+        var secs_old = KT_TOTAL % (60);
+        KT_TOTAL--;
+        var days = Math.floor(KT_TOTAL / (60 * 60 * 24));
+        var hrs = Math.floor((KT_TOTAL % (60 * 60 * 24)) / (60 * 60));
+        var mins = Math.floor((KT_TOTAL % (60 * 60)) / 60);
+        var secs = KT_TOTAL % (60);
+        initDigit(days_old, days, 'days');
+        initDigit(hrs_old, hrs, 'hrs');
+        initDigit(mins_old, mins, 'mins');
+        initDigit(secs_old, secs, 'secs');
+      }
+
+      function start_Countdown_KT() {
+
+        var variant_id;
+        var variant = SI.detectVariant(SI.popup);
+        if (variant && SI.popup.variantIsUnavailable(variant)) {
+            variant_id = variant.id;
+        }
+        var products = JSON.parse(SI.Config.button.countdown_timer_products);
+        var selectedVariant = products.find(p => p.variantId == variant_id || (p.variantId == 0 && p.productId == SI.popup.product.id));
+
+        KT_TOTAL = selectedVariant ? Math.round((selectedVariant.expirationTime - Date.now())/1000) : -1;
+
+        if(SI.Config.button.countdown_timer_expiration && SI.Config.button.countdown_timer_reset_enabled) {
+            var n = 2;
+            while(KT_TOTAL <= 0) {
+                KT_TOTAL = Math.round((SI.Config.button.countdown_timer_expiration + (n * 86400) - Date.now())/1000);
+                n = n * 2;
+            }
+        }
+
+        if (KT_TOTAL < 0) {
+          return
+        }
+
+        initValues();
+        KT_countdown_update = window.setInterval(() => {
+          update_KT_CT();
+        }, 1000);
+        jQuery('.countdown-KT-full-width').removeClass('hide-KT');
+        jQuery('.countdown-KT-full-width').addClass('fade-in-KT');
+      }
+
+      start_Countdown_KT();
+    }
+
+    }
+
+    var link = $('<button>', {
+      css: {
+
+      },
+      'class': 'button button-full button-add-to-cart addtocart',
+      text: "Get notified when we restock",
+      href: '#',
+      id: 'SI_trigger'
+    }).wrap($('<div>', {
+      css: {
+
+      }
+    })).parent().hide();
+    
+    if(SI.Config.isInlineFormEnabled) {
+       link = appikonBisInlineForm;
+    }
+
+
+    $('form[action="/cart/add"]').append(link);
+        var countdownTimer = $('<div class="countdown-KT-full-width hide-KT"id="countdownultimate-KT"><div class="countdown-KT"><div class="message-KT">Product Becoming Available in</div><br style="height: 0px;"><div class="countdown-section-KT day"><div class="digit-KT days0"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="digit-KT days1"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="title-KT">DAYS</div></div><div class="separator-KT sday">:</div><div class="countdown-section-KT hour"><div class="digit-KT hrs0"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="digit-KT hrs1"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="title-KT">HRS</div></div><div class="separator-KT shour">:</div><div class="countdown-section-KT minute"><div class="digit-KT mins0"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="digit-KT mins1"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="title-KT">MINS</div></div><div class="separator-KT sminute">:</div><div class="countdown-section-KT second"><div class="digit-KT secs0"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="digit-KT secs1"><div class="card-KT"><div class="card-text-KT"></div></div><div class="card-back-KT"><div class="card-back-text-KT"></div></div><div class="card-bottom-KT"><div class="card-bottom-text-KT"></div></div><div class="card-bottom-back-KT"><div class="card-bottom-back-text-KT"></div></div></div><div class="title-KT">SECS</div></div><div style="text-align: right;display: block !important;width: 100% !important; max-width: 100% !important; height: 100% !important; max-height: 100% !important;"></div></div></div>');
+    if(SI.Config.button.countdown_timer_enabled && KT_TOTAL >= 0) {
+        $('form[action="/cart/add"]').append(countdownTimer);
+    }
+
+    var variant_id;
+    var reload = function() {
+      try {
+        if (SI.Config.button.always_show_widget) {
+            variant_id = SI.popup.variants[0].id;
+            link.show();
+            if(SI.Config.button.countdown_timer_enabled && KT_TOTAL >= 0) {
+                countdownTimer.show();
+            }
+        } else {
+            var variant = SI.detectVariant(SI.popup);
+            if (variant && SI.popup.variantIsUnavailable(variant)) {
+                variant_id = variant.id;
+                link.show();
+                if(SI.Config.button.countdown_timer_enabled && KT_TOTAL >= 0) {
+                    countdownTimer.show();
+                }
+            } else {
+                link.hide();
+                if(SI.Config.button.countdown_timer_enabled && KT_TOTAL >= 0) {
+                    countdownTimer.hide();
+                }
+            }
+        }
+        } catch (e) {
+          console.log(e)
+        }
+    };
+
+    link.click(function() {
+      SIPopover.form.selectVariant(variant_id)
+    });
+
+    setTimeout(reload, 13);
+    $(document).on('change', reload);
+  });
+}
+
 
       deferBisProductPageButton(setBisProductPageButtonStyles);
     }
