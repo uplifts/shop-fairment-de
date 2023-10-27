@@ -46,6 +46,7 @@
     "product_color_display": "count",
     "product_image_size": "square",
     "search_enable_pages": true,
+    "search_unavailable_products": "last",
     "cart_type": "drawer",
     "cart_icon": "shopping_bag",
     "cart_show_free_shipping_threshold": false,
