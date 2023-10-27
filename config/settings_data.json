@@ -317,7 +317,7 @@
           "4b95d267-68e7-4c6d-a9c6-489965fd4757": {
             "type": "gift_offer",
             "settings": {
-              "threshold": 25,
+              "threshold": 50,
               "product": "fairment-miso-gelbe-erbse"
             }
           }
