@@ -5,6 +5,7 @@
       "blocks": {
         "9a9d9a1a-6eb2-41d1-b28d-aa3a3ca2bf08": {
           "type": "icon_w_text",
+          "disabled": true,
           "settings": {
             "css_class": "",
             "icon_width": 24,
@@ -365,7 +366,6 @@
           "settings": {
             "use_video": false,
             "video_url": "",
-            "image": "shopify:\/\/shop_images\/231017_FAIR_Enzyme_Moodbilder_05.jpg",
             "image_fallback": "shopify:\/\/shop_images\/221024_Fair_Darmgesindheit_01.1.png",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
