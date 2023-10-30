@@ -96,7 +96,6 @@
     },
     "1659348938f6df9a2f": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "165934893735c45f7e-0": {
           "type": "item",
@@ -149,6 +148,7 @@
         "165934893735c45f7e-1",
         "165934893735c45f7e-2"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -166,7 +166,6 @@
     },
     "16593489629e61cb22": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "16593489621646493c-0": {
           "type": "item",
@@ -219,6 +218,7 @@
         "16593489621646493c-1",
         "16593489621646493c-2"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -296,7 +296,6 @@
     },
     "1664446194073d9a9a": {
       "type": "promotion-blocks",
-      "disabled": true,
       "blocks": {
         "1664446194a24a1b51-0": {
           "type": "image",
@@ -373,6 +372,7 @@
         "d1fea5c1-c144-4e41-a0e8-1a3647f1795a",
         "6277ef65-077d-4232-b9a7-6c4e6a8da30e"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "subheading": "Subheading",

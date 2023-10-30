@@ -30,9 +30,7 @@
       "block_order": [
         "slide-1"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "css_class": "home-hero",
         "section_height_mobile": 62,
@@ -335,9 +333,7 @@
         "011c8877-d17d-49eb-9510-d644dedb0958",
         "dd8969b6-348c-4de8-b33e-2e9d9ee5da1b"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "css_class": "",
         "subheading": "Entdecke unsere Produkte",
@@ -996,8 +992,7 @@
         "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-quantity_selector-1": {
           "type": "quantity_selector",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-buy_buttons-1": {
           "type": "buy_buttons",
@@ -1021,8 +1016,7 @@
         "03e30117-2bfa-49ab-b924-36b58df5d400": {
           "type": "description",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

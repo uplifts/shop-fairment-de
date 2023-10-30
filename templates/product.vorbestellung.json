@@ -59,8 +59,7 @@
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
-          "settings": {
-          }
+          "settings": {}
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
           "type": "line_item_property",
@@ -274,8 +273,7 @@
     "product-content": {
       "type": "product-content",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "16625671683f7f5938": {
       "type": "image-with-text",
@@ -365,8 +363,7 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",

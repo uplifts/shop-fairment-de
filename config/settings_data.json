@@ -492,13 +492,11 @@
       },
       "main-customers-register": {
         "type": "main-customers-register",
-        "settings": {
-        }
+        "settings": {}
       },
       "main-customers-login": {
         "type": "main-customers-login",
-        "settings": {
-        }
+        "settings": {}
       },
       "countdown-timer-2-ablyft": {
         "type": "countdown-timer-2-ablyft",
@@ -575,8 +573,7 @@
           "faecf7d4-d509-46a3-a402-ccbb9b8e44e8",
           "38bfd828-3789-4bc1-a751-7bcfe6ed9d9a"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "tv-section": {
         "type": "tv-section",
@@ -606,8 +603,7 @@
       },
       "article-recommendation": {
         "type": "article-recommendation",
-        "settings": {
-        }
+        "settings": {}
       },
       "reviews-slider": {
         "type": "reviews-slider",
@@ -638,9 +634,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "10830403595879607806": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -670,26 +664,22 @@
       "1027443428159536739": {
         "type": "shopify:\/\/apps\/hextom-quick-announcement-bar\/blocks\/qab-embeded-block\/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "10312807297210203588": {
         "type": "shopify:\/\/apps\/aftersell-post-purchase-upsell\/blocks\/utm-triggers\/509ec35d-0632-4dfc-a105-fa799cd9d149",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "8141285270076847652": {
         "type": "shopify:\/\/apps\/speed-kit\/blocks\/speed-kit-installation\/80ceebdf-9344-464b-989b-ffce65a9af7a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "17550530943902319648": {
         "type": "shopify:\/\/apps\/appikon-back-in-stock\/blocks\/subscribe_it_helper\/eb949c69-b3e6-4216-a322-1cd63915d46d",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -739,8 +729,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -774,8 +763,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -785,13 +773,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -800,8 +786,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -849,8 +834,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -884,8 +868,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -895,13 +878,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -910,8 +891,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -964,8 +944,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -999,8 +978,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -1010,13 +988,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1025,8 +1001,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     }

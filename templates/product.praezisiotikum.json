@@ -87,8 +87,7 @@
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
-          "settings": {
-          }
+          "settings": {}
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
           "type": "line_item_property",
@@ -355,8 +354,7 @@
     "product-content": {
       "type": "product-content",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "1662567200ba271a25": {
       "type": "image-with-text",
@@ -382,9 +380,7 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -424,9 +420,7 @@
       "block_order": [
         "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -519,8 +513,7 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -557,9 +550,7 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de",
         "99279bdb-e250-4dac-a6ea-b699eb03765b"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true

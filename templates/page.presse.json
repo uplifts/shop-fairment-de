@@ -2,7 +2,6 @@
   "sections": {
     "16627352937f5d32f8": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "1662735293d32096ee-0": {
           "type": "image",
@@ -31,6 +30,7 @@
       "block_order": [
         "1662735293d32096ee-0"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "section_height_mobile": 76,
@@ -52,7 +52,6 @@
     },
     "1644422436e5687919": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "cc3c32f2-66fc-4ea5-981f-8cef410d67dd": {
           "type": "item",
@@ -71,6 +70,7 @@
       "block_order": [
         "cc3c32f2-66fc-4ea5-981f-8cef410d67dd"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -88,7 +88,6 @@
     },
     "1659088832ca9f9962": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "12a169dd-bd93-40f8-8f27-8f20b78019ae": {
           "type": "item",
@@ -107,6 +106,7 @@
       "block_order": [
         "12a169dd-bd93-40f8-8f27-8f20b78019ae"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -124,7 +124,6 @@
     },
     "1659348938f6df9a2f": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "165934893735c45f7e-0": {
           "type": "item",
@@ -177,6 +176,7 @@
         "165934893735c45f7e-1",
         "165934893735c45f7e-2"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -194,7 +194,6 @@
     },
     "16593489629e61cb22": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "16593489621646493c-0": {
           "type": "item",
@@ -247,6 +246,7 @@
         "16593489621646493c-1",
         "16593489621646493c-2"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -289,7 +289,6 @@
     },
     "16589075887c730d6b": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "165890758815e98f23-0": {
           "type": "collection",
@@ -307,6 +306,7 @@
       "block_order": [
         "165890758815e98f23-0"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",

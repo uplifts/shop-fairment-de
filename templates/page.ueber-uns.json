@@ -28,7 +28,6 @@
     },
     "16627154018feb90e3": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "1662715401f2e56e7d-0": {
           "type": "image",
@@ -57,6 +56,7 @@
       "block_order": [
         "1662715401f2e56e7d-0"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "home-hero",
         "section_height_mobile": 60,
@@ -89,7 +89,6 @@
     },
     "1662715612a3c19f54": {
       "type": "logo-list",
-      "disabled": true,
       "blocks": {
         "1662715612dba984fc-0": {
           "type": "logo",
@@ -158,6 +157,7 @@
         "8018aa15-fe01-4a9f-99f9-e7c86c6e215c",
         "a3b1a1c5-8252-4f95-9087-c628ad06b298"
       ],
+      "disabled": true,
       "settings": {
         "items_per_row_mobile": 2,
         "reveal_on_scroll": true,
@@ -425,7 +425,6 @@
     },
     "1662726817c4d53ec9": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1662726817830310ee-0": {
           "type": "item",
@@ -447,6 +446,7 @@
       "block_order": [
         "1662726817830310ee-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -464,7 +464,6 @@
     },
     "1662726921f122f7bb": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "16627269214821bc44-0": {
           "type": "item",
@@ -486,6 +485,7 @@
       "block_order": [
         "16627269214821bc44-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -503,7 +503,6 @@
     },
     "166272698289273420": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1662726982c49c3658-0": {
           "type": "item",
@@ -526,6 +525,7 @@
       "block_order": [
         "1662726982c49c3658-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -651,7 +651,6 @@
     },
     "16589075887c730d6b": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "165890758815e98f23-0": {
           "type": "collection",
@@ -669,6 +668,7 @@
       "block_order": [
         "165890758815e98f23-0"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",

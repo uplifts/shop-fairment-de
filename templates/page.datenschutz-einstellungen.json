@@ -16,7 +16,6 @@
     },
     "contact-form": {
       "type": "contact-form",
-      "disabled": true,
       "blocks": {
         "e9e1fbd5-cf3d-49bb-9501-46f8bd866767": {
           "type": "text",
@@ -30,6 +29,7 @@
       "block_order": [
         "e9e1fbd5-cf3d-49bb-9501-46f8bd866767"
       ],
+      "disabled": true,
       "settings": {
         "title": "Kontakt",
         "content": "<p>Du hast Fragen zu deiner Bestellung?<br\/>Fülle das Formular aus oder schreibe uns unter Hello@Glow25.de<\/p>",

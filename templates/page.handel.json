@@ -218,7 +218,6 @@
     },
     "1659348938f6df9a2f": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "165934893735c45f7e-0": {
           "type": "item",
@@ -274,6 +273,7 @@
         "165934893735c45f7e-1",
         "165934893735c45f7e-2"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -291,7 +291,6 @@
     },
     "16627165937e1885d1": {
       "type": "promotion-blocks",
-      "disabled": true,
       "blocks": {
         "16627165936d9d24ae-0": {
           "type": "image",
@@ -368,6 +367,7 @@
         "77e4e503-db09-4a97-b64e-923107f8bfc1",
         "21dd7ec3-9207-4743-890c-0209ecd44699"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "subheading": "",
@@ -382,7 +382,6 @@
     },
     "16589075887c730d6b": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "165890758815e98f23-0": {
           "type": "collection",
@@ -400,6 +399,7 @@
       "block_order": [
         "165890758815e98f23-0"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -436,7 +436,6 @@
     },
     "166271955017a941ed": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "1662719550c1eb31b0-0": {
           "type": "testimonial",
@@ -457,6 +456,7 @@
         "1662719550c1eb31b0-0",
         "1662719550c1eb31b0-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "DAS SAGEN UNSERE KUNDEN",

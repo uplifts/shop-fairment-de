@@ -78,7 +78,6 @@
     },
     "product-content": {
       "type": "product-content",
-      "disabled": true,
       "blocks": {
         "description": {
           "type": "description",
@@ -88,6 +87,7 @@
       "block_order": [
         "description"
       ],
+      "disabled": true,
       "settings": {}
     },
     "product-recommendations": {

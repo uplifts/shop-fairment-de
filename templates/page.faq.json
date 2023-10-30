@@ -28,7 +28,6 @@
     },
     "1662386094058881dd": {
       "type": "faq",
-      "disabled": true,
       "blocks": {
         "1662386094dcf33280-0": {
           "type": "category",
@@ -71,6 +70,7 @@
         "1662386094dcf33280-3",
         "1662386094dcf33280-4"
       ],
+      "disabled": true,
       "settings": {
         "show_navigation": false,
         "title": "FAQ",

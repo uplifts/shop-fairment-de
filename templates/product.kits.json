@@ -318,7 +318,6 @@
     },
     "1662567200ba271a25": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1662567200b586aa8f-0": {
           "type": "item",
@@ -341,6 +340,7 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "reveal_on_scroll": true,
@@ -399,7 +399,6 @@
     },
     "302d06ca-d51f-468e-8e47-3312ff500721": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "template--17924579131656__302d06ca-d51f-468e-8e47-3312ff500721-1680171089bbbe263b-0": {
           "type": "item",
@@ -452,6 +451,7 @@
         "template--17924579131656__302d06ca-d51f-468e-8e47-3312ff500721-1680171089bbbe263b-1",
         "template--17924579131656__302d06ca-d51f-468e-8e47-3312ff500721-1680171089bbbe263b-2"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "",
         "reveal_on_scroll": true,
@@ -485,7 +485,6 @@
     },
     "681fa2b1-0f3c-4b10-8eb6-5dee27825b9c": {
       "type": "gallery",
-      "disabled": true,
       "blocks": {
         "template--17924579131656__681fa2b1-0f3c-4b10-8eb6-5dee27825b9c-16805990755ef7570b-0": {
           "type": "image",
@@ -514,6 +513,7 @@
         "template--17924579131656__681fa2b1-0f3c-4b10-8eb6-5dee27825b9c-16805990755ef7570b-1",
         "template--17924579131656__681fa2b1-0f3c-4b10-8eb6-5dee27825b9c-16805990755ef7570b-2"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "Hergestellte Fermente unserer Kunden",
         "title": "Ergebnisse",

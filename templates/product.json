@@ -276,7 +276,6 @@
     },
     "16625671683f7f5938": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1662567167d1d36377-0": {
           "type": "item",
@@ -300,6 +299,7 @@
       "block_order": [
         "1662567167d1d36377-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -317,7 +317,6 @@
     },
     "1662567200ba271a25": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1662567200b586aa8f-0": {
           "type": "item",
@@ -341,6 +340,7 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
