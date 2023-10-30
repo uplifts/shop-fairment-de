@@ -1,0 +1,143 @@
+<style>
+.F023-slider-content {
+  display: none;
+}
+ .fairment-subcollection-slider {
+  margin-top: 24px;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu {
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item {
+  width: 110px;
+  height: 98px;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item:not(last-child) {
+  margin-right: 8px;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item a img {
+  width: 80px;
+  height: 80px;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item a span {
+  font-size: 13px;
+  line-height: 15px;
+  color: #43484C;
+  font-weight: 400;
+}
+
+ .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item.active span {
+  color: #43484C;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 999px) {
+   .fairment-subcollection-slider {
+    width: 100%;
+    margin: 24px 20px 0 20px;
+  }
+   .fairment-subcollection-slider .fairment-subcollection-slider-menu {
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+    margin: 0;
+    display: block;
+  }
+   .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item {
+    display: inline-block;
+  }
+   .fairment-subcollection-slider .fairment-subcollection-slider-menu .fairment-subcollection-slider-list-item img {
+    height: 75px;
+  }
+   .fairment-subcollection-slider .fairment-subcollection-slider-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 2px;
+  }
+   .fairment-subcollection-slider .fairment-subcollection-slider-menu::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #333333;
+  }
+}
+</style>
+
+
+<div class="fairment-subcollection-slider">
+    <ul class="fairment-subcollection-slider-menu">
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when 'item' %} 
+                    <li class="fairment-subcollection-slider-list-item">
+                        <a href="{{ block.settings.collection-url }}">
+                          <img src="{{ block.settings.collection-image | img_url: 'master' }}" />
+                          <span>{{ block.settings.collection-title }}</span>
+                        </a>
+                      </li>
+                {% endcase %}
+         {% endfor %}
+    </ul>
+ </div>
+
+ 
+{% schema %}
+{
+  "name": "subcollection slider",
+    "blocks": [
+        {
+            "name": "Item",
+            "type": "item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "collection-title",
+                    "label": "Title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "collection-image",
+                    "label": "Select Image"
+                },
+                {
+                    "type": "url",
+                    "id": "collection-url",
+                    "label": "Put URL"
+                }
+            ]
+        }
+    ],
+    "presets": [
+    {
+      "name": "subcollection slider"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+ 
+  let collection_items = document.querySelectorAll("li.fairment-subcollection-slider-list-item");
+    collection_items .forEach((item)=>{
+        if (window.location.href.includes(`${item.querySelector("a").href}`)) {
+            item.classList.add("active");
+            setTimeout(() => {
+            document.querySelector(`.fairment-subcollection-slider li.active`).scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+            }, 300);
+        }
+    })
+</script>
