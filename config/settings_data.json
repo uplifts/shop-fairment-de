@@ -687,7 +687,7 @@
       },
       "17550530943902319648": {
         "type": "shopify:\/\/apps\/appikon-back-in-stock\/blocks\/subscribe_it_helper\/eb949c69-b3e6-4216-a322-1cd63915d46d",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }
