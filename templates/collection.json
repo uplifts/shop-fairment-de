@@ -132,8 +132,9 @@
         "ea8fc5e5-3895-4885-bd49-468c7c746610",
         "b40fc653-97e2-47d8-b6e2-9b92017e6038"
       ],
+      "disabled": true,
       "custom_css": [
-        ".promotion-block__content-wrapper .button--primary {--primary-button-background: 255, 255, 255; }"
+        ".promotion-block__content-wrapper .button--primary {--primary-button-background: 255, 255, 255;}"
       ],
       "settings": {
         "css_class": "collection-promos",
@@ -159,6 +160,69 @@
         "image_overlay_color": "#ffffff",
         "image_overlay_opacity": 0,
         "quick_links": ""
+      }
+    },
+    "ae55b65b-6f9c-48ba-9451-08bab0e1d362": {
+      "type": "subcollection-slider",
+      "blocks": {
+        "b59f6b7a-864d-4f29-8668-ca31f60031f2": {
+          "type": "item",
+          "settings": {
+            "collection-title": "Kits & Kulturen",
+            "collection-image": "shopify:\/\/shop_images\/Kits-kulturen.png",
+            "collection-url": "https:\/\/shop.fairment.de\/collections\/kits-kulturen"
+          }
+        },
+        "6d6fdba8-67c3-4714-9a9b-211b5c89c770": {
+          "type": "item",
+          "settings": {
+            "collection-title": "Essen & Trinken",
+            "collection-image": "shopify:\/\/shop_images\/Essen-trinken.png",
+            "collection-url": "https:\/\/shop.fairment.de\/collections\/essen-trinken"
+          }
+        },
+        "34646931-17e2-4ac8-8ac7-1bcef0e0ab5a": {
+          "type": "item",
+          "settings": {
+            "collection-title": "Nahrungsergänzung",
+            "collection-image": "shopify:\/\/shop_images\/Frame_5.png",
+            "collection-url": "https:\/\/shop.fairment.de\/collections\/probiotika-prabiotika"
+          }
+        },
+        "75cf1939-6653-4cac-92f2-59b21ed32f7f": {
+          "type": "item",
+          "settings": {
+            "collection-title": "Zubehör",
+            "collection-image": "shopify:\/\/shop_images\/Frame_6.png",
+            "collection-url": "https:\/\/shop.fairment.de\/collections\/zubehor"
+          }
+        },
+        "783dad78-b02c-4ce7-88f8-f1c799b1295b": {
+          "type": "item",
+          "settings": {
+            "collection-title": "Bestseller",
+            "collection-image": "shopify:\/\/shop_images\/Frame_7.png",
+            "collection-url": "https:\/\/shop.fairment.de\/collections\/bestseller"
+          }
+        },
+        "c29d9d28-6d32-4dd9-b602-eb70759ea67a": {
+          "type": "item",
+          "settings": {
+            "collection-title": "E-Books",
+            "collection-image": "shopify:\/\/shop_images\/Frame_8.png",
+            "collection-url": "https:\/\/shop.fairment.de\/collections\/e-books"
+          }
+        }
+      },
+      "block_order": [
+        "b59f6b7a-864d-4f29-8668-ca31f60031f2",
+        "6d6fdba8-67c3-4714-9a9b-211b5c89c770",
+        "34646931-17e2-4ac8-8ac7-1bcef0e0ab5a",
+        "75cf1939-6653-4cac-92f2-59b21ed32f7f",
+        "783dad78-b02c-4ce7-88f8-f1c799b1295b",
+        "c29d9d28-6d32-4dd9-b602-eb70759ea67a"
+      ],
+      "settings": {
       }
     },
     "main": {
@@ -238,6 +302,7 @@
   "order": [
     "1662389152ccc6a9f2",
     "collection-banner",
+    "ae55b65b-6f9c-48ba-9451-08bab0e1d362",
     "main",
     "165882859275edc12f"
   ]
