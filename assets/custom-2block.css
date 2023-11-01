@@ -1091,7 +1091,7 @@ li.tag_item {
   margin-top: 0;
 }
 ::marker {
-  font-size: 17px !important;
+  font-size: inherit !important;
   font-family: "Helvetica", sans-serif;
 }
 .tags-container {
