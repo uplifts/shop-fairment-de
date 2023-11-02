@@ -1,9 +1,10 @@
 {%- comment %}
-  Hey there! This asset is managed by Locksmith (uselocksmith.com). You can
-  fiddle with what's below, but your changes may be reset the next time that
+  Hey there! This asset is managed by Locksmith (uselocksmith.com).
+
+  Do not modify this file. Any changes will be reset the next time that
   Locksmith interacts with this theme.
 
-  Last updated: Thu, 02 Nov 2023 21:49:36 +0100 (CET)
+  Last updated: Thu, 02 Nov 2023 22:03:18 +0100 (CET)
 {% endcomment -%}
 
 {%include 'locksmith-variables', locksmith_scope: nil%}{%if locksmith_access_denied_content == blank%}{%capture locksmith_access_denied_content%}{%if locksmith_manual_lock%}{{content_for_layout}}{%elsif locksmith_remote_lock%}<div id="locksmith-content">
