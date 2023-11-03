@@ -1193,3 +1193,7 @@ p.desktop {
     /* display: block; */
 }
 }
+#shopify-section-blog-new-design .article-container .article__body.rte ul li {
+    font-size: 20px;
+    color: #000;
+}
