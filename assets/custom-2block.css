@@ -855,6 +855,8 @@ body section.blog-section .row {
 
 #shopify-section-blog-new-design .article-container li {
   line-height: 24px;
+    font-size: 20px;
+    color: black;
 }
 
 @media only screen and (min-width: 769px) {
