@@ -108,6 +108,7 @@
   position: relative;
     word-break:break-all
   /* display: none; */
+    font-size:20px;
 }
 #shopify-section-blog-new-design
   .article-container
