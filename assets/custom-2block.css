@@ -1193,6 +1193,7 @@ p.desktop {
     word-break: break-word;
     position: relative;
     /* display: block; */
+    font-size:20px;
 }
 }
 #shopify-section-blog-new-design .article-container .article__body.rte ul li {
