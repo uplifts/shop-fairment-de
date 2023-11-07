@@ -51,9 +51,11 @@
         {%- if section.settings.show_product_rating and section.settings.custom_rating_snippet != blank -%}
           <div class="product-meta__reviews">
             {{ section.settings.custom_rating_snippet }}
+          {{ product.metafields.reviewscouk.rating }}
+          
+
           </div>
         {%- endif -%}
-
         {%- if product.metafields.custom.short_description != blank -%}
           <div class="product-meta__excerpt">
             {{ product.metafields.custom.short_description }}
