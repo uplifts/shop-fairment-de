@@ -128,7 +128,8 @@
                     {{- product.selected_or_first_available_variant.price | money -}}
                   {%- endif -%}
                 </span>
-
+{{ product.metafields.reviewscouk.rating }}
+                
                 <span class="price price--compare">
                   <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
