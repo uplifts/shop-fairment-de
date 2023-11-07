@@ -688,7 +688,7 @@
           "format_review_count": false,
           "show_popup": true,
           "anchor_to_reviews_widget": false,
-          "show_empty_stars": true
+          "show_empty_stars": false
         }
       }
     }

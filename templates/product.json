@@ -141,7 +141,7 @@
         "show_product_rating": true,
         "show_sticky_add_to_cart": true,
         "show_share_buttons": false,
-        "custom_rating_snippet": "<div class=\"ruk_rating_snippet\" data-sku=\"{{ product-meta_product.handle }};{{ product-meta_product.variants | map: 'sku' | join: ';' }};{{ product-meta_product.variants | map: 'id' | join: ';' }}\"><\/div>",
+        "custom_rating_snippet": "<div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div>",
         "help_page": "",
         "hide_variant_images": false,
         "enable_video_autoplay": true,
