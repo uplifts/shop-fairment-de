@@ -21,6 +21,7 @@
       <product-meta form-id="{{ product_form_id }}" price-class="price--large" class="product-meta">
         <div class="product-badges placement-overtitle">
           {% render 'product-custom-badges', product: product %}
+          <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
         </div>
         {%- if section.settings.show_vendor -%}
           <h2 class="product-meta__vendor heading heading--small">
