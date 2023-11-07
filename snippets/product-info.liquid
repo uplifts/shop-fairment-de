@@ -44,8 +44,8 @@
                 <a href="{{ product.url }}">{{ product.title }}</a>
               </h2>
                         
-<div class="ruk_rating_snippet" data-sku="{{ product.metafields.reviewscouk.rating }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
-            {% endunless %}
+<div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>   
+        {% endunless %}
           </div>
           {{ popular_badge }}
         </div>
