@@ -43,8 +43,8 @@
               <h2 class="product-meta__title heading h3">
                 <a href="{{ product.url }}">{{ product.title }}</a>
               </h2>
-                        
-<div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>   
+   <div class="ruk_rating_snippet" data-sku="{{ product-meta_product.handle }};{{ product-meta_product.variants | map: 'sku' | join: ';' }};{{ product-meta_product.variants | map: 'id' | join: ';' }}"></div>   
+                     
         {% endunless %}
           </div>
           {{ popular_badge }}
