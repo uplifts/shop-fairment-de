@@ -650,23 +650,6 @@
           "lang": "de"
         }
       },
-      "15316669992541710076": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "star": "#ffca28",
-          "text_color": "#333333",
-          "snippet_mode": "default",
-          "text": "",
-          "line_break": false,
-          "listen_for_changes": true,
-          "rating_without_brackets": false,
-          "format_review_count": false,
-          "show_popup": true,
-          "anchor_to_reviews_widget": false,
-          "show_empty_stars": false
-        }
-      },
       "1027443428159536739": {
         "type": "shopify:\/\/apps\/hextom-quick-announcement-bar\/blocks\/qab-embeded-block\/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
         "disabled": true,
@@ -689,6 +672,23 @@
         "type": "shopify:\/\/apps\/appikon-back-in-stock\/blocks\/subscribe_it_helper\/eb949c69-b3e6-4216-a322-1cd63915d46d",
         "disabled": false,
         "settings": {
+        }
+      },
+      "15316669992541710076": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "star": "#ffca28",
+          "text_color": "#333333",
+          "snippet_mode": "default",
+          "text": "",
+          "line_break": false,
+          "listen_for_changes": true,
+          "rating_without_brackets": false,
+          "format_review_count": false,
+          "show_popup": true,
+          "anchor_to_reviews_widget": false,
+          "show_empty_stars": true
         }
       }
     }
