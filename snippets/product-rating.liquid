@@ -42,4 +42,4 @@
     <span class="rating__caption">{{ 'product.general.reviews_count' | t: count: 0 }}</span>
   </div>
 {%- endif -%} {% endcomment %}
-
+<div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
