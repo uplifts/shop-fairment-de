@@ -302,7 +302,6 @@
           },
           "6181359e-d100-4b2e-a906-6ffcc9d0e7ff": {
             "type": "gift_offer",
-            "disabled": true,
             "settings": {
               "threshold": 250,
               "product": "fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika"
