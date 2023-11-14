@@ -17673,6 +17673,16 @@ visibility: hidden;
   }
 }
 
+@media (max-width:370px) {
+  .usp {
+    width: 100px;
+    padding: 5px 3px;
+  }
+  .usp p {
+    font-size: 11px;
+  }
+}
+
 [dir="ltr"] .line-item__price-list-container {
     flex-direction: column;
 }
