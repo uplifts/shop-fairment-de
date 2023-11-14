@@ -12,6 +12,8 @@
 
 <!DOCTYPE html>
   <html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }} no-ablyft{% if hide_xpress_buttons %} hide-xpress-buttons{% endif %}">
+    {{ 'DHL-logo-add.js' | asset_url | script_tag }}
+    {{ 'DHL-logo-add.css' | asset_url | stylesheet_tag }}
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
