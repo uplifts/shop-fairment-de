@@ -481,7 +481,7 @@
         "settings": {
           "enable_section": true,
           "css_classes": "countdown-1",
-          "url_parameters": "dailyrituals, apothekenwissen, adv",
+          "url_parameters": "dailyrituals,apothekenwissen,adv",
           "icon": "shopify:\/\/shop_images\/icons8-discount.svg",
           "text": "<b>Der Sale endet bald!<\/b> Warenkorb reserviert für:",
           "expired_text": "<b>Reservierung abgelaufen!<\/b> Sei schnell, dein Warenkorb ist nicht mehr reserviert.",
