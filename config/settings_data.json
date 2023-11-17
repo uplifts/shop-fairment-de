@@ -690,6 +690,12 @@
           "anchor_to_reviews_widget": false,
           "show_empty_stars": false
         }
+      },
+      "3acfba32-89f3-4377-ae20-cbb9abc48475": {
+        "type": "shopify:\/\/apps\/order-limits-minmaxify\/blocks\/app-embed-block\/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
