@@ -86,7 +86,8 @@
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
-          "settings": {}
+          "settings": {
+          }
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
           "type": "line_item_property",
@@ -113,7 +114,7 @@
           "settings": {
             "is_open": false,
             "label": "(Neu) Spar-Abo",
-            "content": "Spare jetzt bares Geld mit dem neuen Spar-Abo. Wähle selbst das Lieferintervall, das zu dir passt. 100% flexibel und monatlich kündbar. Keine versteckten Kosten.\n<br><br>\nIn unserem Spar-Abo Login kannst du bequem deine Lieferintervalle anpassen, deine Adresse aktualisieren oder die Zahlungsinformationen aktualisieren."
+            "content": "Spare jetzt bares Geld mit dem neuen Spar-Abo. Wähle selbst das Lieferintervall, das zu dir passt. 100% flexibel und monatlich kündbar. Die Mindestliefermenge beträgt drei Lieferungen. Danach kann das Abonnement jederzeit gekündigt werden. \n<br><br>\nIn unserem Spar-Abo Login kannst du bequem deine Lieferintervalle anpassen, deine Adresse aktualisieren oder die Zahlungsinformationen aktualisieren."
           }
         },
         "18fb818f-b83d-491b-88ff-8b188b41cb33": {
@@ -352,7 +353,8 @@
     "product-content": {
       "type": "product-content",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "16625671683f7f5938": {
       "type": "image-with-text",
@@ -417,7 +419,9 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -457,7 +461,9 @@
       "block_order": [
         "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -550,7 +556,8 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -587,7 +594,9 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de",
         "99279bdb-e250-4dac-a6ea-b699eb03765b"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
