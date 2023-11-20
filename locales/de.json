@@ -510,7 +510,7 @@
         "recurring_totals": "{{ total_price }} jeden {{ interval }} zzgl. Versandkosten"
       },
       "shipping_errors": {
-        "shipping_method": "Die Versandoptionen für deine Bestellung haben sich geändert seit dem du das letzte Mal in der Kasse warst. Du kannst den Bestellprozess wie gewohnt abschließen. "
+        "shipping_method": "Die Versandoptionen für deine Bestellung haben sich geändert, seit dem du das letzte Mal in der Kasse warst. Den Bestellprozess kannst du wie gewohnt abschließen. "
       }
     }
   },
