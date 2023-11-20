@@ -508,6 +508,9 @@
       },
       "subscriptions": {
         "recurring_totals": "{{ total_price }} jeden {{ interval }} zzgl. Versandkosten"
+      },
+      "shipping_errors": {
+        "shipping_method": "Die Versandoptionen für deine Bestellung haben sich geändert. Du kannst deine Bestellung abschließen."
       }
     }
   },
