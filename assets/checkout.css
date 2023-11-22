@@ -688,5 +688,6 @@ html.no-ablyft .countdown-panel.countdown-2 {
 .page-checkout.cart-updated .notice.notice--error[data-shipping-warning] {
   border-color: #E6E6E6;
   background-color: #FAFAFA;
+  color: #545454;
 }
 /* END ID - 22.11.23 - Checkout - Changed cart message styling */
