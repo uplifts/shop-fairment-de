@@ -10,6 +10,10 @@
   {%- endif -%}
 {% endfor %}
 
+{%- capture content_for_layout_captured -%}
+  {{ content_for_layout }}
+{%- endcapture -%}
+
 <!DOCTYPE html>
   <html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }} no-ablyft{% if hide_xpress_buttons %} hide-xpress-buttons{% endif %}">
     {{ 'DHL-logo-add.js' | asset_url | script_tag }}
