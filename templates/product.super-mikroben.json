@@ -64,7 +64,6 @@
         },
         "0b8f9f7a-96f0-426a-931d-94a54c9b84e1": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "css_class": "buybox-bundle-link",
             "liquid": "{%- if product.metafields.custom.buybox_bundle_link != blank -%}\n<a href=\"{{ product.metafields.custom.buybox_bundle_link }}\">{{ product.metafields.custom.buybox_bundle_link_text }}<\/a>\n{%- endif -%}"
