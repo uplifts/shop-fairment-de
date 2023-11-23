@@ -7,8 +7,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/230421_Fairment_custom_2000px.jpg",
-            "split_image": "shopify:\/\/shop_images\/230421_Fair_Header_Mockup_groesser.png",
-            "mobile_image": "shopify:\/\/shop_images\/Fairment-Hero-banner-mobile-2-crop.jpg",
+            "split_image": "shopify:\/\/shop_images\/231122_Fair_Header_Mockup_01.png",
+            "mobile_image": "shopify:\/\/shop_images\/231122_Fair_Header_Mockup_01.png",
             "stretch_1st_image": true,
             "text_position": "middle_left",
             "subheading": "",
@@ -30,7 +30,9 @@
       "block_order": [
         "slide-1"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "css_class": "home-hero",
         "section_height_mobile": 62,
@@ -245,7 +247,7 @@
         "1662632520c6abafea-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/230627_supermikroben-mikrobenfutter.png",
+            "image": "shopify:\/\/shop_images\/231122_Fair_Freisteller_Nahrungsergaenzungsmittel.png",
             "highlight": false,
             "subheading": "",
             "title": "Nahrungsergänzung",
@@ -333,7 +335,9 @@
         "011c8877-d17d-49eb-9510-d644dedb0958",
         "dd8969b6-348c-4de8-b33e-2e9d9ee5da1b"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "css_class": "",
         "subheading": "Entdecke unsere Produkte",
@@ -992,7 +996,8 @@
         "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-quantity_selector-1": {
           "type": "quantity_selector",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "template--18067159777544__29335949-d0ba-449c-8064-833e50ddc459-buy_buttons-1": {
           "type": "buy_buttons",
@@ -1016,7 +1021,8 @@
         "03e30117-2bfa-49ab-b924-36b58df5d400": {
           "type": "description",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
