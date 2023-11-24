@@ -62,13 +62,6 @@
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
         },
-        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1": {
-          "type": "liquid",
-          "settings": {
-            "css_class": "buybox-bundle-link",
-            "liquid": "{%- if product.metafields.custom.buybox_bundle_link != blank -%}\n<a href=\"{{ product.metafields.custom.buybox_bundle_link }}\">{{ product.metafields.custom.buybox_bundle_link_text }}<\/a>\n{%- endif -%}"
-          }
-        },
         "5b90bba3-a67f-47a3-b6de-c051c8dd907b": {
           "type": "advantage",
           "settings": {
@@ -86,6 +79,13 @@
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
           "settings": {
+          }
+        },
+        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "buybox-bundle-link",
+            "liquid": "{%- if product.metafields.custom.buybox_bundle_link != blank -%}\n<a href=\"{{ product.metafields.custom.buybox_bundle_link }}\">{{ product.metafields.custom.buybox_bundle_link_text }}<\/a>\n{%- endif -%}"
           }
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
@@ -157,10 +157,10 @@
         "0c30b7c0-e457-4d64-b353-f114abecb928",
         "6f68bbc7-ce12-447c-929c-d36fe7a77cb0",
         "buy_buttons",
-        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1",
         "5b90bba3-a67f-47a3-b6de-c051c8dd907b",
         "3e25850f-95ef-45d4-b934-4fb4faa611d4",
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530",
+        "0b8f9f7a-96f0-426a-931d-94a54c9b84e1",
         "96a7aa85-8d92-4300-951f-deacf7eb7860",
         "24a23161-1c87-4409-9595-813b0c57a726",
         "7704f86c-990b-4996-8afd-296c56ee6011",
