@@ -687,7 +687,8 @@
         ".product-meta {margin-bottom: 16px; display: none;}",
         ".three_usp {display: none;}",
         ".product-buybox--inner {padding: 0px;}",
-        ".product__info {margin-left: auto; margin-right: auto;}"
+        ".product__info {margin-left: auto; margin-right: auto;}",
+        ".product-buybox {border-radius: 10px;}"
       ],
       "settings": {
         "product": "{{ product }}",
