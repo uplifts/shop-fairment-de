@@ -664,6 +664,50 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "7cfac185-df7b-4b66-bad0-eab7ee1c84da": {
+      "type": "featured-product",
+      "blocks": {
+        "template--18304055148808__7cfac185-df7b-4b66-bad0-eab7ee1c84da-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304055148808__7cfac185-df7b-4b66-bad0-eab7ee1c84da-buy_buttons-1"
+      ],
+      "custom_css": [
+        ".product__media {display: none;}",
+        ".product-meta {margin-bottom: 16px; display: none;}",
+        ".three_usp {display: none;}",
+        ".product-buybox--inner {padding: 0px;}",
+        ".product__info {margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "product": "{{ product }}",
+        "subheading": "",
+        "title": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -680,6 +724,7 @@
     "075c9937-78de-4f77-9923-8ec34fe236d1",
     "16660020168146ef1b",
     "16624728032cdcd5d3",
-    "566ef7b6-d019-4da1-8df9-e7135645144e"
+    "566ef7b6-d019-4da1-8df9-e7135645144e",
+    "7cfac185-df7b-4b66-bad0-eab7ee1c84da"
   ]
 }
