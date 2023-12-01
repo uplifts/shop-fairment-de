@@ -87,7 +87,8 @@
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
-          "settings": {}
+          "settings": {
+          }
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
           "type": "line_item_property",
@@ -354,7 +355,8 @@
     "product-content": {
       "type": "product-content",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "1662567200ba271a25": {
       "type": "image-with-text",
@@ -364,7 +366,7 @@
           "settings": {
             "use_video": false,
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "image_fallback": "shopify:\/\/shop_images\/220606_Fair_Darmgesindheit_05.png",
+            "image_fallback": "shopify:\/\/shop_images\/230920_Fair_Praezi_01_1.png",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
@@ -380,7 +382,9 @@
       "block_order": [
         "1662567200b586aa8f-0"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -404,7 +408,7 @@
           "settings": {
             "use_video": false,
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "image": "shopify:\/\/shop_images\/Expertenrat_Fairment.png",
+            "image": "shopify:\/\/shop_images\/230920_Fair_Praezi_02_1.png",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
@@ -420,7 +424,9 @@
       "block_order": [
         "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -442,9 +448,9 @@
         ".sec--benefits-compare {background-color: white;}"
       ],
       "settings": {
-        "title": "Fairment vs. Andere",
-        "text": "Für beste Ergebnisse für dein Wohlbefinden setzen wir auf zwei Punkte: Sporenbasierte Darmbakterien und 100% natürliche Wirkung ohne unnötige Zusatzstoffe. Unsere Produkte werden in streng geprüften Anlagen hergestellt, um höchste Qualität und Sicherheit zu gewährleisten.",
-        "benefits_title": "Fairment",
+        "title": "Präzisiotikum vs. Andere",
+        "text": "text text text",
+        "benefits_title": "Präzisiotikum",
         "dynamic_benefits": "",
         "benefits": "Hochresistente sporenbasierte Bakterienkulturen |\nKomplexe Wirkformel für beste Ergebnisse |\nHergestellt in Deutschland & EU |\nLaborgeprüft in Köln |\nEntwickelt mit Experten |",
         "antibenefits_title": "Andere",
@@ -513,7 +519,8 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -550,7 +557,9 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de",
         "99279bdb-e250-4dac-a6ea-b699eb03765b"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
