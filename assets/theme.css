@@ -11838,8 +11838,9 @@ font-size: 12px;
 
 .product__thumbnail {
   position: relative;
-  width: 76px;
-  min-width: 76px;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
   padding: 2px;
 }
 
@@ -11997,6 +11998,7 @@ font-size: 12px;
   .product__thumbnail {
     width: 64px;
     min-width: 64px;
+    height: auto;
   }
 
   /* Thumbnails left variation */
@@ -12038,6 +12040,7 @@ font-size: 12px;
   .product--thumbnails-left .product__thumbnail {
     width: 60px;
     min-width: 60px;
+    height: auto;
   }
 }
 
