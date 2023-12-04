@@ -25,10 +25,34 @@
             "overlay_color": "#00148c",
             "overlay_opacity": 0
           }
+        },
+        "cfe218c7-d31d-4e0a-b55e-66d506fa240e": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230421_Fairment_custom_2000px.jpg",
+            "split_image": "shopify:\/\/shop_images\/230711_FM_Praebiotikum_Doypack_Mockup_3er_20c91f4a-357e-4579-bcd4-a93edd6cd0d0.png",
+            "stretch_1st_image": true,
+            "text_position": "middle_center",
+            "subheading": "Jetzt wieder da:",
+            "title": "Präzisiotikum",
+            "text": "<p style=\"font-weight:600; color: #00148C;\">Mehr als nur Ballasstoffe<\/p>",
+            "button_1_text": "Jetzt probieren",
+            "button_1_link": "shopify:\/\/products\/prazisiotikum-1x150g-innovatives-prabiotikum",
+            "button_2_text": "",
+            "button_2_link": "",
+            "bottom_line_text": "",
+            "text_color": "#ffffff",
+            "button_background": "#f6a429",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "cfe218c7-d31d-4e0a-b55e-66d506fa240e"
       ],
       "custom_css": [
 
