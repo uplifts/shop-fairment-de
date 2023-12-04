@@ -1,0 +1,236 @@
+<style>
+                #shopify-section-{{ section.id }} {
+                  {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
+
+                  {%- if buy_buttons_block.settings.show_payment_button -%}
+                    {%- if buy_buttons_block.settings.atc_button_background == 'rgba(0,0,0,0)' -%}
+                      {%- assign secondary_button_background = settings.secondary_button_background -%}
+                    {%- else -%}
+                      {%- assign secondary_button_background = buy_buttons_block.settings.atc_button_background -%}
+                    {%- endif -%}
+
+                    {%- if buy_buttons_block.settings.atc_button_text_color == 'rgba(0,0,0,0)' -%}
+                      {%- assign secondary_button_text_color = settings.secondary_button_text_color -%}
+                    {%- else -%}
+                      {%- assign secondary_button_text_color = buy_buttons_block.settings.atc_button_text_color -%}
+                    {%- endif -%}
+
+                    {%- if buy_buttons_block.settings.buy_now_button_background == 'rgba(0,0,0,0)' -%}
+                      {%- assign primary_button_background = settings.primary_button_background -%}
+                    {%- else -%}
+                      {%- assign primary_button_background = buy_buttons_block.settings.buy_now_button_background -%}
+                    {%- endif -%}
+
+                    {%- if buy_buttons_block.settings.buy_now_button_text_color == 'rgba(0,0,0,0)' -%}
+                      {%- assign primary_button_text_color = settings.primary_button_text_color -%}
+                    {%- else -%}
+                      {%- assign primary_button_text_color = buy_buttons_block.settings.buy_now_button_text_color -%}
+                    {%- endif -%}
+                  {%- else -%}
+                    {%- if buy_buttons_block.settings.atc_button_background == 'rgba(0,0,0,0)' -%}
+                      {%- assign primary_button_background = settings.primary_button_background -%}
+                    {%- else -%}
+                      {%- assign primary_button_background = buy_buttons_block.settings.atc_button_background -%}
+                    {%- endif -%}
+
+                    {%- if buy_buttons_block.settings.atc_button_text_color == 'rgba(0,0,0,0)' -%}
+                      {%- assign primary_button_text_color = settings.primary_button_text_color -%}
+                    {%- else -%}
+                      {%- assign primary_button_text_color = buy_buttons_block.settings.atc_button_text_color -%}
+                    {%- endif -%}
+                  {%- endif -%}
+
+                  --primary-button-background: {{ primary_button_background.red }}, {{ primary_button_background.green }}, {{ primary_button_background.blue }};
+                  --primary-button-text-color: {{ primary_button_text_color.red }}, {{ primary_button_text_color.green }}, {{ primary_button_text_color.blue }};
+                  --secondary-button-background: {{ secondary_button_background.red }}, {{ secondary_button_background.green }}, {{ secondary_button_background.blue }};
+                  --secondary-button-text-color: {{ secondary_button_text_color.red }}, {{ secondary_button_text_color.green }}, {{ secondary_button_text_color.blue }};
+                }
+
+            #shopify-section-{{ section.id }} .mini-product-section {
+              background-color: white;
+            }
+            #shopify-section-{{ section.id }} .mini-product-detail {
+              display: flex;
+              justify-content: center;
+              max-width: 712px;
+              padding: 40px 24px;
+            }
+            #shopify-section-{{ section.id }} .mini-product-info{
+              margin: auto 0;
+            }
+            #shopify-section-{{ section.id }} .mini-product-title{
+              color: #00148C;
+              font-family: Avenir Next;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 32.5px;
+              letter-spacing: 0.8px;
+            }
+          #shopify-section-{{ section.id }} .mini-product-image {
+            width: 300px;
+            margin: 0 auto;
+          }
+           #shopify-section-{{ section.id }} .mini-product-image img {
+        width: 100%;
+      }
+        #shopify-section-{{ section.id }} .mini-buy-button button {
+          border-radius: 10px;
+          color: #FFF;
+          text-align: center;
+          font-family: Avenir Next;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 66px;
+        }
+      #shopify-section-{{ section.id }} .mini-buy-button button[disabled]  {
+          border: 1px solid red;
+          color: black;
+       }
+  #shopify-section-{{ section.id }} .mini-buy-button button::after {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg width='28' height='24' viewBox='0 0 28 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.0607 13.0607C27.6464 12.4749 27.6464 11.5251 27.0607 10.9393L17.5147 1.3934C16.9289 0.807611 15.9792 0.807611 15.3934 1.3934C14.8076 1.97919 14.8076 2.92893 15.3934 3.51472L23.8787 12L15.3934 20.4853C14.8076 21.0711 14.8076 22.0208 15.3934 22.6066C15.9792 23.1924 16.9289 23.1924 17.5147 22.6066L27.0607 13.0607ZM0 13.5H26V10.5H0V13.5Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 26px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .mini-buy-button button::before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg width='28' height='24' viewBox='0 0 28 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.0607 13.0607C27.6464 12.4749 27.6464 11.5251 27.0607 10.9393L17.5147 1.3934C16.9289 0.807611 15.9792 0.807611 15.3934 1.3934C14.8076 1.97919 14.8076 2.92893 15.3934 3.51472L23.8787 12L15.3934 20.4853C14.8076 21.0711 14.8076 22.0208 15.3934 22.6066C15.9792 23.1924 16.9289 23.1924 17.5147 22.6066L27.0607 13.0607ZM0 13.5H26V10.5H0V13.5Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 26px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      transform: rotate(-180deg);
+  }
+    {%- if section.settings.hide-image == true -%}
+         #shopify-section-{{ section.id }} .mini-product-image {
+              display: none;
+            }
+    {%- endif -%}
+
+
+    {%- if section.settings.hide-arrow-button == true -%}
+         #shopify-section-{{ section.id }} .mini-buy-button button::after , #shopify-section-{{ section.id }} .mini-buy-button button::before  {
+              display: none;
+            }
+    {%- endif -%}
+
+    {%- if section.settings.only-mobile == true -%}
+    @media screen and (min-width: 1000px) {
+        #shopify-section-{{ section.id }} .mini-product-section {
+                display: none;
+              }
+     }
+    {%- endif -%}
+
+
+
+      @media screen and (max-width: 999px) {
+      #shopify-section-{{ section.id }} .mini-product-section {
+        display: block;
+      }
+      #shopify-section-{{ section.id }} .mini-product-detail {
+        flex-direction: column;
+      }
+      #shopify-section-{{ section.id }} .mini-product-title{
+      display: none;
+       }
+      }
+</style>
+
+<section class="mini-product-section">
+  <div class="container mini-product-detail">
+    <div class="mini-product-image">
+      {{ product | image_url: width: 200 | image_tag }}
+    </div>
+
+    <div class="mini-product-info">
+      <p class="mini-product-title">{{ product.title }}</p>
+      <div class="mini-buy-button">
+        {%- render 'product-form', product: product, update_url: true, miniText: 'Jetzt bestellen' -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Mini Product Detail",
+  "class": "shopify-section--main-product",
+  "blocks": [
+    {
+      "type": "buy_buttons",
+      "name": "Buy buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_payment_button",
+          "label": "Show dynamic checkout button",
+          "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "atc_button_background",
+          "label": "Add to cart background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "atc_button_text_color",
+          "label": "Add to cart color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "buy_now_button_background",
+          "label": "Buy now background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "buy_now_button_text_color",
+          "label": "Buy now color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    }
+  ],
+  "settings": [
+        {
+          "type": "checkbox",
+          "id": "hide-image",
+          "label": "Hide Image",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "only-mobile",
+          "label": "Show Only Mobile",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "hide-arrow-button",
+          "label": "Hide Arrow in Buy Button",
+          "default": false
+        }
+  ],
+  "presets": [
+    {
+    "name": "Mini Product Detail"
+    }
+  ]
+}
+{% endschema %}

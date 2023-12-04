@@ -794,3 +794,23 @@
     data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}"
     data-description="{{ product.description | escape }}">
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", (event) => {
+    if (document.querySelector('.product.product-hero .product__info product-variants .variant-swatch')) {
+        const variantSelector = document.querySelectorAll('.product.product-hero .product__info product-variants .variant-swatch');
+        variantSelector.forEach((element) => {
+            element.addEventListener('click', () => {
+                setTimeout(() => {
+                    let selectedVariant = document.querySelector(".product.product-hero .product__info .product-form__buy-buttons form input[name='id']").value;
+                    if (document.querySelector(".mini-product-detail .mini-buy-button .product-form__buy-buttons form input[name='id']")) {
+                        document.querySelectorAll(".mini-product-detail .mini-buy-button .product-form__buy-buttons form input[name='id']").forEach((e) => {
+                            e.value = selectedVariant;
+                        })
+                    }
+                }, 0);
+            });
+        });
+    }
+});
+</script>
