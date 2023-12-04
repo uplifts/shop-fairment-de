@@ -56,7 +56,7 @@
         "cfe218c7-d31d-4e0a-b55e-66d506fa240e"
       ],
       "custom_css": [
-        ".slideshow__nav {justify-content: start;}"
+        ".slideshow__nav {justify-content: start; bottom: -5px;}"
       ],
       "settings": {
         "css_class": "home-hero",
