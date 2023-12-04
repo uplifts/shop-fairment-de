@@ -595,6 +595,29 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "9cc5769c-be56-4da5-ac5d-14b10cc139a4": {
+      "type": "mini-product-detail",
+      "blocks": {
+        "db796fb9-3690-40bd-89c2-36702ab7aa67": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "db796fb9-3690-40bd-89c2-36702ab7aa67"
+      ],
+      "settings": {
+        "hide-image": true,
+        "only-mobile": true,
+        "hide-arrow-button": false
+      }
+    },
     "16660020168146ef1b": {
       "type": "apps",
       "blocks": {
@@ -646,6 +669,29 @@
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
+      }
+    },
+    "ff1b7367-0a14-4b45-8bd7-45b21b0b06a2": {
+      "type": "mini-product-detail",
+      "blocks": {
+        "82bd79f5-ddb8-44f1-aec7-6a4658492662": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "82bd79f5-ddb8-44f1-aec7-6a4658492662"
+      ],
+      "settings": {
+        "hide-image": false,
+        "only-mobile": true,
+        "hide-arrow-button": true
       }
     },
     "16624728032cdcd5d3": {
@@ -725,7 +771,9 @@
     "13172787-51a3-467b-bf03-1238e810001e",
     "68f9cc3d-b2cd-478d-846d-da14d915b437",
     "075c9937-78de-4f77-9923-8ec34fe236d1",
+    "9cc5769c-be56-4da5-ac5d-14b10cc139a4",
     "16660020168146ef1b",
+    "ff1b7367-0a14-4b45-8bd7-45b21b0b06a2",
     "16624728032cdcd5d3",
     "566ef7b6-d019-4da1-8df9-e7135645144e"
   ]

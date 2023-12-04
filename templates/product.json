@@ -359,6 +359,29 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "9aebc3e4-e450-4f64-a9cc-f90d648e005a": {
+      "type": "mini-product-detail",
+      "blocks": {
+        "91183150-6604-4ebb-88a9-03812404af7e": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "91183150-6604-4ebb-88a9-03812404af7e"
+      ],
+      "settings": {
+        "hide-image": true,
+        "only-mobile": true,
+        "hide-arrow-button": false
+      }
+    },
     "16660020168146ef1b": {
       "type": "apps",
       "blocks": {
@@ -406,6 +429,29 @@
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
+      }
+    },
+    "7ab03783-1f46-455b-8af6-3cd616e04307": {
+      "type": "mini-product-detail",
+      "blocks": {
+        "5703540c-72dd-4ef7-bbdd-3c007417fc13": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "5703540c-72dd-4ef7-bbdd-3c007417fc13"
+      ],
+      "settings": {
+        "hide-image": false,
+        "only-mobile": true,
+        "hide-arrow-button": true
       }
     },
     "16624728032cdcd5d3": {
@@ -479,7 +525,9 @@
     "product-content",
     "16625671683f7f5938",
     "1662567200ba271a25",
+    "9aebc3e4-e450-4f64-a9cc-f90d648e005a",
     "16660020168146ef1b",
+    "7ab03783-1f46-455b-8af6-3cd616e04307",
     "16624728032cdcd5d3",
     "566ef7b6-d019-4da1-8df9-e7135645144e"
   ]

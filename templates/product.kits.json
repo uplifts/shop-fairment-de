@@ -66,7 +66,8 @@
         },
         "fbba2ac9-6ad4-4b85-901e-ffd776df2530": {
           "type": "advantages",
-          "settings": {}
+          "settings": {
+          }
         },
         "96a7aa85-8d92-4300-951f-deacf7eb7860": {
           "type": "line_item_property",
@@ -138,7 +139,9 @@
         "7b740d7e-4a85-4ca8-86ac-001044937892",
         "0a04bfeb-174e-4d27-9568-6fdf08817c74"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "show_vendor": false,
         "show_sku": false,
@@ -148,6 +151,7 @@
         "show_share_buttons": false,
         "custom_rating_snippet": "<div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div>",
         "help_page": "",
+        "hide_variant_images": false,
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -252,7 +256,8 @@
     "product-content": {
       "type": "product-content",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "e042197a-e04e-40e8-ad41-fffdec560213": {
       "type": "image-with-text-block",
@@ -341,7 +346,9 @@
         "1662567200b586aa8f-0"
       ],
       "disabled": true,
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -381,7 +388,9 @@
       "block_order": [
         "template--17906664177928__c840d2ca-4069-4077-a7e2-652d831c0ba5-167933336999ecd87f-0"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -581,13 +590,37 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "e3b0e270-2d7e-4b05-b3af-7654f43c3c20": {
+      "type": "mini-product-detail",
+      "blocks": {
+        "728cfc49-653b-4e5d-8ce3-0d01d63e5d23": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "728cfc49-653b-4e5d-8ce3-0d01d63e5d23"
+      ],
+      "settings": {
+        "hide-image": true,
+        "only-mobile": true,
+        "hide-arrow-button": false
+      }
+    },
     "16660020168146ef1b": {
       "type": "apps",
       "blocks": {
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
@@ -624,10 +657,35 @@
         "a3412a40-aea4-468b-856a-26cb9fdc31de",
         "99279bdb-e250-4dac-a6ea-b699eb03765b"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
+      }
+    },
+    "9a2c0d22-0bb1-49d8-962a-d0e877496444": {
+      "type": "mini-product-detail",
+      "blocks": {
+        "4122774e-8ac3-4ef1-a821-c1d51722676e": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "4122774e-8ac3-4ef1-a821-c1d51722676e"
+      ],
+      "settings": {
+        "hide-image": false,
+        "only-mobile": true,
+        "hide-arrow-button": true
       }
     },
     "16624728032cdcd5d3": {
@@ -706,7 +764,9 @@
     "13172787-51a3-467b-bf03-1238e810001e",
     "681fa2b1-0f3c-4b10-8eb6-5dee27825b9c",
     "f0f15cc1-cf2c-4dcc-b817-2296be55efd4",
+    "e3b0e270-2d7e-4b05-b3af-7654f43c3c20",
     "16660020168146ef1b",
+    "9a2c0d22-0bb1-49d8-962a-d0e877496444",
     "16624728032cdcd5d3",
     "566ef7b6-d019-4da1-8df9-e7135645144e"
   ]

@@ -450,7 +450,11 @@
                     {%- if product.template_suffix == 'pre-order' -%}
                       {{- 'product.form.pre_order' | t -}}
                     {%- else -%}
-                      {{- 'product.form.add_to_cart' | t -}}
+                      {%- if miniText -%}
+                        {{ miniText }}
+                      {% else %}
+                        {{- 'product.form.add_to_cart' | t -}}
+                      {% endif %}
                     {%- endif -%}
                   {%- else -%}
                     {{- 'product.form.sold_out' | t -}}
