@@ -364,7 +364,7 @@
           "settings": {
             "use_video": false,
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "image_fallback": "shopify:\/\/shop_images\/230920_Fair_Praezi_01_1.png",
+            "image_fallback": "shopify:\/\/shop_images\/Praezisiotikum-Praebiotika-von-fairment2.png",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
@@ -410,7 +410,7 @@
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
-            "title": "Neuer, präziser, besser: Präzisiotikum® kümmert sich nur um die Guten unter deinen Darmbakterien.",
+            "title": "Neuer, präziser, besser: Präzisiotikum®",
             "title_fallback": "",
             "content": "<p>Präbiotika, also Ballaststoffe, sind das Futter deiner Darmbakterien. Das Problem bei vielen Präbiotika ist, dass sie sowohl gute als auch schlechte Darmbakterien ernähren. <\/p><p>Deshalb haben wir das Präzisiotikum® entwickelt - ein präzises Präbiotikum. Innovativ formuliert, um nur das Wachstum deiner guten, nützlichen Darmbakterien zu fördern. So werden nicht nur deine Verdauung und deine Nährstoffaufnahme, sondern auch dein Immunsystem unterstützt.*<\/p>",
             "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p>",
@@ -427,6 +427,45 @@
         "background_type": "full_width",
         "background_overlap": "both",
         "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "67afcc81-e56c-453d-b522-49cf8f36137d": {
+      "type": "image-with-text",
+      "blocks": {
+        "ca29d3c3-c865-4df0-85ec-b094f11cadc8": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "",
+            "image_fallback": "shopify:\/\/shop_images\/230912_FAIR_NL_Praezi_Teaser_05.png",
+            "tab_label": "Item",
+            "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
+            "subheading": "",
+            "title": "Perfekt in Kombination mit unseren SuperMikroben® ",
+            "title_fallback": "",
+            "content": "<p>Die Einnahme unserer Premium Biotika und Präbiotika zusammen erzeugt einen kraftvollen, symbiotischen Effekt. <\/p>",
+            "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ca29d3c3-c865-4df0-85ec-b094f11cadc8"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
         "text_alignment": "left",
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
@@ -481,6 +520,7 @@
     },
     "13172787-51a3-467b-bf03-1238e810001e": {
       "type": "benefits-compare",
+      "disabled": true,
       "custom_css": [
         ".sec--benefits-compare {background-color: white;}"
       ],
@@ -741,6 +781,7 @@
     "product-content",
     "1662567200ba271a25",
     "142cb517-0ba5-40e6-a699-e0f9a3b7fd8e",
+    "67afcc81-e56c-453d-b522-49cf8f36137d",
     "c840d2ca-4069-4077-a7e2-652d831c0ba5",
     "13172787-51a3-467b-bf03-1238e810001e",
     "68f9cc3d-b2cd-478d-846d-da14d915b437",
