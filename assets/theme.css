@@ -18094,3 +18094,7 @@ visibility: hidden;
   line-height: 1.25;
 }
 /* END ID - 27.10.23 - Icon w/ text PDP block */
+
+.speed-kit-domain-shop-fairment-de:not(.speed-kit-qab-closed) store-header>.container:first-child {
+    margin-top: 0px !important; 
+}
