@@ -618,13 +618,11 @@
       "blocks": {
         "a3412a40-aea4-468b-856a-26cb9fdc31de": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "disabled": true,
           "settings": {
           }
         },
         "99279bdb-e250-4dac-a6ea-b699eb03765b": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "disabled": true,
           "settings": {
             "star": "#ffca28",
             "review_type": "product_review,questions",
