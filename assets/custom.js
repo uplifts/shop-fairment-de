@@ -275,7 +275,7 @@ megaMenuLevel && megaMenuLevel.forEach((el) => {
       col.classList.remove('is-active');
     });
     el.classList.add('is-active');
-    targetColumn.classList.add('is-active');
+    targetColumn && targetColumn.classList.add('is-active');
   })
 });
 
