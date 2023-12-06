@@ -3,9 +3,9 @@ function showDiv1(){
 }
 
 function showDiv2(){
-    document.getElementById('hiddenThree').style.cssText += ';display:block !important;'
+  document.getElementById('hiddenThree') && document.getElementById('hiddenThree').style.cssText += ';display:block !important;'
 }
 
 function showDiv3(){
-    document.getElementById('hiddenSix').style.display = 'block';
+  document.getElementById('hiddenSix') && document.getElementById('hiddenSix').style.display = 'block';
 }
