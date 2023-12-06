@@ -412,7 +412,7 @@
             "subheading": "",
             "title": "",
             "title_fallback": "Federleicht statt ballongebläht: Fühl dich gut in deinem Körper.",
-            "content": "<p>Unser perfekt abgestimmter und hochwertiger Verdauungskomplex unterstützt dich und deinen Bauch bei einem vitalisierenden und angenehmen Gefühl nach jeder schweren Mahlzeit.<br\/><br\/>Das Besondere der EffektivEnzyme® liegt in der einzigartigen Zusammenstellung, die auf dem neuesten Stand wissenschaftlicher Forschung beruht. Sie enthalten 17 wertvolle Enzyme wie Bromelain - eine Protease, die aus der Ananas extrahiert wird und Proteine zerlegen kann. Papain, ein Enzym, das aus Papaya gewonnen wird und zusätzlich Proteine aufspaltet. Auch Amylase, ein essenzielles Enzym für den Abbau von Kohlenhydraten, sowie Laktase für die<br\/>Laktoseverdauung und Fettspaltung sind Bestandteile dieses Komplexes.<\/p>",
+            "content": "<p>Das Besondere der EffektivEnzyme® liegt in der einzigartigen Zusammenstellung, die auf dem neuesten Stand wissenschaftlicher Forschung beruht. Sie enthalten 17 wertvolle Enzyme wie Bromelain - eine Protease, die aus der Ananas extrahiert wird und Proteine zerlegen kann. Papain, ein Enzym, das aus Papaya gewonnen wird und zusätzlich Proteine aufspaltet. Auch Amylase, ein essenzielles Enzym für den Abbau von Kohlenhydraten, sowie Laktase für die<br\/>Laktoseverdauung und Fettspaltung sind Bestandteile dieses Komplexes.<\/p>",
             "content_fallback": "<p>Gesundheit fängt im Darm an. Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe. Neben den 3 “Superstar-Bakterien” profitierst du von hochwertigen Akazienfasern, die als Ballaststoffe die Grundlage für den Aufbau guter Bakterienkulturen bieten. Zink als wertvolles Spurenelement sorgt zusätzlich für eine normale Funktion deines Immunsystems.<\/p>",
             "button_text": "",
             "button_link": ""
@@ -465,6 +465,7 @@
       "block_order": [
         "79fb55d7-0c55-4d90-8767-2dd4af37a07b"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
