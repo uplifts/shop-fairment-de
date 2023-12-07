@@ -28,7 +28,7 @@ function waitForElem(
 
 const createElement = () => {
   const html = `<span class='dhl-logo-wrapper'>
-                  <img width="45" height="32" src="https://cdn.shopify.com/s/files/1/0063/0721/7473/files/dhl-gogreen-optimized.png" alt="DHL go green">
+                  <img width="45" height="32" src="https://cdn.shopify.com/s/files/1/0063/0721/7473/files/dhl-gogreen-optimized.png" alt="DHL gogreen">
                 </span>`;
   return html;
 };
