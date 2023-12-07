@@ -18058,6 +18058,13 @@ visibility: hidden;
   max-width: 100%;
   font-size: 11px;
   padding: 5px 3px;
+  border-radius: 10px;
+  border: 1px dashed #E8E8E8;
+  background: #F9F9F9;
+}
+
+@media (min-width: 371px) {
+
 }
 
 
