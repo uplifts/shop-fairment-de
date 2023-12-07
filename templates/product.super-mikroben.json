@@ -148,6 +148,27 @@
             "text_color": "",
             "text": ""
           }
+        },
+        "82a36a17-7f3e-442e-a82b-5646e9ec22bb": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/100_naturliche_Inhaltsstoffe.svg",
+            "text": "100% natürliche Inhaltsstoffe, ohne Zusätze"
+          }
+        },
+        "0fee3ef1-b1a5-4f3f-b181-e1224d14eece": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/100_resistent_gegen_Magensaure.svg",
+            "text": "100% resistent gegen Magensäure"
+          }
+        },
+        "8b02cb48-6c9a-4ea2-99cd-4863cbcea4c5": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Hergestellt_laborgepruft.svg",
+            "text": "Hergestellt & laborgeprüft in Deutschland"
+          }
         }
       },
       "block_order": [
@@ -168,7 +189,10 @@
         "18fb818f-b83d-491b-88ff-8b188b41cb33",
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
         "7b740d7e-4a85-4ca8-86ac-001044937892",
-        "55619357-015c-4d2e-b0a6-5531f976f5ad"
+        "55619357-015c-4d2e-b0a6-5531f976f5ad",
+        "82a36a17-7f3e-442e-a82b-5646e9ec22bb",
+        "0fee3ef1-b1a5-4f3f-b181-e1224d14eece",
+        "8b02cb48-6c9a-4ea2-99cd-4863cbcea4c5"
       ],
       "custom_css": [
         ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
