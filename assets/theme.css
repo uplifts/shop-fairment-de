@@ -18066,6 +18066,11 @@ visibility: hidden;
   background: #F9F9F9;
 }
 
+.product-meta__usp-item img {
+  max-width: 100%;
+  max-height: 20px;
+}
+
 @media (min-width: 371px) {  
   .product-meta__usp-item {
     font-size: 12px;
