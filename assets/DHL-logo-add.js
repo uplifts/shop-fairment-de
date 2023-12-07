@@ -28,8 +28,8 @@ function waitForElem(
 
 const createElement = () => {
   const html = `<span class='dhl-logo-wrapper'>
-                      <img width="73px" height="16px" src="https://cdn.shopify.com/s/files/1/0063/0721/7473/files/DHL-Logo.png?v=1699866228">
-                    </span>`;
+                  <img width="73px" height="16px" src="https://cdn.shopify.com/s/files/1/0063/0721/7473/files/dhl-gogreen-optimized.png">
+                </span>`;
   return html;
 };
 
