@@ -14,8 +14,14 @@
   {%- endif -%}
 {%- endcapture -%}
 
+{%- assign has_usps = false -%}
 {%- for block in product.blocks -%}
-  
+  {%- case block.type -%}
+    {%- when 'usp' -%}
+      {%- if block.settings.icon != blank and block.settings.text != blank -%}
+        {%- assign has_usps = true -%}
+      {%- endif -%}
+  {%- endcase -%}
 {%- endfor -%}
 
 <div class="product__info">
