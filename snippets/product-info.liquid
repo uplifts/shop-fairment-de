@@ -57,7 +57,7 @@
             {{ section.settings.custom_rating_snippet }}
           </div>
         {%- endif -%}
-        
+
         {%- if product.metafields.custom.short_description != blank -%}
           <div class="product-meta__excerpt">
             {{ product.metafields.custom.short_description }}
@@ -173,11 +173,6 @@
 
         {%- if section.settings.show_sku -%}
           <div class="product-meta__reference">
-            {% comment %} {%- if section.settings.show_product_rating -%}
-              <a href="{% if featured %}{{ product.url }}{% endif %}#product-{{ product.id }}-reviews-pocket" is="review-link" data-smooth-scroll class="product-meta__reviews-badge hidden-lap-and-up">{%- render 'product-rating', product: product -%}</a>
-              <a href="{% if featured %}{{ product.url }}{% endif %}#product-{{ product.id }}-tabs" is="review-link" data-smooth-scroll class="product-meta__reviews-badge hidden-pocket">{%- render 'product-rating', product: product -%}</a>
-            {%- endif -%} {% endcomment %}
-
             {%- if section.settings.show_sku -%}
               <span class="product-meta__sku text--subdued text--xxsmall" {% if product.selected_or_first_available_variant.sku == blank %}style="display: none"{% endif %} data-product-sku-container>
                 {{- 'product.general.sku' | t }}
