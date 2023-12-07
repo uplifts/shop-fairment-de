@@ -15,7 +15,7 @@
 {%- endcapture -%}
 
 {%- assign has_usps = false -%}
-{%- for block in product.blocks -%}
+{%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'usp' -%}
       {%- if block.settings.icon != blank and block.settings.text != blank -%}
@@ -190,7 +190,6 @@
       </product-meta>
 
       {%- if has_usps -%}
-        Khuesps
         <div class="product-meta__usps">
           {%- for block in product.blocks -%}
             {%- case block.type -%}
