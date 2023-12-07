@@ -1,0 +1,74 @@
+{% assign data-inventory = product.selected_or_first_available_variant.inventory_quantity %}
+{% if data-inventory <= 150 and data-inventory > 30 %}
+  {% assign var_width = data-inventory | divided_by: 10.00 | ceil %}
+{% elsif data-inventory <= 30 %}
+  {% assign var_width = 3 %}
+{% endif %}
+
+{% if data-inventory <= 150 and data-inventory > 0 %}
+  {% unless product.title contains 'E-Book' %}
+    <div class="low-quantiles-bar">
+      <div class="progressbar-wrapper">
+        <div class="progressbar" style="width: {{ var_width }}%;"></div>
+        <div class="percent-left-text">
+          noch <span> {{ var_width }}%</span> verfügbar
+        </div>
+      </div>
+    </div>
+  {% endunless %}
+{% endif %}
+
+<style>
+    .low-quantiles-bar .progressbar-wrapper {
+      display: flex;
+      border-radius: 34px;
+      background: #F2F2F2;
+      width: 100%;
+      position: relative;
+      max-width: 198px;
+      margin: 12px auto;
+      min-height: 20px;
+      overflow: hidden;
+  }
+  .low-quantiles-bar .percent-left-text{
+      color: #43484C;
+      font-family: Avenir Next;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 12px;
+      padding: 4px 5px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-wrap: nowrap;
+      white-space: nowrap;
+  }
+
+  .low-quantiles-bar .progressbar {
+      width: {{ var_width }};
+      background: #E10B17;
+      transition: width 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      animation: progressReverseStripes 3s linear infinite;
+      background-size: 30px 30px;
+  }
+  @keyframes progressReverseStripes{
+      0% {
+          background-position: 0 0;
+          background-image:linear-gradient(125deg,#D0101A 10%,transparent 10%,transparent 20%,#D0101A 20%,#D0101A 30%,transparent 30%,transparent 40%, #D0101A 40%,#D0101A 50%,transparent 50%,transparent 60%,#D0101A 60%,#D0101A 70%,transparent 70%,transparent 80%,#D0101A 80%,#D0101A 90%,transparent 90%,transparent);
+      }
+      100% {
+          background-position: -60px 0;
+          background-image:linear-gradient(125deg,#D0101A 10%,transparent 10%,transparent 20%,#D0101A 20%,#D0101A 30%,transparent 30%,transparent 40%, #D0101A 40%,#D0101A 50%,transparent 50%,transparent 60%,#D0101A 60%,#D0101A 70%,transparent 70%,transparent 80%,#D0101A 80%,#D0101A 90%,transparent 90%,transparent);
+      }
+  }
+
+  @media (max-width: 500px){
+      .low-quantiles-bar .progressbar-wrapper {
+          margin: 10px 0 5px;
+      }
+    	.low-quantiles-bar .quick-atc-button .collection_form {
+      	padding-top: 10px;
+  	}
+  }
+</style>
