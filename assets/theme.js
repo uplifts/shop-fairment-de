@@ -5153,6 +5153,7 @@
         if (!event.detail.variant["featured_media"] || this.selectedVariantMediaId === event.detail.variant["featured_media"]["id"]) {
           return;
         }
+        alert('this.mainCarousel.select');
         this.mainCarousel.select(`[data-media-id="${event.detail.variant["featured_media"]["id"]}"]`);
       }
       this.selectedVariantMediaId = event.detail.variant["featured_media"] ? event.detail.variant["featured_media"]["id"] : null;
