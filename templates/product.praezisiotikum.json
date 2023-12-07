@@ -171,7 +171,8 @@
       ],
       "custom_css": [
         ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
-        ".buybox-bundle-link a:hover {color: #f38388; text-decoration: none;}"
+        ".buybox-bundle-link a:hover {color: #f38388; text-decoration: none;}",
+        ".product-form__buy-buttons,.product-sticky-form {display: none;}"
       ],
       "settings": {
         "show_vendor": false,
