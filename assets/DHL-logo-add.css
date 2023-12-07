@@ -1,11 +1,11 @@
 .dhl-logo-wrapper {
-    padding-left: 15px;
-  }
-  .dhl-logo-wrapper img {
-    height: 16px;
-    width: 73px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  padding-left: 15px;
+}
+.dhl-logo-wrapper img {
+  height: 32px;
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
   
