@@ -189,7 +189,26 @@
         {%- endif -%}
       </product-meta>
 
-
+      {%- if has_usps -%}
+        <div class="product-meta__usps">
+          {%- for block in product.blocks -%}
+            {%- case block.type -%}
+              {%- when 'usp' -%}
+                {%- if block.settings.icon != blank and block.settings.text != blank -%}
+                  <div class="product-meta__usp-item">
+                    <img
+                      class="product-meta__usp-item-icon"
+                      src="{{ block.settings.icon | img_url: 'master' }}"
+                      alt="{{ block.settings.icon.alt }}">
+                    <div class="product-meta__usp-item-text">
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
 
       <div class="three_usp_wrapper">
         <div class="three_usp">
