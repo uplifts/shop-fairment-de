@@ -18051,7 +18051,13 @@ visibility: hidden;
 }
 
 .product-meta__usp-item {
-  width: 90px;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  font-size: 11px;
+  padding: 5px 3px;
 }
 
 
