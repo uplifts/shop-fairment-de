@@ -18047,7 +18047,15 @@ visibility: hidden;
 .product-meta__usps {
   display: flex;
   flex-wrap: wrap;
+  gap: 2px;
 }
+
+.product-meta__usp-item {
+  width: 90px;
+}
+
+
+/* ==================================== */
 
 .three_usp_wrapper {
   display: none;
