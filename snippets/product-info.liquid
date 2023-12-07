@@ -14,6 +14,10 @@
   {%- endif -%}
 {%- endcapture -%}
 
+{%- for block in product.blocks -%}
+  
+{%- endfor -%}
+
 <div class="product__info">
   <div class="product-buybox">
     <div class="product-buybox--inner">
@@ -43,8 +47,7 @@
               <h2 class="product-meta__title heading h3">
                 <a href="{{ product.url }}">{{ product.title }}</a>
               </h2>
-                     
-        {% endunless %}
+            {% endunless %}
           </div>
           {{ popular_badge }}
         </div>
@@ -52,10 +55,9 @@
         {%- if section.settings.show_product_rating and section.settings.custom_rating_snippet != blank -%}
           <div class="product-meta__reviews">
             {{ section.settings.custom_rating_snippet }}
-          
-
           </div>
         {%- endif -%}
+        
         {%- if product.metafields.custom.short_description != blank -%}
           <div class="product-meta__excerpt">
             {{ product.metafields.custom.short_description }}
@@ -185,6 +187,8 @@
           </div>
         {%- endif -%}
       </product-meta>
+
+
 
       <div class="three_usp_wrapper">
       <div class="three_usp">
