@@ -18072,6 +18072,10 @@ visibility: hidden;
   max-height: 20px;
 }
 
+.product-meta__usps + .product-form {
+  margin-top: 20px;
+}
+
 @media (min-width: 371px) {  
   .product-meta__usp-item {
     font-size: 12px;
