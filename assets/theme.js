@@ -5121,7 +5121,6 @@
     }
     async _onVariantChanged(event) {
       const variant = event.detail.variant;
-      alert(variant);
       const filteredMediaIds = [];
       let shouldReload = false;
       this.product["media"].forEach((media) => {
