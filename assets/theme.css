@@ -18045,25 +18045,32 @@ visibility: hidden;
 
 /* START ID - 07.12.23 - USPS dynamic */
 .product-meta__usps {
+  gap: 2px;
   display: flex;
   flex-wrap: wrap;
-  gap: 2px;
 }
 
 .product-meta__usp-item {
+  font-size: 11px;
+  padding: 5px 3px;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 100%;
-  font-size: 11px;
-  padding: 5px 3px;
+  max-width: 115px;
   border-radius: 10px;
   border: 1px dashed #E8E8E8;
   background: #F9F9F9;
 }
 
-@media (min-width: 371px) {
+@media (min-width: 371px) {  
+  .product-meta__usp-item {
+    font-size: 12px;
+    padding: 5px 3px;
+  }
+}
+
+@media (min-width: 601px) {
 
 }
 
