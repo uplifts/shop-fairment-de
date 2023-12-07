@@ -278,6 +278,10 @@
         </div>
       {%- endif -%}
 
+      {% if template.name == 'collection' %}
+        {%- render 'low-quantiles-bar', product: product -%}
+      {% endif %}
+
       {%- if product.available and qty_0_but_continue != true -%}
         {%- if product.metafields.custom.shipping_time != blank -%}
           <div style="color:#228927" class="product-item-meta__shiptime text--xxsmall{% if reduced_content %} hidden-pocket hidden-lap-and-up{% endif %}">
