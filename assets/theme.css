@@ -18052,6 +18052,7 @@ visibility: hidden;
 
 .product-meta__usp-item {
   font-size: 11px;
+  line-height: normal;
   padding: 5px 3px;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
