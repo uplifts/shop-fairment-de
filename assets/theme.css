@@ -18042,3 +18042,61 @@ visibility: hidden;
   line-height: 1.25;
 }
 /* END ID - 27.10.23 - Icon w/ text PDP block */
+
+/* START ID - 07.12.23 - USPS dynamic */
+.product-meta__usps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three_usp_wrapper {
+  display: none;
+}
+
+[data-product-id="7531822252289"] .three_usp_wrapper {
+  display: block;
+}
+
+.three_usp {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.usp {
+  border-radius: 10px;
+  border: 1px dashed #E8E8E8;
+  background: #F9F9F9;
+  padding: 5px;
+  width: 115px;
+}
+
+.usp p {
+  margin:0;
+  color: #343434;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (max-width:600px) {
+  .usp {
+    width: 105px;
+  }
+  .three_usp {
+    gap: 2px;
+  }
+}
+
+@media (max-width:370px) {
+  .usp {
+    width: 90px;
+    padding: 5px 3px;
+  }
+  .usp p {
+    font-size: 11px;
+  }
+}
+/* END ID - 07.12.23 - USPS dynamic */
