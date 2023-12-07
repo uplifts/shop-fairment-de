@@ -591,6 +591,7 @@
       "block_order": [
         "1f2464b6-acf4-4a8e-bf66-912ce4b66ab4"
       ],
+      "disabled": true,
       "settings": {
         "hide-image": true,
         "only-mobile": true,
@@ -666,6 +667,7 @@
       "block_order": [
         "67b07fac-39dd-4bc3-aaed-3e0fa73cec95"
       ],
+      "disabled": true,
       "settings": {
         "hide-image": false,
         "only-mobile": true,
