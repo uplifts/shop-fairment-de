@@ -58,7 +58,7 @@
         ".slideshow__nav {justify-content: start; bottom: -5px;}"
       ],
       "settings": {
-        "css_class": "home-hero",
+        "css_class": "",
         "section_height_mobile": 62,
         "section_height": "small",
         "transition_type": "fade",
