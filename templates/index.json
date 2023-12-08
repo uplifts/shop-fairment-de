@@ -6,8 +6,7 @@
         "cfe218c7-d31d-4e0a-b55e-66d506fa240e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/praezisiotikum-bg.png",
-            "split_image": "shopify:\/\/shop_images\/231204_FAIR_Praezi_Shop.png",
+            "image": "shopify:\/\/shop_images\/Group_4-2.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Group_1-2.jpg",
             "stretch_1st_image": true,
             "text_position": "bottom_left",
@@ -29,8 +28,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/230421_Fairment_custom_2000px.jpg",
-            "split_image": "shopify:\/\/shop_images\/x-230421_Fair_Header_Mockup_groesser.png",
+            "image": "shopify:\/\/shop_images\/Group_3-1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Group_2-2.jpg",
             "stretch_1st_image": true,
             "text_position": "bottom_left",
