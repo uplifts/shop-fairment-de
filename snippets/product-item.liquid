@@ -75,12 +75,14 @@
         {%- endfor -%}
       {%- endif -%}
 
-      {%- if settings.show_secondary_image and product.media.size > 1 and hide_secondary_image != true -%}
-        <img class="product-item__secondary-image" loading="lazy" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.media[1], sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
-      {%- endif -%}
-
-      {%- if settings.show_secondary_image_metafield and product.metafields.custom.hover_image != blank and hide_secondary_image != true -%}
-        <img class="product-item__secondary-image" loading="lazy" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.metafields.custom.hover_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
+      {%- if hide_secondary_image != true -%}  
+        {%- if settings.show_secondary_image_metafield and product.metafields.custom.hover_image != blank-%}
+          <img class="product-item__secondary-image" loading="lazy" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.metafields.custom.hover_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
+        {%- else -%}
+          {%- if settings.show_secondary_image and product.media.size > 1 -%}
+            <img class="product-item__secondary-image" loading="lazy" sizes="{{ sizes_attribute }}" {% render 'image-attributes', image: product.media[1], sizes: '200,300,400,500,600,700,800,900,1000,1100,1200' %}>
+          {%- endif -%}
+        {%- endif -%}
       {%- endif -%}
     </a>
 
