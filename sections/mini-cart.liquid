@@ -292,7 +292,7 @@
                 </line-item-quantity>
               </div>
 
-              <div class="line-item__price-list-container text--small hidden">
+              <div class="line-item__price-list-container text--small">
                 {%- if settings.show_vendor -%}
                   {%- comment -%}
                     IMPLEMENTATION NOTE: in the design, the price is aligned in regards of the product title (not the brand). It was a
@@ -304,7 +304,7 @@
                 <div class="price-list price-list--stack">
                   {{- line_price -}}
                 </div>
-                <div class="product-item-meta__price-list-container text--xxsmall"> 
+                <div class="product-item-meta__price-list-container text--xxsmall hidden"> 
                   <div class="price-list hidden-tablet-and-up testing"> 
                     <div class="hidden-phone">{{- line_price -}}</div>
                     {{- unit_price -}} 
