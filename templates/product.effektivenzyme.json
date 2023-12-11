@@ -639,6 +639,7 @@
       "block_order": [
         "db796fb9-3690-40bd-89c2-36702ab7aa67"
       ],
+      "disabled": true,
       "settings": {
         "hide-image": true,
         "only-mobile": true,
