@@ -158,6 +158,7 @@
         },
         "a09c0ad1-958e-4e35-b4b4-e3c1474a0348": {
           "type": "usp",
+          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/100_resistent_gegen_Magensaure.svg",
             "text": "Mit dem sporenbasierten Bakterium Bacillus coagulans"
