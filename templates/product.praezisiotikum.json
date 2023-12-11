@@ -110,6 +110,7 @@
         },
         "7704f86c-990b-4996-8afd-296c56ee6011": {
           "type": "accordion_item",
+          "disabled": true,
           "settings": {
             "is_open": false,
             "label": "(Neu) Spar-Abo",
