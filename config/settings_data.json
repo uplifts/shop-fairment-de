@@ -334,7 +334,8 @@
         ],
         "custom_css": [
           ".mini-cart__drawer-footer.drawer__footer.drawer__footer--tight.drawer__footer--bordered {opacity: 1; padding-top: 0px !important; padding-bottom: 3px !important;}",
-          ".docapp-cart-item.docapp-summary-note {margin-top: -5px !important;}"
+          ".docapp-cart-item.docapp-summary-note {margin-top: -5px !important;}",
+          ".line-item__price-list-container .unit-price-measurement; {display: none!important;}"
         ],
         "settings": {
           "cart_success_message": "<span class=\"drawer-ab-message-1\"><strong>Gute Wahl!<\/strong> Du wirst dich großartig fühlen<\/span>\n<span class=\"drawer-ab-message-2\"><strong>Gute Wahl!<\/strong> Hier sind deine Produkte<\/span>",
