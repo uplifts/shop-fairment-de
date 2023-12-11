@@ -90,6 +90,7 @@
           },
           "6f5ec34f-8681-4d6c-8727-c6205d10d952": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Wieder da:",
               "learn_more_text": "PRÄZISIOTIKUM",
