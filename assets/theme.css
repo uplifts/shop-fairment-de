@@ -17650,6 +17650,7 @@ visibility: hidden;
 .line-item__price-list-container .unit-price-measurement {
   white-space: nowrap;
   flex-wrap: nowrap;
+  display: none; 
 }
 
 @media (max-width: 420px) {
