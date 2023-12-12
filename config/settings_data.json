@@ -99,11 +99,23 @@
               "button_text": "Jetzt probieren",
               "button_link": "shopify:\/\/products\/prazisiotikum-innovatives-prabiotikum"
             }
+          },
+          "a0656701-3256-41a6-9d51-8d84ac4da2ee": {
+            "type": "message",
+            "settings": {
+              "text": "Für deine tägliche Routine:",
+              "learn_more_text": "Super Mikroben",
+              "title": "Speziell entwickelt von Ärzten und Experten",
+              "content": "<p>Gesundheit fängt im Darm an. Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe.<\/p>",
+              "button_text": "Jetzt probieren",
+              "button_link": "shopify:\/\/products\/fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika"
+            }
           }
         },
         "block_order": [
           "99effb0d-0dbb-4c21-a91b-cd4d45bf55ac",
-          "6f5ec34f-8681-4d6c-8727-c6205d10d952"
+          "6f5ec34f-8681-4d6c-8727-c6205d10d952",
+          "a0656701-3256-41a6-9d51-8d84ac4da2ee"
         ],
         "settings": {
           "announcement_bar_position": "non_sticky",
@@ -334,7 +346,7 @@
         ],
         "custom_css": [
           ".mini-cart__drawer-footer.drawer__footer.drawer__footer--tight.drawer__footer--bordered {opacity: 1; padding-top: 0px !important; padding-bottom: 3px !important;}",
-          ".docapp-cart-item.docapp-summary-note {margin-top: -5px !important; }"
+          ".docapp-cart-item.docapp-summary-note {margin-top: -5px !important;}"
         ],
         "settings": {
           "cart_success_message": "<span class=\"drawer-ab-message-1\"><strong>Gute Wahl!<\/strong> Du wirst dich großartig fühlen<\/span>\n<span class=\"drawer-ab-message-2\"><strong>Gute Wahl!<\/strong> Hier sind deine Produkte<\/span>",
