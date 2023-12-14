@@ -713,6 +713,76 @@
         "hide-arrow-button": true
       }
     },
+    "2d56c382-aa7d-4799-818e-aadd6c202766": {
+      "type": "faq",
+      "blocks": {
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich das Präzisiotikum® mit anderen fairment Produkten kombinieren? ",
+            "answer": "<p>Unsere Produkte sind so konzipiert, dass du sie alle ohne Probleme miteinander kombinieren kannst. 😍 Durch die Kombination ist der Effekt auf deine Gesundheit noch besser! <\/p>"
+          }
+        },
+        "66f22568-fce5-4f70-8126-bfad414fa8f2": {
+          "type": "question",
+          "settings": {
+            "title": "Gibt es beim Präzisiotikum® bekannte Nebenwirkungen?",
+            "answer": "<p>Bisher sind keine Nebenwirkungen bekannt. Einige Personen könnten jedoch anfangs eine leichte Anpassungsphase bemerken, während sich ihr Darm an das Produkt gewöhnt. <\/p>"
+          }
+        },
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich die empfohlene Dosierung beim Präzisiotikum® überschreiten?",
+            "answer": "<p>Wir empfehlen, die empfohlene Dosierung einzuhalten, um die besten Ergebnisse zu erzielen. 🙂 Wenn du jedoch irgendwelche Bedenken hast oder die Dosierung anpassen möchtest, empfehlen wir, dies in Absprache mit deinem Therapeuten zu tun.<\/p>"
+          }
+        },
+        "8bafdca0-5d5f-456b-9744-01151887207e": {
+          "type": "question",
+          "settings": {
+            "title": "Enthält das Präzisiotikum® Gluten, Laktose, Soja oder gentechnisch veränderte Organismen?",
+            "answer": "<p>Keine Sorge! Unser Präzisiotikum® ist gluten- und laktosefrei und enthält kein Soja. Es enthält auch keine Spur von gentechnisch veränderten Organismen (GVO). Außerdem verzichten wir komplett auf jegliche Farb- und Füllstoffe. Wir bei fairment legen großen Wert auf natürliche Zutaten und hohe Qualität.<\/p>"
+          }
+        },
+        "6bce7214-64b2-4b07-a829-29848d9ff5df": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich das Präzisiotikum® bei Diabetes einnehmen?",
+            "answer": "<p>Ja, du kannst das Präzisiotikum® in den empfohlenen Mengen ohne Probleme einnehmen. 🙂 Unser Präzisiotikum® enthält Fructo-Oligosaccharide aus Kiwi, Galacto-Oligosaccharide aus Milch und Xylo-Oligosaccharide aus Mais. Diese Oligosaccharide sind Kohlenhydrate, aber sie gehören zu den sogenannten nicht-verwertbaren Kohlenhydraten. Das bedeutet, dass sie von deinem Körper nicht in der gleichen Weise verstoffwechselt werden wie herkömmliche Kohlenhydrate aus Zucker oder Stärke.<\/p><p>Die Wahrscheinlichkeit, dass Präzisiotikum® deinen Blutzuckerspiegel signifikant ansteigen lässt, ist daher sehr gering. Diese nicht-verwertbaren Kohlenhydrate dienen hauptsächlich als Nahrung für nützliche Darmbakterien und tragen zur Förderung einer gesunden Darmflora bei.<\/p>"
+          }
+        },
+        "7e8b25dc-e40e-4be6-997a-4aefbd80704b": {
+          "type": "question",
+          "settings": {
+            "title": "Für wie lange reicht ein Beutel Präzisiotikum®?",
+            "answer": "<p>Ein einziger Beutel unseres innovativen Präzisiotikum® reicht für ganze 30 Tage aus. Doch wir verstehen, dass es Zeiten gibt, in denen man sich gestresst fühlt, auf Reisen ist oder einfach einen zusätzlichen Energieschub benötigt. Viele unserer Kund:innen entscheiden sich dann für 2 Beutel pro Monat, um stets flexibel zu bleiben.<br\/><br\/>Genau aus diesem Grund wählen viele unserer treuen Kund:innen auch ein monatliches Abonnement, um sicherzustellen, dass sie ihre nächsten Lieferungen rechtzeitig erhalten - so kannst du deinen gesunden Lebensstil mühelos aufrechterhalten!<\/p><p>Und vergiss nicht: Über unser benutzerfreundliches Abo-Mitgliederportal kannst du ganz leicht deine kommende Lieferung anpassen, verschieben oder vorübergehend pausieren.<\/p>"
+          }
+        },
+        "19b934b0-b6b9-42e3-a941-0b5eae70ef8a": {
+          "type": "question",
+          "settings": {
+            "title": "About your shop",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-2",
+        "66f22568-fce5-4f70-8126-bfad414fa8f2",
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3",
+        "8bafdca0-5d5f-456b-9744-01151887207e",
+        "6bce7214-64b2-4b07-a829-29848d9ff5df",
+        "7e8b25dc-e40e-4be6-997a-4aefbd80704b",
+        "19b934b0-b6b9-42e3-a941-0b5eae70ef8a"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "16624728032cdcd5d3": {
       "type": "product-recommendations",
       "blocks": {
@@ -796,37 +866,6 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
-    },
-    "2d56c382-aa7d-4799-818e-aadd6c202766": {
-      "type": "faq",
-      "blocks": {
-        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-2": {
-          "type": "question",
-          "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3": {
-          "type": "question",
-          "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-2",
-        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "show_navigation": false,
-        "title": "FAQ",
-        "content": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -845,9 +884,9 @@
     "a494e470-9284-4390-9792-eda9c89452f3",
     "16660020168146ef1b",
     "dc5e9826-64fc-43c3-9802-83eb4ca48abe",
+    "2d56c382-aa7d-4799-818e-aadd6c202766",
     "16624728032cdcd5d3",
     "bf04a008-9e24-45dd-9d29-54fb8e978574",
-    "566ef7b6-d019-4da1-8df9-e7135645144e",
-    "2d56c382-aa7d-4799-818e-aadd6c202766"
+    "566ef7b6-d019-4da1-8df9-e7135645144e"
   ]
 }
