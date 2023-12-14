@@ -796,6 +796,37 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "2d56c382-aa7d-4799-818e-aadd6c202766": {
+      "type": "faq",
+      "blocks": {
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-2",
+        "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -816,6 +847,7 @@
     "dc5e9826-64fc-43c3-9802-83eb4ca48abe",
     "16624728032cdcd5d3",
     "bf04a008-9e24-45dd-9d29-54fb8e978574",
-    "566ef7b6-d019-4da1-8df9-e7135645144e"
+    "566ef7b6-d019-4da1-8df9-e7135645144e",
+    "2d56c382-aa7d-4799-818e-aadd6c202766"
   ]
 }
