@@ -125,6 +125,15 @@
             "content": "{{ product.metafields.custom.product_tab_1_content }}"
           }
         },
+        "831abba9-dd71-4962-bd6f-2b56427bd1c1": {
+          "type": "accordion_item",
+          "disabled": true,
+          "settings": {
+            "is_open": false,
+            "label": "",
+            "content": ""
+          }
+        },
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01": {
           "type": "accordion_item",
           "settings": {
@@ -188,6 +197,7 @@
         "24a23161-1c87-4409-9595-813b0c57a726",
         "7704f86c-990b-4996-8afd-296c56ee6011",
         "18fb818f-b83d-491b-88ff-8b188b41cb33",
+        "831abba9-dd71-4962-bd6f-2b56427bd1c1",
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
         "7b740d7e-4a85-4ca8-86ac-001044937892",
         "55619357-015c-4d2e-b0a6-5531f976f5ad",
