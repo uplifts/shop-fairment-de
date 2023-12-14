@@ -757,13 +757,6 @@
             "title": "Für wie lange reicht ein Beutel Präzisiotikum®?",
             "answer": "<p>Ein einziger Beutel unseres innovativen Präzisiotikum® reicht für ganze 30 Tage aus. Doch wir verstehen, dass es Zeiten gibt, in denen man sich gestresst fühlt, auf Reisen ist oder einfach einen zusätzlichen Energieschub benötigt. Viele unserer Kund:innen entscheiden sich dann für 2 Beutel pro Monat, um stets flexibel zu bleiben.<br\/><br\/>Genau aus diesem Grund wählen viele unserer treuen Kund:innen auch ein monatliches Abonnement, um sicherzustellen, dass sie ihre nächsten Lieferungen rechtzeitig erhalten - so kannst du deinen gesunden Lebensstil mühelos aufrechterhalten!<\/p><p>Und vergiss nicht: Über unser benutzerfreundliches Abo-Mitgliederportal kannst du ganz leicht deine kommende Lieferung anpassen, verschieben oder vorübergehend pausieren.<\/p>"
           }
-        },
-        "19b934b0-b6b9-42e3-a941-0b5eae70ef8a": {
-          "type": "question",
-          "settings": {
-            "title": "About your shop",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
-          }
         }
       },
       "block_order": [
@@ -772,8 +765,7 @@
         "template--18304054558984__2d56c382-aa7d-4799-818e-aadd6c202766-question-3",
         "8bafdca0-5d5f-456b-9744-01151887207e",
         "6bce7214-64b2-4b07-a829-29848d9ff5df",
-        "7e8b25dc-e40e-4be6-997a-4aefbd80704b",
-        "19b934b0-b6b9-42e3-a941-0b5eae70ef8a"
+        "7e8b25dc-e40e-4be6-997a-4aefbd80704b"
       ],
       "settings": {
         "show_navigation": false,
