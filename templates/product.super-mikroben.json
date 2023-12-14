@@ -674,6 +674,68 @@
         "hide-arrow-button": true
       }
     },
+    "4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b": {
+      "type": "faq",
+      "blocks": {
+        "template--18304055148808__4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Inhaltsstoffe sind in den SuperMikroben®?",
+            "answer": "<p>In Zusammenarbeit mit Expert*innen haben wir eine<strong> <\/strong>einzigartige Formulierung mit hochwertigen Inhaltsstoffen entwickelt. Unsere SuperMikroben® liefern dir einen abgestimmten Komplex aus wichtigen Sporen-basierten Bakterienkulturen, Ballaststoffen aus der Akazienfaser und wertvollem Zink, welcher zu einer normalen Funktion des Immunsystems beiträgt. 🙂<\/p>"
+          }
+        },
+        "f25a498e-ff18-469a-9e7c-31689bd1f40f": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange soll ich die SuperMikroben® einnehmen?",
+            "answer": "<p>Um spürbare Effekte zu erfahren, empfehlen wir dir die Einnahme von unseren SuperMikroben® für mindestens 2 bis 3 Monate. Grundsätzlich sind unsere Mikroben für eine dauerhafte Einnahme konzipiert, um so das Mikrobiom stets vor negativen Einflüssen, wie Stress, schlechter Ernährung oder Medikamenten zu schützen. Im Allgemeinen empfehlen wir eine regelmäßige Einnahme von täglich 2 Kapseln. Während der Einnahme von Antibiotika kann die Menge sogar auf 6 Kapseln pro Tag gesteigert werden.<\/p>"
+          }
+        },
+        "b3d43776-7ab3-47b1-8007-2fbcdc074c00": {
+          "type": "question",
+          "settings": {
+            "title": "Kann eine gesunde Ernährung die Wirkung der SuperMikroben® verstärken?",
+            "answer": "<p>Klar, eine gesunde Ernährung kann die Wirkung der SuperMikroben® unterstützen und dir schneller zu einem guten Bauchgefühl verhelfen. 🙂 Welche Lebensmittel gut bekömmlich sind, kann sehr individuell sein. Auf dem Speiseplan für einen gesunden Darm stehen aber unbedingt <a href=\"https:\/\/shop.fairment.de\/products\/fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika\" target=\"_self\">Probiotika<\/a> und <a href=\"https:\/\/shop.fairment.de\/products\/mikroben-futter-premium-ballaststoffe\" target=\"_self\">Präbiotika<\/a>. Mit einer Extraportion Ballaststoffe und <a href=\"https:\/\/shop.fairment.de\/collections\/essen-trinken\" target=\"_self\">fermentiertem Gemüse<\/a> kannst du deine Darmflora zusätzlich aufbauen. 😊<\/p>"
+          }
+        },
+        "template--18304055148808__4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Wie können bei den SuperMikroben® Nebenwirkungen entstehen?",
+            "answer": "<p>In den ersten Tagen der SuperMikroben® Einnahme können selten mal Nebenwirkungen verspürt werden, da die Mikroben den Darm \"aufräumen\". Wenn du \"Nebenwirkungen\" hast, dann ist das zwar nicht angenehm, es deutet aber auch darauf hin, dass die SuperMikroben® wirken. 🙂 Die schädlichen Keime, die dabei absterben, protestieren dann und setzen beim Absterben Stoffe frei, die alle möglichen Symptome hervorrufen können. Probiere vielleicht mal eine geringere Dosis oder setze sie für eine kurze Zeit ab. Starte später noch einmal und beobachte deinen Körper und gib ihm in der Zeit extra viel Ruhe.<\/p>"
+          }
+        },
+        "template--18304055148808__4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Überleben die SuperMikroben® den Weg in den Darm?",
+            "answer": "<p>Eine Besonderheit unserer SuperMikroben® ist die natürliche Widerstandsfähigkeit gegenüber äußeren Einflüssen wie Hitze, Kälte, Sauerstoff und Magensäure. Die Mikroben überleben den Weg in deinen Darm durch ihre natürliche Endosporenhülle problemlos, auch ohne Kapsel. 🙂<\/p>"
+          }
+        },
+        "11b36cf4-6c5e-47d0-9a2b-5209ac6600f4": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich die SuperMikroben® mit Nahrungsergänzungsmitteln kombinieren?",
+            "answer": "<p>Nach Wunsch kannst du unsere SuperMikroben® mit anderen Nahrungsergänzungsmitteln kombinieren. Beachte dabei die empfohlene Tagesdosis laut Deutscher Gesellschaft für Ernährung (DGE) und sprich dazu am besten mit deinem Arzt oder Therapeuten. 🙂. Besonders empfehlen können wir die Kombination mit <a href=\"https:\/\/shop.fairment.de\/products\/mikroben-futter-premium-ballaststoffe\" target=\"_self\">Präbiotika<\/a>. Mit einer Extraportion Ballaststoffe kannst du deine Darmflora zusätzlich aufbauen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304055148808__4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b-question-1",
+        "f25a498e-ff18-469a-9e7c-31689bd1f40f",
+        "b3d43776-7ab3-47b1-8007-2fbcdc074c00",
+        "template--18304055148808__4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b-question-2",
+        "template--18304055148808__4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b-question-3",
+        "11b36cf4-6c5e-47d0-9a2b-5209ac6600f4"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "16624728032cdcd5d3": {
       "type": "product-recommendations",
       "blocks": {
@@ -753,6 +815,7 @@
     "c89fa439-4cf4-4218-818b-15bca6624875",
     "16660020168146ef1b",
     "ab84bacb-37b0-4439-b31d-c40156fe88a3",
+    "4c7c0d90-91a9-4819-9e21-39f1a8f7cb1b",
     "16624728032cdcd5d3",
     "566ef7b6-d019-4da1-8df9-e7135645144e"
   ]
