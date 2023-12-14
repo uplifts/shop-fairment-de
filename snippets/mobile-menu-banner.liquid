@@ -1,0 +1,77 @@
+<div class="offer-banner-mobile">
+    <div class="offer-banner-container">
+      <div class="offer-banner-content">
+        <span>{{ section.settings.mobile-menu-banner-tagline }}</span>
+        <p>{{ section.settings.mobile-menu-banner-title }}</p>
+        <a href="{{ section.settings.mobile-menu-banner-btn-url }}" class="btn">{{ section.settings.mobile-menu-banner-btn-text }}</a>
+      </div>
+      <div class="offer-banner-img">
+        {{ section.settings.mobile-menu-banner-image | image_url: width: 200 | image_tag }}
+      </div>
+    </div>
+  </div>
+
+<style>
+  #mobile-menu-drawer .offer-banner-mobile {
+  background-image: url("https://abtest-img-upload.s3.eu-west-2.amazonaws.com/uplift/SM-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  margin: 16px 20px 4px 20px;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container .offer-banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container .offer-banner-content span {
+  color: #00158C;
+  font-family: Probiotika Sans RND;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-bottom: 4px;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container .offer-banner-content p {
+  color: #00158C;
+  font-family: Probiotika Sans RND;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container .offer-banner-content a.btn {
+  color: #fff;
+  background: #F17218;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 36px;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container .offer-banner-img {
+  width: 56px;
+}
+
+#mobile-menu-drawer .offer-banner-mobile .offer-banner-container .offer-banner-img img {
+  width: 100%;
+}
+
+#mobile-menu-drawer.has-open-levels .offer-banner-mobile {
+  display: none;
+}
+</style>
