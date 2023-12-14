@@ -121,6 +121,27 @@
             "label": "Fairment Akademie (gratis)",
             "content": "Wir nehmem dich an die Hand. Nach deiner Bestellung bekommst du von uns einen Gutscheincode, mit dem du dich bei unserer Akademie anmelden kannst. \n\nIn der Basis Akademie erwarten dich...\n\n- 20 Schritt für Schritt Video Anleitungen, wie du dein Ferment ansetzt, erntest und worauf du achten solltest.\n\n- Antworten auf häufig gestellte Fragen und mögliche Probleme, damit du sie vermeiden kannst und erkennst, was los ist.\n\n- Viele weitere Videos zu Hintergrundwissen z.B. Was ist eigentlich Fermentation? Was kann man alles fermentieren und warum?"
           }
+        },
+        "4e03b949-38ff-4eef-86a3-324f24d57e8d": {
+          "type": "extra_info",
+          "settings": {
+            "text": "Einmal kaufen, beliebig oft herstellen",
+            "product_list": [
+              "fairment-wilde-fermente-set-neu",
+              "kombucha-set-fairment-original-neu",
+              "mega-starter-kit-special-6-kits-gratis-zugang-zur-fairment-online-akademie",
+              "keinkaese-starter-kit",
+              "fairment-sauerteig-starterkit",
+              "fairment-joghurt-set-vegan",
+              "fairment-joghurt-set-mit-joghurtbereiter-und-zubehor-neu",
+              "fairment-milchkefir-set-neu",
+              "fairment-wasserkefir-set-neu",
+              "starter-kit-special-5-kits",
+              "wasserkefir-kristalle-japankristalle-bio-neu",
+              "milchkefir-knollen-bio-neu",
+              "kombucha-teepilz-mit-starterflussigkeit-scoby-bio-n"
+            ]
+          }
         }
       },
       "block_order": [
@@ -138,7 +159,8 @@
         "18fb818f-b83d-491b-88ff-8b188b41cb33",
         "7a71bc25-959d-4256-9db7-fb69ef0d6c01",
         "7b740d7e-4a85-4ca8-86ac-001044937892",
-        "0a04bfeb-174e-4d27-9568-6fdf08817c74"
+        "0a04bfeb-174e-4d27-9568-6fdf08817c74",
+        "4e03b949-38ff-4eef-86a3-324f24d57e8d"
       ],
       "custom_css": [
 
