@@ -721,6 +721,60 @@
         "hide-arrow-button": true
       }
     },
+    "4bcd040d-8364-49e8-9b82-c8a3f8dc3036": {
+      "type": "faq",
+      "blocks": {
+        "template--18304054690056__4bcd040d-8364-49e8-9b82-c8a3f8dc3036-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Was macht unsere EffektivEnzyme® so außergewöhnlich?",
+            "answer": "<p>Unsere EffektivEnzyme® sind eine hochwirksame Mischung aus verschiedenen Enzymen mit spezifischen Aufgaben. Sie verbessern nicht nur die Nährstoffaufnahme, sondern regulieren auch den gesamten Verdauungstrakt. Das Produkt ist ein erstklassiger Enzym-Komplex, der wichtige Enzyme wie Bromelain, Protease, Papain, Amylase und Laktase in Kombination mit Fenchel, probiotischer Hefe und Sporen-bildenden Bakterien enthält. Diese spezielle Mischung wurde entwickelt, um eine optimale Verdauung zu fördern. Jedes Produkt in unserem Sortiment basiert auf aktuellen Studien und wissenschaftlichen Erkenntnissen, wobei wir ausschließlich Premium-Rohstoffe verwenden, die einen nachweisbaren Mehrwert bieten.<\/p>"
+          }
+        },
+        "c5d557e5-ef24-4d0d-8390-590a732fd7d9": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Inhaltsstoffe sind in den EffektivEnzyme® enthalten?",
+            "answer": "<p>Unsere EffektivEnzyme® sind ein erstklassiger Enzym-Komplex, der wichtige Enzyme wie Bromelain, Protease, Papain, Amylase und Laktase in Kombination mit Fenchel, probiotischer Hefe und Sporen-bildenden Bakterien enthält. Diese spezielle Mischung wurde für eine normale Enzymfunktion entwickelt.<br\/><br\/><strong>Zutaten<\/strong><\/p><p>Sango-Meereskorallenpulver (enthält 20 % Calcium und 10 % Magnesium), Betain-Hydrochlorid, Überzugsmittel: Hydroxypropylmethylcellulose (pflanzliche Kapselhülle), Enzymmischung (Diastase, Bromelain, Protease A, Amylase, Laktase, Protease 3.0, Cellulase, Peptidase, Cellulase AN, Hefe-Lipase, Papain, Pektinase, Xylanase, alpha-Galaktosidase, Hemicellulase, beta-Glucanase, Phytase, Lipase), Fenchelsamenextrakt (Foeniculum vulgare, enthält 6 % Fenchon), Bromelain, aktive, getrocknete Hefe (Saccharomyces boulardii), Laktase, Papain, Bacillus coagulans<\/p>"
+          }
+        },
+        "2124556f-687d-49b8-9da2-1af0d8e934a6": {
+          "type": "question",
+          "settings": {
+            "title": "Enthalten die EffektivEnzyme® Zusatzstoffe?",
+            "answer": "<p>Bei fairment produzieren wir alle unsere Produkte in der EU und halten uns dabei an die GMP, ISO 9001 und HACCP Zertifizierungen. So kannst du sicher sein, dass die EffektivEnzyme® alle Hygienevorschriften erfüllen. Unser Produkt ist vegan und frei von Farbstoffen, Gelatine, Magnesiumstearat, Laktose, Gluten oder gentechnisch veränderten Organismen (GMO), um dir die bestmögliche <strong>Pflanzenpower ohne Zusatzstoffe<\/strong> zu bieten.<\/p>"
+          }
+        },
+        "template--18304054690056__4bcd040d-8364-49e8-9b82-c8a3f8dc3036-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Für wen eignen sich die EffektivEnzyme®?",
+            "answer": "<p>Unsere EffektivEnzyme® eignen sich für alle Menschen, die mehr aus ihrem Essen herausholen wollen. Außerdem ist es der ideale Begleiter für Menschen mit Unverträglichkeiten und Schwierigkeiten mit der Verdauung.<br\/><\/p>"
+          }
+        },
+        "template--18304054690056__4bcd040d-8364-49e8-9b82-c8a3f8dc3036-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange kann ich die EffektivEnzyme® einnehmen?",
+            "answer": "<p>Unsere EffektivEnzyme® können täglich oder nach Bedarf eingenommen werden. Das Produkt ist für eine dauerhafte Einnahme geeignet.<strong><br\/><\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304054690056__4bcd040d-8364-49e8-9b82-c8a3f8dc3036-question-1",
+        "c5d557e5-ef24-4d0d-8390-590a732fd7d9",
+        "2124556f-687d-49b8-9da2-1af0d8e934a6",
+        "template--18304054690056__4bcd040d-8364-49e8-9b82-c8a3f8dc3036-question-2",
+        "template--18304054690056__4bcd040d-8364-49e8-9b82-c8a3f8dc3036-question-3"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "16624728032cdcd5d3": {
       "type": "product-recommendations",
       "blocks": {
@@ -801,6 +855,7 @@
     "9cc5769c-be56-4da5-ac5d-14b10cc139a4",
     "16660020168146ef1b",
     "ff1b7367-0a14-4b45-8bd7-45b21b0b06a2",
+    "4bcd040d-8364-49e8-9b82-c8a3f8dc3036",
     "16624728032cdcd5d3",
     "566ef7b6-d019-4da1-8df9-e7135645144e"
   ]
