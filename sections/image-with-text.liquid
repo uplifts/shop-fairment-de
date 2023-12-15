@@ -79,7 +79,7 @@
   {%- endif -%}
 </style>
 
-<section class="section {% if section.settings.background_overlap == 'both' and is_boxed == false %}section--flush{% endif %}">
+<section class="section {% if section.settings.background_overlap == 'both' and is_boxed == false %}section--flush{% endif %} {{ section.settings.css_class }}">
   <div {% if is_boxed %}class="container"{% endif %}>
     {%- assign first_block = section.blocks.first -%}
 
