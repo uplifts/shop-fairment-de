@@ -18100,13 +18100,16 @@ display: none !important:
   .single-media-img + .product-media__accordion {
       padding-left: 0px;
   }
-  }
-  @media only screen and (min-width: 1400px) { 
+}
+@media only screen and (min-width: 1400px) { 
   .single-media-img + .product-media__accordion {
       padding-left: 36px;
   }
-  }
-  /* END ID - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
+}
+/* END ID - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
 
-  /* START ID - 16.12.23 - Supermikroben LP from Replo */
-  /* END ID - 16.12.23 - Supermikroben LP from Replo */
+/* START ID - 16.12.23 - Supermikroben LP from Replo */
+.supmikrolp-intro {
+  
+}
+/* END ID - 16.12.23 - Supermikroben LP from Replo */
