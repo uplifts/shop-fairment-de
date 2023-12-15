@@ -32,6 +32,7 @@
         "template--18602995745032__64a64ee1-9537-4dc5-a762-3ce6f601c35c-item-1"
       ],
       "settings": {
+        "css_class": "supmikrolp-intro",
         "reveal_on_scroll": true,
         "background_type": "full_width",
         "background_overlap": "both",
@@ -69,6 +70,7 @@
         "template--18602995745032__9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5-item-1"
       ],
       "settings": {
+        "css_class": "",
         "reveal_on_scroll": true,
         "background_type": "full_width",
         "background_overlap": "image",
