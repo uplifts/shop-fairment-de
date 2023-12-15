@@ -18109,7 +18109,11 @@ display: none !important:
 /* END ID - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
 
 /* START ID - 16.12.23 - Supermikroben LP from Replo */
-.supmikrolp-intro {
-  
+.supmikrolp-intro .image-with-text__wrapper {
+  display: flex;
+}
+
+.supmikrolp-intro .image-with-text__image-wrapper {
+  width: 96px;
 }
 /* END ID - 16.12.23 - Supermikroben LP from Replo */
