@@ -545,7 +545,7 @@
           {{- 'cart.general.checkout' | t -}}
          {% comment %} Removing sub total in checkout button by request.
           <span class="square-separator"></span>
-         <span class="docapp-sync-subtotal"> </span>
+         <span class="docapp-sync-total"> {{- cart.total_price | money_with_currency -}}</span>
         {% endcomment %}
         </button>
       {%- else -%}
