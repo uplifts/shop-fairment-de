@@ -18133,6 +18133,14 @@ display: none !important:
   margin: 0 !important;
 }
 
+.supmikrolp-highlights .image-with-text__content-custom {
+
+}
+
+.supmikrolp-highlights-check-text {
+  gap: 0.5em;
+}
+
 @media (max-width: 999px) {
   .supmikrolp-intro .image-with-text {
     padding: 0;

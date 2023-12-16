@@ -63,7 +63,7 @@
             "title_fallback": "",
             "content": "<p><strong>Premium-Biotika (60 Kapseln pro Glas)<\/strong><\/p><ul><li><strong>Reduziert das Völlegefühl<\/strong>, für einen spürbar leichteren Alltag.<\/li><li><strong>Unterstützt die Verdauung<\/strong> von Grund auf und verleiht dir mehr Energie.<\/li><li><strong>Reduziert Blähungen<\/strong> und dadurch auch unangenehme Situationen im Alltag.<\/li><li><strong>Versorgt den Darm <\/strong>mit wertvollen Inhaltsstoffen für einen gesunden und starken Körper.<br\/><\/li><li><strong>Sorgt für mehr Energie<\/strong>, bessere Stimmung und ein rundum besseres Wohlgefühl.<\/li><\/ul>",
             "content_fallback": "",
-            "custom_content": "<div class=\"flex-align-center\">\n{% render 'icon' with 'check', width: 20, height: 20 %}\n<span>Bedingungslos Testen – 90 Tage Geld-Zurück-garantie<\/span>\n<\/div>",
+            "custom_content": "<div class=\"supmikrolp-highlights-check-text flex-align-center\">\n{% render 'icon' with 'check', width: 20, height: 20 %}\n<span>Bedingungslos Testen – 90 Tage Geld-Zurück-garantie<\/span>\n<\/div>",
             "button_text": "Zum Angebot",
             "button_link": "#"
           }
