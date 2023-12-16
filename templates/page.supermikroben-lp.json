@@ -255,6 +255,46 @@
         "background": "rgba(0,0,0,0)",
         "mobile_text_below": false
       }
+    },
+    "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18602995745032__a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c-item-1": {
+          "type": "item",
+          "settings": {
+            "use_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "image": "shopify:\/\/shop_images\/fairment-super-mikroben-anwendung.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Die Besonderheiten von Sporen-basierten Bakterien:",
+            "title_fallback": "",
+            "content": "<p>✅ <strong>Sie überleben die Magensäure<\/strong> sogar ohne Kapsel und kommen dort an wo sie gebraucht werden: in deinem Darm!<\/p><p>✅ <strong>Sie bleiben länger im Darm. <\/strong>Denn statt ihn nur zu durchwandern wie die meisten im Handel erhältlichen Probiotika (sog. transiente Probiotika), siedeln sie sich im Darm an.<\/p><p>✅ <strong>Sie verdrängen schlechte Bakterien & fördern das Wachstum der fehlenden Bakterien.<\/strong> Stell sie dir vor wie Dünger für eine Blumenwiese!<\/p>",
+            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "custom_content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18602995745032__a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c-item-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "nav_slidable_mobile": false,
+        "rounded_corners": false,
+        "accent_background": "#e9e2f1",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -262,6 +302,7 @@
     "64a64ee1-9537-4dc5-a762-3ce6f601c35c",
     "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5",
     "29204d40-ab9f-4e86-9cbb-4cd32713c822",
-    "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f"
+    "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f",
+    "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c"
   ]
 }
