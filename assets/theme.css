@@ -18133,7 +18133,7 @@ display: none !important:
   margin: 0 !important;
 }
 
-.section .supmikrolp-highlights {
+.section.supmikrolp-highlights {
   margin: 0;
   padding: var(--vertical-breather) 0;
   background-color: #fff;
