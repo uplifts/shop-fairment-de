@@ -18167,6 +18167,10 @@ display: none !important:
   padding-top: 16px;
 }
 
+.supmikrolp-reviews .multi-column__inner .multi-column__item {
+  width: 100%;
+}
+
 @media (min-width: 741px) {
   .supmikrolp-reviews .multi-column__inner {
     grid-template-columns: repeat(2, 1fr);
