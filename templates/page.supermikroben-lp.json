@@ -558,13 +558,37 @@
             "title": "Überleben die SuperMikroben® den Weg in den Darm?",
             "answer": "<p>Das Besondere an unserem Premium-Biotika-Komplex ist die natürliche Widerstandsfähigkeit der sporenbasierten Bakterien gegen äußere Einflüsse wie Hitze und Magensäure. Diese Super-Bakterien überleben den Weg in deinen Darm durch ihre Endosporenhülle problemlos, auch ohne Kapsel! Wenn du magst, kannst du unsere Premium-Biotika sogar in warme Getränke oder Speisen einrühren. In herkömmlichen Produkten werden häufig andere Arten von Bakterien eingesetzt, die eine geringe Resistenz gegenüber unserer Magensäure haben und nur selten lebend im Darm ankommen.<\/p>"
           }
+        },
+        "155748bd-5365-4eb9-bd00-3434eadc859c": {
+          "type": "question",
+          "settings": {
+            "title": "Enthalten die SuperMikroben® Zusatzstoffe?p",
+            "answer": "<p>Neben den Super Mikroben enthält die Kapsel wertvolle Ballaststoffe aus der Akazienfaser. Die Kapselhülle besteht aus Pflanzenzellulose. Zusatz- oder Füllstoffe sind nicht enthalten.<\/p>"
+          }
+        },
+        "a9c76158-aae2-48d9-805f-471c940f182f": {
+          "type": "question",
+          "settings": {
+            "title": "Wie sollte ich die SuperMikroben® lagern?",
+            "answer": "<p>Die Super Mikroben müssen nicht gekühlt werden und können verschlossen, trocken und bei Raumtemperatur bis zum Mindesthaltbarkeitsdatum gelagert werden.<\/p>"
+          }
+        },
+        "6f3d4006-6618-4af1-8860-d5308f56002e": {
+          "type": "question",
+          "settings": {
+            "title": "Was sind die genauen Inhaltsstoffe der SuperMikroben®?",
+            "answer": "<p><strong>Pro Tagesdosis (2 Kapseln, 800mg):<\/strong><\/p><p>Bacillus coagulans 9 x 10^8 KbE*<br\/>Bacillus subtilis 1,5 x 10^9 KbE*<br\/>Bacillus clausii 4,5 x 10^8 KbE*<br\/>Akazienfaser 759,56 mg<br\/>Zink 1,5mg (15% NRV)**<\/p><p>Kapselhülle: Pflanzenzellulose<\/p><p><br\/>*Koloniebildende Einheit<br\/>**Prozent Nährstoffbezugswerte (NRV) laut Verordnung (EU) Nr. 1169\/2011<\/p><p>Verzehrmenge: Täglich 2 Kapseln mit ausreichend Flüssigkeit zu einer Mahlzeit einnehmen<\/p>"
+          }
         }
       },
       "block_order": [
         "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-1",
         "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-2",
         "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-3",
-        "010f5143-58b8-42de-82bb-925ce571de27"
+        "010f5143-58b8-42de-82bb-925ce571de27",
+        "155748bd-5365-4eb9-bd00-3434eadc859c",
+        "a9c76158-aae2-48d9-805f-471c940f182f",
+        "6f3d4006-6618-4af1-8860-d5308f56002e"
       ],
       "settings": {
         "show_navigation": false,
