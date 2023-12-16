@@ -18111,6 +18111,7 @@ display: none !important:
 /* START ID - 16.12.23 - Supermikroben LP from Replo */
 .supmikrolp-intro .image-with-text__wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .supmikrolp-intro .image-with-text__image-wrapper {
