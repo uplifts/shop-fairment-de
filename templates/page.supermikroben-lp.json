@@ -172,12 +172,74 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f": {
+      "type": "slideshow",
+      "blocks": {
+        "348732b7-85e2-4412-b3de-0dab763b14f9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Super-Mikroben-gepruft.webp",
+            "stretch_1st_image": false,
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "bottom_line_text": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--18602995745032__7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230509_FAIR_Probiotikum_Listingbilder_02.png",
+            "stretch_1st_image": false,
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "bottom_line_text": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "348732b7-85e2-4412-b3de-0dab763b14f9",
+        "template--18602995745032__7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f-image-1"
+      ],
+      "settings": {
+        "css_class": "",
+        "section_height_mobile": 76,
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "mobile_text_below": false
+      }
     }
   },
   "order": [
     "main",
     "64a64ee1-9537-4dc5-a762-3ce6f601c35c",
     "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5",
-    "29204d40-ab9f-4e86-9cbb-4cd32713c822"
+    "29204d40-ab9f-4e86-9cbb-4cd32713c822",
+    "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f"
   ]
 }
