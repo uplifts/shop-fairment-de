@@ -54,15 +54,16 @@
           "type": "item",
           "settings": {
             "use_video": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "tab_label": "Item",
-            "subheading": "Subheading",
-            "title": "Image with text",
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/Super-Mikroben-von-fairment.webp",
+            "tab_label": "",
+            "subheading": "",
+            "title": "SuperMikroben®",
             "title_fallback": "",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-            "content_fallback": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-            "button_text": "",
-            "button_link": ""
+            "content": "<p><strong>Premium-Biotika (60 Kapseln pro Glas)<\/strong><\/p><ul><li><strong>Reduziert das Völlegefühl<\/strong>, für einen spürbar leichteren Alltag.<\/li><li><strong>Unterstützt die Verdauung<\/strong> von Grund auf und verleiht dir mehr Energie.<\/li><li><strong>Reduziert Blähungen<\/strong> und dadurch auch unangenehme Situationen im Alltag.<\/li><li><strong>Versorgt den Darm <\/strong>mit wertvollen Inhaltsstoffen für einen gesunden und starken Körper.<br\/><\/li><li><strong>Sorgt für mehr Energie<\/strong>, bessere Stimmung und ein rundum besseres Wohlgefühl.<\/li><\/ul>",
+            "content_fallback": "",
+            "button_text": "Zum Angebot",
+            "button_link": "#"
           }
         }
       },
@@ -75,7 +76,7 @@
         "background_type": "full_width",
         "background_overlap": "image",
         "image_position": "left",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "cycle_speed": 8,
         "nav_slidable_mobile": false,
         "rounded_corners": false,
