@@ -509,6 +509,24 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "31d33d52-dbef-463d-9b7e-0b08f0e87401": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "Zum Angebot",
+        "button_link": "#angebot",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -522,6 +540,7 @@
     "a269f138-109b-4cf1-bf7e-7612b036c296",
     "8f600f6c-3542-4ff0-8c6c-f68342a34ef6",
     "acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f",
-    "9abca945-b4f9-4065-868a-d4e03dfeaaad"
+    "9abca945-b4f9-4065-868a-d4e03dfeaaad",
+    "31d33d52-dbef-463d-9b7e-0b08f0e87401"
   ]
 }
