@@ -246,7 +246,7 @@
         "36fd6040-369a-43ce-a4f2-6345b0735113"
       ],
       "settings": {
-        "css_class": "",
+        "css_class": "supmikrolp-gallery",
         "section_height_mobile": 76,
         "section_height": "auto",
         "transition_type": "sweep",
