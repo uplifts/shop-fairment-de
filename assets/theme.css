@@ -18164,7 +18164,13 @@ display: none !important:
 
 .supmikrolp-gallery .slideshow__nav {
   position: static;
-  padding-top: 24px;
+  padding-top: 16px;
+}
+
+@media (min-width: 741px) {
+  .supmikrolp-reviews .multi-column__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 999px) {
