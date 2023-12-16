@@ -18142,6 +18142,10 @@ display: none !important:
   margin-top: 1em;
 }
 
+.supmikrolp-highlights-check-text .icon {
+  color: #2F7D39FF;
+}
+
 @media (max-width: 999px) {
   .supmikrolp-intro .image-with-text {
     padding: 0;
