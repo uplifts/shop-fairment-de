@@ -18152,6 +18152,12 @@ display: none !important:
   color: #2F7D39FF;
 }
 
+.supmikrolp-gallery .slideshow {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 @media (max-width: 999px) {
   .supmikrolp-intro .image-with-text {
     padding: 0;
