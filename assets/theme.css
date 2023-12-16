@@ -18139,6 +18139,7 @@ display: none !important:
 
 .supmikrolp-highlights-check-text {
   gap: 0.5em;
+  margin-top: 1em;
 }
 
 @media (max-width: 999px) {
