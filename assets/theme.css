@@ -18162,6 +18162,11 @@ display: none !important:
   --progress-bar-color: 0, 0, 0;
 }
 
+.supmikrolp-gallery .slideshow__nav {
+  position: static;
+  padding-top: 24px;
+}
+
 @media (max-width: 999px) {
   .supmikrolp-intro .image-with-text {
     padding: 0;
