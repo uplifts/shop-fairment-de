@@ -579,6 +579,20 @@
             "title": "Was sind die genauen Inhaltsstoffe der SuperMikroben®?",
             "answer": "<p><strong>Pro Tagesdosis (2 Kapseln, 800mg):<\/strong><\/p><p>Bacillus coagulans 9 x 10^8 KbE*<br\/>Bacillus subtilis 1,5 x 10^9 KbE*<br\/>Bacillus clausii 4,5 x 10^8 KbE*<br\/>Akazienfaser 759,56 mg<br\/>Zink 1,5mg (15% NRV)**<\/p><p>Kapselhülle: Pflanzenzellulose<\/p><p><br\/>*Koloniebildende Einheit<br\/>**Prozent Nährstoffbezugswerte (NRV) laut Verordnung (EU) Nr. 1169\/2011<\/p><p>Verzehrmenge: Täglich 2 Kapseln mit ausreichend Flüssigkeit zu einer Mahlzeit einnehmen<\/p>"
           }
+        },
+        "8a65b66a-870c-41c3-816b-38fb78a2ddbe": {
+          "type": "question",
+          "settings": {
+            "title": "Schadet ein langer Transport oder Wärme den SuperMikroben®?",
+            "answer": "<p>Unsere SuperMikroben® befinden sich in einer Sporenform, bis sie in deinem Darm ankommen und dort “aufblühen”. Durch diese sind sie sehr robust und überstehen auch hohe Temperaturen. Du kannst sie sogar in heißen Tee oder Kaffee einrühren. 🙂 Ein längerer Transport, auch bei hohen Temperaturen, ist also kein Problem für unsere Mikroben.<\/p>"
+          }
+        },
+        "db41eb58-7ceb-489f-859d-9c6ffb4921ee": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich die SuperMikroben® während des Fastens einnehmen?",
+            "answer": "<p>Glückwunsch zum Fasten! Es ist großartig, dass du dich dazu entschlossen hast, deinem Körper eine Pause zu gönnen. Fasten kann zahlreiche gesundheitliche Vorteile haben, wie zum Beispiel die Reduzierung von Entzündungen im Körper, die Verbesserung von Stoffwechselprozessen, die Unterstützung des Immunsystems, die Senkung des Blutdrucks und des Cholesterinspiegels, sowie die Förderung von körperlicher Regeneration.<\/p><p>Du kannst die SuperMikroben® gerne während des Fastens einnehmen. 🙂 Wir wünschen dir viel Erfolg und ein gutes Bauchgefühl.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -588,7 +602,9 @@
         "010f5143-58b8-42de-82bb-925ce571de27",
         "155748bd-5365-4eb9-bd00-3434eadc859c",
         "a9c76158-aae2-48d9-805f-471c940f182f",
-        "6f3d4006-6618-4af1-8860-d5308f56002e"
+        "6f3d4006-6618-4af1-8860-d5308f56002e",
+        "8a65b66a-870c-41c3-816b-38fb78a2ddbe",
+        "db41eb58-7ceb-489f-859d-9c6ffb4921ee"
       ],
       "settings": {
         "show_navigation": false,
