@@ -152,6 +152,11 @@
                     {%- elsif block.settings.content_fallback != blank -%}
                       {{- block.settings.content_fallback -}}
                     {%- endif -%}
+                    {%- if block.settings.custom_content != blank -%}
+                      <div class="image-with-text__content-custom">
+                        {{ block.settings.custom_content }}
+                      </div>
+                    {%- endif -%}
 
                     {%- if block.settings.button_text != blank -%}
                       <div class="button-wrapper">
