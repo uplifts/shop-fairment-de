@@ -18167,8 +18167,9 @@ display: none !important:
   padding-top: 16px;
 }
 
-.supmikrolp-reviews .multi-column__inner .multi-column__item {
-  width: 100%;
+.supmikrolp-reviews .multi-column__inner .multi-column__item,
+.supmikrolp-reviews .multi-column__inner .multi-column__item .multi-column__image-wrapper {
+  width: 100% !important;
 }
 
 @media (min-width: 741px) {
