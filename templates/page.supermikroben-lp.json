@@ -256,6 +256,17 @@
         "mobile_text_below": false
       }
     },
+    "40b0ae96-721c-433d-9417-390efadc7a9b": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "OFFER WILL BE HERE",
+        "liquid": "",
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c": {
       "type": "image-with-text",
       "blocks": {
@@ -621,6 +632,7 @@
     "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5",
     "29204d40-ab9f-4e86-9cbb-4cd32713c822",
     "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f",
+    "40b0ae96-721c-433d-9417-390efadc7a9b",
     "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c",
     "2513ab37-18a2-4907-98e7-27113d8a6182",
     "a269f138-109b-4cf1-bf7e-7612b036c296",
