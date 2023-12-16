@@ -18133,9 +18133,10 @@ display: none !important:
   margin: 0 !important;
 }
 
-.supmikrolp-highlights {
+.section .supmikrolp-highlights {
   margin: 0;
   padding: var(--vertical-breather) 0;
+  background-color: #fff;
 }
 
 .supmikrolp-highlights .image-with-text__wrapper {
