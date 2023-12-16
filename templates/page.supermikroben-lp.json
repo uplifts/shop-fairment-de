@@ -386,6 +386,129 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "9abca945-b4f9-4065-868a-d4e03dfeaaad": {
+      "type": "multi-column",
+      "blocks": {
+        "ea0ab0b1-c383-48af-8a2f-4aee28726122": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bewertung-61.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "122a304c-c641-4381-9f93-15e4c0eeb6e9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bewertung-1_-_Kopie.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "c2c284ef-00f5-43dc-bb52-0f3ced4f0e08": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bewertung-61.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "7411dc65-a911-4e6c-b90a-d341b987e33f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bewertung-61.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "a4f8c2c3-96dc-4d64-b596-a651071d5019": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bewertung-61.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "8b8d40ba-604b-4e45-81ee-8d602a430bb9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bewertung-61.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "ea0ab0b1-c383-48af-8a2f-4aee28726122",
+        "122a304c-c641-4381-9f93-15e4c0eeb6e9",
+        "c2c284ef-00f5-43dc-bb52-0f3ced4f0e08",
+        "7411dc65-a911-4e6c-b90a-d341b987e33f",
+        "a4f8c2c3-96dc-4d64-b596-a651071d5019",
+        "8b8d40ba-604b-4e45-81ee-8d602a430bb9"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "Subheading",
+        "title": "Multi-column",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "tight",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -398,6 +521,7 @@
     "2513ab37-18a2-4907-98e7-27113d8a6182",
     "a269f138-109b-4cf1-bf7e-7612b036c296",
     "8f600f6c-3542-4ff0-8c6c-f68342a34ef6",
-    "acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f"
+    "acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f",
+    "9abca945-b4f9-4065-868a-d4e03dfeaaad"
   ]
 }
