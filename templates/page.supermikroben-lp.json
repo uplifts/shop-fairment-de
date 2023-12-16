@@ -346,6 +346,24 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "8f600f6c-3542-4ff0-8c6c-f68342a34ef6": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Hohe Verträglichkeit durch ausgeklügelte Inhaltsstoffe",
+        "content": "<p>Gesundheit fängt im Darm an. <strong>Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe.<\/strong><\/p><p>Neben den 3 “Superstar-Bakterien” profitierst du von hochwertigen <strong>Akazienfasern<\/strong>, die als Ballaststoffe die Grundlage für den Aufbau guter Bakterienkulturen bieten.<\/p><p><strong>Zink <\/strong>als wertvolles Spurenelement sorgt zusätzlich für eine normale Funktion deines Immunsystems.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -356,6 +374,7 @@
     "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f",
     "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c",
     "2513ab37-18a2-4907-98e7-27113d8a6182",
-    "a269f138-109b-4cf1-bf7e-7612b036c296"
+    "a269f138-109b-4cf1-bf7e-7612b036c296",
+    "8f600f6c-3542-4ff0-8c6c-f68342a34ef6"
   ]
 }
