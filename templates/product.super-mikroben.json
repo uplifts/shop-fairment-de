@@ -207,7 +207,7 @@
         "show_share_buttons": false,
         "custom_rating_snippet": "<a href=\"#bewertung\"><div class=\"ruk_rating_snippet\" data-sku=\"{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"><\/div><\/a>",
         "help_page": "",
-        "hide_variant_images": false,
+        "hide_variant_images": true,
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
