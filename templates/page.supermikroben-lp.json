@@ -527,6 +527,52 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "57c9814e-ca1d-495e-9a99-9f2f9fdc47a3": {
+      "type": "faq",
+      "blocks": {
+        "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wie soll ich die SuperMikroben® einnehmen?",
+            "answer": "<p>Nimm täglich zwei Kapseln zu einer Mahlzeit mit ausreichend Flüssigkeit zu dir. Alternativ kannst du den Inhalt der Kapsel auch in kalte oder warme Speisen und Getränke einrühren. Du kannst deine Kapseln selbstverständlich auch auf zwei Mahlzeiten aufteilen. So wie es für dich am besten ist.<\/p><p>Der Großteil unserer Kund:innen nimmt die Kapseln morgens zum Frühstück ein. 🙂<\/p><p>Nach Wunsch kannst du unsere SuperMikroben® auch mit Fermenten, Probiotika oder Nahrungsergänzungsmitteln kombinieren, um verschiedene Strategien der Darmbesiedlung zu vereinen.<\/p>"
+          }
+        },
+        "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange sollte ich die SuperMikroben® einnehmen?",
+            "answer": "<p>Um spürbare Effekte für dein Wohlbefinden zu erfahren, empfehlen wir die Einnahme von unseren Super Mikroben für mindestens 1 bis 3 Monate. Wie lange du unsere Super Mikroben genau nehmen solltest, hängt vom Zustand deines Darms, deinem Alter und deinem Lebensstil ab. Im Allgemeinen empfehlen wir eine regelmäßige Einnahme von täglich 2 Kapseln. Die Mikroben können präventiv als täglicher Alltagsbegleiter oder als Intensiv-Kur verwendet werden.*<\/p><p><em>*Nahrungsergänzungsmittel. Die angegebene Verzehrmenge darf nicht überschritten werden. Kein Ersatz für eine ausgewogene und abwechslungsreiche Ernährung und eine gesunde Lebensweise. Die Verwendung während der Schwangerschaft, Stillzeit und für Kinder muss vorher mit einem Arzt abgesprochen werden. Lagerung in einem fest verschlossenen Gefäß. Das Produkt kann kühl oder bei Raumtemperatur gelagert werden. In einer geschlossenen Verpackung und außerhalb der Reichweite von Kindern aufbewahren.<\/em><\/p>"
+          }
+        },
+        "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich die SuperMikroben® auf nüchternen Magen einnehmen?",
+            "answer": "<p>Einige Experten empfehlen die Einnahme von Mikroben vor dem Frühstück oder auf nüchternen Magen, da so der pH-Wert des Magens höher ist und mehr Mikroben im Darm ankommen. Da die SuperMikroben® aber von einer Endosporenhülle umgeben sind, können sie die Magensäure überleben. Du kannst die Mikroben also sowohl zu einer Mahlzeit als auch nüchtern einnehmen. So wie es am besten für dich ist. 🙂<\/p><p>Die Einnahme zu einer Mahlzeit bietet unmittelbare Kohlenstoffquellen für die Mikroben, sodass sie sofort im Darm in Aktion treten können. Außerdem helfen die Mikroben bei der Verdauung der Nahrung, sodass Nährstoffe aus deiner Mahlzeit gewonnen werden können.<\/p>"
+          }
+        },
+        "010f5143-58b8-42de-82bb-925ce571de27": {
+          "type": "question",
+          "settings": {
+            "title": "Überleben die SuperMikroben® den Weg in den Darm?",
+            "answer": "<p>Das Besondere an unserem Premium-Biotika-Komplex ist die natürliche Widerstandsfähigkeit der sporenbasierten Bakterien gegen äußere Einflüsse wie Hitze und Magensäure. Diese Super-Bakterien überleben den Weg in deinen Darm durch ihre Endosporenhülle problemlos, auch ohne Kapsel! Wenn du magst, kannst du unsere Premium-Biotika sogar in warme Getränke oder Speisen einrühren. In herkömmlichen Produkten werden häufig andere Arten von Bakterien eingesetzt, die eine geringe Resistenz gegenüber unserer Magensäure haben und nur selten lebend im Darm ankommen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-1",
+        "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-2",
+        "template--18602995745032__57c9814e-ca1d-495e-9a99-9f2f9fdc47a3-question-3",
+        "010f5143-58b8-42de-82bb-925ce571de27"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Die häufigsten Fragen",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -541,6 +587,7 @@
     "8f600f6c-3542-4ff0-8c6c-f68342a34ef6",
     "acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f",
     "9abca945-b4f9-4065-868a-d4e03dfeaaad",
-    "31d33d52-dbef-463d-9b7e-0b08f0e87401"
+    "31d33d52-dbef-463d-9b7e-0b08f0e87401",
+    "57c9814e-ca1d-495e-9a99-9f2f9fdc47a3"
   ]
 }
