@@ -217,11 +217,33 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "36fd6040-369a-43ce-a4f2-6345b0735113": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Super-Mikroben-fairment-Inhaltsstoffe_4a50615c-b819-483e-85b9-5e042db417f4.jpg",
+            "stretch_1st_image": false,
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "bottom_line_text": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
         "348732b7-85e2-4412-b3de-0dab763b14f9",
-        "template--18602995745032__7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f-image-1"
+        "template--18602995745032__7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f-image-1",
+        "36fd6040-369a-43ce-a4f2-6345b0735113"
       ],
       "settings": {
         "css_class": "",
