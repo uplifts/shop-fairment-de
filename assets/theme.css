@@ -18113,6 +18113,7 @@ display: none !important:
   padding: 20px 0;
   display: flex;
   justify-content: center;
+  gap: 16px;
 }
 
 .supmikrolp-intro .image-with-text__image-wrapper {
