@@ -87,11 +87,97 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "29204d40-ab9f-4e86-9cbb-4cd32713c822": {
+      "type": "multi-column",
+      "blocks": {
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-1": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Sporenbasierte Bakterienkulturen",
+            "content": "<p>Resistent bei Magensäure.<br\/>Überleben den Weg in den Darm.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "100% natürliche Inhaltsstoffe",
+            "content": "<p>Ohne fragwürdige Zusatzstoffe.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-3": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Mit Expert:innen entwickelt",
+            "content": "<p>Hergestellt und laborgeprüft in Deutschland.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        },
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-4": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Hohe Verträglichkeit",
+            "content": "<p>Auch bei Histamin- und Fructose-Intoleranz.<\/p>",
+            "liquid_text": "",
+            "liquid_text_fallback": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-1",
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-2",
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-3",
+        "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-4"
+      ],
+      "settings": {
+        "css_class": "",
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "",
+        "title": "Höchste Qualitäts-Standards in der Produktentwicklung",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "main",
     "64a64ee1-9537-4dc5-a762-3ce6f601c35c",
-    "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5"
+    "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5",
+    "29204d40-ab9f-4e86-9cbb-4cd32713c822"
   ]
 }
