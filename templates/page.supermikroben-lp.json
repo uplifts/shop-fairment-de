@@ -364,6 +364,28 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f": {
+      "type": "faq",
+      "blocks": {
+        "template--18602995745032__acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Detaillierte Inhaltsstoffe",
+            "answer": "<p><strong>Pro Tagesdosis (2 Kapseln, 800mg):<\/strong><\/p><p>Bacillus coagulans 9 x 10^8 KbE*<br\/>Bacillus subtilis 1,5 x 10^9 KbE*<br\/>Bacillus clausii 4,5 x 10^8 KbE*<br\/>Akazienfaser 759,56 mg<br\/>Zink 1,5mg (15% NRV)**<\/p><p>Kapselhülle: Pflanzenzellulose<\/p><p>*Koloniebildende Einheit<br\/>**Prozent Nährstoffbezugswerte (NRV) laut Verordnung (EU) Nr. 1169\/2011<br\/>Verzehrmenge: Täglich 2 Kapseln mit ausreichend Flüssigkeit zu einer Mahlzeit einnehmen<br\/><br\/><em>Wichtig:<br\/>Nahrungsergänzungsmittel. Die angegebene Verzehrmenge darf nicht überschritten werden. Kein Ersatz für eine ausgewogene und abwechslungsreiche Ernährung und eine gesunde Lebensweise. Die Verwendung während der Schwangerschaft, Stillzeit und für Kinder muss vorher mit einem Arzt abgesprochen werden. Lagerung in einem fest verschlossenen Gefäß. Das Produkt kann kühl oder bei Raumtemperatur gelagert werden. In einer geschlossenen Verpackung und außerhalb der Reichweite von Kindern aufbewahren.<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18602995745032__acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f-question-1"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -375,6 +397,7 @@
     "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c",
     "2513ab37-18a2-4907-98e7-27113d8a6182",
     "a269f138-109b-4cf1-bf7e-7612b036c296",
-    "8f600f6c-3542-4ff0-8c6c-f68342a34ef6"
+    "8f600f6c-3542-4ff0-8c6c-f68342a34ef6",
+    "acf7fd0f-a1e5-4e27-a8e0-6d33a1ae6a2f"
   ]
 }
