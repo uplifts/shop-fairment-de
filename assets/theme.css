@@ -18173,6 +18173,12 @@ display: none !important:
   }
 }
 
+@media (min-width: 1200px) {
+  .supmikrolp-reviews .multi-column__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 999px) {
   .supmikrolp-intro .image-with-text {
     padding: 0;
