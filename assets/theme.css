@@ -18236,8 +18236,8 @@ display: none !important:
 }
 
 .promo-offers--btn {
-  --button-background: var(--button-background);
-  --button-text-color: var(--button-text-color);
+  --primary-button-background: var(--button-background);
+  --primary-button-text-color: var(--button-text-color);
 }
 
 .promo-offers--item-info,
