@@ -18255,16 +18255,21 @@ display: none !important:
   .promo-offers--row {
     display: grid;
     gap: var(--gap);
+    grid-template-columns: 1fr 3fr;
   }
 
-  .promo-offers--row {
-    grid-template-columns: 1fr 3fr;
+  .promo-offers--item {
+    --inner-gap: 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .supmikrolp-reviews .multi-column__inner {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .promo-offers--item {
+    --inner-gap: 20px;
   }
 }
 
