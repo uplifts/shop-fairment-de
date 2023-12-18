@@ -8687,6 +8687,7 @@ font-size: 12px;
 
 .cart__checkout-button:not(:only-child) {
   margin-top: 24px;
+  padding-bottom: 5px; 
 }
 
 .cart__payment-methods {
