@@ -37,6 +37,8 @@
             {%- if section.settings.logo != blank -%}
               <img class="promo-offers--logo" loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}">
             {%- endif -%}
+
+
           </div>
 
           <div class="promo-offers--blocks">
@@ -165,8 +167,8 @@
         },
         {
           "type": "image_picker",
-          "id": "logo",
-          "label": "Logo"
+          "id": "image",
+          "label": "Image"
         },
         {
           "type": "header",
