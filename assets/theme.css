@@ -18189,6 +18189,7 @@ display: none !important:
   display: grid;
   grid: auto / auto-flow 75%;
   gap: var(--gap);
+  padding: 1px 0;
 }
 
 .promo-offers--item {
