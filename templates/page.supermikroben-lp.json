@@ -12,11 +12,11 @@
       "type": "custom-liquid",
       "settings": {
         "subheading": "",
-        "title": "",
-        "liquid": "<span class=\"banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\"><\/span>",
+        "title": "Für unsere liebsten Kunden noch verfügbar:",
+        "liquid": "<span class=\"h3 banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\"><\/span>",
         "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
+        "background": "#e9e2f1",
+        "text_color": "#00148c"
       }
     },
     "64a64ee1-9537-4dc5-a762-3ce6f601c35c": {
