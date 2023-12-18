@@ -18197,6 +18197,7 @@ display: none !important:
   gap: 12px;
 	grid-template-rows: subgrid;
   outline: 1px solid currentColor;
+  border: 2px solid transparent;
 }
 
 @media (min-width: 500px) {
