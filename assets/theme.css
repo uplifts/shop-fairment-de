@@ -18193,7 +18193,8 @@ display: none !important:
 
 .promo-offers--item {
   display: grid;
-	grid-row: span 4;
+	grid-row: span 5;
+  gap: 12px;
 	grid-template-rows: subgrid;
 }
 
