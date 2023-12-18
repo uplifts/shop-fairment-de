@@ -87,9 +87,12 @@
                     </div>
 
                     <div class="promo-offers--item-media">
-                      {%- if block.settings.text_line_3 != blank -%}
-                        <img src="" alt="" class="promo-offers--item-image">
-                        {{- block.settings.sub_text -}}
+                      {%- if block.settings.image != blank -%}
+                        <img
+                          src="{{- block.settings.image | img_url: 'master' -}}"
+                          alt="{{- block.settings.image.alt -}}"
+                          loading="lazy"
+                          class="promo-offers--item-image">
                       {%- endif -%}
                     </div>
 
