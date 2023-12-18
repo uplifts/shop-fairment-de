@@ -18243,6 +18243,11 @@ display: none !important:
   object-fit: contain;
 }
 
+.promo-offers--item-subtext {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .promo-offers--item-info,
 .promo-offers--cta,
 .promo-offers--footer {
