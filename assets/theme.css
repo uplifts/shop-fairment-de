@@ -18245,7 +18245,8 @@ display: none !important:
   padding-bottom: var(--inner-gap);
 }
 
-.promo-offers--item-text {
+.promo-offers--item-text,
+.promo-offers--footer {
   font-size: 15px;
 }
 
