@@ -18263,6 +18263,11 @@ display: none !important:
   font-size: 15px;
 }
 
+..promo-offers--cta,
+.promo-offers--footer {
+  text-align: center;
+}
+
 @media (min-width: 500px) {
   .promo-offers--columns {
     grid: auto / auto-flow 45%;
