@@ -18202,6 +18202,7 @@ display: none !important:
 
 .promo-offers--item.is-featured {
   border-color: rgb(var(--button-background));
+  outline: none;
 }
 
 @media (min-width: 500px) {
