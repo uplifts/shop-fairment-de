@@ -18177,7 +18177,8 @@ display: none !important:
 }
 
 .promo-offers--row {
-  
+  display: grid;
+  gap: 16px;
 }
 
 @media (min-width: 741px) {
