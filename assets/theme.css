@@ -18205,6 +18205,13 @@ display: none !important:
   outline: none;
 }
 
+.promo-offers--item-caption {
+  height: 100%;
+  background-color: transparent;
+  padding: 6px;
+  text-align: center;
+}
+
 @media (min-width: 500px) {
   .promo-offers--columns {
     grid: auto / auto-flow 45%;
