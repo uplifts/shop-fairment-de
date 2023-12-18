@@ -18184,6 +18184,11 @@ display: none !important:
   max-height: 40px;
 }
 
+.promo-offers--content {
+  display: grid;
+  gap: var(--gap);
+}
+
 .promo-offers--row {
   display: grid;
   gap: var(--gap);
