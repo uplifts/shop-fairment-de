@@ -279,11 +279,11 @@
             "text": "<u>31,41€<\/u> pro Stück",
             "sub_text": "Gesamt: 31,41€ <del>34,90€<\/del><br>\n(3,49€ geschenkt)",
             "image": "shopify:\/\/shop_images\/Super-Mikroben-10-Prozent-Rabatt.jpg",
-            "button_text": "",
+            "button_text": "Jetzt bestellen",
             "button_link": "",
-            "button_background": "rgba(0,0,0,0)",
-            "button_text_color": "rgba(0,0,0,0)",
-            "bottom_text": ""
+            "button_background": "#6b818c",
+            "button_text_color": "#ffffff",
+            "bottom_text": "90-Tage-Geld-Zurück-Garantie"
           }
         },
         "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-2": {
@@ -293,13 +293,13 @@
             "caption": "Am beliebtesten",
             "title": "3-Monats-Vorrat",
             "text": "<u>Nur 29,67€<\/u> pro Stück",
-            "sub_text": "",
+            "sub_text": "Gesamt: Nur 89,00€ <del>104,70€<\/del><br>\n(15,70€ geschenkt)",
             "image": "shopify:\/\/shop_images\/15-Rabatt.jpg",
-            "button_text": "",
+            "button_text": "Jetzt bestellen",
             "button_link": "",
-            "button_background": "rgba(0,0,0,0)",
-            "button_text_color": "rgba(0,0,0,0)",
-            "bottom_text": ""
+            "button_background": "#f17217",
+            "button_text_color": "#ffffff",
+            "bottom_text": "Gratis Versand innerhalb Deutschlands\n90-Tage-Geld-Zurück-Garantie"
           }
         },
         "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-3": {
@@ -309,13 +309,13 @@
             "caption": "Beste Preis-Leistung",
             "title": "6-Monats-Vorrat",
             "text": "<u>Nur 27,92€<\/u> pro Stück",
-            "sub_text": "",
+            "sub_text": "Gesamt: Nur 167,52€ <del>209,40€<\/del><br>\n(41,88€ geschenkt)",
             "image": "shopify:\/\/shop_images\/Super-Mikroben-20-Prozent-Rabatt.jpg",
-            "button_text": "",
+            "button_text": "Jetzt bestellen",
             "button_link": "",
-            "button_background": "rgba(0,0,0,0)",
-            "button_text_color": "rgba(0,0,0,0)",
-            "bottom_text": ""
+            "button_background": "#f17217",
+            "button_text_color": "#ffffff",
+            "bottom_text": "Gratis Versand innerhalb Deutschlands\n90-Tage-Geld-Zurück-Garantie"
           }
         }
       },
