@@ -8,6 +8,17 @@
         "page_width": "medium"
       }
     },
+    "d91003e4-901b-4c3a-b7cd-e83d9baf40db": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<span class=\"banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\"><\\\/span>",
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "64a64ee1-9537-4dc5-a762-3ce6f601c35c": {
       "type": "image-with-text",
       "blocks": {
@@ -628,6 +639,7 @@
   },
   "order": [
     "main",
+    "d91003e4-901b-4c3a-b7cd-e83d9baf40db",
     "64a64ee1-9537-4dc5-a762-3ce6f601c35c",
     "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5",
     "29204d40-ab9f-4e86-9cbb-4cd32713c822",
