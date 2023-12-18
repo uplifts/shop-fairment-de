@@ -18185,7 +18185,8 @@ display: none !important:
 }
 
 .promo-offers--content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--gap);
 }
 
