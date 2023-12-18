@@ -1,0 +1,46 @@
+<div id="countdown-template" hidden>
+  <div class="countdown-wrapper countdownTemplate">
+    <span class="countdown-cell timer-number tDays">00</span>
+    <span class="countdown-cell mod-sep">:</span>
+    <span class="countdown-cell timer-number tHours">00</span>
+    <span class="countdown-cell mod-sep">:</span>
+    <span class="countdown-cell timer-number tMinutes">00</span>
+    <span class="countdown-cell mod-sep">:</span>
+    <span class="countdown-cell timer-number tSeconds">00</span>
+  </div>
+</div>
+<script>
+  function addZeroToOutput(num) {
+    let output = num < 10 ? '0' + num : num;
+    return output;
+  }
+  let countdownTimers = document.querySelectorAll('.countTimer');
+  countdownTimers && countdownTimers.forEach(function(timer) {
+    let countdownTemplate = document.querySelector('#countdown-template .countdownTemplate');
+    timer.appendChild(countdownTemplate.cloneNode(true));
+    let daysEl = timer.querySelector('.tDays');
+    let hoursEl = timer.querySelector('.tHours');
+    let minutesEl = timer.querySelector('.tMinutes');
+    let secondsEl = timer.querySelector('.tSeconds');
+    let deadlineDate = new Date(timer.dataset.date);
+
+    let second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    let countDown = new Date(deadlineDate).getTime(),
+      x = setInterval(function() {
+        let now = new Date().getTime(),
+          distance = countDown - now;
+        daysEl.innerText = addZeroToOutput(Math.floor(distance / (day))),
+        hoursEl.innerText = addZeroToOutput(Math.floor((distance % (day)) / (hour))),
+        minutesEl.innerText = addZeroToOutput(Math.floor((distance % (hour)) / (minute))),
+        secondsEl.innerText = addZeroToOutput(Math.floor((distance % (minute)) / second));
+        if (distance < 0) {
+          countdownTimers.parentNode.removeChild(countdownTimers);
+          clearInterval(x);
+        }
+      }, 1000);
+  });
+</script>
