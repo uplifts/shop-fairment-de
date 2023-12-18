@@ -35,19 +35,7 @@
         <div class="promo-offers--row">
           <div class="promo-offers--content">
             {%- if section.settings.image != blank -%}
-              <img class="{% if section.settings.mobile_image != blank %}hidden-pocket{% endif %}" loading="lazy" sizes="(max-width: 999px) 100vw, {% if section.settings.layout_type == 'boxed' %}min(1520px, 100vw){% else %}100vw{% endif %}" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200' %}>
-        
-              {%- if section.settings.mobile_image != blank -%}
-                <img class="hidden-lap-and-up" loading="lazy" sizes="100vw" {% render 'image-attributes', image: section.settings.mobile_image, sizes: '600' %}>
-              {%- endif -%}
-            {%- else -%}
-              {%- capture image_classes -%}placeholder-background{%- endcapture -%}
-        
-              {%- if section.settings.reveal_on_scroll -%}
-                {{- 'lifestyle-1' | placeholder_svg_tag: image_classes | replace: '<svg', '<svg reveal' -}}
-              {%- else -%}
-                {{- 'lifestyle-1' | placeholder_svg_tag: image_classes -}}
-              {%- endif -%}
+              <img loading="lazy" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200' %}>
             {%- endif -%}
           </div>
 
