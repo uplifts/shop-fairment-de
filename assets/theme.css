@@ -18201,6 +18201,15 @@ display: none !important:
   .promo-offers {
     --gap: 20px;
   }
+
+  .promo-offers--row {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .promo-offers--row {
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 @media (min-width: 1200px) {
