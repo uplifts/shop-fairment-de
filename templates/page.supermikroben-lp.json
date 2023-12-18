@@ -13,7 +13,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "liquid": "<span class=\"banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\"><\\\/span>",
+        "liquid": "<span class=\"banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\">00:00:00:00<\/span>",
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
