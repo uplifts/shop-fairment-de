@@ -381,7 +381,7 @@
         "text_width": "large",
         "text_position": "center",
         "text_alignment": "center",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -405,7 +405,7 @@
         "show_navigation": false,
         "title": "",
         "content": "",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
     },
@@ -528,7 +528,7 @@
         "mobile_item_size": "medium",
         "desktop_item_size": "medium",
         "spacing": "tight",
-        "background": "rgba(0,0,0,0)",
+        "background": "#f9f9f9",
         "text_color": "rgba(0,0,0,0)"
       }
     },
@@ -632,7 +632,7 @@
         "show_navigation": false,
         "title": "Die häufigsten Fragen",
         "content": "",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
     }
