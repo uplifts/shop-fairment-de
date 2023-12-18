@@ -18235,6 +18235,11 @@ display: none !important:
   object-fit: contain;
 }
 
+.promo-offers--btn {
+  --button-background: var(--button-background);
+  --button-text-color: var(--button-text-color);
+}
+
 .promo-offers--item-info,
 .promo-offers--cta,
 .promo-offers--footer {
