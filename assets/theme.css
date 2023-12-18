@@ -18201,6 +18201,10 @@ display: none !important:
   .supmikrolp-reviews .multi-column__inner {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .promo-offers--columns {
+    grid: auto / repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1000px) {
