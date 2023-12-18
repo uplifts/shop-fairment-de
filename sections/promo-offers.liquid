@@ -35,73 +35,48 @@
         <div class="promo-offers--row">
           <div class="promo-offers--content">
             {%- if section.settings.logo != blank -%}
-              <img loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}">
+              <img class="promo-offers--logo" loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}">
             {%- endif -%}
           </div>
 
           <div class="promo-offers--blocks">
-            <div class="promo-offers--content content-box--text-{{ section.settings.text_alignment}} text-container">
-              {%- if section.settings.subheading != blank -%}
-                <h2 class="promo-offers--subheading heading text--small">
-                  {{ section.settings.subheading }}
-                  {%- if section.settings.subheading_stars != blank -%}
-                    <img class="promo-offers--subheading-stars" src="{{ section.settings.subheading_stars | img_url: 'master' }}" alt="Rating stars">
-                  {%- endif -%}
-                </h2>
-              {%- endif -%}
-
-              {%- if section.settings.title != blank -%}
-                <h3 class="promo-offers--heading heading h3">
-                  {{ section.settings.title }}
-                </h3>
-              {%- endif -%}
-
-              {%- if section.settings.content != blank -%}
-                <div class="promo-offers--text">
-                  {{- section.settings.content -}}
-                </div>
-              {%- endif -%}
-
-              {%- if section.blocks.size > 0 -%}
-                <div class="promo-offers--columns">
-                  {%- for block in section.blocks -%}
-                    {%- if block.type == 'column' -%}
-                      {%- assign button_background = block.settings.button_background -%}
-                      {%- assign button_text_color = block.settings.button_text_color -%}
-                      <div
-                        class="promo-offers--column" id="block-id--{{ block.id }}"
-                        style="--primary-button-background: {{ button_background.red }}, {{ button_background.green }}, {{ button_background.blue }};
-                        --primary-button-text-color: {{ button_text_color.red }}, {{ button_text_color.green }}, {{ button_text_color.blue }};">
-                        {%- if block.settings.text_line_1 != blank -%}
-                          <div class="promo-offers--line1">
-                            {{- block.settings.text_line_1 -}}
-                          </div>
-                        {%- endif -%}
-                        {%- if block.settings.text_line_2 != blank -%}
-                          <div class="promo-offers--line2">
-                            {{- block.settings.text_line_2 -}}
-                          </div>
-                        {%- endif -%}
-                        {%- if block.settings.text_line_3 != blank -%}
-                          <div class="promo-offers--line3">
-                            {{- block.settings.text_line_3 -}}
-                          </div>
-                        {%- endif -%}
-
-                        {%- if block.settings.button_text != blank -%}
-                          <div class="promo-offers--cta">
-                            <a href="{{ block.settings.button_link }}"
-                              class="button button--primary promo-offers--btn">
-                              {{ block.settings.button_text }}
-                            </a>
-                          </div>
-                        {%- endif -%}
+            {%- if section.blocks.size > 0 -%}
+              <div class="promo-offers--columns">
+                {%- for block in section.blocks -%}
+                  {%- assign button_background = block.settings.button_background -%}
+                  {%- assign button_text_color = block.settings.button_text_color -%}
+                  <div
+                    class="promo-offers--column" id="block-id--{{ block.id }}"
+                    style="--primary-button-background: {{ button_background.red }}, {{ button_background.green }}, {{ button_background.blue }};
+                    --primary-button-text-color: {{ button_text_color.red }}, {{ button_text_color.green }}, {{ button_text_color.blue }};">
+                    {%- if block.settings.text_line_1 != blank -%}
+                      <div class="promo-offers--line1">
+                        {{- block.settings.text_line_1 -}}
                       </div>
                     {%- endif -%}
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
-            </div>
+                    {%- if block.settings.text_line_2 != blank -%}
+                      <div class="promo-offers--line2">
+                        {{- block.settings.text_line_2 -}}
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.text_line_3 != blank -%}
+                      <div class="promo-offers--line3">
+                        {{- block.settings.text_line_3 -}}
+                      </div>
+                    {%- endif -%}
+
+                    {%- if block.settings.button_text != blank -%}
+                      <div class="promo-offers--cta">
+                        <a href="{{ block.settings.button_link }}"
+                          class="button button--primary promo-offers--btn">
+                          {{ block.settings.button_text }}
+                        </a>
+                      </div>
+                    {%- endif -%}
+                  </div>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
           </div>
         </div>
       </div>
