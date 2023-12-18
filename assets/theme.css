@@ -18180,6 +18180,10 @@ display: none !important:
   --gap: 16px;
 }
 
+.promo-offers--logo {
+  max-height: 40px;
+}
+
 .promo-offers--row {
   display: grid;
   gap: var(--gap);
