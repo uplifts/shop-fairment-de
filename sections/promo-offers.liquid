@@ -34,8 +34,8 @@
       <div class="promo-offers">
         <div class="promo-offers--row">
           <div class="promo-offers--content">
-            {%- if section.settings.image != blank -%}
-              <img loading="lazy" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200' %}>
+            {%- if section.settings.logo != blank -%}
+              <img loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}">
             {%- endif -%}
           </div>
 
