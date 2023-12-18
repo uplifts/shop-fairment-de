@@ -235,60 +235,6 @@
         "logo_background": "rgba(0,0,0,0)"
       }
     },
-    "936e9df5-c065-4217-830a-f486006c10e2": {
-      "type": "logo-list",
-      "blocks": {
-        "782e9dd2-36ed-4c00-9245-7e85f8a3d83f": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/schrot_korn.png",
-            "link": ""
-          }
-        },
-        "fffc9f1f-bc7f-4c88-b712-65cbe37bb517": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/zeit.png",
-            "link": ""
-          }
-        },
-        "08ac36e0-d1c2-4bf0-90e9-47182a3c960b": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/welt.png",
-            "link": ""
-          }
-        },
-        "77b0d1a7-efce-4383-b5a2-2167d72ed7db": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/feinschmecker.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "782e9dd2-36ed-4c00-9245-7e85f8a3d83f",
-        "fffc9f1f-bc7f-4c88-b712-65cbe37bb517",
-        "08ac36e0-d1c2-4bf0-90e9-47182a3c960b",
-        "77b0d1a7-efce-4383-b5a2-2167d72ed7db"
-      ],
-      "disabled": true,
-      "settings": {
-        "items_per_row_mobile": 2,
-        "reveal_on_scroll": true,
-        "subheading": "",
-        "title": "",
-        "button_text": "",
-        "button_link": "",
-        "stack_logos": true,
-        "background": "#ffffff",
-        "text_color": "#aeaeae",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)",
-        "logo_background": "rgba(0,0,0,0)"
-      }
-    },
     "4a80a714-acd8-47a6-820a-7d1960de026e": {
       "type": "featured-collections",
       "blocks": {
@@ -1093,7 +1039,6 @@
     "slideshow",
     "82704227-2192-4d20-8d6b-cb16b1e470e4",
     "1642984483bc62f870",
-    "936e9df5-c065-4217-830a-f486006c10e2",
     "4a80a714-acd8-47a6-820a-7d1960de026e",
     "1662632521a358d2df",
     "612bcc53-c717-4f5f-819e-50a286164fc2",
