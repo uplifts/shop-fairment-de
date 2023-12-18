@@ -18193,9 +18193,10 @@ display: none !important:
 }
 
 .promo-offers--item {
+  --inner-gap: 12px;
   display: grid;
 	grid-row: span 5;
-  gap: 12px;
+  gap: var(--inner-gap);
 	grid-template-rows: subgrid;
   outline: 1px solid currentColor;
   border: 3px solid transparent;
