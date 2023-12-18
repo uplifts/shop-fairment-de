@@ -18232,6 +18232,12 @@ display: none !important:
   color: rgb(var(--button-text-color));
 }
 
+.promo-offers--item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
 .promo-offers--item-image {
   aspect-ratio: 1;
   object-fit: contain;
