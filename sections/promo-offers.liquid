@@ -69,20 +69,27 @@
                       {%- endif -%}
                     </div>
                     <div class="promo-offers--item-info">
-                      {%- if block.settings.text_line_2 != blank -%}
+                      {%- if block.settings.title != blank -%}
                         <div class="promo-offers--item-title">
                           {{- block.settings.title -}}
                         </div>
                       {%- endif -%}
-                      {%- if block.settings.text_line_3 != blank -%}
+                      {%- if block.settings.text != blank -%}
                         <div class="promo-offers--item-text">
                           {{- block.settings.text -}}
                         </div>
                       {%- endif -%}
-                      {%- if block.settings.text_line_3 != blank -%}
+                      {%- if block.settings.sub_text != blank -%}
                         <div class="promo-offers--item-subtext">
                           {{- block.settings.sub_text -}}
                         </div>
+                      {%- endif -%}
+                    </div>
+
+                    <div class="promo-offers--item-media">
+                      {%- if block.settings.text_line_3 != blank -%}
+                        <img src="" alt="" class="promo-offers--item-image">
+                        {{- block.settings.sub_text -}}
                       {%- endif -%}
                     </div>
 
