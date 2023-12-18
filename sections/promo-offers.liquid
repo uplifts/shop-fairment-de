@@ -43,6 +43,12 @@
                 {{ section.settings.title }}
               </div>
             {%- endif -%}
+
+            {%- if section.settings.content != blank -%}
+              <div class="promo-offers--content-content">
+                {{ section.settings.content }}
+              </div>
+            {%- endif -%}
           </div>
 
           <div class="promo-offers--blocks">
