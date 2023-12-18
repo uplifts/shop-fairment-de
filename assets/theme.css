@@ -18240,8 +18240,13 @@ display: none !important:
 .promo-offers--footer {
   padding: 0 var(--inner-gap);
 }
+
 .promo-offers--footer {
   padding-bottom: var(--inner-gap);
+}
+
+.promo-offers--item-text {
+  font-size: 15px;
 }
 
 @media (min-width: 500px) {
