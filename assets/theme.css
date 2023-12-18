@@ -18172,6 +18172,20 @@ display: none !important:
   width: 100% !important;
 }
 
+.countdown-cell {
+  line-height: 1;
+}
+
+.timer-number {
+  font-size: 1em;
+  line-height: 1;
+}
+
+.timer-caption {
+  font-size: 0.35em;
+  line-height: 1;
+}
+
 @media (min-width: 741px) {
   .supmikrolp-reviews .multi-column__inner {
     grid-template-columns: repeat(2, 1fr);
