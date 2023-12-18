@@ -62,9 +62,9 @@
   style="--bg-color: {{ section.settings.background_color_section | default: 'transparent' }}"
   class="sec--promo-offers section {% unless is_boxed %}section--flush{% endunless %}{% if section.settings.background_color_section != blank %} section--inverse{% endif %} {{ section.settings.css_class }}{% if section.settings.is_inactive != blank %} is-inactive{% endif %}">
   <div {% if is_boxed %}class="container"{% endif %}>
-    <div class="sale-promo-banner-2" style="--bg-color: {{ section.settings.image_bg_color | default: 'transparent' }}">
-      <div class="sale-promo-banner-2--row">
-        <div class="sale-promo-banner-2--image">
+    <div class="promo-offers" style="--bg-color: {{ section.settings.image_bg_color | default: 'transparent' }}">
+      <div class="promo-offers--row">
+        <div class="promo-offers--image">
           {%- if section.settings.image != blank -%}
             <img class="{% if section.settings.mobile_image != blank %}hidden-pocket{% endif %}" loading="lazy" sizes="(max-width: 999px) 100vw, {% if section.settings.layout_type == 'boxed' %}min(1520px, 100vw){% else %}100vw{% endif %}" {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200' %}>
       
@@ -82,59 +82,59 @@
           {%- endif -%}
         </div>
 
-        <div class="sale-promo-banner-2--main">
-          <div class="sale-promo-banner-2--content content-box--text-{{ section.settings.text_alignment}} text-container">
+        <div class="promo-offers--main">
+          <div class="promo-offers--content content-box--text-{{ section.settings.text_alignment}} text-container">
             {%- if section.settings.subheading != blank -%}
-              <h2 class="sale-promo-banner-2--subheading heading text--small">
+              <h2 class="promo-offers--subheading heading text--small">
                 {{ section.settings.subheading }}
                 {%- if section.settings.subheading_stars != blank -%}
-                  <img class="sale-promo-banner-2--subheading-stars" src="{{ section.settings.subheading_stars | img_url: 'master' }}" alt="Rating stars">
+                  <img class="promo-offers--subheading-stars" src="{{ section.settings.subheading_stars | img_url: 'master' }}" alt="Rating stars">
                 {%- endif -%}
               </h2>
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
-              <h3 class="sale-promo-banner-2--heading heading h3">
+              <h3 class="promo-offers--heading heading h3">
                 {{ section.settings.title }}
               </h3>
             {%- endif -%}
 
             {%- if section.settings.content != blank -%}
-              <div class="sale-promo-banner-2--text">
+              <div class="promo-offers--text">
                 {{- section.settings.content -}}
               </div>
             {%- endif -%}
 
             {%- if section.blocks.size > 0 -%}
-              <div class="sale-promo-banner-2--columns">
+              <div class="promo-offers--columns">
                 {%- for block in section.blocks -%}
                   {%- if block.type == 'column' -%}
                     {%- assign button_background = block.settings.button_background -%}
                     {%- assign button_text_color = block.settings.button_text_color -%}
                     <div
-                      class="sale-promo-banner-2--column" id="block-id--{{ block.id }}"
+                      class="promo-offers--column" id="block-id--{{ block.id }}"
                       style="--primary-button-background: {{ button_background.red }}, {{ button_background.green }}, {{ button_background.blue }};
                       --primary-button-text-color: {{ button_text_color.red }}, {{ button_text_color.green }}, {{ button_text_color.blue }};">
                       {%- if block.settings.text_line_1 != blank -%}
-                        <div class="sale-promo-banner-2--line1">
+                        <div class="promo-offers--line1">
                           {{- block.settings.text_line_1 -}}
                         </div>
                       {%- endif -%}
                       {%- if block.settings.text_line_2 != blank -%}
-                        <div class="sale-promo-banner-2--line2">
+                        <div class="promo-offers--line2">
                           {{- block.settings.text_line_2 -}}
                         </div>
                       {%- endif -%}
                       {%- if block.settings.text_line_3 != blank -%}
-                        <div class="sale-promo-banner-2--line3">
+                        <div class="promo-offers--line3">
                           {{- block.settings.text_line_3 -}}
                         </div>
                       {%- endif -%}
 
                       {%- if block.settings.button_text != blank -%}
-                        <div class="sale-promo-banner-2--cta">
+                        <div class="promo-offers--cta">
                           <a href="{{ block.settings.button_link }}"
-                            class="button button--primary sale-promo-banner-2--btn">
+                            class="button button--primary promo-offers--btn">
                             {{ block.settings.button_text }}
                           </a>
                         </div>
