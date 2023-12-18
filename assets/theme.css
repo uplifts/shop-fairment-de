@@ -18187,6 +18187,13 @@ display: none !important:
   }
 }
 
+@media (min-width: 1000px) {
+  .promo-offers--row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
 @media (min-width: 1200px) {
   .supmikrolp-reviews .multi-column__inner {
     grid-template-columns: repeat(3, 1fr);
