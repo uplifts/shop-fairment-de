@@ -96,14 +96,14 @@
                       {%- endif -%}
                     </div>
 
-                    {%- if block.settings.button_text != blank -%}
-                      <div class="promo-offers--cta">
+                    <div class="promo-offers--cta">
+                      {%- if block.settings.button_text != blank -%}
                         <a href="{{ block.settings.button_link }}"
                           class="button button--primary promo-offers--btn">
                           {{ block.settings.button_text }}
                         </a>
-                      </div>
-                    {%- endif -%}
+                      {%- endif -%}
+                    </div>
 
                     <div class="promo-offers--footer">
                       {{ block.settings.bottom_text }}
