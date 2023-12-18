@@ -61,8 +61,8 @@
                       {%- assign button_text_color = block.settings.button_text_color -%}
                       <div
                         class="promo-offers--item{% if block.settings.is_featured %} is-featured{% endif %}" id="block-{{ block.id }}"
-                        style="--primary-button-background: {{ button_background.red }}, {{ button_background.green }}, {{ button_background.blue }};
-                        --primary-button-text-color: {{ button_text_color.red }}, {{ button_text_color.green }}, {{ button_text_color.blue }};">
+                        style="--button-background: {{ button_background.red }}, {{ button_background.green }}, {{ button_background.blue }};
+                        --button-text-color: {{ button_text_color.red }}, {{ button_text_color.green }}, {{ button_text_color.blue }};">
                         <div class="promo-offers--item-header">
                           {%- if block.settings.caption != blank -%}
                             <div class="promo-offers--item-caption">
