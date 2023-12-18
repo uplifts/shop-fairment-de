@@ -18191,6 +18191,12 @@ display: none !important:
   gap: var(--gap);
 }
 
+@media (min-width: 500px) {
+  .promo-offers--columns {
+    grid: auto / auto-flow 45%;
+  }
+}
+
 @media (min-width: 741px) {
   .supmikrolp-reviews .multi-column__inner {
     grid-template-columns: repeat(2, 1fr);
