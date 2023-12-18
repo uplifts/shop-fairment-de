@@ -18201,15 +18201,19 @@ display: none !important:
 }
 
 .promo-offers--item.is-featured {
-  border-color: rgb(var(--primary-button-background));
+  border-color: rgb(var(--button-background));
   outline: none;
 }
 
 .promo-offers--item-caption {
   height: 100%;
-  background-color: transparent;
   padding: 6px;
   text-align: center;
+}
+
+.promo-offers--item.is-featured .promo-offers--item-caption {
+  background-color: rgb(var(--button-background));
+  color: rgb(var(--button-text-color));
 }
 
 @media (min-width: 500px) {
