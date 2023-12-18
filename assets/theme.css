@@ -18204,6 +18204,8 @@ display: none !important:
 
 .promo-offers--item {
   --inner-gap: 12px;
+  --primary-button-background: var(--button-background);
+  --primary-button-text-color: var(--button-text-color);
   display: grid;
 	grid-row: span 5;
   gap: var(--inner-gap);
@@ -18233,11 +18235,6 @@ display: none !important:
 .promo-offers--item-image {
   aspect-ratio: 1;
   object-fit: contain;
-}
-
-.promo-offers--btn {
-  --primary-button-background: var(--button-background);
-  --primary-button-text-color: var(--button-text-color);
 }
 
 .promo-offers--item-info,
