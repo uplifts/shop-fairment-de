@@ -267,13 +267,66 @@
         "mobile_text_below": false
       }
     },
-    "40b0ae96-721c-433d-9417-390efadc7a9b": {
-      "type": "custom-liquid",
+    "214afcdc-8fd6-43b9-8d18-e9cb7ab88c34": {
+      "type": "promo-offers",
+      "blocks": {
+        "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-1": {
+          "type": "offer",
+          "settings": {
+            "is_featured": false,
+            "caption": "",
+            "title": "Offer 1",
+            "text": "",
+            "sub_text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "rgba(0,0,0,0)",
+            "bottom_text": ""
+          }
+        },
+        "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-2": {
+          "type": "offer",
+          "settings": {
+            "is_featured": true,
+            "caption": "",
+            "title": "Offer 2",
+            "text": "",
+            "sub_text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "rgba(0,0,0,0)",
+            "bottom_text": ""
+          }
+        },
+        "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-3": {
+          "type": "offer",
+          "settings": {
+            "is_featured": true,
+            "caption": "",
+            "title": "Offer 3",
+            "text": "",
+            "sub_text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "rgba(0,0,0,0)",
+            "bottom_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-1",
+        "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-2",
+        "template--18602995745032__214afcdc-8fd6-43b9-8d18-e9cb7ab88c34-offer-3"
+      ],
       "settings": {
-        "subheading": "",
-        "title": "OFFER WILL BE HERE",
-        "liquid": "",
-        "background_type": "full_width",
+        "css_class": "",
+        "logo": "shopify:\/\/shop_images\/Fairment_WordLogo_Black.png",
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -644,7 +697,7 @@
     "9b3e215c-9508-4dd0-82f9-0dd2bf4e44b5",
     "29204d40-ab9f-4e86-9cbb-4cd32713c822",
     "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f",
-    "40b0ae96-721c-433d-9417-390efadc7a9b",
+    "214afcdc-8fd6-43b9-8d18-e9cb7ab88c34",
     "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c",
     "2513ab37-18a2-4907-98e7-27113d8a6182",
     "a269f138-109b-4cf1-bf7e-7612b036c296",
