@@ -18200,6 +18200,10 @@ display: none !important:
   border: 2px solid transparent;
 }
 
+.promo-offers--item.is-featured {
+  border-color: rgb(var(--button-background));
+}
+
 @media (min-width: 500px) {
   .promo-offers--columns {
     grid: auto / auto-flow 45%;
