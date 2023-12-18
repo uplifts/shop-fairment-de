@@ -18209,6 +18209,7 @@ display: none !important:
   height: 100%;
   padding: 6px;
   text-align: center;
+  font-weight: 700;
 }
 
 .promo-offers--item.is-featured .promo-offers--item-caption {
