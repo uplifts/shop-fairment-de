@@ -819,62 +819,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "35b37711-a6e7-4955-8c1b-45d798612010": {
-      "type": "gallery",
-      "blocks": {
-        "template--17862827409672__35b37711-a6e7-4955-8c1b-45d798612010-1677694323e05b2fbb-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/221025_Fair_PulverundPillen_01.png",
-            "caption": ""
-          }
-        },
-        "34519612-291d-4226-a878-b20c246a43a9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/221025_Fair_PulverundPillen_01.png",
-            "caption": ""
-          }
-        },
-        "45236e4e-781a-48f0-900c-6934ed6fd9c0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/221025_Fair_PulverundPillen_01.png",
-            "caption": ""
-          }
-        },
-        "a2ff3131-9134-4c94-860c-92f26aa94109": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/221025_Fair_PulverundPillen_01.png",
-            "caption": ""
-          }
-        },
-        "cd72ad7e-7d77-4122-89bc-a7dbc9a6afc1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/221025_Fair_PulverundPillen_01.png",
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17862827409672__35b37711-a6e7-4955-8c1b-45d798612010-1677694323e05b2fbb-0",
-        "34519612-291d-4226-a878-b20c246a43a9",
-        "45236e4e-781a-48f0-900c-6934ed6fd9c0",
-        "a2ff3131-9134-4c94-860c-92f26aa94109",
-        "cd72ad7e-7d77-4122-89bc-a7dbc9a6afc1"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "UGC",
-        "title": "UGC",
-        "content": "",
-        "show_arrows": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "caf24f6c-12f1-4fa6-bbe4-65fecb74d9ee": {
       "type": "featured-collections",
       "blocks": {
@@ -1157,7 +1101,6 @@
     "1662395332e7d208e9",
     "1657466232b5b6889c",
     "39129c01-5646-43a5-aa11-58f61cf82ca9",
-    "35b37711-a6e7-4955-8c1b-45d798612010",
     "caf24f6c-12f1-4fa6-bbe4-65fecb74d9ee",
     "4fb65238-e3b4-4de4-8c46-7620f2f606bc",
     "16625648601f001c2a",
