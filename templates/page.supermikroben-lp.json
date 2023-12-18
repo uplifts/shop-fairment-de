@@ -329,21 +329,7 @@
         "logo": "shopify:\/\/shop_images\/Fairment_WordLogo_Black.png",
         "title": "Die 3 Superhelden für dein Mikrobiom: Klasse statt Masse",
         "content": "<p>Als Vorreiter in Deutschland setzen wir auf die Wirkung von sogenannten <strong>sporenbasierten Mikroben<\/strong>.<\/p><p>In <strong>wissenschaftlichen Studien <\/strong>wurde gezeigt, dass sich die Bakterien durch ihre hohe Resistenz <strong>besonders gut im Darm ansiedeln und vermehren <\/strong>können.<\/p><p>In den Super-Mikroben findest du drei ausgewählte “Superhelden” unter den Mikroben:<\/p><p>- Bacillus coagulans<br\/>- Bacillus clausii<br\/>- Bacillus subtilis<\/p>",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "5300a7ab-85e9-49ff-bac2-6c97ec8966e0": {
-      "type": "blog-posts",
-      "settings": {
-        "blog": "news",
-        "subheading": "Stay up-to-date",
-        "title": "Blog posts",
-        "articles_count": 3,
-        "stack_mobile": false,
-        "show_category": true,
-        "show_excerpt": false,
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
     },
@@ -714,7 +700,6 @@
     "29204d40-ab9f-4e86-9cbb-4cd32713c822",
     "7a6b84f5-1a16-494f-ae6b-d5bc47e35d2f",
     "214afcdc-8fd6-43b9-8d18-e9cb7ab88c34",
-    "5300a7ab-85e9-49ff-bac2-6c97ec8966e0",
     "a6135fcc-6f98-41c0-b5dd-d28cfec8ad9c",
     "2513ab37-18a2-4907-98e7-27113d8a6182",
     "a269f138-109b-4cf1-bf7e-7612b036c296",
