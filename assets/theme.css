@@ -18228,8 +18228,7 @@ display: none !important:
 .promo-offers--item-info,
 .promo-offers--cta,
 .promo-offers--footer {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0 var(--inner-gap);
 }
 
 @media (min-width: 500px) {
