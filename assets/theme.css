@@ -18224,6 +18224,13 @@ display: none !important:
   object-fit: contain;
 }
 
+.promo-offers--item-info,
+.promo-offers--cta,
+.promo-offers--footer {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 @media (min-width: 500px) {
   .promo-offers--columns {
     grid: auto / auto-flow 45%;
