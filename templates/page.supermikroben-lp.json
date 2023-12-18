@@ -13,7 +13,7 @@
       "settings": {
         "subheading": "",
         "title": "Für unsere liebsten Kunden noch verfügbar:",
-        "liquid": "<span class=\"h3 banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\"><\/span>",
+        "liquid": "<div class=\"text-center heading h3 banner-countdown countTimer\" data-date=\"05 Jan 2024 00:00:00 GMT+1\"><\/div>",
         "background_type": "full_width",
         "background": "#e9e2f1",
         "text_color": "#00148c"
