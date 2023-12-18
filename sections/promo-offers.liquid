@@ -154,42 +154,6 @@
       "label": "Content"
     },
     {
-      "type": "select",
-      "id": "layout_type",
-      "label": "Layout type",
-      "options": [
-        {
-          "value": "full_width",
-          "label": "Full width"
-        },
-        {
-          "value": "boxed",
-          "label": "Boxed"
-        }
-      ],
-      "default": "full_width"
-    },
-    {
-      "type": "select",
-      "id": "text_alignment",
-      "label": "Text alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "center"
-    },
-    {
       "type": "header",
       "content": "Colors"
     },
@@ -208,23 +172,38 @@
   ],
   "blocks": [
     {
-      "type": "column",
-      "name": "Column",
+      "type": "offer",
+      "name": "Offer",
       "settings": [
         {
-          "type": "text",
-          "id": "text_line_1",
-          "label": "Text line 1"
+          "type": "checkbox",
+          "id": "is_featured",
+          "label": "Is featured?"
         },
         {
           "type": "text",
-          "id": "text_line_2",
-          "label": "Text line 2"
+          "id": "caption",
+          "label": "Caption"
         },
         {
           "type": "text",
-          "id": "text_line_3",
-          "label": "Text line 3"
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "liquid",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "liquid",
+          "id": "sub_text",
+          "label": "Sub-text"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
         },
         {
           "type": "header",
@@ -258,7 +237,27 @@
   "presets": [
     {
       "name": "Promo offers",
-      "settings": {}
+      "settings": {},
+      "blocks": [
+        {
+          "type": "offer",
+          "settings": {
+            "title": "Offer 1"
+          }
+        },
+        {
+          "type": "offer",
+          "settings": {
+            "title": "Offer 2"
+          }
+        },
+        {
+          "type": "offer",
+          "settings": {
+            "title": "Offer 3"
+          }
+        }
+      ]
     }
   ]
 }
