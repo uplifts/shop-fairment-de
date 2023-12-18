@@ -60,7 +60,7 @@
 
 <section 
   style="--bg-color: {{ section.settings.background_color_section | default: 'transparent' }}"
-  class="sec--sale-promo-banner-2 section {% unless is_boxed %}section--flush{% endunless %}{% if section.settings.background_color_section != blank %} section--inverse{% endif %} {{ section.settings.css_class }}{% if section.settings.is_inactive != blank %} is-inactive{% endif %}">
+  class="sec--promo-offers section {% unless is_boxed %}section--flush{% endunless %}{% if section.settings.background_color_section != blank %} section--inverse{% endif %} {{ section.settings.css_class }}{% if section.settings.is_inactive != blank %} is-inactive{% endif %}">
   <div {% if is_boxed %}class="container"{% endif %}>
     <div class="sale-promo-banner-2" style="--bg-color: {{ section.settings.image_bg_color | default: 'transparent' }}">
       <div class="sale-promo-banner-2--row">
