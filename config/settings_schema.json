@@ -8,6 +8,15 @@
     "theme_support_url": "https:\/\/support.maestrooo.com\/article\/203-contact-us"
   },
   {
+    "name": "Useful information",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "To enable countdown timer, use this template replacing date inside with desirable date and time: <span class=\"banner-countdown countTimer\" data-date=\"05 Apr 2023 00:00:00 GMT-6\"><\/span>"
+      }
+    ]
+  },
+  {
     "name": "Appearance",
     "settings": [
       {
