@@ -18191,6 +18191,12 @@ display: none !important:
   gap: var(--gap);
 }
 
+.promo-offers--item {
+  display: grid;
+	grid-row: span 4;
+	grid-template-rows: subgrid;
+}
+
 @media (min-width: 500px) {
   .promo-offers--columns {
     grid: auto / auto-flow 45%;
