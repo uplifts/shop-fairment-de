@@ -35,7 +35,9 @@
         <div class="promo-offers--row">
           <div class="promo-offers--content">
             {%- if section.settings.logo != blank -%}
-              <img class="promo-offers--logo" loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}">
+              <div class="promo-offers--content-header">
+                <img class="promo-offers--logo" loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}">
+              </div>
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
