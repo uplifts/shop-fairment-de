@@ -2,58 +2,6 @@
   {%- capture tab_title -%}{{- 'customer.addresses.title' | t -}}{%- endcapture -%}
   {% render 'customer-account-links', tab: 'addresses', tab_title: tab_title %}
 
-  <div class="link-bar hidden-phone">
-    <div class="container">
-      <div class="link-bar__wrapper">
-        <ul class="link-bar__linklist list--unstyled" role="list">
-          <li class="link-bar__link-item">
-            <a href="{{ routes.account_url }}" class="link-bar__link link--animated">{{ 'customer.orders.title' | t }}</a>
-          </li>
-
-          <li class="link-bar__link-item">
-            <a href="{{ routes.account_addresses_url }}" class="link-bar__link link--animated text--underlined">{{ 'customer.addresses.title' | t }}</a>
-          </li>
-
-          <li class="link-bar__link-item">
-            <a href="{{ routes.account_logout_url }}" class="link-bar__link link--animated text--subdued" data-no-instant>{{ 'customer.logout.title' | t }}</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="mobile-toolbar hidden-tablet-and-up">
-    <button is="toggle-button" class="mobile-toolbar__item" aria-expanded="false" aria-controls="account-links-popover">{{- 'customer.addresses.title' | t -}} {%- render 'icon' with 'chevron' -%}</button>
-  </div>
-
-  <popover-content id="account-links-popover" class="popover">
-    <span class="popover__overlay"></span>
-
-    <header class="popover__header">
-      <span class="popover__title heading h6">{{- 'customer.general.title' | t -}}</span>
-
-      <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
-        {%- render 'icon' with 'close' -%}
-      </button>
-    </header>
-
-    <div class="popover__content">
-      <div class="popover__choice-list">
-        <a href="{{ routes.account_url }}" class="popover__choice-item">
-          <span class="popover__choice-label">{{ 'customer.orders.title' | t }}</span>
-        </a>
-
-        <a href="{{ routes.account_addresses_url }}" class="popover__choice-item">
-          <span class="popover__choice-label" aria-current="true">{{ 'customer.addresses.title' | t }}</span>
-        </a>
-
-        <a href="{{ routes.account_logout_url }}" class="popover__choice-item text--subdued" data-no-instant>
-          <span class="popover__choice-label">{{ 'customer.logout.title' | t }}</span>
-        </a>
-      </div>
-    </div>
-  </popover-content>
-
   <div class="account account--addresses">
     <div class="container container--small">
       <div class="page-header page-header--small">
