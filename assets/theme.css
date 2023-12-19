@@ -18116,7 +18116,7 @@ display: none !important:
   /* START - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
 
 /* START ID - 19.12.23 - Quickfixes for DE and NL */
-.page-type-product .shopify-section--faq {
+.page-type-product .shopify-section--faq .section {
   margin-top: 0;
 }
 
