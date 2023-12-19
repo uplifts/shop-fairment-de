@@ -690,8 +690,10 @@ html.no-ablyft .countdown-panel.countdown-2 {
   background-color: #FAFAFA;
   color: #545454;
 }
-
-.page-checkout.cart-updated .notice.notice--error[data-shipping-warning] .notice__icon {
-  color: #545454;
-}
 /* END ID - 22.11.23 - Checkout - Changed cart message styling */
+
+/* START ID - 19.12.23 - Quickfixes for DE and NL */
+.order-summary__sections .product__description__selling_plan {
+  font-weight: 500;
+}
+/* END ID - 19.12.23 - Quickfixes for DE and NL */
