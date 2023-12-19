@@ -18102,7 +18102,7 @@ display: none !important:
 /* END ID - 07.12.23 - USPS dynamic */
 
 
-/* START ID - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
+/* START - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
 @media only screen and (min-width: 1000px) and (max-width: 1399px) { 
   .single-media-img + .product-media__accordion {
       padding-left: 0px;
@@ -18113,4 +18113,4 @@ display: none !important:
       padding-left: 36px;
   }
   }
-  /* START ID - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
+  /* START - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
