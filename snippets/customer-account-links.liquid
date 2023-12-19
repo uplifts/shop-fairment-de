@@ -43,6 +43,10 @@
         <span class="popover__choice-label"{% if tab == 'addresses' %} aria-current="true"{% endif %}>{{ 'customer.addresses.title' | t }}</span>
       </a>
 
+      <a href="https://fairment.myshopify.com/tools/recurring/login" class="popover__choice-item" data-no-instant>
+        <span class="popover__choice-label">Subscriptions</span>
+      </a>
+
       <a href="{{ routes.account_logout_url }}" class="popover__choice-item text--subdued" data-no-instant>
         <span class="popover__choice-label">{{ 'customer.logout.title' | t }}</span>
       </a>
