@@ -1,4 +1,6 @@
 <section>
+  {%- capture tab_title -%}{{- 'customer.orders.title' | t -}}{%- endcapture -%}
+  {% render 'customer-account-links', tab: 'orders' %}
   <div class="link-bar hidden-phone">
     <div class="container">
       <div class="link-bar__wrapper">
