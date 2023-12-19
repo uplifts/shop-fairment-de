@@ -1,6 +1,6 @@
 <section>
   {%- capture tab_title -%}{{- 'customer.orders.title' | t -}}{%- endcapture -%}
-  {% render 'customer-account-links', tab: 'orders' %}
+  {% render 'customer-account-links', tab: 'orders', tab_title: tab_title %}
   <div class="link-bar hidden-phone">
     <div class="container">
       <div class="link-bar__wrapper">
