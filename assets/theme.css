@@ -18114,3 +18114,13 @@ display: none !important:
   }
   }
   /* START - 7.12.23 - PDP image alignment with tab - fix for the PDPs which has single image */
+
+/* START ID - 19.12.23 - Quickfixes for DE and NL */
+.page-type-product .shopify-section--faq {
+  margin-top: 0;
+}
+
+.page-type-product reviewsio-product-reviews-widget .ElementsWidget {
+  margin-bottom: 0;
+}
+/* END ID - 19.12.23 - Quickfixes for DE and NL */
