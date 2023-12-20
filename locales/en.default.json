@@ -310,7 +310,8 @@
   },
   "customer": {
     "general": {
-      "title": "My account"
+      "title": "My account",
+      "my_subscriptions": "My subscriptions"
     },
     "login": {
       "title": "Login",
