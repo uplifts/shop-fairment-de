@@ -170,7 +170,7 @@
                 {%- endcomment -%}
 
                 {%- if line_item.url contains 'selling_plan=' -%}
-                  
+                  <div hidden="hidden">Recharge</div>
                 {%- endif -%}
 
                 <span class="price {% if line_item.original_line_price > line_item.final_line_price or line_item.final_line_price == 0 or line_item.variant.compare_at_price > line_item.variant.price %}price--highlight{% endif %}">
