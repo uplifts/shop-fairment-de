@@ -156,18 +156,18 @@
             "text": "100% natürliche Inhaltsstoffe, ohne Zusätze"
           }
         },
-        "a09c0ad1-958e-4e35-b4b4-e3c1474a0348": {
-          "type": "usp",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/100_resistent_gegen_Magensaure.svg",
-            "text": "perfekt in Kombination mit SuperMikroben"
-          }
-        },
         "bab2a81d-dbfe-40b2-9afc-2ac9c23381f2": {
           "type": "usp",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Hergestellt_laborgepruft.svg",
             "text": "Hergestellt & laborgeprüft in Deutschland"
+          }
+        },
+        "a09c0ad1-958e-4e35-b4b4-e3c1474a0348": {
+          "type": "usp",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/100_resistent_gegen_Magensaure.svg",
+            "text": "perfekt in Kombination mit SuperMikroben"
           }
         }
       },
@@ -191,8 +191,8 @@
         "7b740d7e-4a85-4ca8-86ac-001044937892",
         "55619357-015c-4d2e-b0a6-5531f976f5ad",
         "8e2578e3-14e0-4905-81f1-34a8f5fe24cb",
-        "a09c0ad1-958e-4e35-b4b4-e3c1474a0348",
-        "bab2a81d-dbfe-40b2-9afc-2ac9c23381f2"
+        "bab2a81d-dbfe-40b2-9afc-2ac9c23381f2",
+        "a09c0ad1-958e-4e35-b4b4-e3c1474a0348"
       ],
       "custom_css": [
         ".buybox-bundle-link a {color: #f36168; text-decoration: underline;}",
