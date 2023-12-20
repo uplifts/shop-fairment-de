@@ -316,7 +316,8 @@
   },
   "customer": {
     "general": {
-      "title": "Mein Account"
+      "title": "Mein Account",
+      "my_subscriptions": "Meine Abonnements"
     },
     "login": {
       "title": "Einloggen",
