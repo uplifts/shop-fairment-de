@@ -190,7 +190,9 @@
                   <span class="price price--compare">
                     <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
-                    {%- if line_item.original_line_price > line_item.final_line_price -%}
+                    {%- if is_subscription -%}
+                      {{- line_item.variant.price | times: line_item.quantity | money -}}
+                    {%- elsif line_item.original_line_price > line_item.final_line_price -%}
                       {{- line_item.original_line_price | money -}}
                     {%- else -%}
                       {{- line_item.variant.compare_at_price | times: line_item.quantity | money -}}
