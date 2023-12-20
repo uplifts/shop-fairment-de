@@ -135,6 +135,13 @@
           {%- if line_item.product_id == hide_upsell_product_id -%}
             {%- assign show_upsells_in_cart = false -%}
           {%- endif -%}
+          {%- if line_item.url contains 'selling_plan=' -%}
+            {%- assign is_subscription = true -%}
+          {%- endif -%}
+
+          {%- if line_item.url contains 'selling_plan=' -%}
+            <div hidden="hidden">Recharge</div>
+          {%- endif -%}
           <line-item class="line-item">
             <div class="line-item__content-wrapper">
               <a href="{{ line_item.url }}" class="line-item__image-wrapper" tabindex="-1" aria-hidden="true">
@@ -168,10 +175,6 @@
                 IMPLEMENTATION NOTE: The designer wanted to show the "compare at price" on cart. In case an automatic discount is applied
                   to a line item though, the "real" discount takes precedence over the compare at price
                 {%- endcomment -%}
-
-                {%- if line_item.url contains 'selling_plan=' -%}
-                  <div hidden="hidden">Recharge</div>
-                {%- endif -%}
 
                 <span class="price {% if line_item.original_line_price > line_item.final_line_price or line_item.final_line_price == 0 or line_item.variant.compare_at_price > line_item.variant.price %}price--highlight{% endif %}">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
