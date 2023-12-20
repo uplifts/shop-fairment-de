@@ -18263,7 +18263,7 @@ display: none !important:
   font-size: 15px;
 }
 
-..promo-offers--cta,
+.promo-offers--cta,
 .promo-offers--footer {
   text-align: center;
 }
