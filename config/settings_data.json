@@ -51,18 +51,18 @@
     "cart_icon": "shopping_bag",
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "75",
-    "social_facebook": "https:\/\/www.facebook.com\/fairment",
-    "social_instagram": "https:\/\/www.instagram.com\/fairment\/",
-    "favicon": "shopify:\/\/shop_images\/cropped-fairment-logo-192x192.png",
-    "dhl_logo": "shopify:\/\/shop_images\/dhl-gogreen.png",
-    "custom_announcement_bar_snippet": "<div id=\"qab_placeholder\"><\/div>\n<style>\n#shopify-section-header {\n  margin-top: 52px !important;\n}\n@media (min-width: 518px) {\n  #shopify-section-header {\n    margin-top: 40px !important;\n  }\n}\n<\/style>",
+    "social_facebook": "https://www.facebook.com/fairment",
+    "social_instagram": "https://www.instagram.com/fairment/",
+    "favicon": "shopify://shop_images/cropped-fairment-logo-192x192.png",
+    "dhl_logo": "shopify://shop_images/dhl-gogreen.png",
+    "custom_announcement_bar_snippet": "<div id=\"qab_placeholder\"></div>\n<style>\n#shopify-section-header {\n  margin-top: 52px !important;\n}\n@media (min-width: 518px) {\n  #shopify-section-header {\n    margin-top: 40px !important;\n  }\n}\n</style>",
     "fg_enable": false,
     "fg_discount": "GRATIS-GLAS",
     "fg_threshold": 250,
     "fg_a": "fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika",
     "fg_b": "",
-    "checkout_discount_success_message": "<div style=\"font-weight:600\">Rabattcode erfolgreich aktiviert! 🥳<\/div>\n<span style=\"font-weight:500\">Du sparst <span class=\"discountTotal\">13,96<\/span> Euro<\/span> auf deine Bestellung!",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-Header-box-final-alternate.jpg",
+    "checkout_discount_success_message": "<div style=\"font-weight:600\">Rabattcode erfolgreich aktiviert! 🥳</div>\n<span style=\"font-weight:500\">Du sparst <span class=\"discountTotal\">13,96</span> Euro</span> auf deine Bestellung!",
+    "checkout_logo_image": "shopify://shop_images/Checkout-Header-box-final-alternate.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
@@ -71,7 +71,7 @@
     "checkout_button_color": "#f17217",
     "checkout_error_color": "#de2a2a",
     "express_checkout_hide_product": "effektivenzyme-premium-verdauungskomplex",
-    "cart_success_message": "<strong>Gute Wahl!<\/strong> Hier sind deine Produkte",
+    "cart_success_message": "<strong>Gute Wahl!</strong> Hier sind deine Produkte",
     "accent_color": "#405de6",
     "sections": {
       "announcement-bar": {
@@ -83,9 +83,9 @@
               "text": "Kostenloser Versand ab",
               "learn_more_text": "75 € *",
               "title": "Kostenloser Versand ab 75€ innerhalb von Deutschland",
-              "content": "<p>Andere Länder können abweichen. Alle Versandkonditionen findest du hier:<\/p>",
+              "content": "<p>Andere Länder können abweichen. Alle Versandkonditionen findest du hier:</p>",
               "button_text": "Alle Versandkonditionen",
-              "button_link": "shopify:\/\/policies\/shipping-policy"
+              "button_link": "shopify://policies/shipping-policy"
             }
           },
           "6f5ec34f-8681-4d6c-8727-c6205d10d952": {
@@ -94,9 +94,9 @@
               "text": "Wieder da:",
               "learn_more_text": "PRÄZISIOTIKUM",
               "title": "Mehr als nur Ballaststoffe",
-              "content": "<p>Das Präzisiotikum® ist ein innovatives Nahrungsergänzungsmittel, das speziell entwickelt wurde, um die Gesundheit und die guten Bakterien in deinem Darm zu fördern.<\/p>",
+              "content": "<p>Das Präzisiotikum® ist ein innovatives Nahrungsergänzungsmittel, das speziell entwickelt wurde, um die Gesundheit und die guten Bakterien in deinem Darm zu fördern.</p>",
               "button_text": "Jetzt probieren",
-              "button_link": "shopify:\/\/products\/prazisiotikum-innovatives-prabiotikum"
+              "button_link": "shopify://products/prazisiotikum-innovatives-prabiotikum"
             }
           },
           "a0656701-3256-41a6-9d51-8d84ac4da2ee": {
@@ -106,9 +106,9 @@
               "text": "Jetzt probieren:",
               "learn_more_text": "Super Mikroben",
               "title": "Speziell entwickelt von Ärzten und Experten",
-              "content": "<p>Gesundheit fängt im Darm an. Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe.<\/p>",
+              "content": "<p>Gesundheit fängt im Darm an. Fairment steht für kompromisslose Wirkung und beste Inhaltsstoffe.</p>",
               "button_text": "Jetzt probieren",
-              "button_link": "shopify:\/\/products\/fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika"
+              "button_link": "shopify://products/fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika"
             }
           }
         },
@@ -127,12 +127,12 @@
           "text_color": "#00148c",
           "button_background": "#00148c",
           "button_text_color": "#ffffff",
-          "announcement_left_icon_1": "shopify:\/\/shop_images\/Bewertungen_png_webp.png",
+          "announcement_left_icon_1": "shopify://shop_images/Bewertungen_png_webp.png",
           "announcement_left_text_desktop": "4,69 Sterne (Über 100.000 zufriedene Kund:innen)",
-          "announcement_left_text_mobile": "<b>4.6<\/b>",
-          "announcement_left_link": "https:\/\/www.reviews.io\/company-reviews\/store\/shop.fairment.de",
+          "announcement_left_text_mobile": "<b>4.6</b>",
+          "announcement_left_link": "https://www.reviews.io/company-reviews/store/shop.fairment.de",
           "announcement_menu": "submenu",
-          "announcement_right_icon_1": "shopify:\/\/shop_images\/Fairment-Header-Icons2-Bio-Vegan.png"
+          "announcement_right_icon_1": "shopify://shop_images/Fairment-Header-Icons2-Bio-Vegan.png"
         }
       },
       "header": {
@@ -147,7 +147,7 @@
               "images_position": "right",
               "image_1_heading": "",
               "image_1_text": "",
-              "image_1_link": "shopify:\/\/collections\/probiotika-prabiotika",
+              "image_1_link": "shopify://collections/probiotika-prabiotika",
               "image_2_heading": "",
               "image_2_text": "",
               "image_2_link": "",
@@ -199,11 +199,16 @@
         ],
         "settings": {
           "enable_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/Fairment_WordLogo_Black.png",
+          "logo": "shopify://shop_images/Fairment_WordLogo_Black.png",
           "logo_max_width": 120,
           "mobile_logo_max_width": 120,
           "navigation_menu": "hauptmen-uplifts-oct-2023",
           "sidebar_navigation_menu": "",
+          "mobile-menu-banner-image": "shopify://shop_images/SM.png",
+          "mobile-menu-banner-title": "SuperMikroben",
+          "mobile-menu-banner-tagline": "Bestseller Nr. 1",
+          "mobile-menu-banner-btn-text": "Jetzt entdecken",
+          "mobile-menu-banner-btn-url": "https://shop.fairment.de/products/fairment-probiotikum-sporenbasiert-super-mikroben-premium-biotika",
           "secondary_mobile_menu": "",
           "header_layout": "logo_left_navigation_center",
           "show_icons": true,
@@ -222,7 +227,7 @@
             "type": "text",
             "settings": {
               "title": "Über uns",
-              "content": "<p>fairment hat seine Wurzeln in Berlin. Seit 2015 wachsen wir so natürlich wie unsere Produktpalette. Ganz ohne Zusatzstoffe. Bei fairment stimmt nur die Biochemie. Wir sorgen mit fermentierten Lebensmittel und innovativen Darmbakterien und Ballaststoffen für mehr Wohlbefinden.<\/p>",
+              "content": "<p>fairment hat seine Wurzeln in Berlin. Seit 2015 wachsen wir so natürlich wie unsere Produktpalette. Ganz ohne Zusatzstoffe. Bei fairment stimmt nur die Biochemie. Wir sorgen mit fermentierten Lebensmittel und innovativen Darmbakterien und Ballaststoffen für mehr Wohlbefinden.</p>",
               "show_dhl_logo": true
             }
           },
@@ -231,7 +236,7 @@
             "disabled": true,
             "settings": {
               "title": "Was ist Kombucha?",
-              "content": "<p>Kombucha ist ein fermentiertes Teegetränk. Dieses sagenumwobene Getränk ist bereits seit 2.500 Jahren Teil der asiatischen Naturmedizin. Seine vitalisierende Wirkung und der einzigartige Geschmack machen es zu einem Getränk der besonderen Art.<\/p><p><\/p><p>¹nicht gültig mit anderen Rabattaktionen und Rabattcodes<\/p><p><\/p>",
+              "content": "<p>Kombucha ist ein fermentiertes Teegetränk. Dieses sagenumwobene Getränk ist bereits seit 2.500 Jahren Teil der asiatischen Naturmedizin. Seine vitalisierende Wirkung und der einzigartige Geschmack machen es zu einem Getränk der besonderen Art.</p><p></p><p>¹nicht gültig mit anderen Rabattaktionen und Rabattcodes</p><p></p>",
               "show_dhl_logo": false
             }
           },
@@ -251,7 +256,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Jetzt direkt anmelden und 10% Rabatt sichern",
-              "content": "<p>Registriere dich für den Newsletter und spare 10% auf deine erste Bestellung. Außerdem erfährst du immer zuerst von Produktneuheiten und besonderen Aktionen rund um Fairment.<\/p>"
+              "content": "<p>Registriere dich für den Newsletter und spare 10% auf deine erste Bestellung. Außerdem erfährst du immer zuerst von Produktneuheiten und besonderen Aktionen rund um Fairment.</p>"
             }
           }
         },
@@ -268,8 +273,8 @@
           "show_locale_selector": false,
           "show_dhl_logo": true,
           "show_cookie_bar": false,
-          "cookie_bar_title": "<h3>Der Schutz deiner Daten ist uns wichtig<\/h3>",
-          "cookie_bar_content": "<p>Kombucha ist ein Elixier, das vor Leben nur so strotzt. Mithilfe des sogenannten „Kombucha- Pilzes“ wird gesüßter Tee fermentiert. Der Kombucha-Pilz ist jedoch kein Pilz, sondern eine Symbiose verschiedener Hefen und Bakterien. Das Ergebnis ist ein fein moussierender Tee mit süß-saurem, leicht gärigem Geschmack, der kalt genossen wird.<\/p>"
+          "cookie_bar_title": "<h3>Der Schutz deiner Daten ist uns wichtig</h3>",
+          "cookie_bar_content": "<p>Kombucha ist ein Elixier, das vor Leben nur so strotzt. Mithilfe des sogenannten „Kombucha- Pilzes“ wird gesüßter Tee fermentiert. Der Kombucha-Pilz ist jedoch kein Pilz, sondern eine Symbiose verschiedener Hefen und Bakterien. Das Ergebnis ist ein fein moussierender Tee mit süß-saurem, leicht gärigem Geschmack, der kalt genossen wird.</p>"
         }
       },
       "popup": {
@@ -282,7 +287,7 @@
           "show_only_once": true,
           "image_position": "left",
           "title": "Get 10% off",
-          "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
+          "content": "<p>Promotions, new products and sales. Directly to your inbox.</p>"
         }
       },
       "mini-cart": {
@@ -292,7 +297,7 @@
             "type": "advantage",
             "disabled": true,
             "settings": {
-              "icon": "shopify:\/\/shop_images\/icons8-verified_account.png",
+              "icon": "shopify://shop_images/icons8-verified_account.png",
               "content": "Laborgeprüfte zertifizierte Qualität"
             }
           },
@@ -300,7 +305,7 @@
             "type": "advantage",
             "disabled": true,
             "settings": {
-              "icon": "shopify:\/\/shop_images\/klarna-icon.png",
+              "icon": "shopify://shop_images/klarna-icon.png",
               "content": "Kauf auf Rechnung möglich"
             }
           },
@@ -308,7 +313,7 @@
             "type": "advantage",
             "disabled": true,
             "settings": {
-              "icon": "shopify:\/\/shop_images\/icons8-tracking.png",
+              "icon": "shopify://shop_images/icons8-tracking.png",
               "content": "Einfache Sendungsverfolgung"
             }
           },
@@ -349,12 +354,12 @@
           ".docapp-cart-item.docapp-summary-note {margin-top: -5px !important;}"
         ],
         "settings": {
-          "cart_success_message": "<span class=\"drawer-ab-message-1\"><strong>Gute Wahl!<\/strong> Du wirst dich großartig fühlen<\/span>\n<span class=\"drawer-ab-message-2\"><strong>Gute Wahl!<\/strong> Hier sind deine Produkte<\/span>",
+          "cart_success_message": "<span class=\"drawer-ab-message-1\"><strong>Gute Wahl!</strong> Du wirst dich großartig fühlen</span>\n<span class=\"drawer-ab-message-2\"><strong>Gute Wahl!</strong> Hier sind deine Produkte</span>",
           "show_order_note": false,
           "show_shipping_tax_note": false,
           "show_checkout_button": true,
           "show_payment_methods": true,
-          "empty_button_link": "shopify:\/\/collections\/all",
+          "empty_button_link": "shopify://collections/all",
           "show_recommendations": true,
           "hide_recommend_condition_prod": "prazisiotikum-innovatives-prabiotikum",
           "recommendations_title": "Perfekte Ergänzung",
@@ -420,7 +425,7 @@
           "show_section": false,
           "reveal_on_scroll": true,
           "subheading": "Subscribe to our newsletter",
-          "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "content": "<p>Promotions, new products and sales. Directly to your inbox.</p>",
           "text_position": "right",
           "text_alignment": "left",
           "text_background": "rgba(0,0,0,0)",
@@ -437,9 +442,9 @@
             "settings": {
               "montage_free_related": false,
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Qualitaet_03.png",
+              "image": "shopify://shop_images/221026_FAIRMENT_ICONS_Outline_warumFairment_Qualitaet_03.png",
               "image_width": 40,
-              "title": "<h2>Höchste Qualität<\/h2>",
+              "title": "<h2>Höchste Qualität</h2>",
               "text": "Höchste Standards für Qualität und Kundensupport"
             }
           },
@@ -448,9 +453,9 @@
             "settings": {
               "montage_free_related": false,
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Schloss_02.png",
+              "image": "shopify://shop_images/221026_FAIRMENT_ICONS_Outline_warumFairment_Schloss_02.png",
               "image_width": 40,
-              "title": "<h2>100% Sichere Zahlung<\/h2>",
+              "title": "<h2>100% Sichere Zahlung</h2>",
               "text": "Höchste Sicherheit durch SSL-Verschlüsselung"
             }
           },
@@ -459,9 +464,9 @@
             "settings": {
               "montage_free_related": false,
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Versand_04.png",
+              "image": "shopify://shop_images/221026_FAIRMENT_ICONS_Outline_warumFairment_Versand_04.png",
               "image_width": 40,
-              "title": "<h2>Klimaneutraler Versand<\/h2>",
+              "title": "<h2>Klimaneutraler Versand</h2>",
               "text": "Sicher dank DHL GoGreen und Sendungsverfolgung"
             }
           },
@@ -470,9 +475,9 @@
             "settings": {
               "montage_free_related": false,
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/221026_FAIRMENT_ICONS_Outline_warumFairment_Kundenservice_05.png",
+              "image": "shopify://shop_images/221026_FAIRMENT_ICONS_Outline_warumFairment_Kundenservice_05.png",
               "image_width": 40,
-              "title": "<h2>Wir sind für dich da<\/h2>",
+              "title": "<h2>Wir sind für dich da</h2>",
               "text": "Schnelle Abwicklung und inhaltliche Hilfe"
             }
           }
@@ -485,7 +490,7 @@
         ],
         "settings": {
           "title": "Warum unsere Kunden Fairment lieben...",
-          "stars_image": "shopify:\/\/shop_images\/Bewertungen_png.webp",
+          "stars_image": "shopify://shop_images/Bewertungen_png.webp",
           "footer_title": "Über 100.000 glückliche Kunden & Kundinnen"
         }
       },
@@ -495,9 +500,9 @@
           "enable_section": true,
           "css_classes": "countdown-1",
           "url_parameters": "dailyrituals,apothekenwissen,adv",
-          "icon": "shopify:\/\/shop_images\/icons8-discount.svg",
-          "text": "<b>Der Sale endet bald!<\/b> Warenkorb reserviert für:",
-          "expired_text": "<b>Reservierung abgelaufen!<\/b> Sei schnell, dein Warenkorb ist nicht mehr reserviert.",
+          "icon": "shopify://shop_images/icons8-discount.svg",
+          "text": "<b>Der Sale endet bald!</b> Warenkorb reserviert für:",
+          "expired_text": "<b>Reservierung abgelaufen!</b> Sei schnell, dein Warenkorb ist nicht mehr reserviert.",
           "time": "15:00",
           "background": "#ececfa",
           "text_color": "#000000"
@@ -505,13 +510,11 @@
       },
       "main-customers-register": {
         "type": "main-customers-register",
-        "settings": {
-        }
+        "settings": {}
       },
       "main-customers-login": {
         "type": "main-customers-login",
-        "settings": {
-        }
+        "settings": {}
       },
       "countdown-timer-2-ablyft": {
         "type": "countdown-timer-2-ablyft",
@@ -519,8 +522,8 @@
           "enable_section": true,
           "css_classes": "countdown-2",
           "url_parameters": "dailyrituals",
-          "text": "<b>Jetzt beeilen! ⏰<\/b><br> \nDein Warenkorb ist nur für <b class=\"timer-counter timerCounter\" data-time=\"15:00\">15:00<\/b> reserviert.",
-          "expired_text": "<b>Jetzt beeilen! ⏰<\/b><br>\nDein Warenkorb ist nicht mehr reserviert.",
+          "text": "<b>Jetzt beeilen! ⏰</b><br> \nDein Warenkorb ist nur für <b class=\"timer-counter timerCounter\" data-time=\"15:00\">15:00</b> reserviert.",
+          "expired_text": "<b>Jetzt beeilen! ⏰</b><br>\nDein Warenkorb ist nicht mehr reserviert.",
           "time": "",
           "background": "#f7dfcc",
           "text_color": "#614c3b"
@@ -531,10 +534,10 @@
         "settings": {
           "title": "Noch Fragen? Wir helfen gerne!",
           "message": "Unser Kundenservice mit Sitz in Berlin ist von Mo.-Fr. 9 - 13 Uhr für dich da.",
-          "photo": "shopify:\/\/shop_images\/melanie-agent.png",
+          "photo": "shopify://shop_images/melanie-agent.png",
           "agent_name": "Melanie",
           "agent_position": "Kundenservice",
-          "contact_info": "<b>Email: <\/b><a href=\"mailto:briefkasten@fairment.de\">briefkasten@fairment.de<\/a><br>\n<p><b>Telefon:<\/b> <a href=\"tel:030 221 847 31\">030 221 847 31<\/a><\/p>"
+          "contact_info": "<b>Email: </b><a href=\"mailto:briefkasten@fairment.de\">briefkasten@fairment.de</a><br>\n<p><b>Telefon:</b> <a href=\"tel:030 221 847 31\">030 221 847 31</a></p>"
         }
       },
       "blog-new-design": {
@@ -552,7 +555,7 @@
           "349e5c7c-62e5-4be0-b8ef-fbadf9aa3387": {
             "type": "faq",
             "settings": {
-              "page_url": "https:\/\/www.fairment.de\/rezepte",
+              "page_url": "https://www.fairment.de/rezepte",
               "title": "Fairment Rezepte",
               "sub-title": "Lass dich inspirieren!"
             }
@@ -560,7 +563,7 @@
           "bba8fc4c-3bd6-425c-b5df-2b83540fcdb4": {
             "type": "faq",
             "settings": {
-              "page_url": "https:\/\/www.fairment.de\/lernen\/",
+              "page_url": "https://www.fairment.de/lernen/",
               "title": "Fairment Wissen",
               "sub-title": "Mach dich Schlau!"
             }
@@ -568,7 +571,7 @@
           "faecf7d4-d509-46a3-a402-ccbb9b8e44e8": {
             "type": "faq",
             "settings": {
-              "page_url": "https:\/\/support.fairment.de\/",
+              "page_url": "https://support.fairment.de/",
               "title": "Fairment FAQ",
               "sub-title": "Lass dir helfen."
             }
@@ -576,7 +579,7 @@
           "38bfd828-3789-4bc1-a751-7bcfe6ed9d9a": {
             "type": "faq",
             "settings": {
-              "page_url": "https:\/\/www.facebook.com\/fairment",
+              "page_url": "https://www.facebook.com/fairment",
               "title": "Fairment auf Facebook",
               "sub-title": "Besuch die Community!"
             }
@@ -588,8 +591,7 @@
           "faecf7d4-d509-46a3-a402-ccbb9b8e44e8",
           "38bfd828-3789-4bc1-a751-7bcfe6ed9d9a"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "tv-section": {
         "type": "tv-section",
@@ -597,15 +599,15 @@
           "9cf63cce-3ab5-4c1f-b1fe-487946332825": {
             "type": "video",
             "settings": {
-              "image": "shopify:\/\/shop_images\/maxresdefault.jpg",
-              "link": "https:\/\/www.youtube.com\/embed\/83DCWpKomCc"
+              "image": "shopify://shop_images/maxresdefault.jpg",
+              "link": "https://www.youtube.com/embed/83DCWpKomCc"
             }
           },
           "60c9497d-1560-4db9-a8a5-46dab5bf5e14": {
             "type": "video",
             "settings": {
-              "image": "shopify:\/\/shop_images\/maxresdefault_1.jpg",
-              "link": "https:\/\/www.youtube.com\/embed\/UlNNUPT8aXQ"
+              "image": "shopify://shop_images/maxresdefault_1.jpg",
+              "link": "https://www.youtube.com/embed/UlNNUPT8aXQ"
             }
           }
         },
@@ -619,8 +621,7 @@
       },
       "article-recommendation": {
         "type": "article-recommendation",
-        "settings": {
-        }
+        "settings": {}
       },
       "reviews-slider": {
         "type": "reviews-slider",
@@ -629,7 +630,7 @@
             "type": "review",
             "settings": {
               "review_title": "„Kombucha hat meine Oma damals schon immer gemacht. Mit Fairment bin ich in ihre Fußstapfen getreten“",
-              "review_description": "<p>Danke Fairment. Dank euch gibt es bei mir jetzt immer frische Fermente auf den Tisch. Das tut dem Geldbeutel aber vor allem der Gesundheit ganz gut. Die Community hat mich immer mit Rezepten inspiriert.<\/p>",
+              "review_description": "<p>Danke Fairment. Dank euch gibt es bei mir jetzt immer frische Fermente auf den Tisch. Das tut dem Geldbeutel aber vor allem der Gesundheit ganz gut. Die Community hat mich immer mit Rezepten inspiriert.</p>",
               "review_name": "Annika Föhr"
             }
           },
@@ -637,7 +638,7 @@
             "type": "review",
             "settings": {
               "review_title": "„Fairment hat meine Küche erobert. Ich backe jetzt auch mein eigenes Sauerteig Brot.“",
-              "review_description": "<p>An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und stylisch.<\/p>",
+              "review_description": "<p>An einer Darmerkrankung leidend, tragen Fermente einen großen Teil zu meiner Gesunderhaltung bei. Fairment klärt auf und macht den Einstieg in die Welt der Fermentation mit ihren Produkten leicht, unterhaltsam und stylisch.</p>",
               "review_name": "Thomas Neuenhagen"
             }
           }
@@ -651,12 +652,10 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "10830403595879607806": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "url_key": "shop.fairment.de",
@@ -664,31 +663,27 @@
         }
       },
       "1027443428159536739": {
-        "type": "shopify:\/\/apps\/hextom-quick-announcement-bar\/blocks\/qab-embeded-block\/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
+        "type": "shopify://apps/hextom-quick-announcement-bar/blocks/qab-embeded-block/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "10312807297210203588": {
-        "type": "shopify:\/\/apps\/aftersell-post-purchase-upsell\/blocks\/utm-triggers\/509ec35d-0632-4dfc-a105-fa799cd9d149",
+        "type": "shopify://apps/aftersell-post-purchase-upsell/blocks/utm-triggers/509ec35d-0632-4dfc-a105-fa799cd9d149",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "8141285270076847652": {
-        "type": "shopify:\/\/apps\/speed-kit\/blocks\/speed-kit-installation\/80ceebdf-9344-464b-989b-ffce65a9af7a",
+        "type": "shopify://apps/speed-kit/blocks/speed-kit-installation/80ceebdf-9344-464b-989b-ffce65a9af7a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "17550530943902319648": {
-        "type": "shopify:\/\/apps\/appikon-back-in-stock\/blocks\/subscribe_it_helper\/eb949c69-b3e6-4216-a322-1cd63915d46d",
+        "type": "shopify://apps/appikon-back-in-stock/blocks/subscribe_it_helper/eb949c69-b3e6-4216-a322-1cd63915d46d",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15316669992541710076": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "star": "#ffca28",
@@ -705,13 +700,12 @@
         }
       },
       "3acfba32-89f3-4377-ae20-cbb9abc48475": {
-        "type": "shopify:\/\/apps\/order-limits-minmaxify\/blocks\/app-embed-block\/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "type": "shopify://apps/order-limits-minmaxify/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "17151115064775110295": {
-        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
         "disabled": false,
         "settings": {
           "color_brand": "#467C99",
@@ -774,13 +768,10 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
-          "block_order": [
-            "message-1"
-          ],
+          "block_order": ["message-1"],
           "settings": {
             "announcement_bar_position": "non_sticky",
             "announcement_text_size": "normal",
@@ -809,8 +800,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -820,23 +810,15 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
-          "block_order": [
-            "text",
-            "links",
-            "newsletter",
-            "social_media"
-          ],
-          "settings": {
-          }
+          "block_order": ["text", "links", "newsletter", "social_media"],
+          "settings": {}
         }
       }
     },
@@ -884,13 +866,10 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
-          "block_order": [
-            "message-1"
-          ],
+          "block_order": ["message-1"],
           "settings": {
             "announcement_bar_position": "non_sticky",
             "announcement_text_size": "small",
@@ -919,8 +898,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -930,23 +908,15 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
-          "block_order": [
-            "text",
-            "links",
-            "newsletter",
-            "social_media"
-          ],
-          "settings": {
-          }
+          "block_order": ["text", "links", "newsletter", "social_media"],
+          "settings": {}
         }
       }
     },
@@ -999,13 +969,10 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
-          "block_order": [
-            "message-1"
-          ],
+          "block_order": ["message-1"],
           "settings": {
             "announcement_bar_position": "non_sticky",
             "announcement_text_size": "small",
@@ -1034,8 +1001,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -1045,23 +1011,15 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
-          "block_order": [
-            "text",
-            "links",
-            "newsletter",
-            "social_media"
-          ],
-          "settings": {
-          }
+          "block_order": ["text", "links", "newsletter", "social_media"],
+          "settings": {}
         }
       }
     }
