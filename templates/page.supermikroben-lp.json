@@ -170,7 +170,7 @@
         "template--18602995745032__29204d40-ab9f-4e86-9cbb-4cd32713c822-item-4"
       ],
       "settings": {
-        "css_class": "",
+        "css_class": "supmikrolp-quality-columns",
         "reveal_on_scroll": true,
         "stack_items": false,
         "subheading": "",
