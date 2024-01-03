@@ -18316,6 +18316,12 @@ display: none !important:
   }
 }
 
+@media (max-width: 1199px) {
+  .supmikrolp-quality-columns .multi-column__inner {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
 @media (max-width: 999px) {
   .supmikrolp-intro .image-with-text {
     padding: 0;
