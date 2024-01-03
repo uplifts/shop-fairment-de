@@ -18268,6 +18268,12 @@ display: none !important:
   text-align: center;
 }
 
+.promo-offers--row .promo-offers--content,
+.promo-offers--row .promo-offers--blocks {
+  max-width: 100%;
+  min-width: 0;
+}
+
 @media (min-width: 500px) {
   .promo-offers--columns {
     grid: auto / auto-flow 45%;
