@@ -18338,4 +18338,15 @@ display: none !important:
     min-width: 0;
   }
 }
+
+@media (max-width: 499px) {
+  .supmikrolp-quality-columns .section__header .heading {
+    font-size: 24px;
+  }
+
+  .supmikrolp-quality-columns .multi-column__inner .multi-column__item  {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
 /* END ID - 16.12.23 - Supermikroben LP from Replo */
