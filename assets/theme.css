@@ -18349,7 +18349,7 @@ display: none !important:
   }
 
   .sec--promo-offers .promo-offers--columns {
-    grid: auto / auto-flow 55%;
+    grid-auto-columns: 55%;
   }
 }
 /* END ID - 16.12.23 - Supermikroben LP from Replo */
