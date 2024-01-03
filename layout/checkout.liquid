@@ -16,163 +16,163 @@
 
 <!doctype html>
 <html
-  lang="{{ locale }}"
-  dir="{{ direction }}"
-  class="{{ checkout_html_classes }} no-ablyft{% if hide_xpress_buttons %} hide-xpress-buttons{% endif %}"
+        lang="{{ locale }}"
+        dir="{{ direction }}"
+        class="{{ checkout_html_classes }} no-ablyft{% if hide_xpress_buttons %} hide-xpress-buttons{% endif %}"
 >
-  {{ 'DHL-logo-add.js' | asset_url | script_tag }}
-  {{ 'DHL-logo-add.css' | asset_url | stylesheet_tag }}
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0"
-    >
-    <meta name="referrer" content="origin">
+{{ 'DHL-logo-add.js' | asset_url | script_tag }}
+{{ 'DHL-logo-add.css' | asset_url | stylesheet_tag }}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0"
+  >
+  <meta name="referrer" content="origin">
 
-    <!-- ABlyft Snippet from Uplifts -->
-    <script src="https://cdn.ablyft.com/s/41759244.js"></script>
+  <!-- ABlyft Snippet from Uplifts -->
+  <script src="https://cdn.ablyft.com/s/41759244.js"></script>
 
-    <title>{{ page_title }}</title>
+  <title>{{ page_title }}</title>
 
-    {{ checkout_stylesheets }}
-    {{ content_for_header }}
+  {{ checkout_stylesheets }}
+  {{ content_for_header }}
 
-    {% render 'checkout-fonts' %}
-    {{ 'checkout.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ checkout_scripts }}
+  {% render 'checkout-fonts' %}
+  {{ 'checkout.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ checkout_scripts }}
 
-    {% include 'analyzify-gtm-checkout' %}
+  {% include 'analyzify-gtm-checkout' %}
 
-    <!-- Adtribute.io Start -->
-    <script>
-      var adbq = window.adbq || [];
-      var adbs = window.adbs || {};
-      adbs.accountId = 'qbg9ir';
-      adbs.domain = 'fairment.de';
-      adbs.currentPage = new URL( window.location.href );
-      adbs.env = adbs.currentPage.searchParams.get( 'adb_debug' ) === 'true' ? 'dev' : 'prod';
-      adbs.version = adbs.currentPage.searchParams.get( 'adb_version' );
-      adbs.hasSessionStorageAccess = () => {
+  <!-- Adtribute.io Start -->
+  <script>
+    var adbq = window.adbq || [];
+    var adbs = window.adbs || {};
+    adbs.accountId = 'qbg9ir';
+    adbs.domain = 'fairment.de';
+    adbs.currentPage = new URL( window.location.href );
+    adbs.env = adbs.currentPage.searchParams.get( 'adb_debug' ) === 'true' ? 'dev' : 'prod';
+    adbs.version = adbs.currentPage.searchParams.get( 'adb_version' );
+    adbs.hasSessionStorageAccess = () => {
       const test = 'sessionStorageWriteable';
       try {
-      sessionStorage.setItem( 'test', test );
-      sessionStorage.removeItem( 'test' );
-      return true;
+        sessionStorage.setItem( 'test', test );
+        sessionStorage.removeItem( 'test' );
+        return true;
       } catch ( e ) {
-      return false;
+        return false;
       }
-      };
-      adbs.hasLocalStorageAccess = () => {
+    };
+    adbs.hasLocalStorageAccess = () => {
       const test = 'localStorageWriteable';
       try {
-      localStorage.setItem( 'test', test );
-      localStorage.removeItem( 'test' );
-      return true;
+        localStorage.setItem( 'test', test );
+        localStorage.removeItem( 'test' );
+        return true;
       } catch ( e ) {
-      return false;
+        return false;
       }
-      };
-      adbs.encodeInput = ( input ) => btoa( encodeURIComponent( JSON.stringify( input ) ) );
-      adbs.decodeInput = ( input ) => JSON.parse( decodeURIComponent( atob(  input ) ) );
-      adbs.isValidUrl = ( url ) => {
+    };
+    adbs.encodeInput = ( input ) => btoa( encodeURIComponent( JSON.stringify( input ) ) );
+    adbs.decodeInput = ( input ) => JSON.parse( decodeURIComponent( atob(  input ) ) );
+    adbs.isValidUrl = ( url ) => {
       try {
-      new URL( url );
-      return true;
+        new URL( url );
+        return true;
       } catch ( e ) {
-      return false;
+        return false;
       }
-      };
-      adbs.retry = 200;
-      adbs.load = ( a, d, e, v ) => {
+    };
+    adbs.retry = 200;
+    adbs.load = ( a, d, e, v ) => {
       const el = document.createElement( 'script' );
       el.type = 'text/javascript';
       el.async = true;
       el.onerror = () => {
-      setTimeout( () => {
-      adbs.load( adbs.accountId, adbs.domain, adbs.env, adbs.version );
-      adbs.retry = adbs.retry * 1.5;
-      }, adbs.retry);
+        setTimeout( () => {
+          adbs.load( adbs.accountId, adbs.domain, adbs.env, adbs.version );
+          adbs.retry = adbs.retry * 1.5;
+        }, adbs.retry);
       };
       el.src = 'https://bundle.' + d + '/client?env=' + e + '&account_id=' + a + ( v ? '&version=' + v : '' );
       const s = document.getElementsByTagName( 'script' )[0];
       s.parentNode.insertBefore( el, s );
-      }
-      {% if customer %}
-      adbq.push({
+    }
+    {% if customer %}
+    adbq.push({
       method: 'set',
       user_attributes: {
-      $_shopify_customer_id: '{{customer.id}}',
-      $_email: '{{customer.email}}'
+        $_shopify_customer_id: '{{customer.id}}',
+        $_email: '{{customer.email}}'
       }
-      });
-      {% endif %}
-      {% if checkout %}
-      adbq.push({
+    });
+    {% endif %}
+    {% if checkout %}
+    adbq.push({
       method: 'set',
       user_attributes: {
-      $_shopify_checkout_id: '{{checkout.id}}',
-      $_email: {% if checkout.email %}'{{checkout.email}}'{% else %}undefined{% endif %}
+        $_shopify_checkout_id: '{{checkout.id}}',
+        $_email: {% if checkout.email %}'{{checkout.email}}'{% else %}undefined{% endif %}
       }
-      });
-      {% endif %}
-      {% if cart %}
-      if ( {{cart.item_count}} > 0 ) {
+    });
+    {% endif %}
+    {% if cart %}
+    if ( {{cart.item_count}} > 0 ) {
       function trackShopifyCartId ( cartId ) {
-      if ( cartId ) {
-      adbq.push({
-      method: 'track',
-      event_name: 'Identify',
-      event_type: 'standard',
-      user_attributes: {
-      $_shopify_cart_id: cartId
-      }
-      });
-      }
+        if ( cartId ) {
+          adbq.push({
+            method: 'track',
+            event_name: 'Identify',
+            event_type: 'standard',
+            user_attributes: {
+              $_shopify_cart_id: cartId
+            }
+          });
+        }
       };
       function setShopifyCartId ( cartId ) {
-      if ( cartId ) {
-      adbq.push({
-      method: 'set',
-      user_attributes: {
-      $_shopify_cart_id: cartId
-      }
-      });
-      }
+        if ( cartId ) {
+          adbq.push({
+            method: 'set',
+            user_attributes: {
+              $_shopify_cart_id: cartId
+            }
+          });
+        }
       };
       function fetchShopifyCartId () {
-      fetch( '/cart.json' ).then( response => response.json() ).then( json => {
-      setShopifyCartId( json.token );
-      trackShopifyCartId( json.token );
-      if ( adbs.hasSessionStorageAccess() && json.token ) {
-      sessionStorage.setItem( 'adb_shopify_cart_id', json.token );
-      }
-      });
+        fetch( '/cart.json' ).then( response => response.json() ).then( json => {
+          setShopifyCartId( json.token );
+          trackShopifyCartId( json.token );
+          if ( adbs.hasSessionStorageAccess() && json.token ) {
+            sessionStorage.setItem( 'adb_shopify_cart_id', json.token );
+          }
+        });
       };
       if ( adbs.hasSessionStorageAccess() ) {
-      if ( sessionStorage.getItem( 'adb_shopify_cart_id' ) ) {
-      setShopifyCartId( sessionStorage.getItem( 'adb_shopify_cart_id') );
+        if ( sessionStorage.getItem( 'adb_shopify_cart_id' ) ) {
+          setShopifyCartId( sessionStorage.getItem( 'adb_shopify_cart_id') );
+        } else {
+          fetchShopifyCartId();
+        }
       } else {
-      fetchShopifyCartId();
+        fetchShopifyCartId();
       }
-      } else {
-      fetchShopifyCartId();
-      }
-      }
-      {% endif %}
-      {% if product %}
-      adbq.push({
+    }
+    {% endif %}
+    {% if product %}
+    adbq.push({
       method: 'track',
       event_name: 'Viewed a product',
       event_type: 'ecommerce',
       ecommerce_attributes: [{
-      product_id: '{{product.id}}',
-      product_name: '{{product.title}}'
+        product_id: '{{product.id}}',
+        product_name: '{{product.title}}'
       }]
-      });
-      {% endif %}
-      adbq.push( {
+    });
+    {% endif %}
+    adbq.push( {
       method: 'track',
       event_name: 'Viewed a page',
       event_type: 'standard',
@@ -180,222 +180,286 @@
       page_url: adbs.currentPage.href,
       referrer_url: document.referrer,
       page_title: document.title
-      } );
-      if ( adbs.hasLocalStorageAccess() ) {
+    } );
+    if ( adbs.hasLocalStorageAccess() ) {
       if ( localStorage.getItem( 'adbq' ) ) {
-      const storedQueue = JSON.parse( localStorage.getItem( 'adbq' ) );
-      storedQueue.map( event => adbq.push( event ) );
+        const storedQueue = JSON.parse( localStorage.getItem( 'adbq' ) );
+        storedQueue.map( event => adbq.push( event ) );
       }
       localStorage.setItem( 'adbq', JSON.stringify( adbq ) );
-      } else {
+    } else {
       const storedQueue = adbs.currentPage.searchParams.get( 'adbq' );
       if ( storedQueue ) {
-      adbs.decodeInput( storedQueue ).map( event => adbq.push( event ) );
-      adbs.currentPage.searchParams.delete( 'adbq' );
-      window.history.replaceState({}, document.title, adbs.currentPage.href );
+        adbs.decodeInput( storedQueue ).map( event => adbq.push( event ) );
+        adbs.currentPage.searchParams.delete( 'adbq' );
+        window.history.replaceState({}, document.title, adbs.currentPage.href );
       }
       document.querySelectorAll('a').forEach( link => {
-      let currentLink = link.getAttribute('href')
-      if ( adbs.isValidUrl( currentLink ) ) {
-      currentLink = new URL( link.getAttribute('href') );
-      currentLink.searchParams.set( 'adbq', adbs.encodeInput( adbq ) );
-      link.setAttribute( 'href', currentLink.href );
-      }
+        let currentLink = link.getAttribute('href')
+        if ( adbs.isValidUrl( currentLink ) ) {
+          currentLink = new URL( link.getAttribute('href') );
+          currentLink.searchParams.set( 'adbq', adbs.encodeInput( adbq ) );
+          link.setAttribute( 'href', currentLink.href );
+        }
       });
-      }
-      adbs.load( adbs.accountId, adbs.domain, adbs.env, adbs.version );
-    </script>
-    <!-- Adtribute.io End -->
-  </head>
-  {%- assign extra_body_class = '' -%}
-  {%- if content_for_layout_captured contains 'Die Versandoptionen für deine Bestellung haben sich geändert' -%}
-    {%- assign extra_body_class = ' cart-updated' -%}
-  {%- endif -%}
-  <body class="page-checkout{{ extra_body_class }}">
-    {{ skip_to_content_link }}
+    }
+    adbs.load( adbs.accountId, adbs.domain, adbs.env, adbs.version );
+  </script>
+  <!-- Adtribute.io End -->
+</head>
+{%- assign extra_body_class = '' -%}
+{%- if content_for_layout_captured contains 'Die Versandoptionen für deine Bestellung haben sich geändert' -%}
+  {%- assign extra_body_class = ' cart-updated' -%}
+{%- endif -%}
+<body class="page-checkout{{ extra_body_class }}">
+{{ skip_to_content_link }}
 
-    <header class="banner" data-header role="banner">
-      <div class="wrap">
+<header class="banner" data-header role="banner">
+  <div class="wrap">
+    {{ content_for_logo }}
+  </div>
+
+  <!-- Hotjar Tracking Code for shop.fairment.de -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = { hjid: 3542263, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</header>
+
+{{ order_summary_toggle }}
+
+<div class="content" data-content>
+  <div class="wrap">
+    <div class="main">
+      <div class="asdasd"></div>
+      <header class="main__header" role="banner">
         {{ content_for_logo }}
-      </div>
+        <div hidden="hidden">
+          {{ breadcrumb }}
+        </div>
 
-      <!-- Hotjar Tracking Code for shop.fairment.de -->
-      <script>
-        (function (h, o, t, j, a, r) {
-          h.hj =
-            h.hj ||
-            function () {
-              (h.hj.q = h.hj.q || []).push(arguments);
-            };
-          h._hjSettings = { hjid: 3542263, hjsv: 6 };
-          a = o.getElementsByTagName('head')[0];
-          r = o.createElement('script');
-          r.async = 1;
-          r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-          a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-      </script>
-    </header>
-
-    {{ order_summary_toggle }}
-
-    <div class="content" data-content>
-      <div class="wrap">
-        <div class="main">
-          <header class="main__header" role="banner">
-            {{ content_for_logo }}
-            <div hidden="hidden">
-              {{ breadcrumb }}
-            </div>
-
-            {%- unless is_thank_you_page -%}
-              {% comment %} The Vaan Group - Order Bump (1/2) {% endcomment %}
-              <div id="superbump"></div>
-              {% comment %} END OF The Vaan Group - Order Bump (1/2) {% endcomment %}
-              {% comment %} The Vaan Group - Order Bump (2/2) {% endcomment %}
-              <script src="/apps/superbump/superbump_widget.js"></script>
-              {% comment %} END OF The Vaan Group - Order Bump (2/2) {% endcomment %}
-              {% render 'js-superbump' %}
-              <nav class="checkout-breadcrumbs">
-                <ol class="breadcrumb breadcrumb--center" role="list">
-                  <li class="breadcrumb-item mod-completed" data-breadcrumb-step="cart">
-                    <a class="breadcrumb-link" href="/cart">
+        {%- unless is_thank_you_page -%}
+          {% comment %} The Vaan Group - Order Bump (1/2) {% endcomment %}
+          <div id="superbump"></div>
+          {% comment %} END OF The Vaan Group - Order Bump (1/2) {% endcomment %}
+          {% comment %} The Vaan Group - Order Bump (2/2) {% endcomment %}
+          <script src="/apps/superbump/superbump_widget.js"></script>
+          {% comment %} END OF The Vaan Group - Order Bump (2/2) {% endcomment %}
+        {% render 'js-superbump' %}
+          <nav class="checkout-breadcrumbs progressbar-2" style="display: none">
+            <ol class="breadcrumb breadcrumb--center" role="list">
+              <li class="breadcrumb-item mod-completed" data-breadcrumb-step="cart">
+                <a class="breadcrumb-link" href="/cart">
                       <span class="breadcrumb-bubble">
                         <span class="breadcrumb-step">1</span>
                         <span class="breadcrumb-icon">
                           {% render 'icon', icon: 'check-2' %}
                         </span>
                       </span>
-                      <span class="breadcrumb-caption"> Warenkorb </span>
-                    </a>
-                  </li>
+                  <span class="breadcrumb-caption"> Warenkorb </span>
+                </a>
+              </li>
 
-                  <li class="breadcrumb-item mod-blank" data-breadcrumb-step="contact_information">
-                    <a class="breadcrumb-link" href="?step=contact_information">
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="contact_information">
+                <a class="breadcrumb-link" href="?step=contact_information">
                       <span class="breadcrumb-bubble">
                         <span class="breadcrumb-step">2</span>
                         <span class="breadcrumb-icon">
                           {% render 'icon', icon: 'check-2' %}
                         </span>
                       </span>
-                      <span class="breadcrumb-caption"> Informationen </span>
-                    </a>
-                  </li>
+                  <span class="breadcrumb-caption"> Informationen </span>
+                </a>
+              </li>
 
-                  <li class="breadcrumb-item mod-blank" data-breadcrumb-step="shipping_method">
-                    <a class="breadcrumb-link" href="?previous_step=contact_information&step=shipping_method">
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="shipping_method">
+                <a class="breadcrumb-link" href="?previous_step=contact_information&step=shipping_method">
                       <span class="breadcrumb-bubble">
                         <span class="breadcrumb-step">3</span>
                         <span class="breadcrumb-icon">
                           {% render 'icon', icon: 'check-2' %}
                         </span>
                       </span>
-                      <span class="breadcrumb-caption"> Versand </span>
-                    </a>
-                  </li>
+                  <span class="breadcrumb-caption"> Versand </span>
+                </a>
+              </li>
 
-                  <li class="breadcrumb-item mod-blank" data-breadcrumb-step="payment_method">
-                    <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="payment_method">
+                <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
                       <span class="breadcrumb-bubble">
                         <span class="breadcrumb-step">4</span>
                         <span class="breadcrumb-icon">
                           {% render 'icon', icon: 'check-2' %}
                         </span>
                       </span>
-                      <span class="breadcrumb-caption"> Bezahlung </span>
-                    </a>
-                  </li>
+                  <span class="breadcrumb-caption"> Bezahlung </span>
+                </a>
+              </li>
 
-                  <li class="breadcrumb-item mod-blank" data-breadcrumb-step="thank_you">
-                    <a class="breadcrumb-link mod-nolink">
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="thank_you">
+                <a class="breadcrumb-link mod-nolink">
                       <span class="breadcrumb-bubble">
                         <span class="breadcrumb-step">5</span>
                         <span class="breadcrumb-icon">
                           {% render 'icon', icon: 'check-2' %}
                         </span>
                       </span>
-                      <span class="breadcrumb-caption"> Fertig </span>
-                    </a>
-                  </li>
-                </ol>
-              </nav>
-            {%- endunless -%}
+                  <span class="breadcrumb-caption"> Fertig </span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <nav class="checkout-breadcrumbs checkout-breadcrumbs--mod-2 progressbar-2">
+            <ol class="breadcrumb breadcrumb--center" role="list">
+              <li class="breadcrumb-item mod-completed" data-breadcrumb-step="cart">
+                <a class="breadcrumb-link" href="/cart">
+                      <span class="breadcrumb-bubble">
+                        <span class="breadcrumb-step">1</span>
+                        <span class="breadcrumb-icon">
+                          {% render 'icon', icon: 'check-3' %}
+                        </span>
+                      </span>
+                  <span class="breadcrumb-caption"> Warenkorb </span>
+                </a>
+              </li>
 
-            <div id="savings" class="hidden">
-              <p class="savings_top" style="font-weight:700;">Rabattcode erfolgreich aktiviert! 🥳</p>
-              <p class="savings_bottom">
-                <span style="font-weight:700;">Du sparst <span id="saving"></span> Euro</span> auf deine Bestellung!
-              </p>
-            </div>
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="contact_information">
+                <a class="breadcrumb-link" href="?step=contact_information">
+                      <span class="breadcrumb-bubble">
+                        <span class="breadcrumb-step">{% render 'icon', icon: 'checkout-info' %}</span>
+                        <span class="breadcrumb-icon">
+                          {% render 'icon', icon: 'check-3' %}
+                        </span>
+                      </span>
+                  <span class="breadcrumb-caption"> Informationen </span>
+                </a>
+              </li>
 
-            {% section 'countdown-timer' %}
-            {% comment %} {% section 'countdown-timer-2-ablyft' %} {% endcomment %}
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="shipping_method">
+                <a class="breadcrumb-link" href="?previous_step=contact_information&step=shipping_method">
+                      <span class="breadcrumb-bubble">
+                        <span class="breadcrumb-step">{% render 'icon', icon: 'checkout-shipping' %}</span>
+                        <span class="breadcrumb-icon">
+                          {% render 'icon', icon: 'check-3' %}
+                        </span>
+                      </span>
+                  <span class="breadcrumb-caption"> Versand </span>
+                </a>
+              </li>
 
-            {{ alternative_payment_methods }}
-          </header>
-          <main class="main__content" role="main">
-            {{ content_for_layout }}
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="payment_method">
+                <a class="breadcrumb-link" href="?previous_step=shipping_method&step=payment_method">
+                      <span class="breadcrumb-bubble">
+                        <span class="breadcrumb-step">{% render 'icon', icon: 'checkout-payment' %}</span>
+                        <span class="breadcrumb-icon">
+                          {% render 'icon', icon: 'check-3' %}
+                        </span>
+                      </span>
+                  <span class="breadcrumb-caption"> Bezahlung </span>
+                </a>
+              </li>
 
-            <div class="text-columns-checkout--mobile textColumnsCheckoutMobileTarget"></div>
+              <li class="breadcrumb-item mod-blank" data-breadcrumb-step="thank_you">
+                <a class="breadcrumb-link mod-nolink">
+                      <span class="breadcrumb-bubble">
+                        <span class="breadcrumb-step">{% render 'icon', icon: 'checkout-done' %}</span>
+                        <span class="breadcrumb-icon">
+                          {% render 'icon', icon: 'check-3' %}
+                        </span>
+                      </span>
+                  <span class="breadcrumb-caption"> Fertig </span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        {%- endunless -%}
 
-            <div class="checkoutSupportBoxMain checkout-supbox-main hidden-lap-and-up"></div>
-          </main>
-          <footer class="checkout-footer main__footer" role="contentinfo">
-            {%- if settings.custom_payment_icons_url != blank -%}
-              <div class="checkout-page--payicons">
-                <img src="{{ settings.custom_payment_icons_url }}" alt="Payment methods">
-              </div>
-            {%- else -%}
-              {%- unless shop.enabled_payment_types == empty -%}
-                <div class="checkout-page--payicons">
-                  <ul class="inline-list payment-icons">
-                    {%- for type in shop.enabled_payment_types -%}
-                      <li class="icon--payment">
-                        {{ type | payment_type_svg_tag }}
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                </div>
-              {%- endunless -%}
-            {%- endif -%}
-            {{ content_for_footer }}
-          </footer>
+        <div id="savings" class="hidden">
+          <p class="savings_top" style="font-weight:700;">Rabattcode erfolgreich aktiviert! 🥳</p>
+          <p class="savings_bottom">
+            <span style="font-weight:700;">Du sparst <span id="saving"></span> Euro</span> auf deine Bestellung!
+          </p>
         </div>
-        <aside class="sidebar" role="complementary">
-          <div class="sidebar__header">
-            {{ content_for_logo }}
-          </div>
-          <div class="sidebar__content">
-            {{ content_for_order_summary }}
 
-            <div class="text-columns-checkout--desktop">
-              {% section 'text-columns-checkout' %}
-            </div>
+        {% section 'countdown-timer' %}
+        {% comment %} {% section 'countdown-timer-2-ablyft' %} {% endcomment %}
 
-            <div class="checkout-supportbox sidebar-supbox hidden-pocket">
-              <div class="checkoutSupportBoxEl">
-                {% section 'support-box' %}
-              </div>
-            </div>
+        {{ alternative_payment_methods }}
+      </header>
+      <main class="main__content" role="main">
+        {{ content_for_layout }}
+
+        <div class="text-columns-checkout--mobile textColumnsCheckoutMobileTarget"></div>
+
+        <div class="checkoutSupportBoxMain checkout-supbox-main hidden-lap-and-up"></div>
+      </main>
+      <footer class="checkout-footer main__footer" role="contentinfo">
+        {%- if settings.custom_payment_icons_url != blank -%}
+          <div class="checkout-page--payicons">
+            <img src="{{ settings.custom_payment_icons_url }}" alt="Payment methods">
           </div>
-        </aside>
-      </div>
+        {%- else -%}
+          {%- unless shop.enabled_payment_types == empty -%}
+            <div class="checkout-page--payicons">
+              <ul class="inline-list payment-icons">
+                {%- for type in shop.enabled_payment_types -%}
+                  <li class="icon--payment">
+                    {{ type | payment_type_svg_tag }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endunless -%}
+        {%- endif -%}
+        {{ content_for_footer }}
+      </footer>
     </div>
+    <aside class="sidebar" role="complementary">
+      <div class="sidebar__header">
+        {{ content_for_logo }}
+      </div>
+      <div class="sidebar__content">
+        {{ content_for_order_summary }}
 
-    {%- if checkout.discounts_amount > 0 -%}
-      {% comment %}
-        <script>
-          window.discountAmount = '{{ checkout.discounts_amount }}';
-        </script>
-      {% endcomment %}
-    {%- endif -%}
-    <script type="module" src="{{ 'shopify-checkout.js' | asset_url }}"></script>
-    <script type="module" src="{{ 'checkout.js' | asset_url }}"></script>
-    {% render 'checkout-discount-banner' %}
-    {% render 'js-freegift' %}
+        <div class="text-columns-checkout--desktop">
+          {% section 'text-columns-checkout' %}
+        </div>
 
-    {{ tracking_code }}
-  </body>
+        <div class="checkout-supportbox sidebar-supbox hidden-pocket">
+          <div class="checkoutSupportBoxEl">
+            {% section 'support-box' %}
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+{%- if checkout.discounts_amount > 0 -%}
+  {% comment %}
+    <script>
+      window.discountAmount = '{{ checkout.discounts_amount }}';
+    </script>
+  {% endcomment %}
+{%- endif -%}
+<script type="module" src="{{ 'shopify-checkout.js' | asset_url }}"></script>
+<script type="module" src="{{ 'checkout.js' | asset_url }}"></script>
+{% render 'checkout-discount-banner' %}
+{% render 'js-freegift' %}
+
+{{ tracking_code }}
+</body>
 </html>
 
 <script>

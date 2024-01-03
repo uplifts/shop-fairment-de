@@ -10,73 +10,78 @@ function msToSecondsOnly(str) {
   return s;
 }
 
-function fancyTimeFormat(duration) {   
-    // Hours, minutes and seconds
-    var mins = ~~((duration % 3600) / 60);
-    var secs = ~~duration % 60;
+function fancyTimeFormat(duration) {
+  // Hours, minutes and seconds
+  var mins = ~~((duration % 3600) / 60);
+  var secs = ~~duration % 60;
 
-    // Output like "1:01" or "4:03:59" or "123:03:59"
-    var ret = "";
+  // Output like "1:01" or "4:03:59" or "123:03:59"
+  var ret = "";
 
-    ret += "" + mins + ":" + (secs < 10 ? "0" : "");
-    ret += "" + secs;
-    return ret;
+  ret += "" + mins + ":" + (secs < 10 ? "0" : "");
+  ret += "" + secs;
+  return ret;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   let step = Shopify.Checkout.step;
-  let countdownTimer = document.querySelectorAll('.countdownTimer');
-  let stepContact = document.querySelector('.breadcrumb-item[data-breadcrumb-step="contact_information"]');
-  let stepShipping = document.querySelector('.breadcrumb-item[data-breadcrumb-step="shipping_method"]');
-  let stepPayment = document.querySelector('.breadcrumb-item[data-breadcrumb-step="payment_method"]');
-  let stepSuccess = document.querySelector('.breadcrumb-item[data-breadcrumb-step="thank_you"]');
-  let secondPaymentMethodTrigger = document.querySelector('.radio-wrapper[data-select-gateway="65921155262"] .input-radio');
+  const progressBars = document.querySelectorAll('.checkout-breadcrumbs');
+  if(progressBars.length){
+    progressBars.forEach(progressBar => {
+      let countdownTimer = progressBar.querySelectorAll('.countdownTimer');
+      let stepContact = progressBar.querySelector('.breadcrumb-item[data-breadcrumb-step="contact_information"]');
+      let stepShipping = progressBar.querySelector('.breadcrumb-item[data-breadcrumb-step="shipping_method"]');
+      let stepPayment = progressBar.querySelector('.breadcrumb-item[data-breadcrumb-step="payment_method"]');
+      let stepSuccess = progressBar.querySelector('.breadcrumb-item[data-breadcrumb-step="thank_you"]');
+      let secondPaymentMethodTrigger = progressBar.querySelector('.radio-wrapper[data-select-gateway="65921155262"] .input-radio');
 
-  if (step) {
-    document.documentElement.setAttribute('data-current-step', step);
-    switch (step) {
-      case 'contact_information':
-        stepContact.classList.remove('mod-blank');
-        stepContact.classList.add('mod-current');
+      if (step) {
+        document.documentElement.setAttribute('data-current-step', step);
+        switch (step) {
+          case 'contact_information':
+            stepContact.classList.remove('mod-blank');
+            stepContact.classList.add('mod-current');
 
-        break;
-      case 'shipping_method':
-        stepContact.classList.remove('mod-blank');
-        stepContact.classList.add('mod-completed');
-        stepShipping.classList.remove('mod-blank');
-        stepShipping.classList.add('mod-current');
-        countdownTimer && countdownTimer.forEach((el) => {
-          el.classList.add('d-none');
-        });
-        
-        break;
-      case 'payment_method':
+            break;
+          case 'shipping_method':
+            stepContact.classList.remove('mod-blank');
+            stepContact.classList.add('mod-completed');
+            stepShipping.classList.remove('mod-blank');
+            stepShipping.classList.add('mod-current');
+            countdownTimer && countdownTimer.forEach((el) => {
+              el.classList.add('d-none');
+            });
+
+            break;
+          case 'payment_method':
+            stepContact.classList.remove('mod-blank');
+            stepContact.classList.add('mod-completed');
+            stepShipping.classList.remove('mod-blank');
+            stepShipping.classList.add('mod-completed');
+            stepPayment.classList.remove('mod-blank');
+            stepPayment.classList.add('mod-current');
+            countdownTimer && countdownTimer.forEach((el) => {
+              el.classList.add('d-none');
+            });
+
+            break;
+
+          default:
+            break;
+        }
+      }
+      if (document.documentElement.classList.contains('page--thank-you')) {
+        document.documentElement.setAttribute('data-current-step', 'thank_you');
         stepContact.classList.remove('mod-blank');
         stepContact.classList.add('mod-completed');
         stepShipping.classList.remove('mod-blank');
         stepShipping.classList.add('mod-completed');
         stepPayment.classList.remove('mod-blank');
-        stepPayment.classList.add('mod-current');
-        countdownTimer && countdownTimer.forEach((el) => {
-          el.classList.add('d-none');
-        });
-        
-        break;
-    
-      default:
-        break;
-    }
-  }
-  if (document.documentElement.classList.contains('page--thank-you')) {
-    document.documentElement.setAttribute('data-current-step', 'thank_you');
-    stepContact.classList.remove('mod-blank');
-    stepContact.classList.add('mod-completed');
-    stepShipping.classList.remove('mod-blank');
-    stepShipping.classList.add('mod-completed');
-    stepPayment.classList.remove('mod-blank');
-    stepPayment.classList.add('mod-completed');
-    stepSuccess.classList.remove('mod-blank');
-    stepSuccess.classList.add('mod-completed');
+        stepPayment.classList.add('mod-completed');
+        stepSuccess.classList.remove('mod-blank');
+        stepSuccess.classList.add('mod-completed');
+      }
+    })
   }
 
   const textColumnsCheckout = document.querySelector('.textColumnsCheckout');
@@ -88,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (textColumnsCheckout && textColsCheckoutMobile) {
     textColsCheckoutMobile.appendChild(textColumnsCheckout.cloneNode(true));
   }
-  
+
   if (secondPaymentMethodTrigger) {
     secondPaymentMethodTrigger.click();
   }
@@ -109,12 +114,12 @@ document.addEventListener('DOMContentLoaded', function() {
       var timeRaw = el.dataset.time || '15:00';
       var time = msToSecondsOnly(timeRaw);
 
-      var x = setInterval(function() {      
+      var x = setInterval(function() {
         // Display the result in the element with id="demo"
         el.innerHTML = fancyTimeFormat(time);
 
         time--;
-      
+
         // If the count down is finished, write some text
         if (time < 0) {
           clearInterval(x);
@@ -136,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //         let saving = document.getElementById('saving');
 
 //          saving.innerHTML = document.getElementsByClassName("visually-hidden skeleton-while-loading-sr")[0].innerHTML.replace('&nbsp;€ Rabatt auf den Gesamtpreis','');
-          
+
 //         }
 
 const handleDiscountSuccessMessage = (discountAmount, discountNumberEl) => {
