@@ -317,11 +317,11 @@
   .breadcrumb-step {
     font-size: 20px;
   }
-  
+
   .text-columns-checkout--row {
     margin-bottom: -32px;
   }
-  
+
   .text-columns-checkout--col {
     margin-bottom: 32px;
   }
@@ -402,36 +402,36 @@
 /* END ID - 12.08.22 - Checkout fixes */
 
 .step__footer__previous-link {
-  display: none; 
+  display: none;
 }
 
 .total-recap__final-price {
-color: #950101; 
+  color: #950101;
 }
 
 @media (min-width: 1000px) {.logo__image--large {
-max-height: 50px; 
-}}            
+  max-height: 50px;
+}}
 
 .superbump-action {
-    background-color: #F80100 !important;
-    color: white!important;
-    border-radius: 6px!important;
-    letter-spacing: normal !important;
+  background-color: #F80100 !important;
+  color: white!important;
+  border-radius: 6px!important;
+  letter-spacing: normal !important;
 }
 
 .superbump-app {
-    border: 3px #c5a200 solid !important;
-    border-style: dashed !important;
+  border: 3px #c5a200 solid !important;
+  border-style: dashed !important;
 }
-  
+
 .superbump-title-loading, .superbump-title {
-font-size: 1.3em;   
+  font-size: 1.3em;
 }
 
 .RCT.product-upsell-large {
-    border: 5px dotted #F4CD83 !important;
-    background-color: #FFFAE5;
+  border: 5px dotted #F4CD83 !important;
+  background-color: #FFFAE5;
 }}
 
 /* Order Bump Override */
@@ -504,7 +504,7 @@ font-size: 1.3em;
 }
 
 .countdown-panel--text.flex-1.originalText {
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 html.no-ablyft .countdown-panel.countdown-2 {
@@ -627,11 +627,11 @@ html.no-ablyft .countdown-panel.countdown-2 {
 
 /* TEMP STYLE TO HIDE */
 
-@media (max-width: 1023px) { 
-.sec-support-box {
-  display: none;
-}
+@media (max-width: 1023px) {
+  .sec-support-box {
+    display: none;
   }
+}
 /* END ID - 20.07.23 - Checkout - Support box */
 
 /* START ID - 09.08.23 - Checkout - Discount success message */
@@ -697,3 +697,79 @@ html.no-ablyft .countdown-panel.countdown-2 {
   font-weight: 500;
 }
 /* END ID - 19.12.23 - Quickfixes for DE and NL */
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item {
+  --current-color: #03997C;
+  color: #03997C;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item:before,
+.checkout-breadcrumbs--mod-2 .breadcrumb-item:after{
+  height: 2px !important;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item:before,
+.checkout-breadcrumbs--mod-2 .breadcrumb-item:after{
+  background: #D9F0EB !important;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-current:before,
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-current:after,
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-completed:before,
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-completed:after{
+  background: #03997C !important;
+}
+
+
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-bubble{
+  border-width: 2px !important;
+  border-color: #D9F0EB !important;
+  background: #D9F0EB !important;
+  width: 26px !important;
+  height: 26px !important;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-current .breadcrumb-bubble,
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-completed .breadcrumb-bubble{
+  border-color: #03997C !important;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-completed .breadcrumb-bubble{
+  border-color: #03997C !important;
+  background: #03997C !important;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-caption{
+  font-size: 11px !important;
+  color: rgba(3, 153, 124, 0.50);
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-current .breadcrumb-caption{
+  color: #333;
+  font-weight: 600;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-completed .breadcrumb-caption{
+  color: #03997C;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item.mod-completed .breadcrumb-icon .icon{
+  color: #fff;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-item {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-icon{
+  position: relative;
+}
+
+.checkout-breadcrumbs--mod-2 .breadcrumb-icon .icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
