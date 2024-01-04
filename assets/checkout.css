@@ -693,8 +693,10 @@ html.no-ablyft .countdown-panel.countdown-2 {
 /* END ID - 22.11.23 - Checkout - Changed cart message styling */
 
 /* START ID - 19.12.23 - Quickfixes for DE and NL */
+
 .order-summary__sections .product__description__selling_plan {
   font-weight: 500;
+  color: #09148d;
 }
 /* END ID - 19.12.23 - Quickfixes for DE and NL */
 
