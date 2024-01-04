@@ -776,6 +776,6 @@ html.no-ablyft .countdown-panel.countdown-2 {
   transform: translate(-50%, -50%);
 }
 
-.checkout-breadcrumbs.checkout-breadcrumbs--mod-2 .progressbar-2 {
+ .progressbar-2 {
   display: none !important; 
 }
