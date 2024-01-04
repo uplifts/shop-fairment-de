@@ -475,9 +475,9 @@
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
-            "title": "Perfekt in Kombination mit unseren SuperMikroben® ",
+            "title": "Du nimmst bereits SuperMikroben® und\/ oder Präzisiotikum®?",
             "title_fallback": "",
-            "content": "<p>Die Einnahme unserer Premium Biotika und Präbiotika zusammen erzeugt einen kraftvollen, symbiotischen Effekt. <\/p>",
+            "content": "<p>Perfekt! Das bedeutet, du tust bereits mehr für dein Wohlbefinden, als die meisten Menschen. 🎉<br\/><br\/><strong>Wozu dann die BiomBalance® Kur?<\/strong><br\/>Die<strong> BiomBalance®<\/strong> Kur ist ein intensiver Neustart für dein Mikrobiom. Während der Kur nimmst du die <em>fairment <\/em>Darmprodukte (<strong>SuperMikroben®<\/strong>, <strong>Präzisiotikum®<\/strong> und <strong>MegaMukosa®<\/strong>) hochdosiert ein. <br\/><br\/>Außerdem folgst du einer Ernährungsweise, die individuell auf den Zustand deines Darms angepasst ist. Die Synergien aus diesen Komponenten wirken NOCH gezielter, als die einzelnen Produkte es alleine schaffen können.<\/p>",
             "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p>",
             "button_text": "",
             "button_link": ""
@@ -510,14 +510,14 @@
           "settings": {
             "use_video": false,
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "image": "shopify:\/\/shop_images\/230920_Fair_Praezi_02_1.png",
+            "image": "shopify:\/\/shop_images\/240102_FAIR_Darmkur_Grafik_Expert_innen_01_4f4d071b-88db-42b2-bb4f-65f0370eb564.jpg",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
             "title": "Speziell entwickelt von Ärzt:innen und Expert:innen.",
             "title_fallback": "",
             "content": "",
-            "content_fallback": "<p>Gute Produkte, die im Zusammenhang mit dem sensiblen menschlichen Körper stehen, sollten von Expert:innen entwickelt werden.<\/p><p>Unser Präzisiotikum® wurde speziell von Ärzt:innen, Heilpraktiker:innen und Biochemiker:innen für dich entwickelt, um größtmögliches Wohlbefinden zu erzielen. Wir haben unser Expertenteam sorgfältig ausgewählt, um sicherzustellen, dass unsere Produkte die marktführende Qualitätsansprüche erfüllen.<\/p>",
+            "content_fallback": "<p>Gute Produkte, die im Zusammenhang mit dem sensiblen menschlichen Körper stehen, sollten von Expert:innen entwickelt werden.<\/p><p>Unsere BiomBalance® Kur wurde gemeinsam mit Ärzt:innen, Heilpraktiker:innen und Biochemiker:innen für dich entwickelt, um größtmögliches Wohlbefinden zu erzielen. Wir haben unser Expertenteam sorgfältig ausgewählt, um sicherzustellen, dass unsere Produkte die marktführende Qualitätsansprüche erfüllen.<\/p>",
             "button_text": "",
             "button_link": ""
           }
