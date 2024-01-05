@@ -18338,7 +18338,8 @@ display: none !important:
     min-width: 0;
   }
 
-  .section.supmikrolp-highlights {
+  .section.supmikrolp-highlights,
+  .section.supmikrolp-highlights .image-with-text {
     padding-block-start: 0;
   }
 }
