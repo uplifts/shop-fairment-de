@@ -18384,6 +18384,14 @@ display: none !important:
     width: 100%;
   }
 
+  .section.supmikrolp-quality-columns .multi-column__text-container p {
+    margin: 0;
+  }
+
+  .section.supmikrolp-quality-columns .multi-column__text-container p + p {
+    margin-top: 0.5em;
+  }
+
   [template="page-supermikroben-lp"] {
     --heading-h2-font-size: 24px;
     --heading-h3-font-size: 20px;
