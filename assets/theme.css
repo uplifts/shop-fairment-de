@@ -18353,7 +18353,8 @@ display: none !important:
   }
 
   .sec--promo-offers .promo-offers--columns {
-    grid-auto-columns: 55%;
+    display: flex;
+    flex-direction: column;
   }
 
   .section.supmikrolp-highlights,
