@@ -3,6 +3,30 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "bfe35e32-eec4-49ec-baa4-93f88672baab": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/07.01._2.jpg",
+            "split_image": "shopify:\/\/shop_images\/Darmkur_Listingbilder.png",
+            "mobile_image": "shopify:\/\/shop_images\/Darmkur_Listingbilder.png",
+            "stretch_1st_image": true,
+            "text_position": "middle_left",
+            "subheading": "",
+            "title": "Biombalance® DarmKur",
+            "text": "<p style=\"font-weight:600; color: #00148C;\">Die Darmkur die neue  Standards setzt. Sorge jetzt für ein neues Wohlbefinden in deinem Darm.<\/p>",
+            "button_1_text": "Zur Darmkur",
+            "button_1_link": "shopify:\/\/products\/effektivenzyme-premium-verdauungskomplex",
+            "button_2_text": "Zum Shop",
+            "button_2_link": "shopify:\/\/collections\/all",
+            "bottom_line_text": "",
+            "text_color": "#00148c",
+            "button_background": "#f17217",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "slide-1": {
           "type": "image",
           "settings": {
@@ -23,30 +47,6 @@
             "button_background": "#f17218",
             "button_text_color": "#ffffff",
             "overlay_color": "#00148c",
-            "overlay_opacity": 0
-          }
-        },
-        "bfe35e32-eec4-49ec-baa4-93f88672baab": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/07.01._2.jpg",
-            "split_image": "shopify:\/\/shop_images\/Darmkur_Listingbilder.png",
-            "mobile_image": "shopify:\/\/shop_images\/Darmkur_Listingbilder.png",
-            "stretch_1st_image": true,
-            "text_position": "middle_left",
-            "subheading": "",
-            "title": "Biombalance® DarmKur",
-            "text": "<p style=\"font-weight:600; color: #00148C;\">Die Darmkur die neue  Standards setzt. Sorge jetzt für ein neues Wohlbefinden in deinem Darm.<\/p>",
-            "button_1_text": "Zur Darmkur",
-            "button_1_link": "shopify:\/\/products\/effektivenzyme-premium-verdauungskomplex",
-            "button_2_text": "",
-            "button_2_link": "",
-            "bottom_line_text": "",
-            "text_color": "#00148c",
-            "button_background": "#f17217",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
@@ -75,8 +75,8 @@
         }
       },
       "block_order": [
-        "slide-1",
         "bfe35e32-eec4-49ec-baa4-93f88672baab",
+        "slide-1",
         "cfe218c7-d31d-4e0a-b55e-66d506fa240e"
       ],
       "custom_css": [
