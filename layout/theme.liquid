@@ -25,7 +25,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
   dir="{{ direction }}"
   fontify-lang="{{ shop.locale }}"
   {% if request.page_type == 'product' %}data-product-id="{{ product.id }}"{% endif %}
-  template="{{ template }}">
+  template="{{ template | handleize }}">
   <head>
     {{ locksmith_initializations }}
     <!-- ABlyft Snippet from Uplifts -->
