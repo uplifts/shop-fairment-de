@@ -18338,14 +18338,18 @@ display: none !important:
     min-width: 0;
   }
 
-  .section.supmikrolp-highlights .image-with-text__image-wrapper {
-    margin-inline: calc(-1 * var(--container-gutter));
-  }
-
   .section.supmikrolp-highlights,
   .section.supmikrolp-highlights .image-with-text {
     padding-block-start: 0;
     padding-inline: 0;
+  }
+
+  .section.supmikrolp-highlights .image-with-text__wrapper {
+    overflow: visible;
+  }
+
+  .section.supmikrolp-highlights .image-with-text__image-wrapper {
+    margin-inline: calc(-1 * var(--container-gutter));
   }
 }
 
