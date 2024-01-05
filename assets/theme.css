@@ -18337,6 +18337,10 @@ display: none !important:
     max-width: 100%;
     min-width: 0;
   }
+
+  .section.supmikrolp-highlights {
+    padding-block-start: 0;
+  }
 }
 
 @media (max-width: 499px) {
