@@ -58,7 +58,7 @@
       ],
       "settings": {
         "css_class": "home-hero",
-        "section_height_mobile": 100,
+        "section_height_mobile": 70,
         "section_height": "small",
         "transition_type": "fade",
         "autoplay": true,
