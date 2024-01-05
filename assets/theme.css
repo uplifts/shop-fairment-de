@@ -18380,6 +18380,10 @@ display: none !important:
     display: inline !important;
   }
 
+  .section.supmikrolp-highlights .image-with-text__content-custom .button-wrapper .button {
+    width: 100%;
+  }
+
   [template="page-supermikroben-lp"] {
     --heading-h2-font-size: 24px;
     --heading-h3-font-size: 20px;
