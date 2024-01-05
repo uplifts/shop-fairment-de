@@ -54,7 +54,6 @@
         "slide-1",
         "cfe218c7-d31d-4e0a-b55e-66d506fa240e"
       ],
-      "disabled": true,
       "custom_css": [
         ".slideshow__nav {justify-content: start; bottom: -5px;}"
       ],
@@ -122,6 +121,7 @@
         "63105dd9-f7a6-4ddc-b39a-1f9a8023f8ed",
         "ff8f470a-5a99-4489-b53f-9ba6ff59e14a"
       ],
+      "disabled": true,
       "settings": {
         "css_class": "home-hero",
         "section_height_mobile": 84,
