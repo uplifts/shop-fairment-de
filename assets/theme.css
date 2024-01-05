@@ -18337,6 +18337,20 @@ display: none !important:
     max-width: 100%;
     min-width: 0;
   }
+}
+
+@media (max-width: 499px) {
+  .supmikrolp-quality-columns .section__header .heading {
+    font-size: 22px;
+  }
+
+  .supmikrolp-quality-columns .multi-column__inner .multi-column__item .heading {
+    font-size: 15px;
+  }
+
+  .sec--promo-offers .promo-offers--columns {
+    grid-auto-columns: 55%;
+  }
 
   .section.supmikrolp-highlights,
   .section.supmikrolp-highlights .image-with-text {
@@ -18352,19 +18366,7 @@ display: none !important:
     margin-inline: calc(-1 * var(--container-gutter));
     border-radius: 0;
   }
-}
 
-@media (max-width: 499px) {
-  .supmikrolp-quality-columns .section__header .heading {
-    font-size: 22px;
-  }
-
-  .supmikrolp-quality-columns .multi-column__inner .multi-column__item .heading {
-    font-size: 15px;
-  }
-
-  .sec--promo-offers .promo-offers--columns {
-    grid-auto-columns: 55%;
-  }
+  
 }
 /* END ID - 16.12.23 - Supermikroben LP from Replo */
