@@ -18376,6 +18376,10 @@ display: none !important:
     border-radius: 0;
   }
 
+  .section.supmikrolp-intro .image-with-text__content-title split-lines > span {
+    display: inline !important;
+  }
+
   [template="page-supermikroben-lp"] {
     --heading-h2-font-size: 24px;
     --heading-h3-font-size: 20px;
