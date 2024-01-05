@@ -18152,6 +18152,10 @@ display: none !important:
   color: #2F7D39FF;
 }
 
+.supmikrolp-highlights-check-text > span {
+  flex: 1;
+}
+
 .supmikrolp-gallery .slideshow {
   width: 400px;
   max-width: 100%;
