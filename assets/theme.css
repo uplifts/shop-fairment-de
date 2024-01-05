@@ -18350,6 +18350,7 @@ display: none !important:
 
   .section.supmikrolp-highlights .image-with-text__image-wrapper {
     margin-inline: calc(-1 * var(--container-gutter));
+    border-radius: 0;
   }
 }
 
