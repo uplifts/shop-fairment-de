@@ -7,7 +7,7 @@
       "color": "Farbe",
       "white": "Weiß",
       "size": "Größe",
-      "var_img_options": "Menge"
+      "var_img_options": "Menge,Größe"
     },
     "breadcrumb": {
       "title": "Pfadleiste",
