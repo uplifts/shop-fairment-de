@@ -18371,5 +18371,9 @@ display: none !important:
     --heading-h2-font-size: 24px;
     --heading-h3-font-size: 22px;
   }
+
+  [template="page-supermikroben-lp"] #main {
+    line-height: 1.25;
+  }
 }
 /* END ID - 16.12.23 - Supermikroben LP from Replo */
