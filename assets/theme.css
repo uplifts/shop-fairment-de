@@ -18352,6 +18352,10 @@ display: none !important:
     font-size: 15px;
   }
 
+  .supmikrolp-quality-columns .multi-column__inner {
+    grid-template-columns: 1fr !important;
+  }
+
   .sec--promo-offers .promo-offers--columns {
     display: flex;
     flex-direction: column;
