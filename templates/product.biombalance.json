@@ -389,15 +389,15 @@
           "type": "item",
           "settings": {
             "use_video": false,
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "",
             "image_fallback": "shopify:\/\/shop_images\/240103_Fair_Darmkur_Listingbilder_Grafik_04_V4_1.jpg",
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
             "title": "",
-            "title_fallback": "Smart, Stark & Wirksam",
+            "title_fallback": "Einzigartige Wirk-Kombination aus 3 Produkten",
             "content": "",
-            "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p>",
+            "content_fallback": "<p>Die <strong>BiomBalance® Kur <\/strong>verläuft in 3 Phasen, die sinnvoll aufeinander aufbauen. <br\/><br\/>Ab <strong>Phase 1<\/strong> räumen die <strong>SuperMikroben® <\/strong>deinen Darm auf & bilden die perfekte Basis für ein gesündere Darmumgebung<br\/><br\/><strong>Präzisiotikum®<\/strong> füttert ab <strong>Phase 2 <\/strong>die guten Darm-Mikroben, die du durch die <strong>SuperMikroben®<\/strong> in deinen Darm gibst. <br\/><br\/>Schließlich pflegt <strong>MegaMukosa®<\/strong> in Phase 3 deine Darmschleimhaut und hilft deinem Darm, eventuelle Spuren von <strong>Leaky Gut <\/strong>oder andere Schleimhautirritationen zu heilen.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -436,9 +436,9 @@
             "tab_label": "Item",
             "subheading_icon": "shopify:\/\/shop_images\/arrow-283583.png",
             "subheading": "",
-            "title": "Neuer, präziser, besser: Präzisiotikum®",
+            "title": "Paul erklärt dir unsere Darmkur",
             "title_fallback": "",
-            "content": "<p>Präbiotika, also Ballaststoffe, sind das Futter deiner Darmbakterien. Das Problem bei vielen Präbiotika ist, dass sie sowohl gute als auch schlechte Darmbakterien ernähren. <\/p><p>Deshalb haben wir das Präzisiotikum® entwickelt - ein präzises Präbiotikum. Innovativ formuliert, um nur das Wachstum deiner guten, nützlichen Darmbakterien zu fördern. So werden nicht nur deine Verdauung und deine Nährstoffaufnahme, sondern auch dein Immunsystem unterstützt.*<\/p>",
+            "content": "<p>Im ganzen fairment-Team freut sich unser Gründer Paul wohl am allermeisten über die BiomBalance® Kur. <\/p><p>Es war ein lang gehegter Traum von ihm, eine effektive Kur für deine beste Darmgesundheit auf den deutschen Markt zu bringen. ❤️ <\/p>",
             "content_fallback": "<p>Das Präzisiotikum® enthält drei Oligosaccharide, die klinisch nachweislich ausschließlich und ganz präzise deine guten Darmbakterien versorgen. Studien zeigen, dass das Präzisiotikum® die Population der guten Bakterien in einem Monat mehr als verdoppeln kann und somit die Darmschleimhaut unterstützt.(2) Zudem fördert es eine reibungslose Verdauung, ein gesundes Immunsystem, stärkt den Stoffwechsel und fördert dein Wohlbefinden.(1)<\/p>",
             "button_text": "",
             "button_link": ""
