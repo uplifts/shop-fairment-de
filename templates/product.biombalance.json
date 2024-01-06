@@ -474,7 +474,7 @@
         "video_url2": "https:\/\/vimeo.com\/898049506",
         "background_type": "boxed",
         "video_size": "small",
-        "autoplay": true,
+        "autoplay": false,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
