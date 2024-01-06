@@ -5,7 +5,6 @@
       "blocks": {
         "bfe35e32-eec4-49ec-baa4-93f88672baab": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/07.01._2.jpg",
             "split_image": "shopify:\/\/shop_images\/Darmkur_Listingbilder.png",
@@ -29,6 +28,7 @@
         },
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/230421_Fairment_custom_2000px.jpg",
             "split_image": "shopify:\/\/shop_images\/x-230421_Fair_Header_Mockup_groesser.png",
