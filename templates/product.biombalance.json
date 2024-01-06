@@ -382,6 +382,42 @@
       "settings": {
       }
     },
+    "9cbd93ac-4ab2-4fe2-8025-f3bf9bb9c2e2": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Paul erklärt dir unsere Darmkur",
+        "content": "<p>Im ganzen fairment-Team freut sich unser Gründer Paul wohl am allermeisten über die BiomBalance® Kur.<\/p><p>Es war ein lang gehegter Traum von ihm, eine effektive Kur für deine beste Darmgesundheit auf den deutschen Markt zu bringen. ❤️<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "895124ae-62b4-483d-8f3d-9b03b82b7b16": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "",
+        "image": "shopify:\/\/shop_images\/231218_Fair_Darmkur_SP_Motive_01_c5c7fffd-c61c-42d3-8664-f599d4e57229.jpg",
+        "subheading2": "",
+        "title2": "",
+        "video_url2": "https:\/\/www.youtube.com\/watch?v=_Hbb-qJ6DIQ",
+        "image2": "shopify:\/\/shop_images\/231218_Fair_Darmkur_SP_Motive_01_c5c7fffd-c61c-42d3-8664-f599d4e57229.jpg",
+        "background_type": "boxed",
+        "video_size": "small",
+        "autoplay": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1662567200ba271a25": {
       "type": "image-with-text",
       "blocks": {
@@ -448,6 +484,7 @@
       "block_order": [
         "eb40ca53-f75d-470c-bcc9-5c8946a8cefb"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -461,23 +498,6 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "895124ae-62b4-483d-8f3d-9b03b82b7b16": {
-      "type": "video",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "video_url": "",
-        "image": "shopify:\/\/shop_images\/231218_Fair_Darmkur_SP_Motive_01_c5c7fffd-c61c-42d3-8664-f599d4e57229.jpg",
-        "subheading2": "",
-        "title2": "",
-        "video_url2": "https:\/\/www.youtube.com\/watch?v=_Hbb-qJ6DIQ",
-        "background_type": "boxed",
-        "video_size": "small",
-        "autoplay": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "67afcc81-e56c-453d-b522-49cf8f36137d": {
@@ -822,9 +842,10 @@
     "3942d0a2-603b-40ad-8038-e168272b44a6",
     "1662566489f2987f24",
     "product-content",
+    "9cbd93ac-4ab2-4fe2-8025-f3bf9bb9c2e2",
+    "895124ae-62b4-483d-8f3d-9b03b82b7b16",
     "1662567200ba271a25",
     "142cb517-0ba5-40e6-a699-e0f9a3b7fd8e",
-    "895124ae-62b4-483d-8f3d-9b03b82b7b16",
     "67afcc81-e56c-453d-b522-49cf8f36137d",
     "c840d2ca-4069-4077-a7e2-652d831c0ba5",
     "13172787-51a3-467b-bf03-1238e810001e",
