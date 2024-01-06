@@ -469,12 +469,13 @@
         "subheading": "",
         "title": "",
         "video_url": "",
+        "image": "shopify:\/\/shop_images\/231218_Fair_Darmkur_SP_Motive_01_c5c7fffd-c61c-42d3-8664-f599d4e57229.jpg",
         "subheading2": "",
         "title2": "",
         "video_url2": "https:\/\/www.youtube.com\/watch?v=_Hbb-qJ6DIQ",
         "background_type": "boxed",
         "video_size": "small",
-        "autoplay": true,
+        "autoplay": false,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
