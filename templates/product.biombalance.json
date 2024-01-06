@@ -473,7 +473,7 @@
         "title2": "",
         "video_url2": "https:\/\/www.youtube.com\/watch?v=_Hbb-qJ6DIQ",
         "background_type": "boxed",
-        "video_size": "small",
+        "video_size": "medium",
         "autoplay": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
