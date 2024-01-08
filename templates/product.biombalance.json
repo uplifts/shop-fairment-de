@@ -670,6 +670,7 @@
       "block_order": [
         "72ad7b16-28ac-4d8f-b11b-704d062418a2"
       ],
+      "disabled": true,
       "settings": {
         "hide-image": true,
         "only-mobile": true,
@@ -745,6 +746,7 @@
       "block_order": [
         "e0077f47-3c2a-4ed5-908d-0ff502337fce"
       ],
+      "disabled": true,
       "settings": {
         "hide-image": false,
         "only-mobile": true,
