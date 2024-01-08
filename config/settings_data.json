@@ -90,6 +90,7 @@
           },
           "6f5ec34f-8681-4d6c-8727-c6205d10d952": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Wieder da:",
               "learn_more_text": "PRÄZISIOTIKUM",
@@ -97,6 +98,17 @@
               "content": "<p>Das Präzisiotikum® ist ein innovatives Nahrungsergänzungsmittel, das speziell entwickelt wurde, um die Gesundheit und die guten Bakterien in deinem Darm zu fördern.<\/p>",
               "button_text": "Jetzt probieren",
               "button_link": "shopify:\/\/products\/prazisiotikum-innovatives-prabiotikum"
+            }
+          },
+          "0b3f3600-ae1e-4125-aa6f-d12764b6e8fa": {
+            "type": "message",
+            "settings": {
+              "text": "Wir brauchen gerade länger, dir zu antworten",
+              "learn_more_text": "",
+              "title": "Antworten von unserem Kundensupport dauern aktuell etwas länger",
+              "content": "<p>Durch das große Interesse an unserer <a href=\"\/products\/biombalance-darmkur-probiotikum-darmreinigung\" title=\"BiomBalance® Kur\">Darmkur<\/a>, kann es momentan etwas länger dauern, bis du eine Antwort von uns erhältst. Danke für dein Verständnis.<\/p>",
+              "button_text": "",
+              "button_link": ""
             }
           },
           "a0656701-3256-41a6-9d51-8d84ac4da2ee": {
@@ -115,6 +127,7 @@
         "block_order": [
           "99effb0d-0dbb-4c21-a91b-cd4d45bf55ac",
           "6f5ec34f-8681-4d6c-8727-c6205d10d952",
+          "0b3f3600-ae1e-4125-aa6f-d12764b6e8fa",
           "a0656701-3256-41a6-9d51-8d84ac4da2ee"
         ],
         "settings": {
