@@ -13,7 +13,7 @@
 
               {%- assign processed_blocks = processed_blocks | plus: 1 -%}
             {%- endif -%}
-
+            
           {%- when 'reviews' -%}
             <button type="button" id="product-{{ product.id }}-reviews-desktop" class="tabs-nav__item heading heading--small anchor" aria-expanded="{% if processed_blocks == 0 %}true{% else %}false{% endif %}" aria-controls="block-{{ section.id }}-{{ block.id }}" {{ block.shopify_attributes }}>
               {%- assign rating_count = product.metafields.reviews.rating_count.value | default: 0 -%}

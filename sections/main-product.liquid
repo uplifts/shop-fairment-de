@@ -87,8 +87,8 @@
   </section>
 {%- else -%}
   {%- comment -%}
-  The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also
-  quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
+    The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also
+    quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
   {%- endcomment -%}
 
   {%- capture quick_buy_product_info -%}
@@ -115,7 +115,7 @@
           {%- endif -%}
 
           <a href="{{ product.url }}" class="product-item-meta__title">{{ product.title }}</a>
-
+         
           <div class="product-item-meta__price-list-container" role="region" aria-live="polite">
             <div class="price-list" data-product-price-list>
               {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
@@ -128,7 +128,7 @@
                     {{- product.selected_or_first_available_variant.price | money -}}
                   {%- endif -%}
                 </span>
-                
+               
                 <span class="price price--compare">
                   <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
 
@@ -184,7 +184,12 @@
       <header class="drawer__header">
         <p class="drawer__title heading h6">{{ 'product.form.choose_options' | t }}</p>
 
-        <button type="button" class="drawer__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        <button
+          type="button"
+          class="drawer__close-button tap-area"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}"
+        >
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
@@ -201,7 +206,12 @@
       <header class="popover__header">
         {{- quick_buy_product_info -}}
 
-        <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        <button
+          type="button"
+          class="popover__close-button tap-area tap-area--large"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}"
+        >
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
@@ -212,7 +222,6 @@
     </quick-buy-popover>
   {%- endif -%}
 {%- endunless -%}
-
 
 {% schema %}
 {
@@ -687,7 +696,7 @@
           "id": "text",
           "label": "Text",
           "default": "Einmal kaufen, beliebig oft herstellen"
-        }, 
+        },
         {
           "type": "product_list",
           "id": "product_list",
@@ -823,21 +832,33 @@
 {% endschema %}
 
 <script>
-document.addEventListener("DOMContentLoaded", (event) => {
+  document.addEventListener('DOMContentLoaded', (event) => {
     if (document.querySelector('.product.product-hero .product__info product-variants .variant-swatch')) {
-        const variantSelector = document.querySelectorAll('.product.product-hero .product__info product-variants .variant-swatch');
-        variantSelector.forEach((element) => {
-            element.addEventListener('click', () => {
-                setTimeout(() => {
-                    let selectedVariant = document.querySelector(".product.product-hero .product__info .product-form__buy-buttons form input[name='id']").value;
-                    if (document.querySelector(".mini-product-detail .mini-buy-button .product-form__buy-buttons form input[name='id']")) {
-                        document.querySelectorAll(".mini-product-detail .mini-buy-button .product-form__buy-buttons form input[name='id']").forEach((e) => {
-                            e.value = selectedVariant;
-                        })
-                    }
-                }, 0);
-            });
+      const variantSelector = document.querySelectorAll(
+        '.product.product-hero .product__info product-variants .variant-swatch'
+      );
+      variantSelector.forEach((element) => {
+        element.addEventListener('click', () => {
+          setTimeout(() => {
+            let selectedVariant = document.querySelector(
+              ".product.product-hero .product__info .product-form__buy-buttons form input[name='id']"
+            ).value;
+            if (
+              document.querySelector(
+                ".mini-product-detail .mini-buy-button .product-form__buy-buttons form input[name='id']"
+              )
+            ) {
+              document
+                .querySelectorAll(
+                  ".mini-product-detail .mini-buy-button .product-form__buy-buttons form input[name='id']"
+                )
+                .forEach((e) => {
+                  e.value = selectedVariant;
+                });
+            }
+          }, 0);
         });
+      });
     }
-});
+  });
 </script>

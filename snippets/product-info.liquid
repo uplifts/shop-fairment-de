@@ -1,7 +1,33 @@
+<style>
+  .product__info h1.product-meta__title {
+    margin-bottom: 0;
+  }
+  .subheading {
+    margin: 8px 0;
+  }
+  .subheading p {
+    color: #43484c;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  @media only screen and (max-width: 999px) {
+    .subheading {
+      margin: 16px 0;
+    }
+    .subheading p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+</style>
+
 {%- assign has_labels = false -%}
 {%- unless product.selected_or_first_available_variant.available -%}
   {%- assign has_labels = true -%}
-{%- elsif product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+{%- elsif product.selected_or_first_available_variant.compare_at_price
+    > product.selected_or_first_available_variant.price
+-%}
   {%- assign has_labels = true -%}
 {%- endunless -%}
 
@@ -57,89 +83,96 @@
           </div>
           {{ popular_badge }}
         </div>
-        
+        {%- if product.metafields.custom.subheadline != blank -%}
+          <div class="subheading">
+            <p>{{ product.metafields.custom.subheadline }}</p>
+          </div>
+        {%- endif -%}
         {%- if section.settings.show_product_rating and section.settings.custom_rating_snippet != blank -%}
           <div class="product-meta__reviews">
             {{ section.settings.custom_rating_snippet }}
           </div>
         {%- endif -%}
-
         {%- if product.metafields.custom.short_description != blank -%}
           <div class="product-meta__excerpt">
             {{ product.metafields.custom.short_description }}
           </div>
         {%- endif -%}
 
-
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'extra_info' -%}
-                {%- for current_product in block.settings.product_list -%}
-                  {%- if product.id == current_product.id -%}
-                         <div class="price-justification hello">
-                              <p> {{ block.settings.text }} </p>
-                         </div>
-                  {%- endif -%}
-                {%- endfor -%}
+              {%- for current_product in block.settings.product_list -%}
+                {%- if product.id == current_product.id -%}
+                  <div class="price-justification hello">
+                    <p>{{ block.settings.text }}</p>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
 
-                <style>
-                      .price-justification {
-                        background: #E5EFE0;
-                        border-radius: 4px;
-                        margin-bottom: 7px;
-                        max-width: 295px;
-                        width: 100%;
-                        padding: 6px 8px;
-                        display: flex;
-                        justify-content: center;
-                        position: relative;
-                      }
-                      
-                      .price-justification p {
-                        color: #3E943E;
-                        font-size: 15px;
-                        line-height: 15px;
-                        font-weight: 500;
-                        display: flex;
-                        align-items: center;
-                      }
-                      
-                      .price-justification p::before {
-                        content: "";
-                        background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_228_55)'%3E%3Cpath d='M13.8086 0.795736C13.5171 0.446614 12.9977 0.39992 12.6486 0.691422L9.32202 3.49949C9.78117 3.8202 10.1433 4.25085 10.3798 4.76194L13.7043 1.9557C14.0534 1.66418 14.1001 1.14486 13.8086 0.795736Z' fill='%233E943E'/%3E%3Cpath d='M9.60924 7.83192C10.5272 5.09753 9.03233 3.3016 6.17375 3.71748C4.96006 3.8941 3.67785 4.46514 2.74389 5.24502C1.81572 6.02002 1.2958 6.94753 1.24032 7.92731C1.20922 8.47641 1.32196 9.02774 1.56987 9.55883H0V10.7941H11.9412V9.55883H8.73336C9.1067 9.01728 9.41014 8.42505 9.60924 7.83192ZM3.27169 5.87716C4.33385 4.99025 5.92354 4.40524 7.20042 4.49111C6.04495 4.90523 4.74529 5.71959 3.79949 6.5093C2.973 7.19942 2.40051 7.8726 2.09443 8.51322C1.94951 7.67295 2.22853 6.74821 3.27169 5.87716ZM2.66401 9.55883C2.65772 9.39338 2.69555 9.20669 2.7796 8.99897C3.41869 7.419 6.47972 5.41198 8.05491 5.10178L2.7171 9.55883H2.66401ZM4.002 9.55883L8.58277 5.73392C8.15832 6.81601 6.6744 8.57202 5.2254 9.55883H4.002ZM6.56951 9.55883C7.46587 8.78735 8.44049 7.70704 9.03121 6.68367C8.91822 7.68632 8.36802 8.75891 7.70302 9.55883H6.56951Z' fill='%233E943E'/%3E%3Cpath d='M3.70582 14.5H8.23523C9.99569 14.5 11.4733 13.266 11.8488 11.6176H0.0922852C0.467787 13.266 1.94534 14.5 3.70582 14.5Z' fill='%233E943E'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_228_55'%3E%3Crect width='14' height='14' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-                        background-repeat: no-repeat;
-                        background-size: 14px;
-                        width: 14px;
-                        height: 14px;
-                        display: block;
-                        margin-right: 6px;
-                      }
-                      
-                      .price-justification::after {
-                        content: "";
-                        background-image: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 6L0.0717969 -1.30507e-06L13.9282 -9.36995e-08L7 6Z' fill='%23E5EFE0'/%3E%3C/svg%3E");
-                        background-repeat: no-repeat;
-                        width: 16px;
-                        height: 8px;
-                        display: block;
-                        position: absolute;
-                        top: 27px;
-                        left: 34px;
-                      }
+              <style>
+                .price-justification {
+                  background: #e5efe0;
+                  border-radius: 4px;
+                  margin-bottom: 7px;
+                  max-width: 295px;
+                  width: 100%;
+                  padding: 6px 8px;
+                  display: flex;
+                  justify-content: center;
+                  position: relative;
+                }
 
-                     @media screen and (max-width: 999px){
-                          .price-justification {
-                              display: none;
-                          }
-                     }
-                </style>
+                .price-justification p {
+                  color: #3e943e;
+                  font-size: 15px;
+                  line-height: 15px;
+                  font-weight: 500;
+                  display: flex;
+                  align-items: center;
+                }
+
+                .price-justification p::before {
+                  content: '';
+                  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_228_55)'%3E%3Cpath d='M13.8086 0.795736C13.5171 0.446614 12.9977 0.39992 12.6486 0.691422L9.32202 3.49949C9.78117 3.8202 10.1433 4.25085 10.3798 4.76194L13.7043 1.9557C14.0534 1.66418 14.1001 1.14486 13.8086 0.795736Z' fill='%233E943E'/%3E%3Cpath d='M9.60924 7.83192C10.5272 5.09753 9.03233 3.3016 6.17375 3.71748C4.96006 3.8941 3.67785 4.46514 2.74389 5.24502C1.81572 6.02002 1.2958 6.94753 1.24032 7.92731C1.20922 8.47641 1.32196 9.02774 1.56987 9.55883H0V10.7941H11.9412V9.55883H8.73336C9.1067 9.01728 9.41014 8.42505 9.60924 7.83192ZM3.27169 5.87716C4.33385 4.99025 5.92354 4.40524 7.20042 4.49111C6.04495 4.90523 4.74529 5.71959 3.79949 6.5093C2.973 7.19942 2.40051 7.8726 2.09443 8.51322C1.94951 7.67295 2.22853 6.74821 3.27169 5.87716ZM2.66401 9.55883C2.65772 9.39338 2.69555 9.20669 2.7796 8.99897C3.41869 7.419 6.47972 5.41198 8.05491 5.10178L2.7171 9.55883H2.66401ZM4.002 9.55883L8.58277 5.73392C8.15832 6.81601 6.6744 8.57202 5.2254 9.55883H4.002ZM6.56951 9.55883C7.46587 8.78735 8.44049 7.70704 9.03121 6.68367C8.91822 7.68632 8.36802 8.75891 7.70302 9.55883H6.56951Z' fill='%233E943E'/%3E%3Cpath d='M3.70582 14.5H8.23523C9.99569 14.5 11.4733 13.266 11.8488 11.6176H0.0922852C0.467787 13.266 1.94534 14.5 3.70582 14.5Z' fill='%233E943E'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_228_55'%3E%3Crect width='14' height='14' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                  background-repeat: no-repeat;
+                  background-size: 14px;
+                  width: 14px;
+                  height: 14px;
+                  display: block;
+                  margin-right: 6px;
+                }
+
+                .price-justification::after {
+                  content: '';
+                  background-image: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 6L0.0717969 -1.30507e-06L13.9282 -9.36995e-08L7 6Z' fill='%23E5EFE0'/%3E%3C/svg%3E");
+                  background-repeat: no-repeat;
+                  width: 16px;
+                  height: 8px;
+                  display: block;
+                  position: absolute;
+                  top: 27px;
+                  left: 34px;
+                }
+
+                @media screen and (max-width: 999px) {
+                  .price-justification {
+                    display: none;
+                  }
+                }
+              </style>
           {%- endcase -%}
         {%- endfor -%}
 
-
-        <div class="product-meta__price-list-container{% if has_labels %} has-labels{% endif %}" role="region" aria-live="polite">
+        <div
+          class="product-meta__price-list-container{% if has_labels %} has-labels{% endif %}"
+          role="region"
+          aria-live="polite"
+        >
           <div class="price-list" data-product-price-list>
-            {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+            {%- if product.selected_or_first_available_variant.compare_at_price
+                > product.selected_or_first_available_variant.price
+            -%}
               <span class="price price--highlight price--large">
                 <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
@@ -174,9 +207,17 @@
           <div class="product-meta__label-list label-list" data-product-label-list>
             {%- unless product.selected_or_first_available_variant.available -%}
               <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
-            {%- elsif product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+            {%- elsif product.selected_or_first_available_variant.compare_at_price
+                > product.selected_or_first_available_variant.price
+            -%}
               {%- if settings.discount_mode == 'percentage' -%}
-                {%- assign savings = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | round | append: '%' -%}
+                {%- assign savings = product.selected_or_first_available_variant.compare_at_price
+                  | minus: product.selected_or_first_available_variant.price
+                  | times: 100.0
+                  | divided_by: product.selected_or_first_available_variant.compare_at_price
+                  | round
+                  | append: '%'
+                -%}
               {%- else -%}
                 {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
               {%- endif -%}
@@ -192,7 +233,8 @@
                 {%- assign price_per_use = variant.metafields.custom.price_per_use | metafield_tag -%}
                 <div
                   class="variantRelated{% unless variant.id == selected_var.id %} d-none{% endunless %}"
-                  data-variant-id="{{ variant.id }}">
+                  data-variant-id="{{ variant.id }}"
+                >
                   <div class="product-meta__priceperuse-bubble">
                     {{ 'product.general.price_per_use_html' | t: price: price_per_use }}
                   </div>
@@ -206,14 +248,20 @@
               {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
                 <div class="price">
                   <div class="unit-price-measurement">
-                    <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+                    <span class="unit-price-measurement__price">
+                      {{- product.selected_or_first_available_variant.unit_price | money -}}
+                    </span>
                     <span class="unit-price-measurement__separator">/</span>
 
                     {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
-                      <span class="unit-price-measurement__reference-value">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}</span>
+                      <span class="unit-price-measurement__reference-value">
+                        {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
+                      </span>
                     {%- endif -%}
 
-                    <span class="unit-price-measurement__reference-unit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
+                    <span class="unit-price-measurement__reference-unit">
+                      {{- product.selected_or_first_available_variant.unit_price_measurement.reference_unit -}}
+                    </span>
                   </div>
                 </div>
               {%- endif -%}
@@ -225,7 +273,7 @@
                   {%- if cart.taxes_included -%}
                     {{ 'product.general.include_taxes_html' | t }}
                   {%- endif -%}
-        
+
                   {%- if shop.shipping_policy.body != blank -%}
                     {{ 'product.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- endif -%}
@@ -236,10 +284,19 @@
         </div>
 
         <product-payment-terms form-id="{{ product_form_id }}">
-          {%- assign product_installment_form_id = 'product-installment-form-' | append: section.id | append: '-' | append: product.id -%}
+          {%- assign product_installment_form_id = 'product-installment-form-'
+            | append: section.id
+            | append: '-'
+            | append: product.id
+          -%}
 
           {%- form 'product', product, data-productid: product.id, id: product_installment_form_id -%}
-            <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
+            <input
+              type="hidden"
+              name="id"
+              data-productid="{{ product.id }}"
+              value="{{ product.selected_or_first_available_variant.id }}"
+            >
             {{- form | payment_terms -}}
           {%- endform -%}
         </product-payment-terms>
@@ -247,9 +304,17 @@
         {%- if section.settings.show_sku -%}
           <div class="product-meta__reference">
             {%- if section.settings.show_sku -%}
-              <span class="product-meta__sku text--subdued text--xxsmall" {% if product.selected_or_first_available_variant.sku == blank %}style="display: none"{% endif %} data-product-sku-container>
+              <span
+                class="product-meta__sku text--subdued text--xxsmall"
+                {% if product.selected_or_first_available_variant.sku == blank %}
+                  style="display: none"
+                {% endif %}
+                data-product-sku-container
+              >
                 {{- 'product.general.sku' | t }}
-                <span class="product-meta__sku-number" data-product-sku-number>{{ product.selected_or_first_available_variant.sku }}</span>
+                <span class="product-meta__sku-number" data-product-sku-number>
+                  {{- product.selected_or_first_available_variant.sku -}}
+                </span>
               </span>
             {%- endif -%}
           </div>
@@ -266,7 +331,8 @@
                     <img
                       class="product-meta__usp-item-icon"
                       src="{{ block.settings.icon | img_url: 'master' }}"
-                      alt="{{ block.settings.icon.alt }}">
+                      alt="{{ block.settings.icon.alt }}"
+                    >
                     <div class="product-meta__usp-item-text">
                       {{ block.settings.text }}
                     </div>
@@ -280,7 +346,10 @@
       {%- render 'product-form', product: product, update_url: update_url -%}
 
       <div class="product-meta__online-counter customProductVisitorsCounterElement d-none">
-        <div><input name="add" style="display: none;" pvc-override="true"><input name="add" style="display: none;" pvc-override="true"></div>
+        <div>
+          <input name="add" style="display: none;" pvc-override="true"
+          ><input name="add" style="display: none;" pvc-override="true">
+        </div>
       </div>
 
       {%- assign help_page = section.settings.help_page -%}
@@ -291,10 +360,23 @@
             <div class="product-meta__share text--subdued">
               {%- assign share_url = shop.url | append: product.url -%}
               {%- assign twitter_text = product.title | url_param_escape -%}
-              {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+              {%- assign pinterest_description = product.description
+                | strip_html
+                | truncatewords: 15
+                | url_param_escape
+              -%}
               {%- assign pinterest_image = product.image | img_url: '800x' | prepend: 'https:' -%}
 
-              <button is="share-toggle-button" share-url="{{ share_url | escape }}" share-title="{{ product.title | escape }}" class="product-meta__share-label link hidden-tablet-and-up" aria-controls="mobile-share-buttons-{{ section.id }}" aria-expanded="false">{{ 'product.general.share' | t }}</button>
+              <button
+                is="share-toggle-button"
+                share-url="{{ share_url | escape }}"
+                share-title="{{ product.title | escape }}"
+                class="product-meta__share-label link hidden-tablet-and-up"
+                aria-controls="mobile-share-buttons-{{ section.id }}"
+                aria-expanded="false"
+              >
+                {{ 'product.general.share' | t }}
+              </button>
               <div class="product-meta__share-label hidden-phone">{{ 'product.general.share' | t }}</div>
 
               <popover-content id="mobile-share-buttons-{{ section.id }}" class="popover hidden-tablet-and-up">
@@ -303,44 +385,97 @@
                 <header class="popover__header">
                   <span class="popover__title heading h6">{{- 'article.general.share' | t -}}</span>
 
-                  <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                  <button
+                    type="button"
+                    class="popover__close-button tap-area tap-area--large"
+                    data-action="close"
+                    title="{{ 'general.accessibility.close' | t | escape }}"
+                  >
                     {%- render 'icon' with 'close' -%}
                   </button>
                 </header>
 
                 <div class="mobile-share-buttons">
-                  <a class="mobile-share-buttons__item mobile-share-buttons__item--facebook" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.facebook_share' | t }}">
-                    {%- render 'icon' with 'facebook-share-mobile' -%} Facebook
+                  <a
+                    class="mobile-share-buttons__item mobile-share-buttons__item--facebook"
+                    href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="{{ 'general.social.facebook_share' | t }}"
+                  >
+                    {%- render 'icon' with 'facebook-share-mobile' -%}
+                    Facebook
                   </a>
 
-                  <a class="mobile-share-buttons__item mobile-share-buttons__item--pinterest" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.pinterest_pin' | t }}">
-                    {%- render 'icon' with 'pinterest-share-mobile' -%} Pinterest
+                  <a
+                    class="mobile-share-buttons__item mobile-share-buttons__item--pinterest"
+                    href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="{{ 'general.social.pinterest_pin' | t }}"
+                  >
+                    {%- render 'icon' with 'pinterest-share-mobile' -%}
+                    Pinterest
                   </a>
 
-                  <a class="mobile-share-buttons__item mobile-share-buttons__item--twitter" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">
-                    {%- render 'icon' with 'twitter-share-mobile' -%} Twitter
+                  <a
+                    class="mobile-share-buttons__item mobile-share-buttons__item--twitter"
+                    href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="{{ 'general.social.twitter_tweet' | t }}"
+                  >
+                    {%- render 'icon' with 'twitter-share-mobile' -%}
+                    Twitter
                   </a>
 
-                  <a class="mobile-share-buttons__item mobile-share-buttons__item--mail" href="mailto:?&subject={{ article.title | escape }}&body={{ share_url }}" aria-label="{{ 'general.social.email_share' | t }}">
-                    {%- render 'icon' with 'email-share-mobile' -%} {{ 'general.social.email_label' | t }}
+                  <a
+                    class="mobile-share-buttons__item mobile-share-buttons__item--mail"
+                    href="mailto:?&subject={{ article.title | escape }}&body={{ share_url }}"
+                    aria-label="{{ 'general.social.email_share' | t }}"
+                  >
+                    {%- render 'icon' with 'email-share-mobile' -%}
+                    {{ 'general.social.email_label' | t }}
                   </a>
                 </div>
               </popover-content>
 
               <div class="product-meta__share-button-list hidden-phone">
-                <a class="product-meta__share-button-item product-meta__share-button-item--facebook link tap-area" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.facebook_share' | t }}">
+                <a
+                  class="product-meta__share-button-item product-meta__share-button-item--facebook link tap-area"
+                  href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="{{ 'general.social.facebook_share' | t }}"
+                >
                   {%- render 'icon' with 'facebook', width: 8, height: 14 -%}
                 </a>
 
-                <a class="product-meta__share-button-item product-meta__share-button-item--pinterest link tap-area" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.pinterest_pin' | t }}">
+                <a
+                  class="product-meta__share-button-item product-meta__share-button-item--pinterest link tap-area"
+                  href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="{{ 'general.social.pinterest_pin' | t }}"
+                >
                   {%- render 'icon' with 'pinterest', width: 10, height: 14 -%}
                 </a>
 
-                <a class="product-meta__share-button-item product-meta__share-button-item--twitter link tap-area" href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">
+                <a
+                  class="product-meta__share-button-item product-meta__share-button-item--twitter link tap-area"
+                  href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="{{ 'general.social.twitter_tweet' | t }}"
+                >
                   {%- render 'icon' with 'twitter', width: 17, height: 14 -%}
                 </a>
 
-                <a class="product-meta__share-button-item product-meta__share-button-item--mail link tap-area" href="mailto:?&subject={{ product.title | escape }}&body={{ share_url }}" aria-label="{{ 'general.social.email_share' | t }}">
+                <a
+                  class="product-meta__share-button-item product-meta__share-button-item--mail link tap-area"
+                  href="mailto:?&subject={{ product.title | escape }}&body={{ share_url }}"
+                  aria-label="{{ 'general.social.email_share' | t }}"
+                >
                   {%- render 'icon' with 'share', width: 13, height: 13 -%}
                 </a>
               </div>
@@ -348,8 +483,22 @@
           {%- endif -%}
 
           {%- if help_page != blank -%}
-            <button is="toggle-button" class="product-meta__help link text--subdued hidden-tablet-and-up" aria-controls="product-{{ section.id }}-help-popover" aria-expanded="false">{{ 'product.general.need_help' | t }}</button>
-            <button is="toggle-button" class="product-meta__help link text--subdued hidden-phone" aria-controls="product-{{ section.id }}-help-drawer" aria-expanded="false">{{ 'product.general.need_help' | t }}</button>
+            <button
+              is="toggle-button"
+              class="product-meta__help link text--subdued hidden-tablet-and-up"
+              aria-controls="product-{{ section.id }}-help-popover"
+              aria-expanded="false"
+            >
+              {{ 'product.general.need_help' | t }}
+            </button>
+            <button
+              is="toggle-button"
+              class="product-meta__help link text--subdued hidden-phone"
+              aria-controls="product-{{ section.id }}-help-drawer"
+              aria-expanded="false"
+            >
+              {{ 'product.general.need_help' | t }}
+            </button>
           {%- endif -%}
         </div>
       {%- endif -%}
@@ -362,7 +511,12 @@
           <header class="drawer__header">
             <p class="drawer__title heading h6">{{ help_page.title }}</p>
 
-            <button type="button" class="drawer__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+            <button
+              type="button"
+              class="drawer__close-button tap-area"
+              data-action="close"
+              title="{{ 'general.accessibility.close' | t | escape }}"
+            >
               {%- render 'icon' with 'close' -%}
             </button>
           </header>
@@ -381,7 +535,12 @@
           <header class="popover__header">
             <p class="popover__title heading h6">{{ help_page.title }}</p>
 
-            <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+            <button
+              type="button"
+              class="popover__close-button tap-area tap-area--large"
+              data-action="close"
+              title="{{ 'general.accessibility.close' | t | escape }}"
+            >
               {%- render 'icon' with 'close' -%}
             </button>
           </header>
@@ -408,7 +567,7 @@
       {%- endif -%}
     </div>
   </div>
-    
+
   <div class="product-meta__accordion hidden-lap-and-up">
     {% render 'product-accordion', product: product %}
   </div>
